@@ -1,6 +1,6 @@
 include::define-literal.adoc[]
 
-ifdef::1on1guide-org[]
+ifndef::1on1guide-org[]
 :1on1guide-org: 1on1guide.org
 :link-1on1guide-org-url: https://github.com/1on1guide-org/
 :link-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
