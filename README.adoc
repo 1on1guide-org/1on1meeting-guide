@@ -1,0 +1,7 @@
+= 1on1ガイド　リポジトリ
+
+
+
+[[license]]
+== ライセンスについて
+include::LICENSE.adoc[leveloffset=+1]

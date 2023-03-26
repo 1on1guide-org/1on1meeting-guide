@@ -1,13 +1,11 @@
-ifndef::target-release[]
 include::define-literal.adoc[]
-endif::[]
 
 {CC-BY-SA-4_0-png}
 
 “1on1 ガイド” by link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実], 佐々木 将之, 笹尾 納勇仁, link:https://twitter.com/chachaki[@chachaki] and link:https://twitter.com/eroccowaruico[@eroccowaruico] 
  is licensed under {CC-BY-SA-4_0-url-link-en} 
 
-本書『1on1 ガイド』は{1on1guide-org-url-link}を初版の著作者としその後は複数の著者の貢献により作成されています。
+本書『1on1 ガイド』は <<1ON1GUIDE-ORIGINAL-AUTHOR>> とその後の複数の著者の貢献により作成されています。
 本書『1on1 ガイド』は {CC-BY-SA-4_0-url-link} の下に提供されています。
 このライセンスで許諾される範囲を超えた利用の可能性については以下のアドレスもご覧下さい。
 {github-repository-link}
@@ -22,6 +20,8 @@ Permissions beyond the scope of this license may be available at {github-reposit
 その他ライセンスを使用して新しいコンテンツを作成することはできません。
 著者が他の誰かにそれを譲渡しない限り寄稿された著作権は著者に残ります。
 
+
+[#1ON1GUIDE-ORIGINAL-AUTHOR]
 == 初版の著作者
 
 link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実] + 
@@ -32,7 +32,7 @@ link:https://twitter.com/eroccowaruico[@eroccowaruico]
 
 
 == 再利用
-再利用は元のコンテンツと同じ{CC-BY-SA-4_0-url-link-en}で公開する必要があります。
+再利用は元のコンテンツと同じ{CC-BY-SA-4_0-url-link-en}で全ての著作者を記載の上で公開する必要があります。
 
 
 == ロゴ、商標、サービスマーク、ワードマーク
