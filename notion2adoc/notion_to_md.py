@@ -6,8 +6,9 @@ NOTION_API_KEY = os.environ["NOTION_API_KEY"]
 NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
 
 headers = {
-    "Notion-Version": "2022-05-13",
     "Authorization": f"Bearer {NOTION_API_KEY}",
+    "Notion-Version": "2022-06-28",  # Notion APIのバージョンを最新に更新してください
+    "Content-Type": "application/json",
 }
 
 def get_database_items():
