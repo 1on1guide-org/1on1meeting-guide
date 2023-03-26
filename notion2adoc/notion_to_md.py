@@ -16,7 +16,7 @@ def get_database_items():
         "filter": {
             "property": "状態",
             "select": {
-                "equals": "一般公開済"
+                "equals": "公開前"
             }
         }
     }
