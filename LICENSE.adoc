@@ -1,4 +1,6 @@
+ifndef::1on1guide-org[]
 include::define-literal.adoc[]
+endif::[]
 
 ifndef::1on1guide-org[]
 :1on1guide-org: 1on1guide.org

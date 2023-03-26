@@ -1,0 +1,37 @@
+name: Notion to Markdown and Create Pull Request
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extract_and_convert:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests mdutils
+
+    - name: Extract and convert
+      env:
+        NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+      run: python notion2adoc/notion_to_md.py
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'Update markdown files from Notion'
+        title: 'Update markdown files from Notion'
+        body: 'This PR updates the markdown files based on the latest data from the Notion database.'
+        branch: 'update-markdown-from-notion'
+        base: 'main'

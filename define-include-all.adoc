@@ -1,0 +1,5 @@
+include::define-common.adoc[]
+////
+ここまで空行禁止(無駄な改行があるとdefine-commonの設定が有効になりません）
+////
+include::define-literal.adoc[]

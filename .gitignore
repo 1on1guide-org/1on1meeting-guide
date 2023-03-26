@@ -1,0 +1,4 @@
+*.DS_Store
+~$*.xlsx
+define-preview.adoc
+literal-list.adoc
