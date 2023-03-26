@@ -9,7 +9,7 @@ ifndef::1on1guide-org[]
 :link-CC-BY-SA-4_0-url: http://creativecommons.org/licenses/by-sa/4.0/
 :CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
 :CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
-:1on1guide-org--url-link: link:{link-1on1guide-org-url}[{1on1guide-org}]
+:1on1guide-org-url-link: link:{link-1on1guide-org-url}[{1on1guide-org}]
 :github-repository-link: link:{github-repository}[Github repository]
 :CC-BY-SA-4_0-url-link: link:{CC-BY-SA-4_0-url}[{CC-BY-SA-4_0}]
 :CC-BY-SA-4_0-url-link-en: link:{CC-BY-SA-4_0-url}[{CC-BY-SA-4_0_EN}]
@@ -54,4 +54,4 @@ link:https://twitter.com/eroccowaruico[@eroccowaruico]
 == ロゴ、商標、サービスマーク、ワードマーク
 {1on1guide-org-url-link}の商標、ロゴ、サービスマークおよびWebサイトやPDFのルックアンドフィールの権利はクリエイティブコモンズライセンスの下ではライセンスされていません。 +
 また著作権のある著作物（ロゴやグラフィックなど）デザイン）、それらはそれらの条件の下でライセンスされている作品に含まれていません。 +
-文書のテキストを使用しこれらの権利のいずれかを使用したい場合、またはこのコレクションのライセンス条件を遵守することに関して他に質問がある場合はAnalogにお問い合わせください。
+文書のテキストを使用しこれらの権利のいずれかを使用したい場合、またはこのコレクションのライセンス条件を遵守することに関して他に質問がある場合は{1on1guide-org-url-link}にお問い合わせください。
