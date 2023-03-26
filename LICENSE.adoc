@@ -1,5 +1,19 @@
 include::define-literal.adoc[]
 
+ifdef::1on1guide-org[]
+:1on1guide-org: 1on1guide.org
+:link-1on1guide-org-url: https://github.com/1on1guide-org/
+:link-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
+:link-CC-BY-SA-4_0-url: http://creativecommons.org/licenses/by-sa/4.0/
+:CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
+:CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+:1on1guide-org--url-link: link:{link-1on1guide-org-url}[{1on1guide-org}]
+:github-repository-link: link:{github-repository}[Github repository]
+:CC-BY-SA-4_0-url-link: link:{CC-BY-SA-4_0-url}[{CC-BY-SA-4_0}]
+:CC-BY-SA-4_0-url-link-en: link:{CC-BY-SA-4_0-url}[{CC-BY-SA-4_0_EN}]
+:CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
+endif::[]
+
 {CC-BY-SA-4_0-png}
 
 “1on1 ガイド” by link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実], 佐々木 将之, 笹尾 納勇仁, link:https://twitter.com/chachaki[@chachaki] and link:https://twitter.com/eroccowaruico[@eroccowaruico] 
