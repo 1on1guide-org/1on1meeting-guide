@@ -40,8 +40,6 @@ def get_item_properties(item):
             item_properties[key] = [option["name"] for option in value["multi_select"]] if value["multi_select"] else []
         elif value["type"] == "date":
             item_properties[key] = value["date"]["start"] if value["date"] else ""
-        elif value["type"] == "people":
-            item_properties[key] = [user.get("given_name", "") + " " + user.get("family_name", "") if "given_name" in user and "family_name" in user else user["name"] for user in value["people"]] if value["people"] else []
         elif value["type"] == "files":
             item_properties[key] = [file["name"] for file in value["files"]] if value["files"] else []
         elif value["type"] == "checkbox":
@@ -59,6 +57,9 @@ def get_item_properties(item):
         elif value["type"] == "rollup":
             item_properties[key] = value["rollup"]["value"] if value["rollup"] else ""
         # ... 他のプロパティタイプも必要に応じて追加
+        else :
+            item_properties[key] = ""
+        
     return item_properties
 
 def is_item_valid(item):
