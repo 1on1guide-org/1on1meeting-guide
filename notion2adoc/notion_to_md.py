@@ -41,7 +41,7 @@ def get_item_properties(item):
         elif value["type"] == "date":
             item_properties[key] = value["date"]["start"] if value["date"] else ""
         elif value["type"] == "people":
-            item_properties[key] = [user["given_name"] + " " + user["family_name"] for user in value["people"]] if value["people"] else []
+            item_properties[key] = [user.get("given_name", "") + " " + user.get("family_name", "") if "given_name" in user and "family_name" in user else user["name"] for user in value["people"]] if value["people"] else []
         elif value["type"] == "files":
             item_properties[key] = [file["name"] for file in value["files"]] if value["files"] else []
         elif value["type"] == "checkbox":
