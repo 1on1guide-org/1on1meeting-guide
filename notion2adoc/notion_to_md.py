@@ -25,6 +25,21 @@ def get_database_items():
     response.raise_for_status()
     return response.json()["results"]
 
+def get_item_properties(item):
+    item_properties = {}
+    for key, value in item["properties"].items():
+        if value["type"] == "title":
+            item_properties[key] = value["title"][0]["text"]["content"]
+        elif value["type"] == "rich_text":
+            item_properties[key] = value["rich_text"][0]["text"]["content"]
+        elif value["type"] == "number":
+            item_properties[key] = value["number"]
+        elif value["type"] == "select":
+            item_properties[key] = value["select"]["name"]
+        elif value["type"] == "multi_select":
+            item_properties[key] = [option["name"] for option in value["multi_select"]]
+    return item_properties
+
 def is_item_valid(item):
     required_keys = ["No.", "パターン名", "状態"]
     for key in required_keys:
@@ -61,7 +76,8 @@ def create_markdown_file(item):
 if __name__ == "__main__":
     items = get_database_items()
     for item in items:
-        if is_item_valid(item) and item["状態"] == "一般公開済":
-            create_markdown_file(item)
+        item_properties = get_item_properties(item)
+        if is_item_valid(item_properties) and item_properties["状態"] == "一般公開済":
+            create_markdown_file(item_properties)
         else:
-            print(f"Invalid item: {item}")
+            print(f"Invalid item: {item_properties}")
