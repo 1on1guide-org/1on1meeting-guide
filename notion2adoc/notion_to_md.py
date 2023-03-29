@@ -86,10 +86,12 @@ def create_markdown_file(item):
         ("関連パターン", "関連パターン")
     ]
 
-    for section_title, property_name in sections:
-        # レベル2のヘッダーを作成
+    for section_title, property_name in section_mapping.items():
         md_file.new_header(level=2, title=section_title)
-        md_file.new_line(item[property_name])
+        if isinstance(item_properties[property_name], list):
+            md_file.new_line(', '.join(item_properties[property_name]))
+        else:
+            md_file.new_line(item_properties[property_name])
 
     md_file.create_md_file()
     
@@ -99,7 +101,7 @@ if __name__ == "__main__":
     items = get_database_items()
     for item in items:
         item_properties = get_item_properties(item)
-        if is_item_valid(item_properties) and item_properties["状態"] == "公開前":
+        if is_item_valid(item_properties):
             create_markdown_file(item_properties)
         else:
             print(f"Invalid item: {item_properties}")
