@@ -25,13 +25,6 @@ def get_database_items():
     response.raise_for_status()
     return response.json()["results"]
 
-def is_item_valid(item):
-    required_keys = ["No.", "パターン名", "状態"]
-    for key in required_keys:
-        if key not in item:
-            return False
-    return True
-
 def create_markdown_file(item):
     file_name = f"patterns/{item['No.']}.md"
     md_file = MdUtils(file_name=file_name)
@@ -54,11 +47,7 @@ def create_markdown_file(item):
         md_file.new_header(level=2, title=section_title)
         md_file.new_line(item[property_name])
 
-    for item in items:
-        if is_item_valid(item) and item["状態"] == "一般公開済":
-            create_markdown_file(item)
-        else:
-            print(f"Invalid item: {item}")
+    md_file.create_md_file()
 
 if __name__ == "__main__":
     items = get_database_items()
