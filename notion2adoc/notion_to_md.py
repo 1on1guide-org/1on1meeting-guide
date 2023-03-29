@@ -29,15 +29,36 @@ def get_item_properties(item):
     item_properties = {}
     for key, value in item["properties"].items():
         if value["type"] == "title":
-            item_properties[key] = value["title"][0]["text"]["content"]
+            item_properties[key] = value["title"][0]["text"]["content"] if value["title"] else ""
         elif value["type"] == "rich_text":
-            item_properties[key] = value["rich_text"][0]["text"]["content"]
+            item_properties[key] = value["rich_text"][0]["text"]["content"] if value["rich_text"] else ""
         elif value["type"] == "number":
             item_properties[key] = value["number"]
         elif value["type"] == "select":
-            item_properties[key] = value["select"]["name"]
+            item_properties[key] = value["select"]["name"] if value["select"] else ""
         elif value["type"] == "multi_select":
-            item_properties[key] = [option["name"] for option in value["multi_select"]]
+            item_properties[key] = [option["name"] for option in value["multi_select"]] if value["multi_select"] else []
+        elif value["type"] == "date":
+            item_properties[key] = value["date"]["start"] if value["date"] else ""
+        elif value["type"] == "people":
+            item_properties[key] = [user["name"] for user in value["people"]] if value["people"] else []
+        elif value["type"] == "files":
+            item_properties[key] = [file["name"] for file in value["files"]] if value["files"] else []
+        elif value["type"] == "checkbox":
+            item_properties[key] = value["checkbox"]
+        elif value["type"] == "url":
+            item_properties[key] = value["url"] if value["url"] else ""
+        elif value["type"] == "email":
+            item_properties[key] = value["email"] if value["email"] else ""
+        elif value["type"] == "phone_number":
+            item_properties[key] = value["phone_number"] if value["phone_number"] else ""
+        elif value["type"] == "formula":
+            item_properties[key] = value["formula"]["string"] if "string" in value["formula"] else value["formula"]["number"]
+        elif value["type"] == "relation":
+            item_properties[key] = [related_item["id"] for related_item in value["relation"]] if value["relation"] else []
+        elif value["type"] == "rollup":
+            item_properties[key] = value["rollup"]["value"] if value["rollup"] else ""
+        # ... 他のプロパティタイプも必要に応じて追加
     return item_properties
 
 def is_item_valid(item):
