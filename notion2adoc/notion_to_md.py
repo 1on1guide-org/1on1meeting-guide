@@ -26,12 +26,12 @@ def get_database_items():
     return response.json()["results"]
 
 def create_markdown_file(item):
-    number = item["properties"]["No."]["number"]
-    file_name = f"{int(number)}.md"
-    title = item["properties"]["パターン名"]["title"][0]["plain_text"]
-    md_file = MdUtils(file_name=file_name, title=title)
-
-    # セクションと項目の定義
+    file_name = f"patterns/{item['No.']}.md"
+    md_file = MdUtils(file_name=file_name)
+    
+    # レベル1のヘッダーを作成
+    md_file.new_header(level=1, title=item["パターン名"])
+    
     sections = [
         ("はじめに", "はじめに(サブタイトル的に内容を推測できるもの)"),
         ("要約", "要約(使用例を除く詳細をまとめ理解を促すもの)"),
@@ -39,15 +39,13 @@ def create_markdown_file(item):
         ("問題", "問題"),
         ("フォース", "フォース(問題に至る背景)"),
         ("使用例", "使用例(カードを切るタイミングや背景)"),
-        ("関連パターン", "関連パターン"),
+        ("関連パターン", "関連パターン")
     ]
 
-    # 各セクションと対応する項目をMarkdownファイルに追加
     for section_title, property_name in sections:
-        if property_name in item["properties"] and item["properties"][property_name]["rich_text"]:
-            content = item["properties"][property_name]["rich_text"][0]["plain_text"]
-            md_file.new_header(level=2, title=section_title)
-            md_file.new_line(content)
+        # レベル2のヘッダーを作成
+        md_file.new_header(level=2, title=section_title)
+        md_file.new_line(item[property_name])
 
     md_file.create_md_file()
 
