@@ -1,7 +1,11 @@
 name: Notion to Markdown and Create Pull Request
 
-on:
   workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to run the workflow on'
+        required: true
+        default: 'update-markdown-from-notion'
 
 jobs:
   extract_and_convert:
@@ -9,6 +13,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.branch }}
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -33,5 +39,5 @@ jobs:
         commit-message: 'Update markdown files from Notion'
         title: 'Update markdown files from Notion'
         body: 'This PR updates the markdown files based on the latest data from the Notion database.'
-        branch: 'update-markdown-from-notion'
+        branch: ${{ github.event.inputs.branch }}
         base: 'main'
