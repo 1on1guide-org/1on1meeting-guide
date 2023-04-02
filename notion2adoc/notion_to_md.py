@@ -97,9 +97,9 @@ def create_markdown_file(item):
         md_file.new_line(f"")
         md_file.new_line(f"{section_title}")
         if isinstance(item_properties[property_name], list):
-            md_file.new_line(f"  : {', '.join(item_properties[property_name])}")
+            md_file.new_line(f": {', '.join(item_properties[property_name])}")
         else:
-            md_file.new_line(f"  : {item_properties[property_name]}")
+            md_file.new_line(f": {item_properties[property_name]}")
 
     md_file.create_md_file()
 
