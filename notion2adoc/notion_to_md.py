@@ -109,9 +109,10 @@ def create_markdown_file(item, id_to_pattern_name):
 
 if __name__ == "__main__":
     items = get_database_items()
+    id_to_pattern_name_map = create_id_to_pattern_name_map(items)
     for item in items:
         item_properties = get_item_properties(item)
         if is_item_valid(item_properties):
-            create_markdown_file(item_properties)
+            create_markdown_file(item_properties, id_to_pattern_name_map)
         else:
             print(f"Invalid item: {item_properties}")
