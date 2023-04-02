@@ -14,14 +14,7 @@ headers = {
 
 def get_database_items():
     url = f"https://api.notion.com/v1/databases/{NOTION_DATABASE_ID}/query"
-    filter_body = {
-        "filter": {
-            "property": "状態",
-            "select": {
-                "equals": "公開前"
-            }
-        }
-    }
+    filter_body = {}
     response = requests.post(url, headers=headers, json=filter_body)
     response.raise_for_status()
     return response.json()["results"]
@@ -75,8 +68,15 @@ def is_item_valid(item):
             return False
     return True
 
+def create_id_to_pattern_name_map(items):
+    id_to_pattern_name = {}
+    for item in items:
+        item_properties = get_item_properties(item)
+        id_to_pattern_name[item["id"]] = item_properties["パターン名"]
+    return id_to_pattern_name
 
-def create_markdown_file(item):
+
+def create_markdown_file(item, id_to_pattern_name):
     file_name = f"patterns/{item['No.']}.md"
     md_file = MdUtils(file_name=file_name)
 
@@ -96,7 +96,10 @@ def create_markdown_file(item):
     for section_title, property_name in section_mapping.items():
         md_file.new_line(f"")
         md_file.new_line(f"{section_title}")
-        if isinstance(item_properties[property_name], list):
+        if property_name == "関連パターン":
+            related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
+            md_file.new_line(', '.join(related_pattern_names))
+        elif isinstance(item_properties[property_name], list):
             md_file.new_line(f": {', '.join(item_properties[property_name])}")
         else:
             md_file.new_line(f": {item_properties[property_name]}")
@@ -108,7 +111,7 @@ if __name__ == "__main__":
     items = get_database_items()
     for item in items:
         item_properties = get_item_properties(item)
-        if is_item_valid(item_properties):
+        if is_item_valid(item_properties) and item["状態"] == "公開前":
             create_markdown_file(item_properties)
         else:
             print(f"Invalid item: {item_properties}")
