@@ -76,7 +76,7 @@ def create_id_to_pattern_name_map(items):
     return id_to_pattern_name
 
 
-def create_markdown_file(item_properties, id_to_pattern_name):
+def create_markdown_file(item, id_to_pattern_name):
     file_name = f"patterns/{item['No.']}.md"
     md_file = MdUtils(file_name=file_name)
 
