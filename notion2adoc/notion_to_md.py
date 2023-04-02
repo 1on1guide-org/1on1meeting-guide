@@ -61,10 +61,10 @@ def get_item_properties(item):
     return item_properties
 
 
-def is_item_valid(item):
+def is_item_valid(item_properties):
     required_keys = ["No.", "パターン名", "状態"]
     for key in required_keys:
-        if key not in item:
+        if key not in item_properties:
             return False
     return True
 
@@ -76,12 +76,12 @@ def create_id_to_pattern_name_map(items):
     return id_to_pattern_name
 
 
-def create_markdown_file(item, id_to_pattern_name):
-    file_name = f"patterns/{item['No.']}.md"
+def create_markdown_file(item_properties, id_to_pattern_name):
+    file_name = f"patterns/{item_properties['No.']}.md"
     md_file = MdUtils(file_name=file_name)
 
     # レベル1のヘッダーを作成
-    md_file.new_header(level=1, title=item["パターン名"])
+    md_file.new_header(level=1, title=item_properties["パターン名"])
 
     section_mapping = {
         "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
