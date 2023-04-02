@@ -111,7 +111,7 @@ if __name__ == "__main__":
     items = get_database_items()
     for item in items:
         item_properties = get_item_properties(item)
-        if is_item_valid(item_properties) and item["状態"] == "公開前":
+        if is_item_valid(item_properties):
             create_markdown_file(item_properties)
         else:
             print(f"Invalid item: {item_properties}")
