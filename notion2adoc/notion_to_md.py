@@ -96,9 +96,9 @@ def create_markdown_file(item):
     for section_title, property_name in section_mapping.items():
         md_file.new_line(f"{section_title}:")
         if isinstance(item_properties[property_name], list):
-            md_file.new_line(f"    {', '.join(item_properties[property_name])}")
+            md_file.new_line(f"    {', '.join(item_properties[property_name])} ")
         else:
-            md_file.new_line(f"    {item_properties[property_name]}")
+            md_file.new_line(f"    {item_properties[property_name]} ")
 
     md_file.create_md_file()
 
