@@ -95,14 +95,14 @@ def create_markdown_file(item, id_to_pattern_name):
 
     for section_title, property_name in section_mapping.items():
         md_file.new_line(f"")
-        md_file.new_line(f"{section_title}")
+        md_file.new_line(f"{section_title} ::")
         if property_name == "関連パターン":
             related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
             md_file.new_line(', '.join(related_pattern_names))
         elif isinstance(item_properties[property_name], list):
-            md_file.new_line(f": {', '.join(item_properties[property_name])}")
+            md_file.new_line(f"{', '.join(item_properties[property_name])}")
         else:
-            md_file.new_line(f": {item_properties[property_name]}")
+            md_file.new_line(f"{item_properties[property_name]}")
 
     md_file.create_md_file()
 
