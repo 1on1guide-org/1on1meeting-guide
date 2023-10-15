@@ -80,7 +80,7 @@ def create_markdown_file(item_properties, id_to_pattern_name):
     file = open(file_name, 'w')
 
     # レベル1のヘッダーを作成
-    file.write(f"=")
+    file.write(f"= ")
     file.write(item_properties["パターン名"])
     file.write(f"\n")
 
@@ -96,7 +96,7 @@ def create_markdown_file(item_properties, id_to_pattern_name):
 
     for section_title, property_name in section_mapping.items():
         file.write(f"\n")
-        file.write(f"{section_title} ::")
+        file.write(f"{section_title}:: ")
         if property_name == "関連パターン":
             related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
             file.write(', '.join(related_pattern_names))
