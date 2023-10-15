@@ -77,7 +77,7 @@ def create_id_to_pattern_name_map(items):
 
 
 def create_markdown_file(item_properties, id_to_pattern_name):
-    file_name = f"patterns/{item_properties['No.']}.md"
+    file_name = f"patterns/{item_properties['No.']}.adoc"
     md_file = MdUtils(file_name=file_name)
 
     # レベル1のヘッダーを作成
