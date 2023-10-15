@@ -1,6 +1,5 @@
 import os
 import requests
-from mdutils.mdutils import MdUtils
 
 NOTION_API_KEY = os.environ["NOTION_API_KEY"]
 NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
@@ -78,10 +77,10 @@ def create_id_to_pattern_name_map(items):
 
 def create_markdown_file(item_properties, id_to_pattern_name):
     file_name = f"patterns/{item_properties['No.']}.adoc"
-    md_file = MdUtils(file_name=file_name)
+    file = open(file_name, 'w')
 
     # レベル1のヘッダーを作成
-    md_file.new_header(level=1, title=item_properties["パターン名"])
+    file.new_header(level=1, title=item_properties["パターン名"])
 
     section_mapping = {
         "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
@@ -94,18 +93,17 @@ def create_markdown_file(item_properties, id_to_pattern_name):
     }
 
     for section_title, property_name in section_mapping.items():
-        md_file.new_line(f"")
-        md_file.new_line(f"{section_title} ::")
+        file.write(f"\n")
+        file.write(f"{section_title} ::")
         if property_name == "関連パターン":
             related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
-            md_file.new_line(', '.join(related_pattern_names))
+            file.write(', '.join(related_pattern_names))
         elif isinstance(item_properties[property_name], list):
-            md_file.new_line(f"{', '.join(item_properties[property_name])}")
+            file.write(f"{', '.join(item_properties[property_name])}\n")
         else:
-            md_file.new_line(f"{item_properties[property_name]}")
+            file.write(f"{item_properties[property_name]}\n")
 
-    md_file.create_md_file()
-
+    file.close()
 
 if __name__ == "__main__":
     items = get_database_items()
