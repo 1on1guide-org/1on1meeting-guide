@@ -80,7 +80,9 @@ def create_markdown_file(item_properties, id_to_pattern_name):
     file = open(file_name, 'w')
 
     # レベル1のヘッダーを作成
-    file.new_header(level=1, title=item_properties["パターン名"])
+    file.write(f"=")
+    file.write(item_properties["パターン名"])
+    file.write(f"\n")
 
     section_mapping = {
         "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
