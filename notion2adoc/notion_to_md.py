@@ -112,7 +112,7 @@ if __name__ == "__main__":
     id_to_pattern_name_map = create_id_to_pattern_name_map(items)
     for item in items:
         item_properties = get_item_properties(item)
-        if is_item_valid(item_properties) and item_properties['状態'] == "公開前":
+        if is_item_valid(item_properties) and (item_properties['状態'] == "公開前" or item_properties['状態'] == "使用例以外二次校済"):
             create_markdown_file(item_properties, id_to_pattern_name_map)
         else:
             print(f"Invalid item: {item_properties}")
