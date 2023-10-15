@@ -1,6 +1,5 @@
 import os
 import requests
-import pypandoc
 from mdutils.mdutils import MdUtils
 
 NOTION_API_KEY = os.environ["NOTION_API_KEY"]
@@ -69,7 +68,6 @@ def is_item_valid(item_properties):
             return False
     return True
 
-
 def create_id_to_pattern_name_map(items):
     id_to_pattern_name = {}
     for item in items:
@@ -79,9 +77,8 @@ def create_id_to_pattern_name_map(items):
 
 
 def create_markdown_file(item_properties, id_to_pattern_name):
-    file_name = f"patterns/{item_properties['No.']}"
-    file_name_markdown = file_name + ".md"
-    md_file = MdUtils(file_name=file_name_markdown)
+    file_name = f"patterns/{item_properties['No.']}.md"
+    md_file = MdUtils(file_name=file_name)
 
     # レベル1のヘッダーを作成
     md_file.new_header(level=1, title=item_properties["パターン名"])
@@ -100,8 +97,7 @@ def create_markdown_file(item_properties, id_to_pattern_name):
         md_file.new_line(f"")
         md_file.new_line(f"{section_title} ::")
         if property_name == "関連パターン":
-            related_pattern_names = [id_to_pattern_name[related_pattern_id]
-                                     for related_pattern_id in item_properties[property_name]]
+            related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
             md_file.new_line(', '.join(related_pattern_names))
         elif isinstance(item_properties[property_name], list):
             md_file.new_line(f"{', '.join(item_properties[property_name])}")
@@ -109,9 +105,6 @@ def create_markdown_file(item_properties, id_to_pattern_name):
             md_file.new_line(f"{item_properties[property_name]}")
 
     md_file.create_md_file()
-
-    output = pypandoc.convert_file(
-        input_file=file_name_markdown, to='asciidoc', outputfile=file_name + ".adoc")
 
 
 if __name__ == "__main__":
