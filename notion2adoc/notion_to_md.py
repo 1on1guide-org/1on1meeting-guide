@@ -79,8 +79,11 @@ def create_markdown_file(item_properties, id_to_pattern_name):
     file_name = f"patterns/{item_properties['No.']}.adoc"
     
     with open(file_name, 'w', encoding='utf-8') as file:
-        # ヘッダーレベル1
-        file.write(f"# {item['パターン名']}\n\n")
+        
+        # レベル1のヘッダーを作成
+        file.write(f"= ")
+        file.write(item_properties["パターン名"])
+        file.write(f"\n")
 
         section_mapping = {
             "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
