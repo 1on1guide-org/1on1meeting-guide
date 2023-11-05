@@ -179,30 +179,36 @@ G. 1on1プロセスの実行と運用
 
 === パターン
 
-1.初期に一緒に場をつくる
-2.相手を変えようとしない
-3.アドバイスの前に話を「最後まで聴く」
-4.思いつきで話してみる
-5.自分の感情を言葉にする
-6.すべてを言葉通りには受け取らない
-7.お互いの共通項・違いを知る
-8.1on1の相手と自分の共通のメタファーを知る
-9.話してもよいことを例示する
-10.対話の間合いを近づける
-11.対話の間合いを遠ざける
-12.その時のコンディションをお互いに見る
-13.背景を知る
-14.ステークホルダーや組織の関係や役割を語る
-15.一旦の結論を出して仮置きする
-16.問題・課題に集中して取り組む
-17.あえて解決を目指さない
-18.率直に伝える（フランク・フィードバック）
-19.初期はリードするためにテーマを持っておく
-20.問題と不安を分離する
-21.お互いの取説をつくって更新していく
-22.あえて利害関係の無い人と1on1をしてみる
-23.記憶が薄れない程度の実施になるよう周期を見直す
-24.組織の構造を知り、1on1のテーマと照らし合わせる
+include::patterns/1.adoc[leveloffset=+3]
+>>>
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
+
+include::patterns/1.adoc[leveloffset=+3]
 
 == 用語集
 
