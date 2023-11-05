@@ -77,35 +77,31 @@ def create_id_to_pattern_name_map(items):
 
 def create_markdown_file(item_properties, id_to_pattern_name):
     file_name = f"patterns/{item_properties['No.']}.adoc"
-    file = open(file_name, 'w')
+    
+    with open(file_name, 'w', encoding='utf-8') as file:
+        # ヘッダーレベル1
+        file.write(f"# {item['パターン名']}\n\n")
 
-    # レベル1のヘッダーを作成
-    file.write(f"= ")
-    file.write(item_properties["パターン名"])
-    file.write(f"\n")
+        section_mapping = {
+            "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
+            "要約": "要約(使用例を除く詳細をまとめ理解を促すもの)",
+            "状況": "状況",
+            "問題": "問題",
+            "フォース": "フォース(問題に至る背景)",
+            "使用例": "使用例(カードを切るタイミングや背景)",
+            "関連パターン": "関連パターン"
+        }
 
-    section_mapping = {
-        "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
-        "要約": "要約(使用例を除く詳細をまとめ理解を促すもの)",
-        "状況": "状況",
-        "問題": "問題",
-        "フォース": "フォース(問題に至る背景)",
-        "使用例": "使用例(カードを切るタイミングや背景)",
-        "関連パターン": "関連パターン"
-    }
-
-    for section_title, property_name in section_mapping.items():
-        file.write(f"\n")
-        file.write(f"{section_title}:: ")
-        if property_name == "関連パターン":
-            related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
-            file.write(', '.join(related_pattern_names))
-        elif isinstance(item_properties[property_name], list):
-            file.write(f"{', '.join(item_properties[property_name])}\n")
-        else:
-            file.write(f"{item_properties[property_name]}\n")
-
-    file.close()
+        for section_title, property_name in section_mapping.items():
+            file.write(f"\n")
+            file.write(f"{section_title}:: ")
+            if property_name == "関連パターン":
+                related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
+                file.write(', '.join(related_pattern_names))
+            elif isinstance(item_properties[property_name], list):
+                file.write(f"{', '.join(item_properties[property_name])}\n")
+            else:
+                file.write(f"{item_properties[property_name]}\n")
 
 if __name__ == "__main__":
     items = get_database_items()
