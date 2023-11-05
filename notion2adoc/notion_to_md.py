@@ -1,6 +1,5 @@
 import os
 import requests
-from mdutils.mdutils import MdUtils
 
 NOTION_API_KEY = os.environ["NOTION_API_KEY"]
 NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
@@ -77,42 +76,42 @@ def create_id_to_pattern_name_map(items):
 
 
 def create_markdown_file(item_properties, id_to_pattern_name):
-    file_name = f"patterns/{item_properties['No.']}.md"
-    md_file = MdUtils(file_name=file_name)
+    file_name = f"patterns/{item_properties['No.']}.adoc"
+    
+    with open(file_name, 'w', encoding='utf-8') as file:
+        
+        # レベル1のヘッダーを作成
+        file.write(f"= ")
+        file.write(item_properties["パターン名"])
+        file.write(f"\n")
 
-    # レベル1のヘッダーを作成
-    md_file.new_header(level=1, title=item_properties["パターン名"])
+        section_mapping = {
+            "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
+            "要約": "要約(使用例を除く詳細をまとめ理解を促すもの)",
+            "状況": "状況",
+            "問題": "問題",
+            "フォース": "フォース(問題に至る背景)",
+            "使用例": "使用例(カードを切るタイミングや背景)",
+            "関連パターン": "関連パターン"
+        }
 
-    section_mapping = {
-        "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
-        "要約": "要約(使用例を除く詳細をまとめ理解を促すもの)",
-        "状況": "状況",
-        "問題": "問題",
-        "フォース": "フォース(問題に至る背景)",
-        "使用例": "使用例(カードを切るタイミングや背景)",
-        "関連パターン": "関連パターン"
-    }
-
-    for section_title, property_name in section_mapping.items():
-        md_file.new_line(f"")
-        md_file.new_line(f"{section_title} ::")
-        if property_name == "関連パターン":
-            related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
-            md_file.new_line(', '.join(related_pattern_names))
-        elif isinstance(item_properties[property_name], list):
-            md_file.new_line(f"{', '.join(item_properties[property_name])}")
-        else:
-            md_file.new_line(f"{item_properties[property_name]}")
-
-    md_file.create_md_file()
-
+        for section_title, property_name in section_mapping.items():
+            file.write(f"\n")
+            file.write(f"{section_title}:: ")
+            if property_name == "関連パターン":
+                related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
+                file.write(', '.join(related_pattern_names))
+            elif isinstance(item_properties[property_name], list):
+                file.write(f"{', '.join(item_properties[property_name])}\n")
+            else:
+                file.write(f"{item_properties[property_name]}\n")
 
 if __name__ == "__main__":
     items = get_database_items()
     id_to_pattern_name_map = create_id_to_pattern_name_map(items)
     for item in items:
         item_properties = get_item_properties(item)
-        if is_item_valid(item_properties) and item_properties['状態'] == "公開前":
+        if is_item_valid(item_properties) and (item_properties['状態'] == "公開前" or item_properties['状態'] == "使用例以外二次校済"):
             create_markdown_file(item_properties, id_to_pattern_name_map)
         else:
             print(f"Invalid item: {item_properties}")
