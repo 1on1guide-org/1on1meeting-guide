@@ -105,6 +105,9 @@ def create_markdown_file(item_properties, id_to_pattern_name):
                 file.write(f"{', '.join(item_properties[property_name])}\n")
             else:
                 file.write(f"{item_properties[property_name]}\n")
+                
+        file.write(f"\n")
+        file.write(f"\n")
 
 if __name__ == "__main__":
     items = get_database_items()
