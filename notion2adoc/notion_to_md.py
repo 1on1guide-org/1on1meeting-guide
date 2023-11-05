@@ -67,7 +67,6 @@ def is_item_valid(item_properties):
             return False
     return True
 
-
 def create_id_to_pattern_name_map(items):
     id_to_pattern_name = {}
     for item in items:
@@ -78,10 +77,10 @@ def create_id_to_pattern_name_map(items):
 
 def create_markdown_file(item_properties, id_to_pattern_name):
     file_name = f"patterns/{item_properties['No.']}.adoc"
-
-    with open(file_name, 'w') as file:
+    
+    with open(file_name, 'w', encoding='utf-8') as file:
         # ヘッダーレベル1
-        file.write(f"= {item['パターン名']}\n\n")
+        file.write(f"# {item['パターン名']}\n\n")
 
         section_mapping = {
             "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
@@ -97,14 +96,12 @@ def create_markdown_file(item_properties, id_to_pattern_name):
             file.write(f"\n")
             file.write(f"{section_title}:: ")
             if property_name == "関連パターン":
-                related_pattern_names = [id_to_pattern_name[related_id]
-                                         for related_id in item_properties[property_name]]
+                related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
                 file.write(', '.join(related_pattern_names))
             elif isinstance(item_properties[property_name], list):
                 file.write(f"{', '.join(item_properties[property_name])}\n")
             else:
                 file.write(f"{item_properties[property_name]}\n")
-
 
 if __name__ == "__main__":
     items = get_database_items()
