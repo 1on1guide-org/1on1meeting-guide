@@ -209,13 +209,6 @@ include::patterns/7.adoc[leveloffset=+3]
 
 include::patterns/9.adoc[leveloffset=+3]
 
-<<<
-
-include::patterns/10.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/11.adoc[leveloffset=+3]
 
 <<<
 
