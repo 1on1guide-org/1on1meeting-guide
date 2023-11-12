@@ -75,15 +75,14 @@ def create_id_to_pattern_name_map(items):
     return id_to_pattern_name
 
 
-def create_markdown_file(item_properties, id_to_pattern_name):
+def create_asciidoc_file(item_properties, id_to_pattern_name):
     file_name = f"patterns/{item_properties['No.']}.adoc"
     
     with open(file_name, 'w', encoding='utf-8') as file:
         
         # レベル1のヘッダーを作成
-        file.write(f"= ")
-        file.write(item_properties["パターン名"])
-        file.write(f"\n")
+        file.write(f"= {item_properties['パターン名']}\n\n")
+
 
         section_mapping = {
             "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
@@ -95,19 +94,21 @@ def create_markdown_file(item_properties, id_to_pattern_name):
             "関連パターン": "関連パターン"
         }
 
+        # 項目をAsciidocの定義リストとして書き込みます。
         for section_title, property_name in section_mapping.items():
-            file.write(f"\n")
-            file.write(f"{section_title}:: ")
-            if property_name == "関連パターン":
-                related_pattern_names = [id_to_pattern_name[related_id] for related_id in item_properties[property_name]]
-                file.write(', '.join(related_pattern_names))
-            elif isinstance(item_properties[property_name], list):
-                file.write(f"{', '.join(item_properties[property_name])}\n")
-            else:
-                file.write(f"{item_properties[property_name]}\n")
+            content = item_properties.get(property_name, "")
+            if isinstance(content, list):
+                # 関連パターンのプロパティの場合、IDを名前に変換する
+                if property_name == "関連パターン" and content:
+                    content = [id_to_pattern_name.get(related_id, "Unknown pattern") for related_id in content]
+                    content = ', '.join(content)
+                else:
+                    content = ', '.join(content)  # その他のリストタイププロパティ
+            # プロパティの内容をAsciidocの定義リスト形式で書き込みます。
+            file.write(f"{section_title}::\n")
+            file.write(f"{content}\n\n")
                 
-        file.write(f"\n")
-        file.write(f"\n")
+        file.write(f"\n\n")
 
 if __name__ == "__main__":
     items = get_database_items()
@@ -115,6 +116,6 @@ if __name__ == "__main__":
     for item in items:
         item_properties = get_item_properties(item)
         if is_item_valid(item_properties) and (item_properties['状態'] == "公開前" or item_properties['状態'] == "使用例以外二次校済"):
-            create_markdown_file(item_properties, id_to_pattern_name_map)
+            create_asciidoc_file(item_properties, id_to_pattern_name_map)
         else:
             print(f"Invalid item: {item_properties}")
