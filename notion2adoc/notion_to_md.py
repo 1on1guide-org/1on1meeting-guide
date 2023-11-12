@@ -84,6 +84,7 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
         file.write(f"= {item_properties['パターン名']}\n\n")
 
 
+        # Asciidocのセクションと定義リストを書く
         section_mapping = {
             "はじめに": "はじめに(サブタイトル的に内容を推測できるもの)",
             "要約": "要約(使用例を除く詳細をまとめ理解を促すもの)",
@@ -93,20 +94,29 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
             "使用例": "使用例(カードを切るタイミングや背景)",
             "関連パターン": "関連パターン"
         }
-
-        # 項目をAsciidocの定義リストとして書き込みます。
+        
         for section_title, property_name in section_mapping.items():
+            # 項目名と値を取得
             content = item_properties.get(property_name, "")
-            if isinstance(content, list):
-                # 関連パターンのプロパティの場合、IDを名前に変換する
-                if property_name == "関連パターン" and content:
+            
+            # 項目の値がリストであり、かつ空でない場合のみ出力
+            if isinstance(content, list) and content:
+                # '関連パターン' セクションの処理
+                if property_name == "関連パターン":
+                    # IDからパターン名を取得し、リストをカンマ区切りの文字列に変換
                     content = [id_to_pattern_name.get(related_id, "Unknown pattern") for related_id in content]
-                    content = ', '.join(content)
+                    content = ', '.join(content) if content else None
                 else:
-                    content = ', '.join(content)  # その他のリストタイププロパティ
-            # プロパティの内容をAsciidocの定義リスト形式で書き込みます。
-            file.write(f"{section_title}::\n")
-            file.write(f"{content}\n\n")
+                    # その他のリスト型プロパティの処理
+                    content = ', '.join(content)
+            # 項目の値が文字列または数値で、空でない場合のみ出力
+            elif content:
+                content = str(content)
+            
+            # 項目の内容を書き込み
+            if content:  # コンテンツが有効な値の場合のみ書き込み
+                file.write(f"{section_title}::\n")
+                file.write(f"{content}\n\n")
                 
         file.write(f"\n\n")
 
