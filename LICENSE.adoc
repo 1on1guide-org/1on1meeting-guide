@@ -18,17 +18,9 @@ endif::[]
 
 {CC-BY-SA-4_0-png}
 
-“1on1 ガイド” by link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実], 佐々木 将之, 笹尾 納勇仁, link:https://twitter.com/chachaki[@chachaki] and link:https://twitter.com/eroccowaruico[@eroccowaruico] 
- is licensed under {CC-BY-SA-4_0-url-link-en} 
+本書『1on1 ガイド』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、その後の複数の著者の貢献により作成されています。本書は {CC-BY-SA-4_0-url-link} の下に提供されています。
 
-本書『1on1 ガイド』は <<1ON1GUIDE-ORIGINAL-AUTHOR>> とその後の複数の著者の貢献により作成されています。
-本書『1on1 ガイド』は {CC-BY-SA-4_0-url-link} の下に提供されています。
-このライセンスで許諾される範囲を超えた利用の可能性については以下のアドレスもご覧下さい。
-{github-repository-link}
-
-
-Asciidoctor action sample by {1on1guide-org-url-link} is licensed under a {CC-BY-SA-4_0-url-link-en}.
-Permissions beyond the scope of this license may be available at {github-repository-link}.
+“1on1 ガイド” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki] and link:https://twitter.com/eroccowaruico[@eroccowaruico]  is licensed under a {CC-BY-SA-4_0-url-link-en}.
 
 
 == 貢献
@@ -41,7 +33,6 @@ Permissions beyond the scope of this license may be available at {github-reposit
 == 初版の著作者
 
 link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実] + 
-佐々木 将之 + 
 笹尾 納勇仁 + 
 link:https://twitter.com/chachaki[@chachaki] + 
 link:https://twitter.com/eroccowaruico[@eroccowaruico] 
