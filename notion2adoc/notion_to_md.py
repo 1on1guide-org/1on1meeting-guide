@@ -115,16 +115,15 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                 content = str(content)
             elif content:
                 texts = content.splitlines()
-                connect_text = ""
+                content = ""
                 for linetext in texts:
                     t = re.subn("^・", "* ", linetext)
-                    if connect_text == "":
-                        connect_text = linetext
+                    if content == "":
+                        content = t[0]
                     elif t[1] != 0:
-                        connect_text += "/n" + linetext
+                        content += "/n" + t[0]
                     else:
-                        connect_text += " +" + "/n" +linetext
-                    content = connect_text
+                        content += " +" + "/n" +t[0]
             
             # 項目の内容を書き込み
             if content:  # コンテンツが有効な値の場合のみ書き込み
