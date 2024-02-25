@@ -121,9 +121,9 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                     if content == "":
                         content = t[0]
                     elif t[1] != 0:
-                        content += "/n" + t[0]
+                        content += "\n" + t[0]
                     else:
-                        content += " +" + "/n" +t[0]
+                        content += " +" + "\n" +t[0]
             
             # 項目の内容を書き込み
             if content:  # コンテンツが有効な値の場合のみ書き込み
