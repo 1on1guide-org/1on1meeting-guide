@@ -110,8 +110,10 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                     # その他のリスト型プロパティの処理
                     content = ', '.join(content)
             # 項目の値が文字列または数値で、空でない場合のみ出力
-            elif content:
+            elif isinstance(content, (int, float))  and content:
                 content = str(content)
+            elif content:
+                content = content.replace("\n・", "\r\n* ") 
             
             # 項目の内容を書き込み
             if content:  # コンテンツが有効な値の場合のみ書き込み
