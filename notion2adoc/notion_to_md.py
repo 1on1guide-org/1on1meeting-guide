@@ -1,5 +1,6 @@
 import os
 import requests
+import re
 
 NOTION_API_KEY = os.environ["NOTION_API_KEY"]
 NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
@@ -113,7 +114,17 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
             elif isinstance(content, (int, float))  and content:
                 content = str(content)
             elif content:
-                content = content.replace("・", "* ") 
+                texts = content.splitlines()
+                connect_text = ""
+                for linetext in texts:
+                    t = re.subn("^・", "* ", linetext)
+                    if connect_text == "":
+                        connect_text = linetext
+                    elif t[1] != 0:
+                        connect_text += "/n" + linetext
+                    else:
+                        connect_text += " +" + "/n" +linetext
+                    content = connect_text
             
             # 項目の内容を書き込み
             if content:  # コンテンツが有効な値の場合のみ書き込み
