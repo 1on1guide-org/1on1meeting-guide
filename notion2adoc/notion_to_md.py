@@ -113,7 +113,7 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
             elif isinstance(content, (int, float))  and content:
                 content = str(content)
             elif content:
-                content = content.replace("\n・", "\n* ") 
+                content = content.replace("・", "* ") 
             
             # 項目の内容を書き込み
             if content:  # コンテンツが有効な値の場合のみ書き込み
