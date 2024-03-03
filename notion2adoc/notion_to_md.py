@@ -105,8 +105,8 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                 # '関連パターン' セクションの処理
                 if property_name == "関連パターン":
                     # IDからパターン名を取得し、リストをカンマ区切りの文字列に変換
-                    content = [id_to_pattern_name.get(related_id, "Unknown pattern") for related_id in content]
-                    content = ', '.join("<<_" + content + ">>") if content else None
+                    content = ['<<_' + id_to_pattern_name.get(related_id, "Unknown pattern") + '>>' for related_id in content]
+                    content = ','.join(content) if content else None
                 else:
                     # その他のリスト型プロパティの処理
                     content = ', '.join(content)
