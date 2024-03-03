@@ -118,15 +118,17 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                 content = ""
                 for linetext in texts:
                     t = re.subn("^・", "* ", linetext)
-                    t2 = re.subn("^　・", "** ", t[0])
-                    t[0] = t2[0]
-                    t[1] += t2[1]
+                    linetext = t[0]
+                    sub_count = t[1]
+                    t = re.subn("^　・", "** ", linetext)
+                    linetext = t[0]
+                    sub_count += t[1]
                     if content == "":
-                        content = t[0]
-                    elif t[1] != 0:
-                        content += "\n" + t[0]
+                        content = linetext
+                    elif sub_count != 0:
+                        content += "\n" + linetext
                     else:
-                        content += " +" + "\n" +t[0]
+                        content += " +" + "\n" + linetext
             
             # 項目の内容を書き込み
             if content:  # コンテンツが有効な値の場合のみ書き込み
