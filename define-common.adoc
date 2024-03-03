@@ -11,8 +11,8 @@
 :encoding: utf-8
 :backend: html5
 :docinfo: shared
-// 画像を埋め込み コマンドから指定
-// :data-uri:
+// 画像を埋め込み
+:data-uri:
 // キャッシュを許容
 // :cache-uri:
 // 各ラベルの日本語定義
