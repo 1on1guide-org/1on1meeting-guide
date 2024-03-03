@@ -118,6 +118,7 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                 content = ""
                 for linetext in texts:
                     t = re.subn("^・", "* ", linetext)
+                    t = re.subn("^　・", "** ", t)
                     if content == "":
                         content = t[0]
                     elif t[1] != 0:
