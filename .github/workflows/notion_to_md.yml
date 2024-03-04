@@ -34,4 +34,3 @@ jobs:
         title: 'Update markdown files from Notion'
         body: 'This PR updates the markdown files based on the latest data from the Notion database.'
         branch: 'update-markdown-from-notion'
-        base: 'main'
