@@ -33,4 +33,4 @@ jobs:
         commit-message: 'Update markdown files from Notion'
         title: 'Update markdown files from Notion'
         body: 'This PR updates the markdown files based on the latest data from the Notion database.'
-        branch: 'update-markdown-from-notion'
+        branch-suffix: timestamp
