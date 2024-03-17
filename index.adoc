@@ -277,8 +277,6 @@ include::glossary.adoc[]
 
 <<<
 
-== 最後に
-
 //ライセンス
 include::LICENSE.adoc[]
 
