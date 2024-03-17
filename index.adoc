@@ -5,7 +5,7 @@
 :toc-title: 目次
 // このバージョンはPDFでも利用しています。
 :revnumber: 0.0.1
-:revdate: 2023-03-31
+:revdate: 2024-03-17
 :author: 1on1guide.org
 :organization: 1on1guide.org
 :homepage: https://github.com/1on1guide-org/
