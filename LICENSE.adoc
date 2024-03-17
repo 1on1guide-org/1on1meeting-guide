@@ -16,6 +16,8 @@ ifndef::1on1guide-org[]
 :CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
 endif::[]
 
+== ライセンス
+
 {CC-BY-SA-4_0-png}
 
 本書『1on1 ガイド』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、その後の複数の著者の貢献により作成されています。本書は {CC-BY-SA-4_0-url-link} の下に提供されています。
@@ -23,14 +25,14 @@ endif::[]
 “1on1 ガイド” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki] and link:https://twitter.com/eroccowaruico[@eroccowaruico]  is licensed under a {CC-BY-SA-4_0-url-link-en}.
 
 
-== 貢献
+=== 貢献
 このコンテンツに貢献したい場合はあなたの貢献したドキュメントが{CC-BY-SA-4_0-url-link}の下でを利用可能になることに同意することを意味します。
 その他ライセンスを使用して新しいコンテンツを作成することはできません。
 著者が他の誰かにそれを譲渡しない限り寄稿された著作権は著者に残ります。
 
 
 [#1ON1GUIDE-ORIGINAL-AUTHOR]
-== 初版の著作者
+=== 初版の著作者
 
 link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実] + 
 笹尾 納勇仁 + 
@@ -38,11 +40,11 @@ link:https://twitter.com/chachaki[@chachaki] +
 link:https://twitter.com/eroccowaruico[@eroccowaruico] 
 
 
-== 再利用
+=== 再利用
 再利用は元のコンテンツと同じ{CC-BY-SA-4_0-url-link-en}で全ての著作者を記載の上で公開する必要があります。
 
 
-== ロゴ、商標、サービスマーク、ワードマーク
+=== ロゴ、商標、サービスマーク、ワードマーク
 {1on1guide-org-url-link}の商標、ロゴ、サービスマークおよびWebサイトやPDFのルックアンドフィールの権利はクリエイティブコモンズライセンスの下ではライセンスされていません。 +
 また著作権のある著作物（ロゴやグラフィックなど）デザイン）、それらはそれらの条件の下でライセンスされている作品に含まれていません。 +
 文書のテキストを使用しこれらの権利のいずれかを使用したい場合、またはこのコレクションのライセンス条件を遵守することに関して他に質問がある場合は{1on1guide-org-url-link}にお問い合わせください。
