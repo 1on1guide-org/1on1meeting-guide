@@ -1,0 +1,1467 @@
+= AsciiDocの記載方法
+ifndef::includedir[]
+:includedir: ../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../
+endif::imagesdir[]
+
+[[ASCIIDOC-SYNTAX-DEFINE]]
+== 文言や画像、リンク等の定義と利用
+
+Asciidocでは定義済み項目を本文中に直書きすることなく簡単に利用することができます。
+
+define-literal.adocに定義された情報は「\{name-role-sample}」のように記載することで「{name-role-sample}」と出力したり、
+定義された画像として「\{icon-sample-user}」のように記載することで「{icon-sample-user}」と出力することができます。
+
+[.accordion.source,asciidoc,linenums]
+----
+define-literal.adocに定義された情報は「\{name-role-sample}」のように記載することで「{name-role-sample}」と出力したり、
+定義された画像として「\{icon-sample-user}」のように記載することで「{icon-sample-user}」と出力することができます。
+----
+
+
+[[ASCIIDOC-SYNTAX-SECTION-LEVEL]]
+== セクションタイトルのレベルについて
+
+asciidocはヘッダー(見出し)の扱いが厳格な文書形式です。 +
+また多くの人が同時に修正しやすくGitでのマージ等が低コストで行えるように、
+レベル2のヘッダーごとにインクルードによるファイルの分割してください。 +
+また、分割したファイルでは原則レベル3以降のヘッダーを利用し文書の構造化に努めてください。
+
+[.accordion.source,asciidoc,linenums]
+----
+[[include]]
+= 参照先の章の名称
+\include::include.adoc[]
+----
+
+インクルードするファイルのレベルは「leveloffset」を利用して以下の記載をすると揃えることができます。
+
+[.accordion.source,asciidoc,linenums]
+----
+\include::include.adoc[leveloffset=+2]
+----
+
+
+== 出力設定について
+
+AsciiDocではifdef(ifndef)ディレクティブを利用した簡易的な出力制御が可能です。 +
+本ドキュメントでは主に以下の定義を利用して状況や対象者によって以下のように出力を切り替えています。
+
+[.accordion.source,asciidoc,linenums]
+----
+\ifdef::backend-html5[]
+HTMLのみの出力内容
+\endif::[]
+
+\ifndef::backend-pdf[]
+PDFでは出力されない内容
+\endif::[]
+
+\ifndef::convert-for-readers[]
+自動化した出力では利用しない内容
+(「convert-for-writers」は本サンプルで定義している項目)
+\endif::[]
+
+\ifdef::convert-for-writers[]
+明示的にendifを記載する場合。
+(「convert-index」は本サンプルで定義している項目)
+\endif::convert-for-writers[]
+----
+
+[[ASCIIDOC-SYNTAX-IMAGES]]
+== 画像について
+
+ここでは利用方法を記載します。
+
+[[ASCIIDOC-SYNTAX-IMAGE-BLOCK]]
+=== ブロックでの記述
+
+.ブロック画像
+image::contents/images/Logo/analog-logo.svg[pageTop,{full-page}]
+
+[.accordion.source]
+----
+.ブロック画像
+image::contents/images/Logo/analog-logo.svg[pageTop,{full-page}]
+----
+
+画像の指定には定義を利用したサイズルールがあります。 +
+定義を利用することで、全てのサイズを統一することが可能です。
+
+[.accordion]
+====
+.サイズの記載
+[%header,cols="2,2,3"]
+|===
+|対象 |定義 | 備考
+|外部ドキュメントの貼り付け |full-width | センタリングも行います。
+|サムネイル |thumbnail |
+|フルサイズの画面幅 |full-page |
+|ダイアログのみの画像 |dialog-page |
+|===
+====
+
+[[ASCIIDOC-SYNTAX-IMAGE-INLINE]]
+=== インラインでの記述
+
+インライン {icon-h-write} で表示
+image:contents/images/SvgBadges/badges/badge-user-analog-check.svg[]
+
+[.accordion.source,asciidoc,linenums]
+----
+インライン {icon-h-write} で表示
+image:contents/images/SvgBadges/badges/badge-user-analog-check.svg[]
+----
+
+
+== 表の書き方
+
+普段の利用でMarkdownより大きな利便性を感じる場面は表の扱いです。 +
+ここでは本ドキュメントで利用している記載法を紹介します。
+
+
+.複雑な表の扱い
+[%header,cols="1,2,3"]
+|===
+|TH サイズ1 |TH サイズ2 |TH サイズ3
+
+<|<で左寄せ R1C1
+^|^で中央寄せ R1C2
+>|>で右寄せ R1C3
+
+h|hで個別のヘッダ
+|AsciiDoc記法で改行→
+|セル内で +
+改行
+
+|TD
+|AsciiDoc記法のリスト→
+<a|
+* [.cellsfont]#<で左寄せを明示#
+* [.cellsfont]#aでAsciiDoc記法を許容#
+* [.cellsfont]#[.cellsfont]#内容#にてフォントをテーブルと合わせる#
+
+.3+|.n+縦に結合 +
+| {set:cellbgcolor:#00ccff} TD +
+色の指定
+| {set:cellbgcolor:#transparent} TD +
+色の指定(継承)
+
+2+|n+横に結合
+
+| {set:cellbgcolor:#00ccff} TD +
+色の指定
+| ↑ 結合されたカラムの定義はしません +
+色の指定は連続する
+
+3+a| {set:cellbgcolor:#transparent}
+
+[.cellsfont]#結合時など色の指定の影響(継承の扱いは微妙)#
+
+[.cellsfont]#aで内部にテーブル#
+[%header,cols="1,3"]
+!===
+![.cellsfont]#no.# ![.cellsfont]#内容#
+^![.cellsfont]#1#
+![.cellsfont]#ただしセパレータを\!にかえる#
+!===
+// 隙間が足りない事があるので隠し文字をいれる
+{zwsp}
+|===
+//最終セルのカラーをリセットして他のテーブルに影響しない様にする
+{set:cellbgcolor!}
+
+[.accordion.source,asciidoc,linenums]
+----
+.複雑な表の扱い
+[%header,cols="1,2,3"]
+|===
+|TH サイズ1 |TH サイズ2 |TH サイズ3
+
+<|<で左寄せ R1C1
+^|^で中央寄せ R1C2
+>|>で右寄せ R1C3
+
+h|hで個別のヘッダ
+|AsciiDoc記法で改行→
+|セル内で +
+改行
+
+|TD
+|AsciiDoc記法のリスト→
+<a|
+* [.cellsfont]#<で左寄せを明示#
+* [.cellsfont]#aでAsciiDoc記法を許容#
+* [.cellsfont]#[.cellsfont]#内容#にてフォントをテーブルと合わせる#
+
+.3+|.n+縦に結合 +
+| {set:cellbgcolor:#00ccff} TD +
+色の指定
+| {set:cellbgcolor:#transparent} TD +
+色の指定(継承)
+
+2+|n+横に結合
+
+| {set:cellbgcolor:#00ccff} TD +
+色の指定
+| ↑ 結合されたカラムの定義はしません +
+色の指定は連続する
+
+3+a| {set:cellbgcolor:#transparent}
+
+[.cellsfont]#結合時など色の指定の影響(継承の扱いは微妙)#
+
+[.cellsfont]#aで内部にテーブル#
+[%header,cols="1,3"]
+!===
+![.cellsfont]#no.# ![.cellsfont]#内容#
+^![.cellsfont]#1#
+![.cellsfont]#ただしセパレータを\!にかえる#
+!===
+// 隙間が足りない事があるので隠し文字をいれる
+{zwsp}
+|===
+//最終セルのカラーをリセットして他のテーブルに影響しない様にする
+{set:cellbgcolor!}
+----
+
+[[ASCIIDOC-SYNTAX-ROLE]]
+== ロール指定による文字のスタイル指定
+
+以下のようにロールを利用してスタイルを適用できます。
+
+* 指定なし
+* *強調によるボールド*
+* [.big]#大きめ文字#
+* [.red]#赤#
+* [.darkorange.big]#オレンジ大きめ文字#
+* [.navy.big]#*青の大きめ文字ボールド*#
+* [.cellsfont]#テーブル内と同じ文字#
+* [.cellsfont.red]#テーブル内の赤字#
+
+[.accordion.source,asciidoc,linenums]
+----
+* 指定なし
+* *強調によるボールド*
+* [.big]#大きめ文字#
+* [.red]#赤#
+* [.darkorange.big]#オレンジ大きめ文字#
+* [.navy.big]#*青の大きめ文字ボールド*#
+* [.cellsfont]#テーブル内と同じ文字#
+* [.cellsfont.red]#テーブル内の赤字#
+----
+
+
+[[ASCIIDOC-SYNTAX-ROLE-COLORNAME]]
+=== 本ドキュメントでロール指定可能な色と色名について
+
+本ドキュメントでは以下のブロックに示す色をHTMLおよびPDF共通で利用できるように「css/docinfo.css」および「themes/default-role-color-theme.yml」に定義しています。 +
+利用の際はSVGなども細かく色を合わせるとともに、ドキュメント全体での統一感を失わないように注意してください。 +
+なお、色名のリストはPDFでは大きくなりすぎるので出力しません。
+
+ifndef::backend-pdf[]
+
+.ロール指定できる色名見本 (カッコ内はRGBカラーコード)
+[.accordion,asciidoc]
+====
+[.black]#■black (000000)# +
+[.dimgray]#■dimgray (696969)# +
+[.gray]#■gray (808080)# +
+[.darkgray]#■darkgray (a9a9a9)# +
+[.silver]#■silver (c0c0c0)# +
+[.lightgray]#■lightgray (d3d3d3)# +
+[.gainsboro]#■gainsboro (dcdcdc)# +
+[.whitesmoke]#■whitesmoke (f5f5f5)# +
+[.white]#■white (ffffff)# +
+[.snow]#■snow (fffafa)# +
+[.ghostwhite]#■ghostwhite (f8f8ff)# +
+[.floralwhite]#■floralwhite (fffaf0)# +
+[.linen]#■linen (faf0e6)# +
+[.antiquewhite]#■antiquewhite (faebd7)# +
+[.papayawhip]#■papayawhip (ffefd5)# +
+[.blanchedalmond]#■blanchedalmond (ffebcd)# +
+[.bisque]#■bisque (ffe4c4)# +
+[.moccasin]#■moccasin (ffe4b5)# +
+[.navajowhite]#■navajowhite (ffdead)# +
+[.peachpuff]#■peachpuff (ffdab9)# +
+[.mistyrose]#■mistyrose (ffe4e1)# +
+[.lavenderblush]#■lavenderblush (fff0f5)# +
+[.seashell]#■seashell (fff5ee)# +
+[.oldlace]#■oldlace (fdf5e6)# +
+[.ivory]#■ivory (fffff0)# +
+[.honeydew]#■honeydew (f0fff0)# +
+[.mintcream]#■mintcream (f5fffa)# +
+[.azure]#■azure (f0ffff)# +
+[.aliceblue]#■aliceblue (f0f8ff)# +
+[.lavender]#■lavender (e6e6fa)# +
+[.lightsteelblue]#■lightsteelblue (b0c4de)# +
+[.lightslategray]#■lightslategray (778899)# +
+[.slategray]#■slategray (708090)# +
+[.steelblue]#■steelblue (4682b4)# +
+[.royalblue]#■royalblue (4169e1)# +
+[.midnightblue]#■midnightblue (191970)# +
+[.navy]#■navy (000080)# +
+[.darkblue]#■darkblue (00008b)# +
+[.mediumblue]#■mediumblue (0000cd)# +
+[.blue]#■blue (0000ff)# +
+[.dodgerblue]#■dodgerblue (1e90ff)# +
+[.cornflowerblue]#■cornflowerblue (6495ed)# +
+[.deepskyblue]#■deepskyblue (00bfff)# +
+[.lightskyblue]#■lightskyblue (87cefa)# +
+[.skyblue]#■skyblue (87ceeb)# +
+[.lightblue]#■lightblue (add8e6)# +
+[.powderblue]#■powderblue (b0e0e6)# +
+[.paleturquoise]#■paleturquoise (afeeee)# +
+[.lightcyan]#■lightcyan (e0ffff)# +
+[.cyan]#■cyan (00ffff)# +
+[.turquoise]#■turquoise (40e0d0)# +
+[.mediumturquoise]#■mediumturquoise (48d1cc)# +
+[.darkturquoise]#■darkturquoise (00ced1)# +
+[.lightseagreen]#■lightseagreen (20b2aa)# +
+[.cadetblue]#■cadetblue (5f9ea0)# +
+[.darkcyan]#■darkcyan (008b8b)# +
+[.teal]#■teal (008080)# +
+[.darkslategray]#■darkslategray (2f4f4f)# +
+[.darkgreen]#■darkgreen (006400)# +
+[.green]#■green (008000)# +
+[.forestgreen]#■forestgreen (228b22)# +
+[.seagreen]#■seagreen (2e8b57)# +
+[.mediumseagreen]#■mediumseagreen (3cb371)# +
+[.mediumaquamarine]#■mediumaquamarine (66cdaa)# +
+[.darkseagreen]#■darkseagreen (8fbc8f)# +
+[.aquamarine]#■aquamarine (7fffd4)# +
+[.palegreen]#■palegreen (98fb98)# +
+[.lightgreen]#■lightgreen (90ee90)# +
+[.springgreen]#■springgreen (00ff7f)# +
+[.mediumspringgreen]#■mediumspringgreen (00fa9a)# +
+[.lawngreen]#■lawngreen (7cfc00)# +
+[.chartreuse]#■chartreuse (7fff00)# +
+[.greenyellow]#■greenyellow (adff2f)# +
+[.lime]#■lime (00ff00)# +
+[.limegreen]#■limegreen (32cd32)# +
+[.yellowgreen]#■yellowgreen (9acd32)# +
+[.darkolivegreen]#■darkolivegreen (556b2f)# +
+[.olivedrab]#■olivedrab (6b8e23)# +
+[.olive]#■olive (808000)# +
+[.darkkhaki]#■darkkhaki (bdb76b)# +
+[.palegoldenrod]#■palegoldenrod (eee8aa)# +
+[.cornsilk]#■cornsilk (fff8dc)# +
+[.beige]#■beige (f5f5dc)# +
+[.lightyellow]#■lightyellow (ffffe0)# +
+[.lightgoldenrodyellow]#■lightgoldenrodyellow (fafad2)# +
+[.lemonchiffon]#■lemonchiffon (fffacd)# +
+[.wheat]#■wheat (f5deb3)# +
+[.burlywood]#■burlywood (deb887)# +
+[.tan]#■tan (d2b48c)# +
+[.khaki]#■khaki (f0e68c)# +
+[.yellow]#■yellow (ffff00)# +
+[.gold]#■gold (ffd700)# +
+[.orange]#■orange (ffa500)# +
+[.sandybrown]#■sandybrown (f4a460)# +
+[.darkorange]#■darkorange (ff8c00)# +
+[.goldenrod]#■goldenrod (daa520)# +
+[.peru]#■peru (cd853f)# +
+[.darkgoldenrod]#■darkgoldenrod (b8860b)# +
+[.chocolate]#■chocolate (d2691e)# +
+[.sienna]#■sienna (a0522d)# +
+[.saddlebrown]#■saddlebrown (8b4513)# +
+[.maroon]#■maroon (800000)# +
+[.darkred]#■darkred (8b0000)# +
+[.brown]#■brown (a52a2a)# +
+[.firebrick]#■firebrick (b22222)# +
+[.indianred]#■indianred (cd5c5c)# +
+[.rosybrown]#■rosybrown (bc8f8f)# +
+[.darksalmon]#■darksalmon (e9967a)# +
+[.lightcoral]#■lightcoral (f08080)# +
+[.salmon]#■salmon (fa8072)# +
+[.lightsalmon]#■lightsalmon (ffa07a)# +
+[.coral]#■coral (ff7f50)# +
+[.tomato]#■tomato (ff6347)# +
+[.orangered]#■orangered (ff4500)# +
+[.red]#■red (ff0000)# +
+[.crimson]#■crimson (dc143c)# +
+[.mediumvioletred]#■mediumvioletred (c71585)# +
+[.deeppink]#■deeppink (ff1493)# +
+[.hotpink]#■hotpink (ff69b4)# +
+[.palevioletred]#■palevioletred (db7093)# +
+[.pink]#■pink (ffc0cb)# +
+[.lightpink]#■lightpink (ffb6c1)# +
+[.thistle]#■thistle (d8bfd8)# +
+[.magenta]#■magenta (e4007f)# +
+[.fuchsia]#■fuchsia (ff00ff)# +
+[.violet]#■violet (ee82ee)# +
+[.plum]#■plum (dda0dd)# +
+[.orchid]#■orchid (da70d6)# +
+[.mediumorchid]#■mediumorchid (ba55d3)# +
+[.darkorchid]#■darkorchid (9932cc)# +
+[.darkviolet]#■darkviolet (9400d3)# +
+[.darkmagenta]#■darkmagenta (8b008b)# +
+[.purple]#■purple (800080)# +
+[.indigo]#■indigo (043c78)# +
+[.darkslateblue]#■darkslateblue (483d8b)# +
+[.blueviolet]#■blueviolet (8a2be2)# +
+[.mediumpurple]#■mediumpurple (9370db)# +
+[.slateblue]#■slateblue (6a5acd)# +
+[.mediumslateblue]#■mediumslateblue (7b68ee)# +
+[.coralred]#■coralred (ef857d)# +
+[.poppyred]#■poppyred (ea5550)# +
+[.tomatored]#■tomatored (ea5549)# +
+[.vermilion]#■vermilion (ea553a)# +
+[.scarlet]#■scarlet (ea5532)# +
+[.carrotorange]#■carrotorange (ed6d35)# +
+[.chinesered]#■chinesered (ed6d46)# +
+[.terracotta]#■terracotta (bd6856)# +
+[.cocoabrown]#■cocoabrown (98605e)# +
+[.mahogany]#■mahogany (6b3f31)# +
+[.marron]#■marron (6a1917)# +
+[.sepia]#■sepia (622d18)# +
+[.coffee]#■coffee (7b5544)# +
+[.burntsienna]#■burntsienna (bb5535)# +
+[.amberrose]#■amberrose (e6bfb2)# +
+[.beigerose]#■beigerose (e8d3ca)# +
+[.salmonpink]#■salmonpink (f3a68c)# +
+[.sahara]#■sahara (e29676)# +
+[.ashrose]#■ashrose (e6bfab)# +
+[.shellpink]#■shellpink (fbdac8)# +
+[.babypink]#■babypink (fdede4)# +
+[.nailpink]#■nailpink (fce4d6)# +
+[.rawsienna]#■rawsienna (e17b34)# +
+[.caramel]#■caramel (bc611e)# +
+[.sunset]#■sunset (f6b483)# +
+[.cinnamon]#■cinnamon (be8f68)# +
+[.champagne]#■champagne (e9dacb)# +
+[.peach]#■peach (fbd8b5)# +
+[.cafeaulait]#■cafeaulait (946c45)# +
+[.apricot]#■apricot (f7b977)# +
+[.amber]#■amber (c2894b)# +
+[.bronze]#■bronze (ac6b25)# +
+[.vanilla]#■vanilla (e8c59c)# +
+[.cork]#■cork (c49a6a)# +
+[.burntumber]#■burntumber (6f5436)# +
+[.rawumber]#■rawumber (866629)# +
+[.flesh]#■flesh (fad09e)# +
+[.goldenyellow]#■goldenyellow (f6ae54)# +
+[.mandarinorange]#■mandarinorange (f3981d)# +
+[.marigold]#■marigold (f39800)# +
+[.ecrubeige]#■ecrubeige (f6e5cc)# +
+[.oyster]#■oyster (eae1cf)# +
+[.ochre]#■ochre (ba8b40)# +
+[.buff]#■buff (caac71)# +
+[.saffronyellow]#■saffronyellow (fac559)# +
+[.pumpkin]#■pumpkin (e5a323)# +
+[.yellowocher]#■yellowocher (c4972f)# +
+[.blond]#■blond (f2d58a)# +
+[.biscuit]#■biscuit (ead7a4)# +
+[.leghorn]#■leghorn (ffe9a9)# +
+[.sunshineyellow]#■sunshineyellow (ffedab)# +
+[.creamyellow]#■creamyellow (fff3b8)# +
+[.naplesyellow]#■naplesyellow (fdd35c)# +
+[.topaz]#■topaz (e9bc00)# +
+[.chromeyellow]#■chromeyellow (fcc800)# +
+[.cream]#■cream (e3d7a3)# +
+[.straw]#■straw (ece093)# +
+[.jasmineyellow]#■jasmineyellow (edde7b)# +
+[.antiquegold]#■antiquegold (c1ab05)# +
+[.jaunebrillant]#■jaunebrillant (ffdc00)# +
+[.citrus]#■citrus (eddc44)# +
+[.limelight]#■limelight (fff799)# +
+[.mimosa]#■mimosa (fff462)# +
+[.lemonyellow]#■lemonyellow (fff352)# +
+[.melonyellow]#■melonyellow (e0de94)# +
+[.chartreuseyellow]#■chartreuseyellow (e3e548)# +
+[.limeyellow]#■limeyellow (eaeea2)# +
+[.chartreusegreen]#■chartreusegreen (d9e367)# +
+[.lettucegreen]#■lettucegreen (d1de4c)# +
+[.olivegreen]#■olivegreen (5f6527)# +
+[.mossgreen]#■mossgreen (777e41)# +
+[.grassgreen]#■grassgreen (7b8d42)# +
+[.leafgreen]#■leafgreen (9fc24d)# +
+[.whitelily]#■whitelily (f0f6da)# +
+[.asparagusgreen]#■asparagusgreen (dbebc4)# +
+[.citrongreen]#■citrongreen (618e34)# +
+[.meadowgreen]#■meadowgreen (65ab31)# +
+[.applegreen]#■applegreen (a7d28d)# +
+[.ivygreen]#■ivygreen (578a3d)# +
+[.spinachgreen]#■spinachgreen (417038)# +
+[.cactus]#■cactus (387d39)# +
+[.skygreen]#■skygreen (bee0c2)# +
+[.spearmint]#■spearmint (79c06e)# +
+[.mintgreen]#■mintgreen (89c997)# +
+[.parrotgreen]#■parrotgreen (37a34a)# +
+[.summergreen]#■summergreen (009944)# +
+[.opalgreen]#■opalgreen (bee0ce)# +
+[.spraygreen]#■spraygreen (a4d5bd)# +
+[.bottlegreen]#■bottlegreen (004d25)# +
+[.cobaltgreen]#■cobaltgreen (3cb37a)# +
+[.evergreen]#■evergreen (00984f)# +
+[.malachitegreen]#■malachitegreen (009854)# +
+[.emeraldgreen]#■emeraldgreen (00a968)# +
+[.viridian]#■viridian (00885a)# +
+[.hollygreen]#■hollygreen (006948)# +
+[.billiardgreen]#■billiardgreen (005c42)# +
+[.chromegreen]#■chromegreen (00533f)# +
+[.antiquegreen]#■antiquegreen (54917f)# +
+[.watergreen]#■watergreen (a5c9c1)# +
+[.icegreen]#■icegreen (a3d6cc)# +
+[.turquoisegreen]#■turquoisegreen (00947a)# +
+[.peppermintgreen]#■peppermintgreen (00ac9a)# +
+[.peacockgreen]#■peacockgreen (00a497)# +
+[.nileblue]#■nileblue (2cb4ad)# +
+[.saxeblue]#■saxeblue (418b89)# +
+[.slategreen]#■slategreen (3c7170)# +
+[.tealgreen]#■tealgreen (006a6c)# +
+[.aquagreen]#■aquagreen (88bfbf)# +
+[.peacockblue]#■peacockblue (009e9f)# +
+[.capriblue]#■capriblue (00a3a7)# +
+[.cambridgeblue]#■cambridgeblue (25b7c0)# +
+[.turquoiseblue]#■turquoiseblue (00afcc)# +
+[.summershower]#■summershower (a1d8e2)# +
+[.ceruleanblue]#■ceruleanblue (008db7)# +
+[.duckblue]#■duckblue (007199)# +
+[.marineblue]#■marineblue (006888)# +
+[.madonnablue]#■madonnablue (00608d)# +
+[.egyptianblue]#■egyptianblue (0073a8)# +
+[.shadowblue]#■shadowblue (719bad)# +
+[.yachtblue]#■yachtblue (409ecc)# +
+[.chalkblue]#■chalkblue (68a9cf)# +
+[.pigeonblue]#■pigeonblue (88b5d3)# +
+[.smokeblue]#■smokeblue (a4c1d7)# +
+[.frostyblue]#■frostyblue (bbdbf3)# +
+[.bleuacide]#■bleuacide (006eb0)# +
+[.cobaltblue]#■cobaltblue (0068b7)# +
+[.spectrumblue]#■spectrumblue (0075c2)# +
+[.zenithblue]#■zenithblue (4496d3)# +
+[.heavenlyblue]#■heavenlyblue (68a4d9)# +
+[.orchidgray]#■orchidgray (bcc7d7)# +
+[.daydream]#■daydream (a3b9e0)# +
+[.salviablue]#■salviablue (94adda)# +
+[.hyacinthblue]#■hyacinthblue (7a99cf)# +
+[.hyacinth]#■hyacinth (6c9bd2)# +
+[.navyblue]#■navyblue (202f55)# +
+[.ironblue]#■ironblue (192f60)# +
+[.inkblue]#■inkblue (003f8e)# +
+[.orientalblue]#■orientalblue (26499d)# +
+[.ultramarineblue]#■ultramarineblue (4753a2)# +
+[.ultramarine]#■ultramarine (434da2)# +
+[.wistaria]#■wistaria (8d93c8)# +
+[.bluelavender]#■bluelavender (a4a8d4)# +
+[.pannsy]#■pannsy (4d4398)# +
+[.heliotrope]#■heliotrope (9079b6)# +
+[.deeproyalpurple]#■deeproyalpurple (47266e)# +
+[.grape]#■grape (56256e)# +
+[.mauve]#■mauve (915da3)# +
+[.iris]#■iris (c7a5cc)# +
+[.lilac]#■lilac (d1bada)# +
+[.crocus]#■crocus (b79fcb)# +
+[.lavendermauve]#■lavendermauve (a688bd)# +
+[.royalpurple]#■royalpurple (7f1184)# +
+[.raisin]#■raisin (6b395f)# +
+[.raspberry]#■raspberry (841a75)# +
+[.framboise]#■framboise (9a0d7c)# +
+[.dahliapurple]#■dahliapurple (a50082)# +
+[.orchidpurple]#■orchidpurple (af0082)# +
+[.raspberryred]#■raspberryred (9f166a)# +
+[.lilla]#■lilla (e0b5d3)# +
+[.rosetendre]#■rosetendre (e6afcf)# +
+[.orchidpink]#■orchidpink (da81b2)# +
+[.cyclamenpink]#■cyclamenpink (d04f97)# +
+[.bougainvillaea]#■bougainvillaea (e62f8b)# +
+[.ruby]#■ruby (c70067)# +
+[.claret]#■claret (941f57)# +
+[.azalee]#■azalee (d83473)# +
+[.cosmos]#■cosmos (dc6b9a)# +
+[.lotuspink]#■lotuspink (de82a7)# +
+[.oldorchid]#■oldorchid (e3adc1)# +
+[.rosemist]#■rosemist (debecc)# +
+[.rosedragee]#■rosedragee (e5c1cd)# +
+[.cherrypink]#■cherrypink (eb6ea0)# +
+[.opera]#■opera (e95388)# +
+[.rosered]#■rosered (ea618e)# +
+[.oldlilac]#■oldlilac (b0778c)# +
+[.cocoa]#■cocoa (6e4a55)# +
+[.winered]#■winered (b33e5c)# +
+[.garnet]#■garnet (942343)# +
+[.cochinealred]#■cochinealred (c82c55)# +
+[.strawberry]#■strawberry (e73562)# +
+[.carmine]#■carmine (d70035)# +
+[.signalred]#■signalred (e8383d)# +
+[.burgundy]#■burgundy (6c2735)# +
+[.bordeaux]#■bordeaux (6c272d)# +
+[.camellia]#■camellia (da536e)# +
+[.rose]#■rose (e95464)# +
+[.rosepink]#■rosepink (f19ca7)# +
+[.flamingopink]#■flamingopink (f5b2ac)# +
+[.oldrose]#■oldrose (e29399)# +
+[.pinkalmond]#■pinkalmond (e3acae)# +
+[.rosedust]#■rosedust (e6c0c0)# +
+[.snowwhite]#■snowwhite (fafdff)# +
+[.pinkwhite]#■pinkwhite (fef9fb)# +
+[.milkywhite]#■milkywhite (fffff9)# +
+[.amberwhite]#■amberwhite (fff9f5)# +
+[.lavenderice]#■lavenderice (f7f6fb)# +
+[.pearlwhite]#■pearlwhite (f7f6f5)# +
+[.powderpink]#■powderpink (f5ecf4)# +
+[.silverwhite]#■silverwhite (efefef)# +
+[.frostygray]#■frostygray (e8ece9)# +
+[.silverpink]#■silverpink (eeeaec)# +
+[.beigecameo]#■beigecameo (eee9e6)# +
+[.ecru]#■ecru (eee7e0)# +
+[.pinkbeige]#■pinkbeige (ede4e1)# +
+[.frostywhite]#■frostywhite (e6eae6)# +
+[.oysterwhite]#■oysterwhite (eae8e1)# +
+[.wisteriamist]#■wisteriamist (d3d6dd)# +
+[.cloud]#■cloud (d4d9df)# +
+[.moongray]#■moongray (d4d9dc)# +
+[.chinaclay]#■chinaclay (d4dcd3)# +
+[.sandbeige]#■sandbeige (dcd6d2)# +
+[.orchidmist]#■orchidmist (d3d3d8)# +
+[.reedgray]#■reedgray (d4d9d6)# +
+[.skygray]#■skygray (cbd0d3)# +
+[.lavendergray]#■lavendergray (bcbace)# +
+[.pearlgray]#■pearlgray (c9c9c4)# +
+[.sandgray]#■sandgray (c9c9c2)# +
+[.marblegray]#■marblegray (c0c5c2)# +
+[.opalgray]#■opalgray (bfbec5)# +
+[.frenchgray]#■frenchgray (8da0b6)# +
+[.mist]#■mist (b4aeb1)# +
+[.ashblond]#■ashblond (b5b5ae)# +
+[.fog]#■fog (abb1b5)# +
+[.beigegray]#■beigegray (b4ada9)# +
+[.silvergray]#■silvergray (afafb0)# +
+[.stormgray]#■stormgray (aaaab0)# +
+[.greenfog]#■greenfog (abb1ad)# +
+[.ashgray]#■ashgray (9fa09e)# +
+[.rosegray]#■rosegray (9d8e87)# +
+[.elephantskin]#■elephantskin (9f9f98)# +
+[.battleshipgray]#■battleshipgray (898989)# +
+[.stonegray]#■stonegray (898880)# +
+[.mossgray]#■mossgray (7e837f)# +
+[.dovegray]#■dovegray (7d7b83)# +
+[.steelgray]#■steelgray (736d71)# +
+[.ivygray]#■ivygray (666c67)# +
+[.graphite]#■graphite (594e52)# +
+[.charcoalgray]#■charcoalgray (4e454a)# +
+[.taupe]#■taupe (504946)# +
+[.lampblack]#■lampblack (24140e)#
+====
+endif::[]
+
+
+== 特殊なAttributeの利用
+
+=== リンクの定義
+
+link:https://github.com/Analog-inc/asciidoctor-action[利用しているActionのリポジトリ]
+
+本ドキュメントは{zwsp}{link-site-preview}で閲覧できます。 +
+\{zwsp}は日本語との結合時に必要です。
+
+[.accordion.source,asciidoc,linenums]
+----
+link:https://github.com/Analog-inc/asciidoctor-action[利用しているActionのリポジトリ]
+
+本ドキュメントは{zwsp}{link-site-preview}で閲覧できます。 +
+\{zwsp}は日本語との結合時に必要です。
+----
+
+=== 定義の途中で色指定
+
+:name-button-test: 【テスト】ボタン
+:name-button-test-red-name: pass:quotes[[.red]#【テスト】#]
+:name-button-test-red: {name-button-test-red-name}{zwsp}ボタン
+
+通常の記載は『{name-button-test}』で、一部のみ赤字は『{name-button-test-red}』です。
+/{zwsp}がpassでそのまま出力されるために2行に分けています。
+
+[.accordion.source,asciidoc,linenums]
+----
+:name-button-test: 【テスト】ボタン
+:name-button-test-red-name: pass:quotes[[.red]#【テスト】#]
+:name-button-test-red: {name-button-test-red-name}{zwsp}ボタン
+
+通常の記載は『{name-button-test}』で、一部のみ赤字は『{name-button-test-red}』です。
+/{zwsp}がpassでそのまま出力されるために2行に分けています。
+----
+
+=== 定義内で改行
+
+:sentence-no-newline: 定義内で改行はしても \
+表示では改行しません。
+
+:sentence-newline: 定義内で改行して + \
+表示でも改行します。
+
+{sentence-no-newline} +
+{sentence-newline}
+
+[.accordion.source,asciidoc,linenums]
+----
+:sentence-no-newline: 定義内で改行はしても \
+表示では改行しません。
+
+:sentence-newline: 定義内で改行して + \
+表示でも改行します。
+
+{sentence-no-newline} +
+{sentence-newline}
+----
+
+== 脚注
+
+脚注はアイコンが左側に表示されるスタイルです。
+変更容易性や表現の幅を考慮しブロック形式で記載することをお勧めします。
+
+[NOTE]
+.[.navy.big]#*NOTE*#
+====
+インフォメーションマークが出力されます。 +
+補足となる内容や追加の情報が必要な場合に記載してください。
+====
+
+[.accordion.source,asciidoc,linenums]
+----
+[NOTE]
+.[.navy.big]#*NOTE*#
+====
+インフォメーションマークが出力されます。 +
+補足となる内容を記載してください。
+====
+----
+
+[TIP]
+.[.big]#*TIP*#
+====
+電球マークが出力されます。 +
+少し高度な利用方法などを記載してください。 +
+ユーザーが行う解決策などを提示する場合に利用してください。
+====
+
+[.accordion.source,asciidoc,linenums]
+----
+[TIP]
+.[.big]#*TIP*#
+====
+電球マークが出力されます。 +
+少し高度な利用方法などを記載してください。
+====
+----
+
+[WARNING]
+.[.orange.big]#*WARNING*#
+====
+三角オレンジの注意マークが出力されます +
+システムを利用する上で不用意にデータの閲覧ができなくなるなどの +
+問題を回避する方法を記載してください。
+====
+
+[.accordion.source,asciidoc,linenums]
+----
+[WARNING]
+.[.orange.big]#*WARNING*#
+====
+三角オレンジの注意マークが出力されます +
+システムを利用する上で不用意にデータの閲覧ができなくなるなどの +
+問題を回避する方法を記載してください。
+====
+----
+
+[IMPORTANT]
+.[.red.big]#*IMPORTANT*#
+====
+丸い赤の警告マークが出力されます +
+システムを利用する上でセキュリティリスクなどを記載してください。
+====
+
+[.accordion.source,asciidoc,linenums]
+----
+[IMPORTANT]
+.[.red.big]#*IMPORTANT*#
+====
+丸い赤の警告マークが出力されます +
+システムを利用する上でセキュリティリスクなどを記載してください。
+====
+----
+
+
+[CAUTION]
+.[.darkgreen.big]#*CAUTION*#
+====
+現在ある不具合やバグ、明らかな矛盾点など記載してください。
+====
+
+
+[.accordion.source,asciidoc,linenums]
+----
+[CAUTION]
+.[.darkgreen.big]#*CAUTION*#
+====
+現在ある不具合やバグ、明らかな矛盾点など記載してください。
+====
+
+----
+
+== ブロック
+
+=== Example block (例示)
+
+.〇〇について
+[example]
+====
+例示的な内容を指定するか、 +
+または勧告ブロックを定義します。
+
+. リスト
+. リスト
+====
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[example]
+====
+例示的な内容を指定するか、 +
+または勧告ブロックを定義します。
+
+. リスト
+. リスト
+====
+----
+
+=== Listing block
+
+.〇〇について
+[listing, javascript]
+----
+// 入力されたソースコードやキーボード入力が表示されます
+
+ただし +
+吹き出し機能が使えます。<!--1-->
+
+document.write("Hello world!!");
+
+----
+<1> 吹き出しの内容をここで定義します。
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[listing, javascript]
+\----
+// 入力されたソースコードやキーボード入力が表示されます
+
+ただし +
+吹き出し機能が使えます。<!--1-->
+
+document.write("Hello world!!");
+
+\----
+<1> 吹き出しの内容をここで定義します。
+----
+
+=== Fenced
+
+
+.〇〇について
+```
+// 入力されたソースコードまたはキーボード入力が表示されます。
+ドキュメントで有効になっていて、言語が設定されている場合は、 +
+ソース・ハイライターで色付けされます。
+
+document.write("Hello world!!");
+```
+
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+```
+// 入力されたソースコードまたはキーボード入力が表示されます。
+ドキュメントで有効になっていて、言語が設定されている場合は、 +
+ソース・ハイライターで色付けされます。
+
+document.write("Hello world!!");
+```
+----
+
+=== Literal block
+
+.〇〇について
+[literal]
+....
+入力された通りに +
+出力テキストが表示されます
+吹き出し機能が使えます。<!--1-->
+....
+<1> 吹き出しの内容をここで定義します。
+
+ スペースを開けた一行が同じ表示になるので注意
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[literal]
+....
+入力された通りに +
+出力テキストが表示されます
+吹き出し機能が使えます。<!--1-->
+....
+<1> 吹き出しの内容をここで定義します。
+
+ スペースを開けた一行が同じ表示になるので注意
+----
+
+=== Passthrough block
+
+.〇〇について
+[pass]
+++++
+出力に直接送られる +
+未処理のコンテンツ
+++++
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[pass]
+++++
+出力に直接送られる +
+未処理のコンテンツ
+++++
+----
+
+=== Blockquotes(引用)
+
+.〇〇について
+[quote, Albert Einstein,proverb,]
+----
+ミスをしたことのない人は、 +
+新しいことに挑戦したことがありません。
+吹き出し機能が使えます。<!--1-->
+----
+<1> 吹き出しの内容をここで定義します。
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[quote, Albert Einstein,proverb,]
+\----
+ミスをしたことのない人は、 +
+新しいことに挑戦したことがありません。
+吹き出し機能が使えます。<!--1-->
+\----
+<1> 吹き出しの内容をここで定義します。
+----
+
+=== Sidebar
+
+.〇〇について
+[sidebar]
+****
+文書の流れの外に表示される +
+テキストやコンテンツを
+非表示にする
+
+. リスト
+. リスト
+****
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[sidebar]
+****
+文書の流れの外に表示される +
+テキストやコンテンツを
+非表示にする
+
+. リスト
+. リスト
+****
+----
+
+=== Source
+
+.〇〇について
+[source,javascript]
+----
+// 入力されたとおりに表示されるソースコードまたはキーボード入力。
+ドキュメントで有効になっていて、言語が設定されている場合は、 +
+ソース・ハイライターで色付けされます。
+吹き出し機能が使えます。<!--1-->
+
+document.write("Hello world!!");
+
+----
+<1> 吹き出しの内容をここで定義します。
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[source,Java]
+/----
+// 入力されたとおりに表示されるソースコードまたはキーボード入力。
+ドキュメントで有効になっていて、言語が設定されている場合は、 +
+ソース・ハイライターで色付けされます。
+吹き出し機能が使えます。<!--1-->
+
+document.write("Hello world!!");
+
+/----
+<1> 吹き出しの内容をここで定義します。
+----
+
+=== Stem
+
+.〇〇について
+[stem]
+++++
+インタプリタに直接送られる未処理のコンテンツ (AsciiMath や LaTeX math など)
+++++
+
+[.accordion.source,asciidoc,linenums]
+----
+.〇〇について
+[stem]
+++++
+インタプリタに直接送られる未処理のコンテンツ (AsciiMath や LaTeX math など)
+++++
+----
+
+== リスト
+
+=== 順序無しリストのネスト
+
+* レベル１
+** レベル２
+*** レベル３
+** レベル２
+
+[.accordion.source,asciidoc,linenums]
+----
+* レベル１
+** レベル２
+*** レベル３
+** レベル２
+----
+
+=== 順序ありリストのネスト
+
+. 手順１
+. 手順２
+.. 手順２a
+.. 手順２b
+. 手順３
+
+[.accordion.source,asciidoc,linenums]
+----
+. 手順１
+. 手順２
+.. 手順２a
+.. 手順２b
+. 手順３
+----
+
+=== チェックリスト
+
+リーフレットなどを作成する場合に利用してください。
+
+- [*] チェック済みの要素
+- [x] これもチェック済みの要素
+- [ ] 未チェックの要素
+
+[.accordion.source,asciidoc,linenums]
+----
+- [*] チェック済みの要素
+- [x] これもチェック済みの要素
+- [ ] 未チェックの要素
+----
+
+
+== カウンター
+
+{counter2:sequence-count-sample-no:0}カウンターは型を定義することができる。 +
+{counter:sequence-count-sample-no}.{nbsp}カウンターの利用方法 +
+{counter:sequence-count-sample-no}.{nbsp}自動的にインクリメント +
+{counter2:sequence-count-sample-no}見せずにインクリメント +
+{counter:sequence-count-sample-no}.{nbsp}飛んでるはず
+
+:sequence-count-sample-no: 0
+
+{counter:sequence-count-sample-no}.{nbsp}リセットは普通のAttributeと同じ
+
+{counter:sequence-count-sample-alphabet:a}.{nbsp}カウンターは型を定義することができる。 +
+{counter:sequence-count-sample-alphabet}.{nbsp}インクリメントができればいい
+
+[.accordion.source,asciidoc,linenums]
+----
+{counter2:sequence-count-sample-no:0}カウンターは型を定義することができる。 +
+{counter:sequence-count-sample-no}.{nbsp}カウンターの利用方法 +
+{counter:sequence-count-sample-no}.{nbsp}自動的にインクリメント +
+{counter2:sequence-count-sample-no}見せずにインクリメント +
+{counter:sequence-count-sample-no}.{nbsp}飛んでるはず
+
+:sequence-count-sample-no: 0
+
+{counter:sequence-count-sample-no}.{nbsp}リセットは普通Attributeと同じ
+
+{counter:sequence-count-sample-alphabet:a}.{nbsp}カウンターは型を定義することができる。 +
+{counter:sequence-count-sample-alphabet}.{nbsp}インクリメントができればいい
+
+----
+
+
+== 改ページ
+----
+<<<
+----
+
+
+== コメントアウト
+
+=== インライン
+
+//はコメントアウトになり出力されません。
+----
+//はコメントアウトになり出力されません。
+----
+
+
+=== ブロック
+
+////
+ここにコメント
+////
+
+----
+////
+ここにコメント
+////
+----
+
+== ラベル
+
+辞書形式に利用します。
+
+第一項:: 第一項の定義
+二条::: 第一項二条の定義
+第二項:: 第二項の定義
+
+[.accordion.source,asciidoc,linenums]
+----
+第一項:: 第一項の定義
+第一項二条::: 第一項二条の定義
+第二項:: 第二項の定義
+----
+
+
+== 水平罫線
+
+水平罫線は以下のように記載します。
+
+'''
+
+[.accordion.source,asciidoc,linenums]
+----
+'''
+----
+
+== インラインマクロ
+
+=== Inline image macro
+
+「image:」で始まるインライン画像はインラインマクロの一つです。 +
+詳しくは「<<ASCIIDOC-SYNTAX-IMAGE-INLINE>>」を参照してください。
+
+=== Inline pass macro
+
+「pass:」を利用するとAsciiDocの文法などが無視され未処理でそのまま出力されます。
+
+=== Inline Macro Processor Extension
+
+Inline Macro Processor Extensionは自分で処理を記載して利用するAsciidoctor Extensionsの1種類です。
+
+// Inline Macro Processor Extensionの詳細はサンプルを配置してください。
+
+==== datetimeformat
+
+include::{includedir}/customs/common/extensions/datetimeformat-InlineMacroProcessor/sample.adoc[leveloffset=+4]
+
+
+
+== 記号の記載
+
+一部の記号は記載時にリプレースやエスケープを行う必要があります。
+
+例えば「{vbar}」はリプレースとして「\{vbar}」と記載を行います。
+また、テーブル内で別のセパレーターとして「!」と利用する場合などはエスケープとして「/!」とすることで出力できます。
+
+[.accordion.source,asciidoc,linenums]
+----
+例えば「{vbar}」はリプレースとして「\{vbar}」と記載を行います。
+また、テーブル内で別のセパレーターとして「!」と利用する場合などはエスケープとして「/!」とすることで出力できます。
+----
+
+以下はリプレースを行うべき記号や文字のリストとなります。
+
+[.accordion]
+.リプレース対象の定義済み文字 ^[1][2][3]^
+====
+[width="75%", cols="^4m,^3l,^3"]
+|===
+|Attribute name |Replacement text |Appearance
+
+|blank
+e|nothing
+|{empty}
+
+|empty
+e|nothing
+|{empty}
+
+|sp
+e|single space
+|{sp}
+
+|nbsp
+|&#160;
+|{nbsp}
+
+|zwsp^[4]^
+|&#8203;
+|{zwsp}
+
+|wj^[5]^
+|&#8288;
+|{wj}
+
+|apos
+|&#39;
+|{apos}
+
+|quot
+|&#34;
+|{quot}
+
+|lsquo
+|&#8216;
+|{lsquo}
+
+|rsquo
+|&#8217;
+|{rsquo}
+
+|ldquo
+|&#8220;
+|{ldquo}
+
+|rdquo
+|&#8221;
+|{rdquo}
+
+|deg
+|&#176;
+|{deg}
+
+|plus
+|&#43;
+|{plus}
+
+|brvbar
+|&#166;
+|&#166;
+
+|vbar
+|\|
+|{vbar}
+
+|amp
+|&
+|&
+
+|lt
+|<
+|<
+
+|gt
+|>
+|>
+
+|startsb
+|[
+|[
+
+|endsb
+|]
+|]
+
+|caret
+|^
+|^
+
+|asterisk
+|*
+|*
+
+|tilde
+|~
+|~
+
+|backslash
+|\
+|\
+
+|backtick
+|`
+|`
+
+|two-colons
+|::
+|::
+
+|two-semicolons
+|;;
+|;;
+
+|cpp
+|C++
+|C++
+|===
+
+
+^[1]^ いくつかの置換はUnicode文字ですが、他の置換は数値の文字参照です(例えば、\&#34;)。
+これらの文字参照は、Unicode文字の使用がAsciiDocの構文に干渉したり、レンダラー(すなわちブラウザ)を混乱させる可能性がある場合に使用されます。
+参照をレンダラーが理解できるものに変換するのはコンバータ次第です(マニュアルページとPDFコンバータの両方が処理するもの)。
+
+^[2]^ Asciidoctor は、定義済みの属性を再割り当てすることを妨げるものではありません。
+しかし、出力形式が異なるエンコーディング方式の使用を必要としない限り、それらを読み取り専用として扱うのが最善です。
+これらの属性は、コンテンツとプレゼンテーションを切り離すための効果的なツールです。
+
+^[3]^ Asciidoctorでは、HTMLで定義されている名前付き文字参照(別名：名前付き実体)のいずれかを使用できます。
+しかし、名前付き文字参照を使用すると、PDFなどの非HTML出力を生成する際に問題が発生することがあります。
+これらの名前を解決するために必要な参照テーブルが定義されていない可能性があるからです。私たちの推奨事項は、XMLで定義されているもの(すなわち lt ・ gt ・ amp ・ quot ・ apos)を除いて、名前付き文字参照の使用を避けることです。
+その代わりに、数値の文字参照を使用してください。
+
+^[4]^ ゼロ幅空間(ZWSP)は、必要に応じて長い単語を分割できる場所を示すUnicodeのコードポイントです。
+
+^[5]^ ワードジョイナー(WJ)は、その位置での改行を防ぐUnicodeのコードポイントです。
+====
+
+== ダイアグラム
+Asciidoctorではダイアグラムを記載できますが、生成画像はプレビューできません。 +
+ダイアグラムの名称は必ず一意のものを設定してください。
+
+
+=== ditaaで記述するダイアグラム
+
+[.accordion]
+====
+
+[ditaa, asciidoc-syntax-diagram-ditaa-sample, svg]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        | --+ Asciidoctor +--> |               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
+
+
+
+[ditaa, asciidoc-syntax-diagram-ditaa-sample-format, svg]
+....
+
+          +-----+
+          |{d}  |
+          |     |
+          |     |
+          +-----+
+
+          +-----+
+          |{s}  |
+          |     |
+          |     |
+          +-----+
+
+          +-----+
+          |{io} |
+          |     |
+          |     |
+          +-----+
+
+          Color codes
+      /----------+----------\
+      |cRED 赤    |cBLU 青    |
+      +----------+----------+
+      |cGRE 緑    |cPNK ピンク  |
+      +----------+----------+
+      |cBLK 黒    |cYEL 黄色   |
+      \----------+----------/
+
+      /-----------------\
+      | Things to do    |
+      | cGRE            |
+      | o Cut the grass |
+      | o Buy jam       |
+      | o Fix car       |
+      | o Make website  |
+      \-----------------/
+
+....
+
+====
+
+
+=== PlantUMLで記述するダイアグラム
+
+UMLを記述する場合はPlantUMLがおすすめ。 +
+多彩なUMLを気軽に記述できる。
+
+[.accordion]
+====
+
+[plantuml, asciidoc-syntax-diagram-plantuml-classes, svg]
+....
+class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor <|-- DiagramBlock
+DiagramBlock <|-- DitaaBlock
+DiagramBlock <|-- PlantUmlBlock
+....
+
+[plantuml, asciidoc-syntax-diagram-plantuml-sequence, svg]
+....
+actor Bob #red
+' The only difference between actor
+'and participant is the drawing
+participant Alice
+participant "I have a really\nlong name" as L #99FF99
+/' You can also declare:
+   participant L as "I have a really\nlong name"  #99FF99
+  '/
+
+Alice->Bob: Authentication Request
+Bob->Alice: Authentication Response
+note over Alice, Bob #FFAAAA: This is displayed\n over Bob and Alice.
+note over Alice: ノートだよ
+Bob->L: Log transaction
+Alice->Alice: This is a signal to self.\nIt also demonstrates\nmultiline \ntext
+....
+
+====

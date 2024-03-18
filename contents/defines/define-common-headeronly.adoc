@@ -1,0 +1,83 @@
+// 空行禁止(最終行含めて無駄な改行があると設定が有効になりません）
+// このファイルの定義はすべてHeader Only項目となります
+// ==========
+// Intrinsic attributes
+// ==========
+:backend: html5
+// ==========
+// Compliance attributes
+// ==========
+// マクロを利用
+:experimental:
+// ==========
+// Localization and numbering attributes
+// ==========
+:lang: ja
+:last-update-label:
+:manname-title:
+:toc-title: 目次
+:untitled-label: 無題
+:version-label:
+// ==========
+// Document metadata attributes
+// ==========
+:author: Analog inc.
+:revremark:
+// ==========
+// Section title and table of contents attributes
+// ==========
+// 目次
+:toc: left
+:toclevels: 5
+// ==========
+// General content and formatting attributes
+// ==========
+// キャッシュを許容
+// :cache-uri:
+// 画像を埋め込み 全ての画像が埋め込まれて重くなるのでコメントアウト
+// :data-uri:
+:docinfo: shared
+// :docinfodir:
+:doctype: book
+// ==========
+//Image and icon attributes
+// ==========
+:icons: font
+// :iconsdir:
+// 定義するとページ配置できないので工夫する
+// :imagesdir: ./images
+// ==========
+// Source highlighting and formatting attributes
+// ==========
+// ソースハイライター設定
+ifeval::[{env} != vscode]
+:source-highlighter: rouge
+:rouge-style: github
+endif::[]
+ifeval::[{env} == vscode]
+:source-highlighter: highlight.js
+:highlightjs-theme: github
+endif::[]
+// ==========
+// HTML styling attributes
+// ==========
+// :copycss:
+// :stylesdir:
+// :stylesheet:
+// :toc-class:
+// ==========
+// Manpage attributes
+// ==========
+// ==========
+// Security attributes
+// ==========
+:allow-uri-read:
+// ==========
+// AsciiDoc Attributes for PDF / AsciiDoc document attributes
+// ==========
+// PDFバージョン
+:pdf-version: 1.7
+// PDFの日本語対応
+:scripts: cjk
+// PDFの圧縮
+:compress:

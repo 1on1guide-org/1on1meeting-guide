@@ -1,0 +1,65 @@
+// このファイルの定義にHeader Only項目を混ぜないでください
+// ==========
+// Compliance attributes
+// ==========
+// :attribute-missing:
+// ==========
+// Localization and numbering attributes
+// ==========
+:appendix-caption: 付録
+:caution-caption: 一時的な問題等
+:chapter-refsig:
+// 各ラベルの日本語定義
+:chapter-signifier!:
+// :example-caption: 例
+:example-caption!:
+// :figure-caption: 図
+:figure-caption!:
+:important-caption: 重要
+:listing-caption:
+:note-caption: 補足
+// :preface-title: はじめに
+:preface-title!:
+:section-refsig:
+// :table-caption: 表
+:table-caption!:
+:tip-caption: ヒント
+:warning-caption: 警告
+// ==========
+// Document metadata attributes
+// ==========
+// ==========
+// Section title and table of contents attributes
+// ==========
+// セクションのナンバリングレベルを設定
+:sectnumlevels: 5
+// セクションにアンカーを作成
+:sectanchors:
+// セクションにリンクを作成
+:sectlinks:
+// 章番号を付けるか。属性を定義しておくだけで章番号が付けられる。
+:sectnums:
+// ==========
+// General content and formatting attributes
+// ==========
+// クロスリファレンス名をフルにして接頭辞をやめる
+:xrefstyle: full
+// ==========
+//Image and icon attributes
+// ==========
+// ==========
+// Source highlighting and formatting attributes
+// ==========
+:rouge-linenums-mode: inline
+:source-linenums-option:
+// Verbatim Blockの自動改行をHTMLで防止する
+:prewrap!:
+// ==========
+// HTML styling attributes
+// ==========
+// ==========
+// Manpage attributes
+// ==========
+// ==========
+// Security attributes
+// ==========

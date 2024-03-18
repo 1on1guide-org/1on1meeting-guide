@@ -1,0 +1,10 @@
+// 空行禁止(最終行含めて無駄な改行があると設定が有効になりません）
+include::define-common-headeronly.adoc[]
+// 空行禁止(最終行含めて無駄な改行があると設定が有効になりません）
+// ここから原則空行禁止(余計なトラブルを防ぐために空行は避けてください）
+include::define-common.adoc[]
+// ここまで原則空行禁止
+include::define-imagesize.adoc[]
+include::define-convert.adoc[]
+include::define-imageNicon.adoc[]
+include::define-literal.adoc[]

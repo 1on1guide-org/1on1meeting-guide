@@ -1,0 +1,23 @@
+ifndef::includedir[]
+:includedir: ../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../
+endif::imagesdir[]
+
+各種、Attributeを設定するファイルを集めたディレクトリーです。
+Attributeには以下の項目があります。
+
+
+Built-In Document Attribute:: link:https://docs.asciidoctor.org/asciidoc/latest/attributes/document-attributes-ref/[asciidocで定義されたAttribute] 、ユーザーから利用できないものやヘッダーオンリーなどの項目もあるので注意する必要があります。
+Default asset directory Attribute::: asciidocで定義されたAttributeのうち、ファイルパスを指定する場合に利用します。CLIと記載環境の両立のため、このディレクトリの設定で設定を行うことはないと考えています。
+Custom Document Attribute:: 記載者が自由に利用可能な変数です。
+
+[WARNING]
+.[.orange.big]#*ヘッダーオンリーのAttributeに注意してください*#
+====
+ヘッダーオンリーのAttributeはファイル先頭からの空行が許されていません。
+また、 ``include`` する際も空行に注意する必要があります。
+それぞれの定義ファイルの最終行も含めて空行が入らないように注意してください。
+====

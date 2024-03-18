@@ -1,0 +1,50 @@
+= 本ドキュメントの設定について
+ifndef::includedir[]
+:includedir: ../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../
+endif::imagesdir[]
+
+== 参照ディレクトリの扱い
+
+本ドキュメントはできる限り VS Code 上でファイルを編集している時のリアルタイムプレビューと、Github Actions を利用したコンバートの両立を行えるようにしています。
+その中でいくつかの対応が必要になったので記載します。
+
+=== Asciidoc ファイルのファイル名の扱い
+
+基本的に ``.adoc`` 拡張子のみを対応しています。
+またrootディレクトリ直下の ``index-`` プリフィックスのみコンバート処理を実施します。
+さらに ``README.adoc`` はコンバート処理を考慮しない様にしています。
+そして、``define-`` プリフィックスのものは特に注意が必要です。
+この要件は以下の記載を上記以外のファイルに行うことで、記載しやすくしています。
+
+[source,asciidoc]
+----
+== タイトル
+\ifndef::includedir[]
+:includedir: ../../
+\include::{includedir}contents/defines/define-all-include.adoc[]
+\endif::includedir[]
+\ifndef::imagesdir[]
+:imagesdir: ../../
+\endif::imagesdir[]
+
+本文
+----
+<1> ここでのパスはプロジェクト(ドキュメント)ルートへの相対パスを設定
+
+これにより画像は全てプロジェクト(ドキュメント)ルートからのフルパス(VS codeでファイル右クリックで相対パスってとったパス)を指定することでPDFもHTMLも問題なく出力できます。
+一方で、includeは {homedir} てつけるとフルパス、自分同じ場所か配下なら  {homedir}  をつけずに相対パスにして扱うことができます。
+
+=== ディレクトリ名を指定する属性の話
+
+includedir:: この指定は本ドキュメント固有のCustom Document Attributeです。この指定を利用することでincludeを指定しやすくしています。 + 
+本指定をindexは空、個別のファイルを相対パスで行うことで、複雑なディレクトリ構成でのincludeの指定を容易にしています。 +
+この定義の名称は link:https://docs.asciidoctor.org/asciidoc/latest/directives/include/#include-resolution[Asciidocterの公式ドキュメントのInclude file resolution]を参考にしています。
+basedir:: Asciidocに定義されたBuilt-In Document Attributeです。この定義はCLIで動作する際にフルパスで値が設定されるため利用していません。
+imagesdir:: asciidocに定義された default asset directory  Attributeです。この定義はHTML(:data-uri:のしては除く) の場合と画像を埋め込みするPDFで扱いが変わるため、CLIで指定します。画像へのリンクは(ドキュメント)ルートからのフルパスを利用することになります。
+iconsdir:: asciidocに定義された  default asset directory  Attributeです。現在は利用していませんし、動作の解析もしていません。
+stylesdir:: asciidocに定義された  default asset directory  Attributeです。この定義はおそらくHTMLの場合のみ利用されますが、現在は利用していませんし、動作の解析もしていません。
+scriptsdir:: asciidocに定義された  default asset directory  Attributeです。この定義はおそらくHTMLの場合のみ利用されますが、現在は利用していませんし、動作の解析もしていません。

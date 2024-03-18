@@ -1,0 +1,15 @@
+ifndef::includedir[]
+:includedir: ../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+
+PDF出力の際に日本語環境に合わせてフォントを指定したり、
+文書をみやすいフォーマットにするスタイルを記述しています。CSSに似た記述方法になっています。
+
+default-theme.yml:: Asciidoctor標準のテーマです。このテーマを元にPDFを作成しています。編集はしないでください。
+common-theme.yml:: このマニュアル標準のテーマです。default-theme.ymlを継承しているのでスタイルを変更すべき最低限の記載のみ行っています。
+user-\{ロール}-theme.yml:: 各出力ユーザー向けの設定を入れたテーマです。 common-theme.ymlを継承しているのでユーザー権限の差分以外は定義していません。 +
+こちらのテーマは「.github/workflows/asciidoc.sh」内で出力ファイル毎に指定されます。

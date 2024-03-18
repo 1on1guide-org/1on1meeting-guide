@@ -1,0 +1,17 @@
+= fonts ディレクトリ
+ifndef::includedir[]
+:includedir: ../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+
+
+このディレクトリはフォントファイルを配置するディレクトリです。日本語のファイルはフォントファイルがないとPDF出力できないため配置しています。
+このディレクトリには以下のフォントが配置されています。
+
+源真ゴシック:: link:http://jikasei.me/font/genshin/[自家製フォント工房]で配布されているフォントでフリーの OpenType フォントである「源ノ角ゴシック」を TrueType 形式に変換したフォントです。
+源様明朝:: link:https://github.com/ButTaiwan/genyo-font/[GitHubのButTaiwan/genyo-font]で配布されているフォントでフリーの OpenType フォントである「源ノ明朝」を TrueType 形式に変換したフォントです。 +
+ttcで配布された link:https://github.com/ButTaiwan/genyo-font/tree/d63d3c62836a63093b043437b09b370a5fb808d9[最新のフォント]は句読点の制御が上手く行かないので、link:https://github.com/ButTaiwan/genyo-font/tree/bc2fa246196fefc1ef9e9843bc8cdba22523a39d[少し古いバージョン]の物を利用しています。
+Noto Emojiフォント:: link:https://www.google.com/get/noto/#emoji-zsye[Google Noto Fontsで提供]されているオープンソースの絵文字フォントです。なお同じ配布元に携帯電話で使えるカラー絵文字もありますがエラーになるため使えません。

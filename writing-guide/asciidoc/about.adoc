@@ -1,0 +1,132 @@
+= AsciiDocについて
+ifndef::includedir[]
+:includedir: ../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../
+endif::imagesdir[]
+
+
+AsciiDocは軽量マークアップ言語の一つで可読文書記述形式です。 +
+出力もHTML, PDF, ePubなどが行えるため出版や開発環境でのナレッジの共有まで様々な用途で利用することが可能です。
+
+* link:https://asciidoc.org/[AsciiDoc 公式サイト]
+
+* AsciiDocをドキュメント作成に利用している例
+** link:https://www.science.co.jp/case/yamaha/github_asciidoc/[YAMAHA様事例]
+* AsciiDocを執筆に利用している例
+** O’Reilly Mediaの書籍の一部(Welcome kitとして公開していました)
+* AsciiDocをナレッジに利用している例
+** link:https://github.com/github/markup[GitHub](READMEやWikiに利用するオープンソースマークアップライブラリに採用されています)
+
+== AsciiDocの記述方法
+
+AsciiDocは軽量マークアップ言語でメジャーなフォーマットであるmarkdownと比較し、
+同様の記述容易性を供えつつもより高度な文書の論理構造を構築することが可能です。 +
+記載方法の簡単な説明は以下のリンクをご参照ください。
+
+* link:https://takumon.github.io/asciidoc-syntax-quick-reference-japanese-translation/[Asciidoctor 文法クイックリファレンス(日本語訳)]
+
+また、ヘルプデスク内で利用している記載方法は「<<ASCIIDOC-SYNTAX-REFERENCE>>」をご覧ください。
+
+== Asciidoctorの利用と環境
+
+Asciidoctorは、AsciiDoc形式のための包括的なツールで、AsciiDoc形式をHTML5、DocBook、PDFなどの形式に変換します。
+
+=== Asciidoctorの歴史
+Asciidoctorは2012年にGitHub開発者であるNick HengeveldがGitのウェブサイトに示されているgitのマニュアルページを生成するために作成したプロトタイプをベースに、同じくGitHub開発者であるRyan Waldronがプロジェクトを開始しました。 +
+2013年にAsciidoctorがGitHubにおいて発表され、その後はオープンソースプロジェクトとしてGitHubでホストされています。 +
+このため、GitHubではサイト上で.adocファイルのプレビューすることができ、READMEやWikiをAsciiDoc形式で記述することが可能です。
+
+* link:https://asciidoctor.org/[Asciidoctor 公式サイト]
+
+=== Asciidoctorの利用方法と本環境
+
+詳しいマニュアルもありますが、本環境については以下のBlog記事をご参照ください。本環境はBlog記事の構成を発展させたものとなります。
+
+* 公式マニュアル
+** link:https://asciidoctor.org/docs/user-manual/[Asciidoctor Users manual]
+* Blog記事
+** link:https://tech-blog.cloud-config.jp/2020-03-17-recommend-asciidoc/[AsciiDocを利用してエンジニアのナレッジを上手に集約しよう]
+** link:https://tech-blog.cloud-config.jp/2020-03-26-github-actions-asciidoc1/[GitHub Actionsを使って気軽にAsciiDocを出力しよう(1)]
+** link:https://tech-blog.cloud-config.jp/2020-04-02-github-actions-asciidoc-2/[GitHub Actionsを使って気軽にAsciiDocを出力しよう(2)]
+** link:https://tech-blog.cloud-config.jp/2020-04-09-github-actions-asciidoctor-action1/[GitHub ActionsのAsciiDoc用アクションの仕組み(1)]
+** link:https://tech-blog.cloud-config.jp/2020-04-16-github-actions-asciidoc-2/[GitHub ActionsのAsciiDoc用アクションの仕組み(2)]
+** link:https://tech-blog.cloud-config.jp/2020-04-16-github-actions-asciidoctor-docker/[GitHub Actionsで利用したいAsciidoctorの環境]
+** link:https://tech-blog.cloud-config.jp/2020-04-15-github-actions-docker/[GitHub Actionsで利用したいDockerコンテナの基礎]
+** link:https://tech-blog.cloud-config.jp/2020-04-22-github-actions-asciidoc-pdf1/[GitHub ActionsでAsciiDocをPDF出力しよう(1)]
+** link:https://tech-blog.cloud-config.jp/2020-05-11-github-actions-asciidoc-pdf2/[GitHub ActionsでAsciiDocをPDF出力しよう(2)]
+
+
+== なぜAsciiDocを利用するのか？
+
+=== バージョン管理の必要性
+システムに紐づくドキュメントはシステムの更新と共に、更新され共存する必要があります。 +
+また、お客様の不明点や、問題解決に必要なTipsの記載も欠かせません。 +
+このため、いつ何のためにどんな修正が行われたか、Gitによるバージョン管理で追跡し、 +
+必要であれば過去のバージョンを取り消すことも必要です。
+
+=== スタイルの統一
+従来のドキュメントエディタの多くは、更新が重なると適用したスタイルを維持することが難しくなります。 +
+Asciidoc形式は記載方法がテキスト形式に限られるため、記載時にスタイルを切り離して記載することができます。 +
+これにより、より大きな文章でも統一されたスタイルで提供することが可能です。
+
+=== 表現の統一
+従来のドキュメントエディタの多くは、文字列の定義や、繰り返し利用される記述の一括定義が行えず、 +
+記載箇所毎の大量の表現ゆれ、表記ゆれに対応する必要がありました。 +
+また、表記ゆれを確認するために検索を行うと大量の検索結果が表示されてしまい +
+あえて別表現を使っている場合の抽出が困難でした。 +
+Asciidoc形式は文字列の定義や、文書の参照取り込みが可能なため、これらの問題に対し適切な運用が可能です。
+
+=== 各権限毎の出力
+全ての仕様を網羅し的確な説明がなされたナレッジがあれば、それから各権限向けのマニュアル等ドキュメントを作りたいと考えるのは自然な発想です。 +
+従来のドキュメントエディタの多くでも、そのような運用がなされていますが、更新が進むに連れて対象権限毎に表現を修正したドキュメントと、 +
+最新の仕様が記載された網羅的なドキュメントのマージが難しくなり、表現ゆれや記載ミスの原因となっています。 +
+Asciidoc形式はifdefディレクティブの利用により簡易的な出力制御が行えるため、 +
+網羅的なドキュメントに全ての権限に対する記載することができ、安定的に各権限のマニュアル等ドキュメントをリリースすることが可能です。
+
+=== リリース向け出力形式の最適化
+現在、多くのシステムではPDFのドキュメントが配布されますが、 +
+WebシステムではHTMLのドキュメントも多用されています。 +
+HTMLのドキュメントは目次もサイドバー等に表示可能になりブラウザの機能と合わせて目的検索生が向上するためです。 +
+従来のドキュメントエディタもほとんどの場合でPDF出力が可能になっていますが、 +
+HTMLでの出力を行うと、HTMLの利便性を享受できないことが多く、最悪の場合レイアウト崩れ等が発生することが多々あります。 +
+Asciidoc形式はPDF出力とHTML出力に対して、それぞれ最適な出力を提供します。
+
+== AsciiDocに移行するデメリット
+ここでは従来のドキュメントと、本ナレッジを比較した場合のデメリットを記載します。
+
+=== 記載方法に慣れていない
+今までOffice suite等のドキュメントエディタを利用していた場合、 +
+多くの方が編集方法に戸惑うと考えられます。 +
+ただしこれらの問題はドキュメントエディタが更新された場合にも当てはまります。 +
+Asciidoc形式はMarkdown形式の様な簡易的な記載ができる学習コストが低い記載方法の一つです。 +
+従来のドキュメントエディタと異なり、スタイルを壊してしまうこともないため大きな問題にならないと考えています。
+
+=== 編集履歴や校閲機能がない
+Asciidoc形式はテキスト形式のため、編集履歴や校閲機能はありません。 +
+これらを同じドキュメントエディタ上で利用していた場合は当初不便を感じると思われます。 +
+Asciidoc形式では、本文中に出力されないコメントを記載することは可能です。 +
+また、より確実なバージョン管理を行うためにGit-hubのプライベートリポジトリを利用することで、 +
+Issueの管理による議論や、それに紐付けた更新など、多彩なバージョン管理等を行うことでカバー可能です。
+
+=== 記載中にイメージがわかない
+Asciidoc形式はテキスト形式のため、従来のドキュメントエディタと異なり、記載中はスタイルが適用されません。 +
+しかし、現在は無料のテキストエディタや統合開発環境に(Atom, VS Code, IntelliJ IDEA, Android studio)等にプラグインをインストールすることで、 +
+簡単にプレビューを表示しながら編集することが可能です。
+
+=== 特殊な記述ができない
+Asciidoc形式は原則として技術本やドキュメントを記載するための汎用的な構成を重視されているため、 +
+画像の上に画像を貼り付けたり、ある一箇所だけ特別なスタイルを変更することができません。 +
+これらについては、更新が進むたびに表現方法がバラついてしまうことがなくなるため、 +
+一長一短だと考えられます。
+
+
+=== ドキュメントエディタで校閲や添削できない
+Asciidoc形式は出力を行うとPDFやHTMLにて出力されるため、その状態での校閲や添削はできません。 +
+特にPDFではページング制御とうがあるため、出力イメージ上で校閲や添削を行いたいと考えられます。 +
+この点についてPDFは、Adobe Acrobat ReaderやAppleのプレビューアプリには注釈機能があるため、 +
+直接の編集ではない校閲や添削は可能です。 +
+また、HTMLについてもスクリーンショット等にマークアップすることが多くのブラウザやOSで可能になっているため、 +
+編集者以外の校閲や添削に問題はありません。

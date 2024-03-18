@@ -1,0 +1,15 @@
+extends: common
+
+title_page:
+  logo-image: image:../images/title/title-user-analog.svg[align=center]
+
+
+table:
+  font_size: $base_font_size_min
+  line_height: 0.8
+  cell:
+    padding: [0.3, 1, 0.3, 1]
+
+role:
+  cellsfont:
+    font_size: $base_font_size_min

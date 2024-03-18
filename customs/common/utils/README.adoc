@@ -1,0 +1,20 @@
+ifndef::includedir[]
+:includedir: ../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+:link-os-Windows-Subsystem-for-Linux: https://docs.microsoft.com/ja-jp/windows/wsl/[「Windows Subsystem for Linux（WSL）」]
+
+汎用的なシェルスクリプトを配置するディレクトリです。
+
+delete.sh:: リンクされないpngやadocファイルを削除するシェルスクリプトです。
+relative-path-level2top.sh:: 各ディレクトリ配下の ``.adoc`` 拡張子の項目について、できるかぎりプロジェクトルートからのパスを利用して記載できるようにパス階層を自動的に振り直す仕組みです。本文を直接変更するのではなく特定の定義のみを変更します。
+search-diacritical-mark-NFD.sh:: Unicode正規化がNFDで行われ、濁点・半濁点が親となる文字と分離した場合にerrorを出力します。 +
+このファイルは出力スクリプト「.github/workflows/asciidoc.sh」上で動作します。
+
+== シェルスクリプトの利用方法
+利用する際はターミナル上でシェルスクリプトを実行します。
+当ディレクトリのシェルスクリプトはカレントディレクトリに依存しませんが、既存のパス構成に依存しているため、パスを変更した際はシェルスクリプトの修正が必要です。
+Windows10でも{zwsp}{link-os-Windows-Subsystem-for-Linux}{zwsp}を有効にしたら動くかもしれません。

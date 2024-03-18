@@ -1,0 +1,29 @@
+<!-- 文字列長に合わせて設定 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="{%full-length%}" height="24">
+	<g fill="none" fill-rule="evenodd">
+		<g font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="11">
+			<path id="class-bg" fill="#24292E" d="M0 3 a3 3 0 0 1 3 -3 h{%class-length%}  v20 h-{%class-length%} a3 3 0 0 1 -3 -3 Z" >
+			</path>
+			<!-- 権限コードを設定 -->
+			<text fill="#010101" fill-opacity=".3">
+				<tspan x="24" y="15">{%cord%}</tspan>
+			</text>
+			<text fill="#FFFFFF">
+				<tspan x="24" y="14">{%cord%}</tspan>
+			</text>
+		</g>
+		<g transform="translate({%name-position%})" font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="11">
+			<!-- 文字列長に合わせて設定 -->
+			<path  fill="{%color%}" d="M0 0 h{%name-length%} a3 3 0 0 1 3 3 v14 a3 3 0 0 1 -3 3 H0 z" id="name-bg" />
+			<!-- 権限名称を設定 -->
+			<text fill="#010101" fill-opacity=".3">
+				<tspan x="4.5" y="15">{%name%}</tspan>
+			</text>
+			<text fill="#FFFFFF">
+				<tspan x="4" y="14">{%name%}</tspan>
+			</text>
+		</g>
+		<!-- 権限に合わせたアイコンを選択(15px:15px) -->
+		{%icon%}
+	</g>
+</svg>
