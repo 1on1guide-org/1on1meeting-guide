@@ -1,11 +1,11 @@
 = 表現の統一について
-ifndef::includedir[]
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
+endif::[]
 
 
 == 統一した文言など表現ゆれを防ぐための利用
