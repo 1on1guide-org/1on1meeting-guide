@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123">
+	<g >
+		<text x="50%" y="360" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="36" fill="#00448A">
+	Asciidcotor
+		</text>
+		<text x="50%" y="420" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="36" fill="#00448A">
+	サンプルファイル
+		</text>
+		<text x="50%" y="490" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="24" fill="#00448A">
+	(〇〇編)
+		</text>
+		<text x="50%" y="550" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#222222">
+	第{%revnumber%}版
+		</text>
+	</g>
+	<g >
+		<path  id="パス" d="M0 0 794 0 794 180 0 180 Z" fill="#00448A" fill-opacity="1" stroke="none"/>
+		<path transform="translate(0  600)" id="パス" d="M0 0 794 0 794 523 0 523 Z" fill="#00448A" fill-opacity="1" stroke="none"/>
+
+	</g>
+	<g transform="translate(307  220)">
+ 	</g>
+</svg>

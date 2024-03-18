@@ -1,0 +1,761 @@
+role:
+  black:
+    font_color: 000000
+  pdfblack:
+    font_color: 222222
+  dimgray:
+    font_color: 696969
+  gray:
+    font_color: 808080
+  darkgray:
+    font_color: a9a9a9
+  silver:
+    font_color: c0c0c0
+  lightgray:
+    font_color: d3d3d3
+  gainsboro:
+    font_color: dcdcdc
+  whitesmoke:
+    font_color: f5f5f5
+  white:
+    font_color: ffffff
+  snow:
+    font_color: fffafa
+  ghostwhite:
+    font_color: f8f8ff
+  floralwhite:
+    font_color: fffaf0
+  linen:
+    font_color: faf0e6
+  antiquewhite:
+    font_color: faebd7
+  papayawhip:
+    font_color: ffefd5
+  blanchedalmond:
+    font_color: ffebcd
+  bisque:
+    font_color: ffe4c4
+  moccasin:
+    font_color: ffe4b5
+  navajowhite:
+    font_color: ffdead
+  peachpuff:
+    font_color: ffdab9
+  mistyrose:
+    font_color: ffe4e1
+  lavenderblush:
+    font_color: fff0f5
+  seashell:
+    font_color: fff5ee
+  oldlace:
+    font_color: fdf5e6
+  ivory:
+    font_color: fffff0
+  honeydew:
+    font_color: f0fff0
+  mintcream:
+    font_color: f5fffa
+  azure:
+    font_color: f0ffff
+  aliceblue:
+    font_color: f0f8ff
+  lavender:
+    font_color: e6e6fa
+  lightsteelblue:
+    font_color: b0c4de
+  lightslategray:
+    font_color: 778899
+  slategray:
+    font_color: 708090
+  steelblue:
+    font_color: 4682b4
+  royalblue:
+    font_color: 4169e1
+  midnightblue:
+    font_color: 191970
+  navy:
+    font_color: 000080
+  darkblue:
+    font_color: 00008b
+  mediumblue:
+    font_color: 0000cd
+  blue:
+    font_color: 0000ff
+  dodgerblue:
+    font_color: 1e90ff
+  cornflowerblue:
+    font_color: 6495ed
+  deepskyblue:
+    font_color: 00bfff
+  lightskyblue:
+    font_color: 87cefa
+  skyblue:
+    font_color: 87ceeb
+  lightblue:
+    font_color: add8e6
+  powderblue:
+    font_color: b0e0e6
+  paleturquoise:
+    font_color: afeeee
+  lightcyan:
+    font_color: e0ffff
+  cyan:
+    font_color: 00ffff
+  turquoise:
+    font_color: 40e0d0
+  mediumturquoise:
+    font_color: 48d1cc
+  darkturquoise:
+    font_color: 00ced1
+  lightseagreen:
+    font_color: 20b2aa
+  cadetblue:
+    font_color: 5f9ea0
+  darkcyan:
+    font_color: 008b8b
+  teal:
+    font_color: 008080
+  darkslategray:
+    font_color: 2f4f4f
+  darkgreen:
+    font_color: 006400
+  green:
+    font_color: 008000
+  forestgreen:
+    font_color: 228b22
+  seagreen:
+    font_color: 2e8b57
+  mediumseagreen:
+    font_color: 3cb371
+  mediumaquamarine:
+    font_color: 66cdaa
+  darkseagreen:
+    font_color: 8fbc8f
+  aquamarine:
+    font_color: 7fffd4
+  palegreen:
+    font_color: 98fb98
+  lightgreen:
+    font_color: 90ee90
+  springgreen:
+    font_color: 00ff7f
+  mediumspringgreen:
+    font_color: 00fa9a
+  lawngreen:
+    font_color: 7cfc00
+  chartreuse:
+    font_color: 7fff00
+  greenyellow:
+    font_color: adff2f
+  lime:
+    font_color: 00ff00
+  limegreen:
+    font_color: 32cd32
+  yellowgreen:
+    font_color: 9acd32
+  darkolivegreen:
+    font_color: 556b2f
+  olivedrab:
+    font_color: 6b8e23
+  olive:
+    font_color: 808000
+  darkkhaki:
+    font_color: bdb76b
+  palegoldenrod:
+    font_color: eee8aa
+  cornsilk:
+    font_color: fff8dc
+  beige:
+    font_color: f5f5dc
+  lightyellow:
+    font_color: ffffe0
+  lightgoldenrodyellow:
+    font_color: fafad2
+  lemonchiffon:
+    font_color: fffacd
+  wheat:
+    font_color: f5deb3
+  burlywood:
+    font_color: deb887
+  tan:
+    font_color: d2b48c
+  khaki:
+    font_color: f0e68c
+  yellow:
+    font_color: ffff00
+  gold:
+    font_color: ffd700
+  orange:
+    font_color: ffa500
+  sandybrown:
+    font_color: f4a460
+  darkorange:
+    font_color: ff8c00
+  goldenrod:
+    font_color: daa520
+  peru:
+    font_color: cd853f
+  darkgoldenrod:
+    font_color: b8860b
+  chocolate:
+    font_color: d2691e
+  sienna:
+    font_color: a0522d
+  saddlebrown:
+    font_color: 8b4513
+  maroon:
+    font_color: 800000
+  darkred:
+    font_color: 8b0000
+  brown:
+    font_color: a52a2a
+  firebrick:
+    font_color: b22222
+  indianred:
+    font_color: cd5c5c
+  rosybrown:
+    font_color: bc8f8f
+  darksalmon:
+    font_color: e9967a
+  lightcoral:
+    font_color: f08080
+  salmon:
+    font_color: fa8072
+  lightsalmon:
+    font_color: ffa07a
+  coral:
+    font_color: ff7f50
+  tomato:
+    font_color: ff6347
+  orangered:
+    font_color: ff4500
+  red:
+    font_color: ff0000
+  crimson:
+    font_color: dc143c
+  mediumvioletred:
+    font_color: c71585
+  deeppink:
+    font_color: ff1493
+  hotpink:
+    font_color: ff69b4
+  palevioletred:
+    font_color: db7093
+  pink:
+    font_color: ffc0cb
+  lightpink:
+    font_color: ffb6c1
+  thistle:
+    font_color: d8bfd8
+  magenta:
+    font_color: e4007f
+  fuchsia:
+    font_color: ff00ff
+  violet:
+    font_color: ee82ee
+  plum:
+    font_color: dda0dd
+  orchid:
+    font_color: da70d6
+  mediumorchid:
+    font_color: ba55d3
+  darkorchid:
+    font_color: 9932cc
+  darkviolet:
+    font_color: 9400d3
+  darkmagenta:
+    font_color: 8b008b
+  purple:
+    font_color: 800080
+  indigo:
+    font_color: 043c78
+  darkslateblue:
+    font_color: 483d8b
+  blueviolet:
+    font_color: 8a2be2
+  mediumpurple:
+    font_color: 9370db
+  slateblue:
+    font_color: 6a5acd
+  mediumslateblue:
+    font_color: 7b68ee
+  coralred:
+    font_color: ef857d
+  poppyred:
+    font_color: ea5550
+  tomatored:
+    font_color: ea5549
+  vermilion:
+    font_color: ea553a
+  scarlet:
+    font_color: ea5532
+  carrotorange:
+    font_color: ed6d35
+  chinesered:
+    font_color: ed6d46
+  terracotta:
+    font_color: bd6856
+  cocoabrown:
+    font_color: 98605e
+  mahogany:
+    font_color: 6b3f31
+  marron:
+    font_color: 6a1917
+  sepia:
+    font_color: 622d18
+  coffee:
+    font_color: 7b5544
+  burntsienna:
+    font_color: bb5535
+  amberrose:
+    font_color: e6bfb2
+  beigerose:
+    font_color: e8d3ca
+  salmonpink:
+    font_color: f3a68c
+  sahara:
+    font_color: e29676
+  ashrose:
+    font_color: e6bfab
+  shellpink:
+    font_color: fbdac8
+  babypink:
+    font_color: fdede4
+  nailpink:
+    font_color: fce4d6
+  rawsienna:
+    font_color: e17b34
+  caramel:
+    font_color: bc611e
+  sunset:
+    font_color: f6b483
+  cinnamon:
+    font_color: be8f68
+  champagne:
+    font_color: e9dacb
+  peach:
+    font_color: fbd8b5
+  cafeaulait:
+    font_color: 946c45
+  apricot:
+    font_color: f7b977
+  amber:
+    font_color: c2894b
+  bronze:
+    font_color: ac6b25
+  vanilla:
+    font_color: e8c59c
+  cork:
+    font_color: c49a6a
+  burntumber:
+    font_color: 6f5436
+  rawumber:
+    font_color: 866629
+  flesh:
+    font_color: fad09e
+  goldenyellow:
+    font_color: f6ae54
+  mandarinorange:
+    font_color: f3981d
+  marigold:
+    font_color: f39800
+  ecrubeige:
+    font_color: f6e5cc
+  oyster:
+    font_color: eae1cf
+  ochre:
+    font_color: ba8b40
+  buff:
+    font_color: caac71
+  saffronyellow:
+    font_color: fac559
+  pumpkin:
+    font_color: e5a323
+  yellowocher:
+    font_color: c4972f
+  blond:
+    font_color: f2d58a
+  biscuit:
+    font_color: ead7a4
+  leghorn:
+    font_color: ffe9a9
+  sunshineyellow:
+    font_color: ffedab
+  creamyellow:
+    font_color: fff3b8
+  naplesyellow:
+    font_color: fdd35c
+  topaz:
+    font_color: e9bc00
+  chromeyellow:
+    font_color: fcc800
+  cream:
+    font_color: e3d7a3
+  straw:
+    font_color: ece093
+  jasmineyellow:
+    font_color: edde7b
+  antiquegold:
+    font_color: c1ab05
+  jaunebrillant:
+    font_color: ffdc00
+  citrus:
+    font_color: eddc44
+  limelight:
+    font_color: fff799
+  mimosa:
+    font_color: fff462
+  lemonyellow:
+    font_color: fff352
+  melonyellow:
+    font_color: e0de94
+  chartreuseyellow:
+    font_color: e3e548
+  limeyellow:
+    font_color: eaeea2
+  chartreusegreen:
+    font_color: d9e367
+  lettucegreen:
+    font_color: d1de4c
+  olivegreen:
+    font_color: 5f6527
+  mossgreen:
+    font_color: 777e41
+  grassgreen:
+    font_color: 7b8d42
+  leafgreen:
+    font_color: 9fc24d
+  whitelily:
+    font_color: f0f6da
+  asparagusgreen:
+    font_color: dbebc4
+  citrongreen:
+    font_color: 618e34
+  meadowgreen:
+    font_color: 65ab31
+  applegreen:
+    font_color: a7d28d
+  ivygreen:
+    font_color: 578a3d
+  spinachgreen:
+    font_color: 417038
+  cactus:
+    font_color: 387d39
+  skygreen:
+    font_color: bee0c2
+  spearmint:
+    font_color: 79c06e
+  mintgreen:
+    font_color: 89c997
+  parrotgreen:
+    font_color: 37a34a
+  summergreen:
+    font_color: 009944
+  opalgreen:
+    font_color: bee0ce
+  spraygreen:
+    font_color: a4d5bd
+  bottlegreen:
+    font_color: 004d25
+  cobaltgreen:
+    font_color: 3cb37a
+  evergreen:
+    font_color: 00984f
+  malachitegreen:
+    font_color: 009854
+  emeraldgreen:
+    font_color: 00a968
+  viridian:
+    font_color: 00885a
+  hollygreen:
+    font_color: 006948
+  billiardgreen:
+    font_color: 005c42
+  chromegreen:
+    font_color: 00533f
+  antiquegreen:
+    font_color: 54917f
+  watergreen:
+    font_color: a5c9c1
+  icegreen:
+    font_color: a3d6cc
+  turquoisegreen:
+    font_color: 00947a
+  peppermintgreen:
+    font_color: 00ac9a
+  peacockgreen:
+    font_color: 00a497
+  nileblue:
+    font_color: 2cb4ad
+  saxeblue:
+    font_color: 418b89
+  slategreen:
+    font_color: 3c7170
+  tealgreen:
+    font_color: 006a6c
+  aquagreen:
+    font_color: 88bfbf
+  peacockblue:
+    font_color: 009e9f
+  capriblue:
+    font_color: 00a3a7
+  cambridgeblue:
+    font_color: 25b7c0
+  turquoiseblue:
+    font_color: 00afcc
+  summershower:
+    font_color: a1d8e2
+  ceruleanblue:
+    font_color: 008db7
+  duckblue:
+    font_color: 007199
+  marineblue:
+    font_color: 006888
+  madonnablue:
+    font_color: 00608d
+  egyptianblue:
+    font_color: 0073a8
+  shadowblue:
+    font_color: 719bad
+  yachtblue:
+    font_color: 409ecc
+  chalkblue:
+    font_color: 68a9cf
+  pigeonblue:
+    font_color: 88b5d3
+  smokeblue:
+    font_color: a4c1d7
+  frostyblue:
+    font_color: bbdbf3
+  bleuacide:
+    font_color: 006eb0
+  cobaltblue:
+    font_color: 0068b7
+  spectrumblue:
+    font_color: 0075c2
+  zenithblue:
+    font_color: 4496d3
+  heavenlyblue:
+    font_color: 68a4d9
+  orchidgray:
+    font_color: bcc7d7
+  daydream:
+    font_color: a3b9e0
+  salviablue:
+    font_color: 94adda
+  hyacinthblue:
+    font_color: 7a99cf
+  hyacinth:
+    font_color: 6c9bd2
+  navyblue:
+    font_color: 202f55
+  ironblue:
+    font_color: 192f60
+  inkblue:
+    font_color: 003f8e
+  orientalblue:
+    font_color: 26499d
+  ultramarineblue:
+    font_color: 4753a2
+  ultramarine:
+    font_color: 434da2
+  wistaria:
+    font_color: 8d93c8
+  bluelavender:
+    font_color: a4a8d4
+  pannsy:
+    font_color: 4d4398
+  heliotrope:
+    font_color: 9079b6
+  deeproyalpurple:
+    font_color: 47266e
+  grape:
+    font_color: 56256e
+  mauve:
+    font_color: 915da3
+  iris:
+    font_color: c7a5cc
+  lilac:
+    font_color: d1bada
+  crocus:
+    font_color: b79fcb
+  lavendermauve:
+    font_color: a688bd
+  royalpurple:
+    font_color: 7f1184
+  raisin:
+    font_color: 6b395f
+  raspberry:
+    font_color: 841a75
+  framboise:
+    font_color: 9a0d7c
+  dahliapurple:
+    font_color: a50082
+  orchidpurple:
+    font_color: af0082
+  raspberryred:
+    font_color: 9f166a
+  lilla:
+    font_color: e0b5d3
+  rosetendre:
+    font_color: e6afcf
+  orchidpink:
+    font_color: da81b2
+  cyclamenpink:
+    font_color: d04f97
+  bougainvillaea:
+    font_color: e62f8b
+  ruby:
+    font_color: c70067
+  claret:
+    font_color: 941f57
+  azalee:
+    font_color: d83473
+  cosmos:
+    font_color: dc6b9a
+  lotuspink:
+    font_color: de82a7
+  oldorchid:
+    font_color: e3adc1
+  rosemist:
+    font_color: debecc
+  rosedragee:
+    font_color: e5c1cd
+  cherrypink:
+    font_color: eb6ea0
+  opera:
+    font_color: e95388
+  rosered:
+    font_color: ea618e
+  oldlilac:
+    font_color: b0778c
+  cocoa:
+    font_color: 6e4a55
+  winered:
+    font_color: b33e5c
+  garnet:
+    font_color: 942343
+  cochinealred:
+    font_color: c82c55
+  strawberry:
+    font_color: e73562
+  carmine:
+    font_color: d70035
+  signalred:
+    font_color: e8383d
+  burgundy:
+    font_color: 6c2735
+  bordeaux:
+    font_color: 6c272d
+  camellia:
+    font_color: da536e
+  rose:
+    font_color: e95464
+  rosepink:
+    font_color: f19ca7
+  flamingopink:
+    font_color: f5b2ac
+  oldrose:
+    font_color: e29399
+  pinkalmond:
+    font_color: e3acae
+  rosedust:
+    font_color: e6c0c0
+  snowwhite:
+    font_color: fafdff
+  pinkwhite:
+    font_color: fef9fb
+  milkywhite:
+    font_color: fffff9
+  amberwhite:
+    font_color: fff9f5
+  lavenderice:
+    font_color: f7f6fb
+  pearlwhite:
+    font_color: f7f6f5
+  powderpink:
+    font_color: f5ecf4
+  silverwhite:
+    font_color: efefef
+  frostygray:
+    font_color: e8ece9
+  silverpink:
+    font_color: eeeaec
+  beigecameo:
+    font_color: eee9e6
+  ecru:
+    font_color: eee7e0
+  pinkbeige:
+    font_color: ede4e1
+  frostywhite:
+    font_color: e6eae6
+  oysterwhite:
+    font_color: eae8e1
+  wisteriamist:
+    font_color: d3d6dd
+  cloud:
+    font_color: d4d9df
+  moongray:
+    font_color: d4d9dc
+  chinaclay:
+    font_color: d4dcd3
+  sandbeige:
+    font_color: dcd6d2
+  orchidmist:
+    font_color: d3d3d8
+  reedgray:
+    font_color: d4d9d6
+  skygray:
+    font_color: cbd0d3
+  lavendergray:
+    font_color: bcbace
+  pearlgray:
+    font_color: c9c9c4
+  sandgray:
+    font_color: c9c9c2
+  marblegray:
+    font_color: c0c5c2
+  opalgray:
+    font_color: bfbec5
+  frenchgray:
+    font_color: 8da0b6
+  mist:
+    font_color: b4aeb1
+  ashblond:
+    font_color: b5b5ae
+  fog:
+    font_color: abb1b5
+  beigegray:
+    font_color: b4ada9
+  silvergray:
+    font_color: afafb0
+  stormgray:
+    font_color: aaaab0
+  greenfog:
+    font_color: abb1ad
+  ashgray:
+    font_color: 9fa09e
+  rosegray:
+    font_color: 9d8e87
+  elephantskin:
+    font_color: 9f9f98
+  battleshipgray:
+    font_color: 898989
+  stonegray:
+    font_color: 898880
+  mossgray:
+    font_color: 7e837f
+  dovegray:
+    font_color: 7d7b83
+  steelgray:
+    font_color: 736d71
+  ivygray:
+    font_color: 666c67
+  graphite:
+    font_color: 594e52
+  charcoalgray:
+    font_color: 4e454a
+  taupe:
+    font_color: 504946
+  lampblack:
+    font_color: 24140e

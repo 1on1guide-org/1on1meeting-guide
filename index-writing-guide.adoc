@@ -1,0 +1,25 @@
+= Writing Guide
+// このバージョンはPDFでも利用しています。
+:revdate: 2021-01-01
+:revnumber: 1.0.0
+:includedir: ./
+include::{includedir}contents/defines/define-all-include.adoc[]
+ifeval::[{env} == vscode]
+:imagesdir: ./
+endif::[]
+// ここまで空行禁止(無駄な改行があると設定が有効になりません）
+
+
+[[DESCRIPTION-GUIDELINES]]
+include::./writing-guide/guideline/description.adoc[leveloffset=+1]
+
+<<<
+[[ABOUT-ASCIIDOC]]
+include::./writing-guide/asciidoc/about.adoc[leveloffset=+1]
+
+<<<
+[[ASCIIDOC-SYNTAX-REFERENCE]]
+include::./writing-guide/asciidoc/syntax-reference.adoc[leveloffset=+1]
+
+<<<
+include::./writing-guide/howto/config.adoc[leveloffset=+1]

@@ -1,0 +1,12 @@
+ifndef::includedir[]
+:includedir: ../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+
+このディレクトリはHTML出力時にヘッダーやフッターに必要な情報を挿入するdocinfoファイルを配置しています。
+
+docinfo.html:: ヘッダーに出力する内容です。主にCSSの挿入を行っています。
+docinfo-footer.html:: フッター出力する内容です。主にJavaScriptの挿入を行っています。

@@ -1,19 +1,11 @@
 = 1on1ガイド
-// 目次
-:toc: left
-:toclevels: 5
-:toc-title: 目次
-// このバージョンはPDFでも利用しています。
 :revnumber: 0.0.1
 :revdate: 2024-03-17
-:author: 1on1guide.org
-:organization: 1on1guide.org
-:homepage: https://github.com/1on1guide-org/
-// ソースハイライター設定
-:source-highlighter: rouge
-:rouge-style: github
-:rouge-linenums-mode: inline
-include::define-include-all.adoc[]
+:includedir: ./
+include::{includedir}contents/defines/define-all-include.adoc[]
+ifeval::[{env} == vscode]
+:imagesdir: ./
+endif::[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 [[PURPOSE-GUIDELINES]]
@@ -170,110 +162,17 @@ include::define-include-all.adoc[]
 
 
 // カテゴリー
-include::category.adoc[leveloffset=+1]
-
-
-
-=== パターン
-
-include::patterns/1.adoc[leveloffset=+3]
+include::contents/category.adoc[leveloffset=+1]
 
 <<<
 
-include::patterns/2.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/3.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/4.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/5.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/6.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/7.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/8.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/9.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/10.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/11.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/12.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/13.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/14.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/15.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/16.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/17.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/18.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/19.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/20.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/21.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/22.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/23.adoc[leveloffset=+3]
-
-<<<
-
-include::patterns/24.adoc[leveloffset=+3]
+// パターン
+include::contents/patterns/all.adoc[leveloffset=+1]
 
 <<<
 
 // 用語集
-include::glossary.adoc[]
+include::contents/glossary.adoc[]
 
 <<<
 

@@ -1,0 +1,17 @@
+// 出力レベルを段階的に定義
+// VS codeでの修正中に全表示
+ifeval::[{env} == vscode]
+:convert-for-all:
+endif::[]
+// Allを設定したらライター向けの情報も全て出す
+ifdef::convert-for-all[]
+:convert-for-writers:
+endif::[]
+// ライター向けの情報にはレビュワー向けの情報も出す
+ifdef::convert-for-writers[]
+:convert-for-reviewers:
+endif::[]
+// レビュワー向けの情報には読者向けの情報も含まれる
+ifdef::convert-for-reviewers[]
+:convert-for-readers:
+endif::[]

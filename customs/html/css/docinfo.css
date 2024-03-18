@@ -1,0 +1,592 @@
+#header>h1:first-child,
+#content h1>a.link,
+h2>a.link,
+h3>a.link,
+#toctitle>a.link,
+.sidebarblock>.content>.title>a.link,
+h4>a.link,
+h5>a.link,
+h6>a.link,
+#content h1>a.link:hover,
+h2>a.link:hover,
+h3>a.link:hover,
+#toctitle>a.link:hover,
+.sidebarblock>.content>.title>a.link:hover,
+h4>a.link:hover,
+h5>a.link:hover,
+h6>a.link:hover,
+.subheader,
+.admonitionblock td.content>.title,
+.audioblock>.title,
+.exampleblock>.title,
+.imageblock>.title,
+.listingblock>.title,
+.literalblock>.title,
+.stemblock>.title,
+.openblock>.title,
+.paragraph>.title,
+.quoteblock>.title,
+table.tableblock>.title,
+.verseblock>.title,
+.videoblock>.title,
+.dlist>.title,
+.olist>.title,
+.ulist>.title,
+.qlist>.title,
+.hdlist>.title,
+#toctitle {
+	color: #043c78
+}
+
+h1 {
+	font-size: 2.4em;
+	font-weight: bold
+}
+
+h2 {
+	font-size: 2.0em;
+	font-weight: bold
+}
+
+h3 {
+	font-size: 1.8em;
+	font-weight: bold
+}
+
+h4 {
+	font-size: 1.6em;
+	font-weight: bold
+}
+
+h5 {
+	font-size: 1.4em;
+	font-weight: bold
+}
+
+h6 {
+	font-size: 1.2em;
+	font-weight: bold
+}
+
+table thead tr th,
+table thead tr td,
+table tbody tr th,
+table tfoot tr th,
+table tfoot tr td,
+table tr td p,
+.cellsfont {
+	font-family: "Open Sans", "DejaVu Sans", sans-serif
+}
+
+table thead tr th,
+table tbody tr th {
+	background: #0068b7;
+	color: #FFFFFF
+}
+
+table tr th p {
+	color: #FFFFFF
+}
+
+table tfoot tr th {
+	background: #f5f5f5
+}
+
+table.tableblock {
+	border-collapse: collapse;
+}
+
+table.frame-all {
+	border-width: 2px;
+}
+
+table.grid-all>thead>tr>.tableblock,
+table.grid-all>tbody>tr>.tableblock {
+	border-width: 1px 1px 1px 1px;
+}
+
+.black {color: #000000}
+.dimgray {color: #696969}
+.gray {color: #808080}
+.darkgray {color: #a9a9a9}
+.silver {color: #c0c0c0}
+.lightgray {color: #d3d3d3}
+.gainsboro {color: #dcdcdc}
+.whitesmoke {color: #f5f5f5}
+.white {color: #ffffff}
+.snow {color: #fffafa}
+.ghostwhite {color: #f8f8ff}
+.floralwhite {color: #fffaf0}
+.linen {color: #faf0e6}
+.antiquewhite {color: #faebd7}
+.papayawhip {color: #ffefd5}
+.blanchedalmond {color: #ffebcd}
+.bisque {color: #ffe4c4}
+.moccasin {color: #ffe4b5}
+.navajowhite {color: #ffdead}
+.peachpuff {color: #ffdab9}
+.mistyrose {color: #ffe4e1}
+.lavenderblush {color: #fff0f5}
+.seashell {color: #fff5ee}
+.oldlace {color: #fdf5e6}
+.ivory {color: #fffff0}
+.honeydew {color: #f0fff0}
+.mintcream {color: #f5fffa}
+.azure {color: #f0ffff}
+.aliceblue {color: #f0f8ff}
+.lavender {color: #e6e6fa}
+.lightsteelblue {color: #b0c4de}
+.lightslategray {color: #778899}
+.slategray {color: #708090}
+.steelblue {color: #4682b4}
+.royalblue {color: #4169e1}
+.midnightblue {color: #191970}
+.navy {color: #000080}
+.darkblue {color: #00008b}
+.mediumblue {color: #0000cd}
+.blue {color: #0000ff}
+.dodgerblue {color: #1e90ff}
+.cornflowerblue {color: #6495ed}
+.deepskyblue {color: #00bfff}
+.lightskyblue {color: #87cefa}
+.skyblue {color: #87ceeb}
+.lightblue {color: #add8e6}
+.powderblue {color: #b0e0e6}
+.paleturquoise {color: #afeeee}
+.lightcyan {color: #e0ffff}
+.cyan {color: #00ffff}
+.turquoise {color: #40e0d0}
+.mediumturquoise {color: #48d1cc}
+.darkturquoise {color: #00ced1}
+.lightseagreen {color: #20b2aa}
+.cadetblue {color: #5f9ea0}
+.darkcyan {color: #008b8b}
+.teal {color: #008080}
+.darkslategray {color: #2f4f4f}
+.darkgreen {color: #006400}
+.green {color: #008000}
+.forestgreen {color: #228b22}
+.seagreen {color: #2e8b57}
+.mediumseagreen {color: #3cb371}
+.mediumaquamarine {color: #66cdaa}
+.darkseagreen {color: #8fbc8f}
+.aquamarine {color: #7fffd4}
+.palegreen {color: #98fb98}
+.lightgreen {color: #90ee90}
+.springgreen {color: #00ff7f}
+.mediumspringgreen {color: #00fa9a}
+.lawngreen {color: #7cfc00}
+.chartreuse {color: #7fff00}
+.greenyellow {color: #adff2f}
+.lime {color: #00ff00}
+.limegreen {color: #32cd32}
+.yellowgreen {color: #9acd32}
+.darkolivegreen {color: #556b2f}
+.olivedrab {color: #6b8e23}
+.olive {color: #808000}
+.darkkhaki {color: #bdb76b}
+.palegoldenrod {color: #eee8aa}
+.cornsilk {color: #fff8dc}
+.beige {color: #f5f5dc}
+.lightyellow {color: #ffffe0}
+.lightgoldenrodyellow {color: #fafad2}
+.lemonchiffon {color: #fffacd}
+.wheat {color: #f5deb3}
+.burlywood {color: #deb887}
+.tan {color: #d2b48c}
+.khaki {color: #f0e68c}
+.yellow {color: #ffff00}
+.gold {color: #ffd700}
+.orange {color: #ffa500}
+.sandybrown {color: #f4a460}
+.darkorange {color: #ff8c00}
+.goldenrod {color: #daa520}
+.peru {color: #cd853f}
+.darkgoldenrod {color: #b8860b}
+.chocolate {color: #d2691e}
+.sienna {color: #a0522d}
+.saddlebrown {color: #8b4513}
+.maroon {color: #800000}
+.darkred {color: #8b0000}
+.brown {color: #a52a2a}
+.firebrick {color: #b22222}
+.indianred {color: #cd5c5c}
+.rosybrown {color: #bc8f8f}
+.darksalmon {color: #e9967a}
+.lightcoral {color: #f08080}
+.salmon {color: #fa8072}
+.lightsalmon {color: #ffa07a}
+.coral {color: #ff7f50}
+.tomato {color: #ff6347}
+.orangered {color: #ff4500}
+.red {color: #ff0000}
+.crimson {color: #dc143c}
+.mediumvioletred {color: #c71585}
+.deeppink {color: #ff1493}
+.hotpink {color: #ff69b4}
+.palevioletred {color: #db7093}
+.pink {color: #ffc0cb}
+.lightpink {color: #ffb6c1}
+.thistle {color: #d8bfd8}
+.magenta {color: #e4007f}
+.fuchsia {color: #ff00ff}
+.violet {color: #ee82ee}
+.plum {color: #dda0dd}
+.orchid {color: #da70d6}
+.mediumorchid {color: #ba55d3}
+.darkorchid {color: #9932cc}
+.darkviolet {color: #9400d3}
+.darkmagenta {color: #8b008b}
+.purple {color: #800080}
+.indigo {color: #043c78}
+.darkslateblue {color: #483d8b}
+.blueviolet {color: #8a2be2}
+.mediumpurple {color: #9370db}
+.slateblue {color: #6a5acd}
+.mediumslateblue {color: #7b68ee}
+.coralred {color: #ef857d}
+.poppyred {color: #ea5550}
+.tomatored {color: #ea5549}
+.vermilion {color: #ea553a}
+.scarlet {color: #ea5532}
+.carrotorange {color: #ed6d35}
+.chinesered {color: #ed6d46}
+.terracotta {color: #bd6856}
+.cocoabrown {color: #98605e}
+.mahogany {color: #6b3f31}
+.marron {color: #6a1917}
+.sepia {color: #622d18}
+.coffee {color: #7b5544}
+.burntsienna {color: #bb5535}
+.amberrose {color: #e6bfb2}
+.beigerose {color: #e8d3ca}
+.salmonpink {color: #f3a68c}
+.sahara {color: #e29676}
+.ashrose {color: #e6bfab}
+.shellpink {color: #fbdac8}
+.babypink {color: #fdede4}
+.nailpink {color: #fce4d6}
+.rawsienna {color: #e17b34}
+.caramel {color: #bc611e}
+.sunset {color: #f6b483}
+.cinnamon {color: #be8f68}
+.champagne {color: #e9dacb}
+.peach {color: #fbd8b5}
+.cafeaulait {color: #946c45}
+.apricot {color: #f7b977}
+.amber {color: #c2894b}
+.bronze {color: #ac6b25}
+.vanilla {color: #e8c59c}
+.cork {color: #c49a6a}
+.burntumber {color: #6f5436}
+.rawumber {color: #866629}
+.flesh {color: #fad09e}
+.goldenyellow {color: #f6ae54}
+.mandarinorange {color: #f3981d}
+.marigold {color: #f39800}
+.ecrubeige {color: #f6e5cc}
+.oyster {color: #eae1cf}
+.ochre {color: #ba8b40}
+.buff {color: #caac71}
+.saffronyellow {color: #fac559}
+.pumpkin {color: #e5a323}
+.yellowocher {color: #c4972f}
+.blond {color: #f2d58a}
+.biscuit {color: #ead7a4}
+.leghorn {color: #ffe9a9}
+.sunshineyellow {color: #ffedab}
+.creamyellow {color: #fff3b8}
+.naplesyellow {color: #fdd35c}
+.topaz {color: #e9bc00}
+.chromeyellow {color: #fcc800}
+.cream {color: #e3d7a3}
+.straw {color: #ece093}
+.jasmineyellow {color: #edde7b}
+.antiquegold {color: #c1ab05}
+.jaunebrillant {color: #ffdc00}
+.citrus {color: #eddc44}
+.limelight {color: #fff799}
+.mimosa {color: #fff462}
+.lemonyellow {color: #fff352}
+.melonyellow {color: #e0de94}
+.chartreuseyellow {color: #e3e548}
+.limeyellow {color: #eaeea2}
+.chartreusegreen {color: #d9e367}
+.lettucegreen {color: #d1de4c}
+.olivegreen {color: #5f6527}
+.mossgreen {color: #777e41}
+.grassgreen {color: #7b8d42}
+.leafgreen {color: #9fc24d}
+.whitelily {color: #f0f6da}
+.asparagusgreen {color: #dbebc4}
+.citrongreen {color: #618e34}
+.meadowgreen {color: #65ab31}
+.applegreen {color: #a7d28d}
+.ivygreen {color: #578a3d}
+.spinachgreen {color: #417038}
+.cactus {color: #387d39}
+.skygreen {color: #bee0c2}
+.spearmint {color: #79c06e}
+.mintgreen {color: #89c997}
+.parrotgreen {color: #37a34a}
+.summergreen {color: #009944}
+.opalgreen {color: #bee0ce}
+.spraygreen {color: #a4d5bd}
+.bottlegreen {color: #004d25}
+.cobaltgreen {color: #3cb37a}
+.evergreen {color: #00984f}
+.malachitegreen {color: #009854}
+.emeraldgreen {color: #00a968}
+.viridian {color: #00885a}
+.hollygreen {color: #006948}
+.billiardgreen {color: #005c42}
+.chromegreen {color: #00533f}
+.antiquegreen {color: #54917f}
+.watergreen {color: #a5c9c1}
+.icegreen {color: #a3d6cc}
+.turquoisegreen {color: #00947a}
+.peppermintgreen {color: #00ac9a}
+.peacockgreen {color: #00a497}
+.nileblue {color: #2cb4ad}
+.saxeblue {color: #418b89}
+.slategreen {color: #3c7170}
+.tealgreen {color: #006a6c}
+.aquagreen {color: #88bfbf}
+.peacockblue {color: #009e9f}
+.capriblue {color: #00a3a7}
+.cambridgeblue {color: #25b7c0}
+.turquoiseblue {color: #00afcc}
+.summershower {color: #a1d8e2}
+.ceruleanblue {color: #008db7}
+.duckblue {color: #007199}
+.marineblue {color: #006888}
+.madonnablue {color: #00608d}
+.egyptianblue {color: #0073a8}
+.shadowblue {color: #719bad}
+.yachtblue {color: #409ecc}
+.chalkblue {color: #68a9cf}
+.pigeonblue {color: #88b5d3}
+.smokeblue {color: #a4c1d7}
+.frostyblue {color: #bbdbf3}
+.bleuacide {color: #006eb0}
+.cobaltblue {color: #0068b7}
+.spectrumblue {color: #0075c2}
+.zenithblue {color: #4496d3}
+.heavenlyblue {color: #68a4d9}
+.orchidgray {color: #bcc7d7}
+.daydream {color: #a3b9e0}
+.salviablue {color: #94adda}
+.hyacinthblue {color: #7a99cf}
+.hyacinth {color: #6c9bd2}
+.navyblue {color: #202f55}
+.ironblue {color: #192f60}
+.inkblue {color: #003f8e}
+.orientalblue {color: #26499d}
+.ultramarineblue {color: #4753a2}
+.ultramarine {color: #434da2}
+.wistaria {color: #8d93c8}
+.bluelavender {color: #a4a8d4}
+.pannsy {color: #4d4398}
+.heliotrope {color: #9079b6}
+.deeproyalpurple {color: #47266e}
+.grape {color: #56256e}
+.mauve {color: #915da3}
+.iris {color: #c7a5cc}
+.lilac {color: #d1bada}
+.crocus {color: #b79fcb}
+.lavendermauve {color: #a688bd}
+.royalpurple {color: #7f1184}
+.raisin {color: #6b395f}
+.raspberry {color: #841a75}
+.framboise {color: #9a0d7c}
+.dahliapurple {color: #a50082}
+.orchidpurple {color: #af0082}
+.raspberryred {color: #9f166a}
+.lilla {color: #e0b5d3}
+.rosetendre {color: #e6afcf}
+.orchidpink {color: #da81b2}
+.cyclamenpink {color: #d04f97}
+.bougainvillaea {color: #e62f8b}
+.ruby {color: #c70067}
+.claret {color: #941f57}
+.azalee {color: #d83473}
+.cosmos {color: #dc6b9a}
+.lotuspink {color: #de82a7}
+.oldorchid {color: #e3adc1}
+.rosemist {color: #debecc}
+.rosedragee {color: #e5c1cd}
+.cherrypink {color: #eb6ea0}
+.opera {color: #e95388}
+.rosered {color: #ea618e}
+.oldlilac {color: #b0778c}
+.cocoa {color: #6e4a55}
+.winered {color: #b33e5c}
+.garnet {color: #942343}
+.cochinealred {color: #c82c55}
+.strawberry {color: #e73562}
+.carmine {color: #d70035}
+.signalred {color: #e8383d}
+.burgundy {color: #6c2735}
+.bordeaux {color: #6c272d}
+.camellia {color: #da536e}
+.rose {color: #e95464}
+.rosepink {color: #f19ca7}
+.flamingopink {color: #f5b2ac}
+.oldrose {color: #e29399}
+.pinkalmond {color: #e3acae}
+.rosedust {color: #e6c0c0}
+.snowwhite {color: #fafdff}
+.pinkwhite {color: #fef9fb}
+.milkywhite {color: #fffff9}
+.amberwhite {color: #fff9f5}
+.lavenderice {color: #f7f6fb}
+.pearlwhite {color: #f7f6f5}
+.powderpink {color: #f5ecf4}
+.silverwhite {color: #efefef}
+.frostygray {color: #e8ece9}
+.silverpink {color: #eeeaec}
+.beigecameo {color: #eee9e6}
+.ecru {color: #eee7e0}
+.pinkbeige {color: #ede4e1}
+.frostywhite {color: #e6eae6}
+.oysterwhite {color: #eae8e1}
+.wisteriamist {color: #d3d6dd}
+.cloud {color: #d4d9df}
+.moongray {color: #d4d9dc}
+.chinaclay {color: #d4dcd3}
+.sandbeige {color: #dcd6d2}
+.orchidmist {color: #d3d3d8}
+.reedgray {color: #d4d9d6}
+.skygray {color: #cbd0d3}
+.lavendergray {color: #bcbace}
+.pearlgray {color: #c9c9c4}
+.sandgray {color: #c9c9c2}
+.marblegray {color: #c0c5c2}
+.opalgray {color: #bfbec5}
+.frenchgray {color: #8da0b6}
+.mist {color: #b4aeb1}
+.ashblond {color: #b5b5ae}
+.fog {color: #abb1b5}
+.beigegray {color: #b4ada9}
+.silvergray {color: #afafb0}
+.stormgray {color: #aaaab0}
+.greenfog {color: #abb1ad}
+.ashgray {color: #9fa09e}
+.rosegray {color: #9d8e87}
+.elephantskin {color: #9f9f98}
+.battleshipgray {color: #898989}
+.stonegray {color: #898880}
+.mossgray {color: #7e837f}
+.dovegray {color: #7d7b83}
+.steelgray {color: #736d71}
+.ivygray {color: #666c67}
+.graphite {color: #594e52}
+.charcoalgray {color: #4e454a}
+.taupe {color: #504946}
+.lampblack {color: #24140e}
+
+a>em {
+	font-style: normal
+}
+
+.admonitionblock>table td.content {
+	color: #24140e
+}
+
+.admonitionblock>table td.content,
+.admonitionblock td.content>.title {
+	font-family: "Open Sans", "DejaVu Sans", sans-serif;
+	font-style: normal
+}
+
+.admonitionblock td.icon .icon-tip::before {
+	color: #ff8c00
+}
+
+.admonitionblock td.icon .icon-caution::before {
+	content: "\f0a6";
+	color: #006400
+}
+
+.admonitionblock td.icon .icon-important::before {
+	color: #ff0000
+}
+
+.admonitionblock td.icon .icon-note::before {
+	color: #000080
+}
+
+.admonitionblock td.icon .icon-warning::before {
+	color: #ff8c00
+}
+
+.exampleblock>.content {
+	background: #f0f8ff;
+}
+
+.accordion-label {
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px;
+	margin: 1em 0;
+	border: 1px solid #4e454a;
+	border-radius: 2px;
+	background-color: #778899;
+	color: #FFFFFF;
+	font-family: "Open Sans", "DejaVu Sans", sans-serif;
+	font-style: normal
+}
+
+.accordion-check {
+	display: none;
+}
+
+.accordion-label::after {
+	content: "開く　▶︎";
+}
+
+.accordion {
+	visibility: hidden;
+	height: 10px;
+}
+
+.accordion-check:checked+.accordion-label::after {
+	content: "閉じる▼";
+}
+
+.accordion-check:checked+.accordion-label+.accordion {
+	visibility: visible;
+	height: inherit;
+}
+
+.accordion-label::before {
+	content: "詳細を";
+}
+
+.accordion-label.source::before {
+	content: "記述方法を";
+}
+
+#header .details br,
+#footer .details br {
+	display: none;
+}
+
+#header .details #revnumber::before,
+#footer .details #revnumber::before {
+	content: "\00a0\2013\00a0第";
+}
+
+#header .details #revnumber::after,
+#footer .details #revnumber::after {
+	content: "版\00a0";
+}
+
+#header .details #localdatetime::before,
+#footer .details #localdatetime::before {
+	content: "\00a0\2013\00a0 Update";
+}
+
+#footer .details  {
+	color: #d4d9d6
+}

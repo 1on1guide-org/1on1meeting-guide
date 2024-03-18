@@ -1,0 +1,11 @@
+ifndef::includedir[]
+:includedir: ../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+
+このディレクトリは一部標準的な設定ではできない設定を行うファイルを配置するディレクトリです。
+
+config.rb:: ダイアグラムに含めるフォントがPDFに埋め込めない問題を解決するためのRubyでしか設定できない事を記述しています。

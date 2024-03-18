@@ -1,0 +1,20 @@
+ifndef::includedir[]
+:includedir: ../../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+:link-os-Windows-Subsystem-for-Linux: https://docs.microsoft.com/ja-jp/windows/wsl/[「Windows Subsystem for Linux（WSL）」]
+
+このディレクトリは表紙の画像や文字を設定するSVGを配置しています。いくつかの画像をレイヤーにして仕様しています。
+
+
+maketool/revnumber.sh:: このツールでindex.adocからバージョンを取得します。 +
+カレントディレクトリに依存しませんが、既存のパス構成に依存しているため、パスを変更した際はシェルスクリプトの修正が必要です。 +
+基本コンバート時に動かすのでローカルで実行する必要はありません。 +
+動作確認したい場合でWindows10の方は{zwsp}{link-os-Windows-Subsystem-for-Linux}{zwsp}を有効にしたら動くかもしれません。 +
+このファイルは出力スクリプト「.github/workflows/asciidoc.sh」上で動作します。
+title-all.svg:: 全ての画像を重ねたときのイメージを1ファイルで表しています。この画像は実際には利用しませんが、他のデータを作成する元のファイルとなります。
+title-background.svg:: 「title-all.svg」のうち、共通で利用する背景を定義しています。
+title-user-\{ロール}.svg:: 「title-all.svg」のうち、ロールごとに変更が必要な内容を定義しています。

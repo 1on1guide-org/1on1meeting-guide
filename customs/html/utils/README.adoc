@@ -1,0 +1,18 @@
+ifndef::includedir[]
+:includedir: ../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+:link-os-Windows-Subsystem-for-Linux: https://docs.microsoft.com/ja-jp/windows/wsl/[「Windows Subsystem for Linux（WSL）」]
+
+html生成時に必要なシェルスクリプトを配置するディレクトリです。
+
+copy-html-assets.sh:: html生成時に必要なassetsファイルを出力フォルダにコピーするシェルスクリプトです。
+
+
+== シェルスクリプトの利用方法
+利用する際はターミナル上でシェルスクリプトを実行します。
+当ディレクトリのシェルスクリプトはカレントディレクトリに依存しませんが、既存のパス構成に依存しているため、パスを変更した際はシェルスクリプトの修正が必要です。
+Windows10でも{zwsp}{link-os-Windows-Subsystem-for-Linux}{zwsp}を有効にしたら動くかもしれません。

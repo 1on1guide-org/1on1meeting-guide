@@ -1,0 +1,13 @@
+ifndef::includedir[]
+:includedir: ../../../
+include::{includedir}contents/defines/define-all-include.adoc[]
+endif::includedir[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+
+Asciidoctor Extensionsを配置するlibrary用のディレクトリです。
+
+common-extensions.rb:: コンバート時に呼び出すコマンドで、内部に記載されたクラスをAsciidoctor Extensionsとして登録します。
+datetimeformat-InlineMacroProcessor:: Attributesに定義された日時をフォーマットするExtensionです。 
+sample.adoc::: 「datetimeformat-InlineMacroProcessor」の動作を検証するファイルで、Asciidoctor Extensions作成時の推奨ファイルです。
