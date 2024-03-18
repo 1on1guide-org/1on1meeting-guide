@@ -1,10 +1,10 @@
-ifndef::includedir[]
 :includedir: ../../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
+endif::[]
 :link-os-Windows-Subsystem-for-Linux: https://docs.microsoft.com/ja-jp/windows/wsl/[「Windows Subsystem for Linux（WSL）」]
 
 汎用的なシェルスクリプトを配置するディレクトリです。

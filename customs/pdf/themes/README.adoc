@@ -1,10 +1,10 @@
-ifndef::includedir[]
 :includedir: ../../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
+endif::[]
 
 PDF出力の際に日本語環境に合わせてフォントを指定したり、
 文書をみやすいフォーマットにするスタイルを記述しています。CSSに似た記述方法になっています。

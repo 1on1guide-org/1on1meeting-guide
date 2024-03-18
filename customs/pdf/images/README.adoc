@@ -1,11 +1,11 @@
 = imagesディレクトリの内容について
-ifndef::includedir[]
 :includedir: ../../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
+endif::[]
 
 このディレクトリは画像ファイルを配置するディレクトリです。各階層でそれぞれ画像の種類を定義しています。 +
 画像の作成方法等は各階層の「README.adoc」に記載の説明を参照してください。

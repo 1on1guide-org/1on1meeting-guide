@@ -1,10 +1,10 @@
-ifndef::includedir[]
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
+endif::[]
 
 各種、Attributeを設定するファイルを集めたディレクトリーです。
 Attributeには以下の項目があります。

@@ -1,11 +1,11 @@
 = SVGバッジについて
-ifndef::includedir[]
 :includedir: ../../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
+endif::[]
 
 == 本バッジの利用方法
 本バッチは権限とその実行内容などを表すために利用します。
