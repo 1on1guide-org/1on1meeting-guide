@@ -1,7 +1,7 @@
 extends: common
 
 title_page:
-  logo-image: image:../images/title/title-user-analog.svg[align=center]
+  logo-image: image:../images/title/title-user-reviewers.svg[align=center]
 
 
 table:
