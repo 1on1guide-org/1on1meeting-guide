@@ -48,7 +48,7 @@ jobs:
     # Use the output from the documents step
     - name: Save AsciiDoc step
       timeout-minutes: 1
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Output-document
         path: ./public/
