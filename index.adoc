@@ -8,6 +8,34 @@ ifeval::[{env} == vscode]
 endif::[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
+// ライターモードの注意
+ifdef::convert-for-writers[]
+[IMPORTANT]
+.[.red.big]#*編集者向けのコンテンツが出力されています*#
+====
+本項目が出ている場合はレビュワー向けの出力が有効になっています。
+正式版では利用できないため注意しだください。
+====
+endif::convert-for-writers[]
+
+// レビュワーモードの注意
+ifdef::convert-for-reviewers[]
+[IMPORTANT]
+.[.red.big]#*レビュワー向けのコンテンツが出力されています*#
+====
+本項目が出ている場合はレビュワー向けの出力が有効になっています。
+正式版では利用できないため注意しだください。
+====
+endif::convert-for-reviewers[]
+
+// レビューリクエスト
+ifdef::convert-for-reviewers[]
+//レビューリクエストはセクション番号をキャンセルする
+:sectnums!:
+include::requests-review.adoc[]
+:sectnums:
+endif::[]
+
 // 1on1ガイドの目的と背景
 [[PURPOSE-GUIDELINES]]
 include::contents/1on1ガイドの目的と背景.adoc[]
