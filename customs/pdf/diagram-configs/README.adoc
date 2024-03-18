@@ -1,10 +1,10 @@
-ifndef::includedir[]
 :includedir: ../../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
+endif::[]
 
 このディレクトリは一部標準的な設定ではできない設定を行うファイルを配置するディレクトリです。
 
