@@ -109,7 +109,7 @@ role:
 prose:
   margin-bottom: 10
 
-key:
+kbd:
   font-style: normal
   font_family: inherit
 
@@ -205,7 +205,7 @@ table:
 
 
 # リスト全体の設定
-outline-list:
+list:
   item-spacing: 4
 
 admonition:
