@@ -20,7 +20,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Check out code
       timeout-minutes: 1
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     # Make SvgBadges 
     - name: Make SvgBadges 
       timeout-minutes: 1
