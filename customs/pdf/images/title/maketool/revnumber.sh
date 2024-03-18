@@ -3,7 +3,7 @@ set -eu
 
 TOOL_DIR=$(cd $(dirname $0); pwd)
 TITLE_DIR=${TOOL_DIR%%\/maketool}
-INDEX_DIR=${TOOL_DIR%%\/pdf\/images\/title\/maketool}
+INDEX_DIR=${TOOL_DIR%%\/customs\/pdf\/images\/title\/maketool}
 
 echo ${TOOL_DIR}
 echo ${TITLE_DIR}

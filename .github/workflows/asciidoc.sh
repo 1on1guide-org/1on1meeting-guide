@@ -57,7 +57,8 @@ PDF_PARTS_PATH=${CURRENT_PATH}/customs/pdf
 # parameters & Attributes
 PDF_PARAMETERS=" -D ${PDF_OUTPUT_PATH}/ -a imagesdir=${CURRENT_PATH}/ -a imagesoutdir=${PDF_OUTPUT_PATH}/images/ -a chapter-label= -r ${PDF_PARTS_PATH}/diagram-configs/config.rb -a pdf-themesdir=${PDF_PARTS_PATH}/themes -a pdf-fontsdir=${PDF_PARTS_PATH}/fonts "
 # convert
-asciidoctor-pdf ${COMMON_PARAMETERS} ${PDF_PARAMETERS}  -a convert-for-all -a pdf-theme=${PDF_PARTS_PATH}/themes/user-analog-theme.yml 'index*.adoc'
+asciidoctor-pdf ${COMMON_PARAMETERS} ${PDF_PARAMETERS}  -a convert-for-reviewers -a pdf-theme=${PDF_PARTS_PATH}/themes/user-reviewers-theme.yml 'index.adoc'
+asciidoctor-pdf ${COMMON_PARAMETERS} ${PDF_PARAMETERS}  -a convert-for-readers -a pdf-theme=${PDF_PARTS_PATH}/themes/user-readers-theme.yml 'index.adoc'
 
 ########################
 ##### Output HTML  #####
