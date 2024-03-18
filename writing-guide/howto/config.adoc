@@ -1,11 +1,11 @@
 = 本ドキュメントの設定について
-ifndef::includedir[]
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-endif::includedir[]
+ifeval::[{env} == vscode]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
+endif::[]
 
 == 参照ディレクトリの扱い
 
