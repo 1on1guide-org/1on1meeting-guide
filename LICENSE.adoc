@@ -43,7 +43,7 @@ link:https://twitter.com/eroccowaruico[@eroccowaruico]
 
 
 === 再利用
-再利用は元のコンテンツと同じ{CC-BY-SA-4_0-url-link-en}で全ての著作者を記載の上で公開する必要があります。
+再利用は元のコンテンツと同じ{link-CC-BY-SA-4_0-en}で全ての著作者を記載の上で公開する必要があります。
 
 
 === ロゴ、商標、サービスマーク、ワードマーク

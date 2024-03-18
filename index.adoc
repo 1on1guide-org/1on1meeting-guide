@@ -40,17 +40,12 @@ endif::[]
 [[PURPOSE-GUIDELINES]]
 include::contents/1on1ガイドの目的と背景.adoc[]
 
-
 // 1on1の目的
 [[PURPOSE-1ON1]]
 include::contents/1on1の目的.adoc[]
 
-
-<<<
-
 // 1on1の前提条件
 include::contents/1on1の前提条件.adoc[]
-
 
 <<<
 
@@ -84,4 +79,3 @@ include::contents/用語集.adoc[]
 
 //ライセンス
 include::LICENSE.adoc[]
-

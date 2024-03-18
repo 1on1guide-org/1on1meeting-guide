@@ -72,7 +72,7 @@ def create_id_to_pattern_name_map(items):
     id_to_pattern_name = {}
     for item in items:
         item_properties = get_item_properties(item)
-        id_to_pattern_name[item["id"]] = item_properties["パターン名"]
+        id_to_pattern_name[item["id"]] = '* <<_' + item_properties["パターン名"] + '>>'
     return id_to_pattern_name
 
 
@@ -105,8 +105,8 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                 # '関連パターン' セクションの処理
                 if property_name == "関連パターン":
                     # IDからパターン名を取得し、リストをカンマ区切りの文字列に変換
-                    content = ['<<_' + id_to_pattern_name.get(related_id, "Unknown pattern") + '>>' for related_id in content]
-                    content = ','.join(content) if content else None
+                    content = [id_to_pattern_name.get(related_id, "Unknown pattern") for related_id in content]
+                    content = '\n'.join(content) if content else None
                 else:
                     # その他のリスト型プロパティの処理
                     content = ', '.join(content)
