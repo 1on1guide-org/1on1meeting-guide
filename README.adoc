@@ -1,5 +1,9 @@
 = 1on1ガイド　リポジトリ
-
+:includedir: ./
+include::{includedir}contents/defines/define-all-include.adoc[]
+ifeval::[{env} == vscode]
+:imagesdir: ./
+endif::[]
 
 
 [[license]]

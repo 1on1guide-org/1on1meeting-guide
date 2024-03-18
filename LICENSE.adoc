@@ -1,18 +1,20 @@
-ifndef::1on1guide-org[]
-include::define-literal.adoc[]
+:includedir: ./
+include::{includedir}contents/defines/define-all-include.adoc[]
+ifeval::[{env} == vscode]
+:imagesdir: ./
 endif::[]
 
 ifndef::1on1guide-org[]
 :1on1guide-org: 1on1guide.org
-:link-1on1guide-org-url: https://github.com/1on1guide-org/
-:link-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
-:link-CC-BY-SA-4_0-url: http://creativecommons.org/licenses/by-sa/4.0/
 :CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
 :CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
-:1on1guide-org-url-link: link:{link-1on1guide-org-url}[{1on1guide-org}]
-:github-repository-link: link:{github-repository}[Github repository]
-:CC-BY-SA-4_0-url-link: link:{CC-BY-SA-4_0-url}[{CC-BY-SA-4_0}]
-:CC-BY-SA-4_0-url-link-en: link:{CC-BY-SA-4_0-url}[{CC-BY-SA-4_0_EN}]
+:url-1on1guide-org: https://github.com/1on1guide-org/
+:url-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
+:url-CC-BY-SA-4_0: http://creativecommons.org/licenses/by-sa/4.0/
+:link-1on1guide-org: link:{url-1on1guide-org}[{1on1guide-org}]
+:link-github-repository: link:{url-github-repository}[Github repository]
+:link-CC-BY-SA-4_0: link:{url-CC-BY-SA-4_0}[{CC-BY-SA-4_0}]
+:link-CC-BY-SA-4_0-en: link:{url-CC-BY-SA-4_0}[{CC-BY-SA-4_0_EN}]
 :CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
 endif::[]
 
@@ -20,13 +22,13 @@ endif::[]
 
 {CC-BY-SA-4_0-png}
 
-本書『1on1 ガイド』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、その後の複数の著者の貢献により作成されています。本書は {CC-BY-SA-4_0-url-link} の下に提供されています。
+本書『1on1 ガイド』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、その後の複数の著者の貢献により作成されています。本書は {link-CC-BY-SA-4_0} の下に提供されています。
 
-“1on1 ガイド” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki] and link:https://twitter.com/eroccowaruico[@eroccowaruico]  is licensed under a {CC-BY-SA-4_0-url-link-en}.
+“1on1 ガイド” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki] and link:https://twitter.com/eroccowaruico[@eroccowaruico]  is licensed under a {link-CC-BY-SA-4_0-en}.
 
 
 === 貢献
-このコンテンツに貢献したい場合はあなたの貢献したドキュメントが{CC-BY-SA-4_0-url-link}の下でを利用可能になることに同意することを意味します。
+このコンテンツに貢献したい場合はあなたの貢献したドキュメントが{link-CC-BY-SA-4_0}の下でを利用可能になることに同意することを意味します。
 その他ライセンスを使用して新しいコンテンツを作成することはできません。
 著者が他の誰かにそれを譲渡しない限り寄稿された著作権は著者に残ります。
 
@@ -45,6 +47,6 @@ link:https://twitter.com/eroccowaruico[@eroccowaruico]
 
 
 === ロゴ、商標、サービスマーク、ワードマーク
-{1on1guide-org-url-link}の商標、ロゴ、サービスマークおよびWebサイトやPDFのルックアンドフィールの権利はクリエイティブコモンズライセンスの下ではライセンスされていません。 +
+{link-1on1guide-org}の商標、ロゴ、サービスマークおよびWebサイトやPDFのルックアンドフィールの権利はクリエイティブコモンズライセンスの下ではライセンスされていません。 +
 また著作権のある著作物（ロゴやグラフィックなど）デザイン）、それらはそれらの条件の下でライセンスされている作品に含まれていません。 +
-文書のテキストを使用しこれらの権利のいずれかを使用したい場合、またはこのコレクションのライセンス条件を遵守することに関して他に質問がある場合は{1on1guide-org-url-link}にお問い合わせください。
+文書のテキストを使用しこれらの権利のいずれかを使用したい場合、またはこのコレクションのライセンス条件を遵守することに関して他に質問がある場合は{link-1on1guide-org}にお問い合わせください。
