@@ -1,5 +1,5 @@
 = 1on1ガイド
-:revnumber: 0.0.1
+:revnumber: β0.1.0
 :revdate: 2024-03-17
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
