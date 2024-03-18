@@ -1,4 +1,0 @@
-extends: common
-
-title_page:
-  logo-image: image:../images/title/title-user-sample.svg[align=center]
