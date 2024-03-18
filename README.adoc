@@ -5,6 +5,58 @@ ifeval::[{env} == vscode]
 :imagesdir: ./
 endif::[]
 
+このリポジトリは『1on1 meeting ガイド』の執筆を管理するための場所です。
+
+== 『1on1 meeting ガイド』の出力先
+現在『1on1 meeting ガイド』はGitHub actionsのArtifactsとして出力されます。
+
+== 管理者
+本リポジトリは以下のメンテナーにて管理されています。
+コントリビューターについては初回の正式版以降に検討される予定です。
+
+メンテナー::
+link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] 
+
+コントリビューター::
+現在はメンテナーが直接レビュー依頼をした方に貢献いただいています。
+
+== 生成物
+
+* PDF
+** レビュワー向けクローズドβ版
+** 読者向けβ版
+* HTML
+** 編集者むけ出力
+
+== 生成方法
+
+== ファイル構成
+
+[,tree]
+----
+.
+├─ .github                  (Github Actions向け等のファイル)
+├─ contents                 (『1on1 meeting ガイド』の構成ファイル)
+│ ├─ defines                (『1on1 meeting ガイド』の設定ファイル)
+│ ├─ images                 (『1on1 meeting ガイド』で利用する共通的な画像ファイル)
+│ ├─ patterns               (『1on1 meeting ガイド』中のパターンファイル Notionから自動で書き出す場合あり)
+│ ├─ category.adoc          (『1on1 meeting ガイド』の構成ファイルの一部)
+│ └─ glossaly.adoc          (『1on1 meeting ガイド』の構成ファイルの一部)
+├─ customs                  (出力などの制御に必要な構成ファイル)
+├─ public                   (コンバート時の出力先ディレクトリ)
+├─ writing-guide            (記載ガイドなどの構成要素)
+├─ index-writing-guide.adoc (記載ガイドの出力用インデックスファイル)
+├─ index.adoc               (『1on1 meeting ガイド』出力用インデックスファイル)
+├─ LICENSE.adoc             (『1on1 meeting ガイド』のライセンスを記載したファイル)
+└─ README.adoc              (本README)
+----
+
+== 更新に推奨する環境
+Visual Studio CodeとAsciiDoc extensionを利用します。
+
+* link:https://code.visualstudio.com[Visual Studio Code]
+* link:https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[AsciiDoc extension]
+
 
 [[license]]
 == ライセンスについて
