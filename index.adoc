@@ -48,6 +48,7 @@ include::contents/1on1の前提条件.adoc[]
 <<<
 
 // 1on1の価値基準
+[[価値基準]]
 include::contents/1on1の価値基準.adoc[]
 
 <<<
@@ -58,11 +59,11 @@ include::contents/価値基準を満たすための行動.adoc[]
 <<<
 
 // 1on1のパターン
-[[1ON1-PATTERN]]
+[[PATTERN-OF-1ON1]]
 include::contents/1on1のパターン.adoc[]
 
 // カテゴリー
-[[1ON1-PATTERN-CATEGORY]]
+[[PATTERN-CATEGORY]]
 include::contents/カテゴリー.adoc[leveloffset=+1]
 
 <<<
