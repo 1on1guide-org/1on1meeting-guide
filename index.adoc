@@ -58,22 +58,28 @@ include::contents/価値基準を満たすための行動.adoc[]
 <<<
 
 // 1on1のパターン
+[[1ON1-PATTERN]]
 include::contents/1on1のパターン.adoc[]
 
 // カテゴリー
+[[1ON1-PATTERN-CATEGORY]]
 include::contents/カテゴリー.adoc[leveloffset=+1]
 
 <<<
 
 // パターン
+[[ALL-PATTERNS]]
 include::contents/patterns/全てのパターン.adoc[leveloffset=+1]
 
 <<<
 
 // 用語集
+[[GLOSSARY]]
 include::contents/用語集.adoc[]
 
 <<<
 
 //ライセンス
+[[LICENSE]]
 include::LICENSE.adoc[]
+
