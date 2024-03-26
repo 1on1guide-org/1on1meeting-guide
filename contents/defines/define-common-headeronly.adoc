@@ -21,7 +21,7 @@
 // ==========
 // Document metadata attributes
 // ==========
-:author: Analog inc.
+:author: 1on1guide.org
 :revremark:
 // ==========
 // Section title and table of contents attributes
