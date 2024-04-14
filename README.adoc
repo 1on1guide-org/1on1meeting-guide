@@ -5,10 +5,10 @@ ifeval::[{env} == vscode]
 :imagesdir: ./
 endif::[]
 
-このリポジトリは『1on1 meeting ガイド』の執筆を管理するための場所です。
+このリポジトリは『1on1ミーティングガイド』の執筆を管理するための場所です。
 
-== 『1on1 meeting ガイド』の出力先
-現在『1on1 meeting ガイド』はGitHub actionsのArtifactsとして出力されます。
+== 『1on1ミーティングガイド』の出力先
+現在『1on1ミーティングガイド』はGitHub actionsのArtifactsとして出力されます。
 
 == 管理者
 本リポジトリは以下のメンテナーにて管理されています。
@@ -36,16 +36,16 @@ link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛�
 ----
 .
 ├─ .github                  (Github Actions向け等のファイル)
-├─ contents                 (『1on1 meeting ガイド』の構成ファイル)
-│ ├─ defines                (『1on1 meeting ガイド』の設定ファイル)
-│ ├─ images                 (『1on1 meeting ガイド』で利用する共通的な画像ファイル)
-│ └─ patterns               (『1on1 meeting ガイド』中のパターンファイル Notionから自動で書き出す場合あり)
+├─ contents                 (『1on1ミーティングガイド』の構成ファイル)
+│ ├─ defines                (『1on1ミーティングガイド』の設定ファイル)
+│ ├─ images                 (『1on1ミーティングガイド』で利用する共通的な画像ファイル)
+│ └─ patterns               (『1on1ミーティングガイド』中のパターンファイル Notionから自動で書き出す場合あり)
 ├─ customs                  (出力などの制御に必要な構成ファイル)
 ├─ public                   (コンバート時の出力先ディレクトリ)
 ├─ writing-guide            (記載ガイドなどの構成要素)
 ├─ index-writing-guide.adoc (記載ガイドの出力用インデックスファイル)
-├─ index.adoc               (『1on1 meeting ガイド』出力用インデックスファイル)
-├─ LICENSE.adoc             (『1on1 meeting ガイド』のライセンスを記載したファイル)
+├─ index.adoc               (『1on1ミーティングガイド』出力用インデックスファイル)
+├─ LICENSE.adoc             (『1on1ミーティングガイド』のライセンスを記載したファイル)
 └─ README.adoc              (本README)
 ----
 
