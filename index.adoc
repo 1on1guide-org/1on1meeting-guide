@@ -1,4 +1,4 @@
-= 1on1ガイド
+= 1on1ミーティングガイド
 :revnumber: β0.1.0
 :revdate: 2024-03-17
 :includedir: ./
@@ -34,9 +34,9 @@ ifdef::convert-for-reviewers[]
 include::requests-review.adoc[]
 endif::[]
 
-// 1on1ガイドの目的と背景
+// 1on1ミーティングガイドの目的と背景
 [[PURPOSE-GUIDELINES]]
-include::contents/1on1ガイドの目的と背景.adoc[]
+include::contents/1on1ミーティングガイドの目的と背景.adoc[]
 
 // 1on1の目的
 [[PURPOSE-1ON1]]
