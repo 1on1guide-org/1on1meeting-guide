@@ -119,6 +119,7 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                 texts = content.splitlines()
                 content = ""
                 for linetext in texts:
+                    print(f"linetext: {linetext}")
                     t = re.subn("^・", "* ", linetext)
                     linetext = t[0]
                     sub_count = t[1]
@@ -129,9 +130,9 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                         content = linetext
                     elif sub_count != 0:
                         content += "\n" + linetext
-                    elif linetext.endsWith('::') == True:
+                    elif linetext.endsWith('::'):
                         content += "\n" + linetext
-                    elif content.endsWith('::') == True:
+                    elif content.endsWith('::'):
                         content += "\n" + linetext
                     else:
                         content += " +" + "\n" + linetext
