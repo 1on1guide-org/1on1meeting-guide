@@ -130,9 +130,9 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
                         content = linetext
                     elif sub_count != 0:
                         content += "\n" + linetext
-                    elif str(linetext).endsWith('::'):
+                    elif linetext.endswith('::'):
                         content += "\n" + linetext
-                    elif content.endsWith('::'):
+                    elif content.endswith('::'):
                         content += "\n" + linetext
                     else:
                         content += " +" + "\n" + linetext
