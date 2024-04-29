@@ -56,7 +56,7 @@ jobs:
         shellcommand: "./.github/workflows/asciidoc.sh"
     # Use the output from the documents step
     - name: Save AsciiDoc step
-      if: !inputs.upload_pages
+      if: inputs.upload_pages == false
       timeout-minutes: 1
       uses: actions/upload-artifact@v4
       with:
@@ -65,7 +65,7 @@ jobs:
         retention-days: 1
     # Uploading artifact that can be deployed to GitHub Pages.
     - name: Uploading GitHub Pages
-      if: inputs.upload_pages
+      if: inputs.upload_pages == true
       uses: actions/upload-pages-artifact@v3
       with:
         name: github-pages
@@ -75,7 +75,7 @@ jobs:
 
   # Deploy job
   deploy:
-    if: inputs.deploy_pages
+    if: inputs.deploy_pages == true
     # Add a dependency to the build job
     needs: asciidoctor_job
 
