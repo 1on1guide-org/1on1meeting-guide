@@ -71,6 +71,6 @@ HTML_PARTS_PATH=${CURRENT_PATH}/customs/html
 # parameters & Attributes
 HTML_PARAMETERS=" -D ${HTML_OUTPUT_PATH}/ -a imagesdir=images/ -a imagesoutdir=${HTML_OUTPUT_PATH}/images/ -a docinfodir=${HTML_PARTS_PATH}/docinfo -a nofooter "
 # convert
-asciidoctor ${COMMON_PARAMETERS} ${HTML_PARAMETERS} -a convert-for-all 'index*.adoc'
+asciidoctor ${COMMON_PARAMETERS} ${HTML_PARAMETERS} -a convert-for-readers 'index*.adoc'
 # サイト表示用の階層のためにコピー
 cp -rf ./public/html/index.html ./public/index.html
