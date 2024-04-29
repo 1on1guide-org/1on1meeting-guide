@@ -8,6 +8,15 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      upload_pages:
+        description: 'Upload artifact to GitHub Pages.'
+        required: false
+        type: boolean
+      deploy_pages:
+        description: 'Deploy to GitHub Pages.'
+        required: false
+        type: boolean
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -47,9 +56,42 @@ jobs:
         shellcommand: "./.github/workflows/asciidoc.sh"
     # Use the output from the documents step
     - name: Save AsciiDoc step
+      if: !inputs.upload_pages
       timeout-minutes: 1
       uses: actions/upload-artifact@v4
       with:
         name: Output-document
         path: ./public/
         retention-days: 1
+    # Uploading artifact that can be deployed to GitHub Pages.
+    - name: Uploading GitHub Pages
+      if: inputs.upload_pages
+      uses: actions/upload-pages-artifact
+      with:
+        name: github-pages
+        path: ./public/
+        retention-days: 1
+
+
+  # Deploy job
+  deploy:
+    if: inputs.deploy_pages
+    # Add a dependency to the build job
+    needs: asciidoctor_job
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
