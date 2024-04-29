@@ -10,11 +10,17 @@ endif::[]
 
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5[]
+// セクションNo.キャンセル
+// PDFへのリンクはセクションNo.を出さない (最後に必ず復帰させること)
+:sectnums!:
+== 印刷に便利なPDF版が用意されています。
 [NOTE]
 .[.navy.big]#*PDF版について*#
 ====
 PDF版は link:./pdf/1on1%20meeting%20guide.pdf[こちら]。
 ====
+// PDFへのリンクはセクションNo.を出さないので最後に必ず戻す。
+:sectnums:
 endif::backend-html5[]
 
 // ライターモードの注意
