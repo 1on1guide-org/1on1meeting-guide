@@ -8,6 +8,15 @@ ifeval::[{env} == vscode]
 endif::[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
+// HTMLモードでのPDFへのリンク
+ifdef::backend-html5[]
+[NOTE]
+.[.navy.big]#*PDF版について*#
+====
+PDF版は link:./pdf/1on1%20meeting%20guide.pdf[こちら]。
+====
+endif::backend-html5[]
+
 // ライターモードの注意
 ifdef::convert-for-writers[]
 [IMPORTANT]
