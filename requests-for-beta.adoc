@@ -4,6 +4,9 @@ ifeval::[{env} == vscode]
 :imagesdir: ./
 endif::[]
 
+// 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える
+:name-this-guide: {name-1on1meeting-guide-raw}
+
 [WARNING]
 .[.orange.big]#*{name-this-guide}はβ版として公開しております*#
 ====

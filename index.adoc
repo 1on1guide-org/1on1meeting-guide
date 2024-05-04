@@ -8,6 +8,9 @@ ifeval::[{env} == vscode]
 endif::[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
+// 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える
+:name-this-guide: {name-1on1meeting-guide-raw}
+
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5,convert-for-all[]
 [NOTE]
@@ -23,6 +26,10 @@ include::requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
 include::contents/1on1ミーティングガイドの目的と背景.adoc[]
+
+
+//上記で本書に置き換えたので、この後は全て本書となるように設定 
+:name-this-guide: {name-this-guide-raw}
 
 // 1on1の目的
 include::contents/1on1の目的.adoc[]

@@ -15,5 +15,5 @@
 :name-1on1meeting-guide-raw: 1on1ミーティングガイド
 :name-this-guide-raw: 本書
 // 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える
-:name-this-guide: {name-1on1meeting-guide-raw}
+:name-this-guide: {name-this-guide-raw}
 
