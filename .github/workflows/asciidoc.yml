@@ -1,5 +1,5 @@
 # This is a AsciiDoctor workflow to help you get started with Actions
-name: Make Artifact
+name: Make Artifact And Deploy
 
 # Controls when the action will run. Triggers the workflow on push
 
@@ -80,7 +80,7 @@ jobs:
 
   # Deploy job
   deploy:
-    if: inputs.deploy_pages == true
+    if: inputs.deploy_pages == true && inputs.upload_pages == true
     # Add a dependency to the build job
     needs: asciidoctor_job
 
