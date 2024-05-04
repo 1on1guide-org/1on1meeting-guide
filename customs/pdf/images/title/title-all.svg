@@ -1,15 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123">
 	<g >
-		<text x="50%" y="360" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="36" fill="#606060">
-	1on1ミーティング
+		<text x="50%" y="340" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="36" fill="#606060">
+	1on1ミーティングガイド
 		</text>
-		<text x="50%" y="420" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="36" fill="#606060">
-	ガイド
-		</text>
-		<text x="50%" y="490" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="24" fill="#606060">
+		<text x="50%" y="410" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="24" fill="#606060">
 	(〇〇編)
 		</text>
-		<text x="50%" y="550" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#606060">
+		<text x="50%" y="480" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#606060">
 	{%revnumber%}
 		</text>
 	</g>
