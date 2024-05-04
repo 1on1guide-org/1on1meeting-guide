@@ -5,13 +5,9 @@ ifeval::[{env} == vscode]
 endif::[]
 // Allを設定したらライター向けの情報も全て出す
 ifdef::convert-for-all[]
-:convert-for-writers:
-endif::[]
-// ライター向けの情報にはレビュワー向けの情報も出す
-ifdef::convert-for-writers[]
-:convert-for-reviewers:
+:convert-for-readers:
 endif::[]
 // レビュワー向けの情報には読者向けの情報も含まれる
-ifdef::convert-for-reviewers[]
-:convert-for-readers:
+ifdef::convert-for-readers[]
+:convert-for-writers:
 endif::[]

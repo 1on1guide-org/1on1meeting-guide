@@ -9,45 +9,17 @@ endif::[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // HTMLモードでのPDFへのリンク
-ifdef::backend-html5[]
-// セクションNo.キャンセル
-// PDFへのリンクはセクションNo.を出さない (最後に必ず復帰させること)
-:sectnums!:
-== 印刷に便利なPDF版が用意されています。
+ifdef::backend-html5,convert-for-all[]
 [NOTE]
-.[.navy.big]#*PDF版について*#
+.[.navy.big]#*本書は印刷に便利なPDF版が用意されています*#
 ====
-PDF版は link:./pdf/1on1%20meeting%20guide.pdf[こちら]。
+*PDF版は link:./pdf/1on1meeting-guide.pdf[こちら]から閲覧することができます。* +
+ダウンロードして利用される場合は、右クリックからダウンロードお願いします。
 ====
-// PDFへのリンクはセクションNo.を出さないので最後に必ず戻す。
-:sectnums:
-endif::backend-html5[]
+endif::backend-html5,convert-for-all[]
 
-// ライターモードの注意
-ifdef::convert-for-writers[]
-[IMPORTANT]
-.[.red.big]#*編集者向けのコンテンツが出力されています*#
-====
-本項目が出ている場合はレビュワー向けの出力が有効になっています。
-正式版では利用できないため注意してください。
-====
-endif::convert-for-writers[]
-
-// レビュワーモードの注意
-ifdef::convert-for-reviewers[]
-[IMPORTANT]
-.[.red.big]#*レビュワー向けのコンテンツが出力されています*#
-====
-本項目が出ている場合はレビュワー向けの出力が有効になっています。
-正式版では利用できないため注意してください。
-====
-endif::convert-for-reviewers[]
-
-// レビューリクエスト
-ifdef::convert-for-reviewers[]
-// セクションNo.のキャンセルは内部で実施
-include::requests-review.adoc[]
-endif::[]
+// β版の注意点
+include::requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
 [[PURPOSE-GUIDELINES]]

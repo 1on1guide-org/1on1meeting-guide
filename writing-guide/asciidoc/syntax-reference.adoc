@@ -62,7 +62,7 @@ PDFでは出力されない内容
 
 \ifndef::convert-for-readers[]
 自動化した出力では利用しない内容
-(「convert-for-writers」は本サンプルで定義している項目)
+(「convert-for-readers」は本サンプルで定義している項目)
 \endif::[]
 
 \ifdef::convert-for-writers[]

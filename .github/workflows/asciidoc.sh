@@ -57,8 +57,7 @@ PDF_PARTS_PATH=${CURRENT_PATH}/customs/pdf
 # parameters & Attributes
 PDF_PARAMETERS=" -D ${PDF_OUTPUT_PATH}/ -a imagesdir=${CURRENT_PATH}/ -a imagesoutdir=${PDF_OUTPUT_PATH}/images/ -a chapter-label= -r ${PDF_PARTS_PATH}/diagram-configs/config.rb -a pdf-themesdir=${PDF_PARTS_PATH}/themes -a pdf-fontsdir=${PDF_PARTS_PATH}/fonts "
 # convert
-asciidoctor-pdf ${COMMON_PARAMETERS} ${PDF_PARAMETERS}  -a convert-for-reviewers -a pdf-theme=${PDF_PARTS_PATH}/themes/user-reviewers-theme.yml -o '1on1 meeting guide for reviewers.pdf' 'index.adoc'
-asciidoctor-pdf ${COMMON_PARAMETERS} ${PDF_PARAMETERS}  -a convert-for-readers -a pdf-theme=${PDF_PARTS_PATH}/themes/user-readers-theme.yml -o '1on1 meeting guide.pdf' 'index.adoc'
+asciidoctor-pdf ${COMMON_PARAMETERS} ${PDF_PARAMETERS}  -a convert-for-readers -a pdf-theme=${PDF_PARTS_PATH}/themes/user-readers-theme.yml -o '1on1meeting-guide.pdf' 'index.adoc'
 
 ########################
 ##### Output HTML  #####
@@ -72,5 +71,3 @@ HTML_PARTS_PATH=${CURRENT_PATH}/customs/html
 HTML_PARAMETERS=" -D ${HTML_OUTPUT_PATH}/ -a imagesdir=images/ -a imagesoutdir=${HTML_OUTPUT_PATH}/images/ -a docinfodir=${HTML_PARTS_PATH}/docinfo -a nofooter "
 # convert
 asciidoctor ${COMMON_PARAMETERS} ${HTML_PARAMETERS} -a convert-for-readers 'index*.adoc'
-# サイト表示用の階層のためにコピー
-cp -rf ./public/html/index.html ./public/index.html
