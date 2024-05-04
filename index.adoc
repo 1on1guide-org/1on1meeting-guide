@@ -9,19 +9,14 @@ endif::[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // HTMLモードでのPDFへのリンク
-ifdef::backend-html5[]
-// セクションNo.キャンセル
-// PDFへのリンクはセクションNo.を出さない (最後に必ず復帰させること)
-:sectnums!:
-== 印刷に便利なPDF版が用意されています。
+ifdef::backend-html5,convert-for-all[]
 [NOTE]
-.[.navy.big]#*PDF版について*#
+.[.navy.big]#*本書は印刷に便利なPDF版が用意されています*#
 ====
-PDF版は link:./pdf/1on1meeting-guide.pdf[こちら]。
+*PDF版は link:./pdf/1on1meeting-guide.pdf[こちら]から閲覧することができます。* +
+ダウンロードして利用される場合は、右クリックからダウンロードお願いします。
 ====
-// PDFへのリンクはセクションNo.を出さないので最後に必ず戻す。
-:sectnums:
-endif::backend-html5[]
+endif::backend-html5,convert-for-all[]
 
 // β版の注意点
 include::requests-for-beta.adoc[]
