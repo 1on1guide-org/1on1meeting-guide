@@ -47,7 +47,7 @@ include::contents/価値基準を満たすための行動.adoc[]
 
 // 本書の構成
 [[PATTERN-OF-1ON1]]
-include::contents/1on1のパターン.adoc[]
+include::contents/本書の構成.adoc[]
 
 <<<
 // カテゴリー
