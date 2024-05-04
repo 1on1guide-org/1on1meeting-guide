@@ -17,37 +17,14 @@ ifdef::backend-html5[]
 [NOTE]
 .[.navy.big]#*PDF版について*#
 ====
-PDF版は link:./pdf/1on1%20meeting%20guide.pdf[こちら]。
+PDF版は link:./pdf/1on1meeting-guide.pdf[こちら]。
 ====
 // PDFへのリンクはセクションNo.を出さないので最後に必ず戻す。
 :sectnums:
 endif::backend-html5[]
 
-// ライターモードの注意
-ifdef::convert-for-writers[]
-[IMPORTANT]
-.[.red.big]#*編集者向けのコンテンツが出力されています*#
-====
-本項目が出ている場合はレビュワー向けの出力が有効になっています。
-正式版では利用できないため注意してください。
-====
-endif::convert-for-writers[]
-
-// レビュワーモードの注意
-ifdef::convert-for-reviewers[]
-[IMPORTANT]
-.[.red.big]#*レビュワー向けのコンテンツが出力されています*#
-====
-本項目が出ている場合はレビュワー向けの出力が有効になっています。
-正式版では利用できないため注意してください。
-====
-endif::convert-for-reviewers[]
-
-// レビューリクエスト
-ifdef::convert-for-reviewers[]
-// セクションNo.のキャンセルは内部で実施
-include::requests-review.adoc[]
-endif::[]
+// β版の注意点
+include::requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
 [[PURPOSE-GUIDELINES]]
