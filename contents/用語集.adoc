@@ -1,4 +1,3 @@
-[glossary]
 == 用語集
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
@@ -8,7 +7,6 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::[]
 
-[glossary]
 [#glossary_feedbackloop, reftext=フィードバックループ]
 フィードバックループ:: 
 反応が返るところまでが本来のフィードバックだが、転じて、その反応を受けて、再度返すところを含めて「フィードバック」としていることもある。本書では一連の流れ全体を「フィードバックループ」として記載している。
