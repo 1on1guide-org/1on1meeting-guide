@@ -55,6 +55,11 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 * link:https://code.visualstudio.com[Visual Studio Code]
 * link:https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[AsciiDoc extension]
 
+== Webサイトへのへのデプロイ
+. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[Github Actionsの「Make Artifact And Deploy」] を開きます
+. 「Run workflow」で 「main」ブランチを指定します
+. 「Upload artifact to GitHub Pages.」にチェックを入れて、「Run workflow」ボタンを押下するとドライランを行うことができ、実行したActionのArtifactとして結果をダウンロード可能です。
+. ドライランの結果に問題がなければ「Upload artifact to GitHub Pages.」と「Deploy to GitHub Pages.」の両方にチェックを入れて「Run workflow」ボタンを押下し実行してください。
 
 [[license]]
 == ライセンスについて
