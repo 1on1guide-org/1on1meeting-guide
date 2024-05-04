@@ -5,7 +5,7 @@
 :url-1on1guide-org: https://github.com/1on1guide-org/
 :url-1on1meeting-guide-html: https://1on1guide.org
 :url-writing-guide-html: https://1on1guide.org/index-writing-guide.html
-:url-asciidoc-syntax-reference-html: {url-asciidoc-writing-guide-html}#ASCIIDOC-SYNTAX-REFERENCE
+:url-asciidoc-syntax-reference-html: {url-writing-guide-html}#ASCIIDOC-SYNTAX-REFERENCE
 :url-1on1meeting-guide-pdf: https://1on1guide.org/pdf/1on1meeting-guide.pdf
 :url-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
 :url-CC-BY-SA-4_0: http://creativecommons.org/licenses/by-sa/4.0/

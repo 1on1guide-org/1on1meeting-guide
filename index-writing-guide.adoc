@@ -22,4 +22,4 @@ include::./writing-guide/asciidoc/about.adoc[leveloffset=+1]
 include::./writing-guide/asciidoc/syntax-reference.adoc[leveloffset=+1]
 
 <<<
-include::./writing-guide/howto/config.adoc[leveloffset=+1]
+include::./writing-guide/howto/config.adoc[]
