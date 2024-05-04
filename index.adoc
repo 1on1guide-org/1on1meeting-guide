@@ -77,6 +77,7 @@ include::contents/価値基準を満たすための行動.adoc[]
 [[PATTERN-OF-1ON1]]
 include::contents/1on1のパターン.adoc[]
 
+<<<
 // カテゴリー
 [[PATTERN-CATEGORY]]
 include::contents/カテゴリー.adoc[leveloffset=+1]
