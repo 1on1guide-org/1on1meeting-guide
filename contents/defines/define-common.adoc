@@ -2,7 +2,7 @@
 // ==========
 // Compliance attributes
 // ==========
-// :attribute-missing:
+:attribute-missing: warn
 // ==========
 // Localization and numbering attributes
 // ==========
@@ -36,7 +36,7 @@
 // セクションにアンカーを作成
 :sectanchors:
 // セクションにリンクを作成
-:sectlinks:
+// :sectlinks:
 // 章番号を付けるか。属性を定義しておくだけで章番号が付けられる。
 :sectnums:
 // ==========
