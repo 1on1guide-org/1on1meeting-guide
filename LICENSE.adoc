@@ -29,20 +29,21 @@ endif::[]
 “1on1 meeting guide” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki], link:https://twitter.com/eroccowaruico[@eroccowaruico] and link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[other contributors] is licensed under a {link-CC-BY-SA-4_0-en}.
 
 === 再利用
-再利用は元のコンテンツと同じ{link-CC-BY-SA-4_0-en}で全ての著作者を記載の上で公開する必要があります。
+再利用は元のコンテンツと同じ{link-CC-BY-SA-4_0}で全ての著作者を記載の上で公開する必要があります。
 
 === 貢献
 このコンテンツに貢献したい場合はあなたの貢献したドキュメントが{link-CC-BY-SA-4_0}の下で利用可能になることに同意することを意味します。 +
 その他ライセンスを使用して新しいコンテンツを作成することはできません。
-著者が他の誰かにそれを譲渡しない限り寄稿された著作権は著者に残ります。
+著者が他の誰かにそれを譲渡しない限り寄稿された著作権は著者に残ります。 +
+詳しくは{link-1on1guide-org}にお問い合わせください。
 
 [#1ON1GUIDE-ORIGINAL-AUTHOR]
 === 初版の著作者
 
-link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実] + 
-笹尾 納勇仁 + 
-link:https://twitter.com/chachaki[@chachaki] + 
-link:https://twitter.com/eroccowaruico[@eroccowaruico] 
+* link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実] 
+* 笹尾 納勇仁 
+* link:https://twitter.com/chachaki[@chachaki] 
+* link:https://twitter.com/eroccowaruico[@eroccowaruico] 
 
 === ロゴ、商標、サービスマーク、ワードマーク
 {link-1on1guide-org}の商標、ロゴ、サービスマークおよびWebサイトやPDFのルックアンドフィールの権利はクリエイティブコモンズライセンスの下ではライセンスされていません。 +
