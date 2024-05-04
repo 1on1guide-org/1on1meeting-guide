@@ -1,4 +1,4 @@
-= 1on1ミーティングガイド: (1on1ガイド)
+= 1on1ミーティングガイド
 :revnumber: β0.1.0
 :revdate: 2024-03-17
 :includedir: ./
