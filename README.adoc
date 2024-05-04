@@ -1,4 +1,4 @@
-= 1on1ガイドミーティング　リポジトリ
+= 1on1ミーティングガイド　リポジトリ
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifeval::[{env} == vscode]

@@ -1,4 +1,4 @@
-== 1on1ガイドの目的と背景
+== 1on1ミーティングガイドの目的と背景
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifeval::[{env} == vscode]
