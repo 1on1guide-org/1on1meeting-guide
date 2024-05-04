@@ -936,17 +936,6 @@ document.write("Hello world!!");
 ++++
 ----
 
-=== Blockquotes(引用)
-
-.〇〇について
-[quote, Albert Einstein,proverb,]
-----
-ミスをしたことのない人は、 +
-新しいことに挑戦したことがありません。
-吹き出し機能が使えます。<!--1-->
-----
-<1> 吹き出しの内容をここで定義します。
-
 [.accordion.source,asciidoc,linenums]
 ----
 .〇〇について
