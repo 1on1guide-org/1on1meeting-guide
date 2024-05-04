@@ -1,10 +1,11 @@
 :includedir: ../../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
+
 :link-os-Windows-Subsystem-for-Linux: https://docs.microsoft.com/ja-jp/windows/wsl/[「Windows Subsystem for Linux（WSL）」]
 
 html生成時に必要なシェルスクリプトを配置するディレクトリです。

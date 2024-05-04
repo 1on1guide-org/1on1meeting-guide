@@ -1,10 +1,10 @@
 :includedir: ../../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
 このディレクトリはHTML出力時にヘッダーやフッターに必要な情報を挿入するdocinfoファイルを配置しています。
 

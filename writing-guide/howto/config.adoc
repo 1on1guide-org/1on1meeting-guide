@@ -1,18 +1,20 @@
-= 本ドキュメントの設定について
+
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
-== 参照ディレクトリの扱い
+== 本ドキュメントの設定について
+
+=== 参照ディレクトリの扱い
 
 本ドキュメントはできる限り VS Code 上でファイルを編集している時のリアルタイムプレビューと、Github Actions を利用したコンバートの両立を行えるようにしています。
 その中でいくつかの対応が必要になったので記載します。
 
-=== Asciidoc ファイルのファイル名の扱い
+==== Asciidoc ファイルのファイル名の扱い
 
 基本的に ``.adoc`` 拡張子のみを対応しています。
 またrootディレクトリ直下の ``index-`` プリフィックスのみコンバート処理を実施します。
@@ -22,23 +24,24 @@ endif::[]
 
 [source,asciidoc]
 ----
-== タイトル
-:includedir: ../../
+:includedir: ../../ <!--1-->
 \include::{includedir}contents/defines/define-all-include.adoc[]
-\ifeval::[{env} == vscode]
+\ifdef::env-vscode[]
 \ifndef::imagesdir[]
-:imagesdir: ../../
+:imagesdir: ../../ <!--1-->
 \endif::imagesdir[]
-\endif::[]
+\endif::env-vscode[]
+
+== タイトル
 
 本文
 ----
 <1> ここでのパスはプロジェクト(ドキュメント)ルートへの相対パスを設定
 
 これにより画像は全てプロジェクト(ドキュメント)ルートからのフルパス(VS codeでファイル右クリックで相対パスってとったパス)を指定することでPDFもHTMLも問題なく出力できます。
-一方で、includeは {homedir} てつけるとフルパス、自分同じ場所か配下なら  {homedir}  をつけずに相対パスにして扱うことができます。
+一方で、includeは \{includedir} てつけるとフルパス、自分同じ場所か配下なら \{includedir}  をつけずに相対パスにして扱うことができます。
 
-=== ディレクトリ名を指定する属性の話
+==== ディレクトリ名を指定する属性の話
 
 includedir:: この指定は本ドキュメント固有のCustom Document Attributeです。この指定を利用することでincludeを指定しやすくしています。 + 
 本指定をindexは空、個別のファイルを相対パスで行うことで、複雑なディレクトリ構成でのincludeの指定を容易にしています。 +

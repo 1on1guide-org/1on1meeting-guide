@@ -1,0 +1,15 @@
+:includedir: ../
+include::{includedir}contents/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../
+endif::imagesdir[]
+endif::env-vscode[]
+
+// HPDFへのリンク
+[NOTE]
+.[.navy.big]#*{name-this-guide}は印刷に便利なPDF版が用意されています*#
+====
+*PDF版は link:./pdf/1on1meeting-guide.pdf[こちら]から閲覧することができます。* +
+ダウンロードして利用される場合は、右クリックからダウンロードお願いします。
+====

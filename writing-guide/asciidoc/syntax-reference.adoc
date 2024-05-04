@@ -1,23 +1,24 @@
 = AsciiDocの記載方法
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
 [[ASCIIDOC-SYNTAX-DEFINE]]
 == 文言や画像、リンク等の定義と利用
 
 Asciidocでは定義済み項目を本文中に直書きすることなく簡単に利用することができます。
 
-define-literal.adocに定義された情報は「\{name-role-sample}」のように記載することで「{name-role-sample}」と出力したり、
+define-literal.adocに定義された情報は「\{name-this-guide}」のように記載することで「{name-this-guide}」と出力したり、
 定義された画像として「\{icon-sample-user}」のように記載することで「{icon-sample-user}」と出力することができます。
 
 [.accordion.source,asciidoc,linenums]
 ----
-define-literal.adocに定義された情報は「\{name-role-sample}」のように記載することで「{name-role-sample}」と出力したり、
+define-literal.adocに定義された情報は「\{name-this-guide}」のように記載することで「{name-this-guide}」と出力したり、
 定義された画像として「\{icon-sample-user}」のように記載することで「{icon-sample-user}」と出力することができます。
 ----
 
@@ -80,12 +81,12 @@ PDFでは出力されない内容
 === ブロックでの記述
 
 .ブロック画像
-image::contents/images/Logo/analog-logo.svg[pageTop,{full-page}]
+image::contents/images/1on1_Meeting_Patterns.jpg[pageTop,{full-page}]
 
 [.accordion.source]
 ----
 .ブロック画像
-image::contents/images/Logo/analog-logo.svg[pageTop,{full-page}]
+image::contents/images/1on1_Meeting_Patterns.jpg[pageTop,{full-page}]
 ----
 
 画像の指定には定義を利用したサイズルールがあります。 +
@@ -107,13 +108,16 @@ image::contents/images/Logo/analog-logo.svg[pageTop,{full-page}]
 [[ASCIIDOC-SYNTAX-IMAGE-INLINE]]
 === インラインでの記述
 
-インライン {icon-h-write} で表示
-image:contents/images/SvgBadges/badges/badge-user-analog-check.svg[]
+インライン {icon-sample-check} で表示
+
+image:contents/images/SvgBadges/badges/badge-user-sample-check.svg[]
+
 
 [.accordion.source,asciidoc,linenums]
 ----
-インライン {icon-h-write} で表示
-image:contents/images/SvgBadges/badges/badge-user-analog-check.svg[]
+インライン {icon-sample-check} で表示
+
+image:contents/images/SvgBadges/badges/badge-user-sample-check.svg[]
 ----
 
 
@@ -656,14 +660,14 @@ endif::[]
 
 link:https://github.com/Analog-inc/asciidoctor-action[利用しているActionのリポジトリ]
 
-本ドキュメントは{zwsp}{link-site-preview}で閲覧できます。 +
+本ドキュメントは{zwsp}{link-asciidoc-syntax-reference-html}で閲覧できます。 +
 \{zwsp}は日本語との結合時に必要です。
 
 [.accordion.source,asciidoc,linenums]
 ----
 link:https://github.com/Analog-inc/asciidoctor-action[利用しているActionのリポジトリ]
 
-本ドキュメントは{zwsp}{link-site-preview}で閲覧できます。 +
+本ドキュメントは{zwsp}{link-asciidoc-syntax-reference-html}で閲覧できます。 +
 \{zwsp}は日本語との結合時に必要です。
 ----
 
@@ -931,17 +935,6 @@ document.write("Hello world!!");
 未処理のコンテンツ
 ++++
 ----
-
-=== Blockquotes(引用)
-
-.〇〇について
-[quote, Albert Einstein,proverb,]
-----
-ミスをしたことのない人は、 +
-新しいことに挑戦したことがありません。
-吹き出し機能が使えます。<!--1-->
-----
-<1> 吹き出しの内容をここで定義します。
 
 [.accordion.source,asciidoc,linenums]
 ----

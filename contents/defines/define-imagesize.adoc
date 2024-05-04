@@ -1,5 +1,5 @@
 // 画像サイズ
-ifdef::backend-html5[]
+ifdef::backend-html5,env-vscode[]
 :twoinches: width='144'
 :full-width: width='100%',align="center"
 :half-width: width='50%'

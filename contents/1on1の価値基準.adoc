@@ -1,13 +1,15 @@
-== 1on1の価値基準
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
-1on1の実施に際しては、以下のような6つの価値基準を大切にしていると考えて、「<<PATTERN-OF-1ON1>>」 を作成している。
+[[価値基準]]
+== 1on1の価値基準
+
+1on1の実施に際しては、以下のような6つの価値基準を大切にしていると考えて、「 <<PATTERN-OF-1ON1>> 」 を作成している。
 
 . 人としての尊重
 . 多様性の許容

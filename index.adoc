@@ -3,30 +3,25 @@
 :revdate: 2024-03-17
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 :imagesdir: ./
-endif::[]
+endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
+
 
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5,convert-for-all[]
-[NOTE]
-.[.navy.big]#*本書は印刷に便利なPDF版が用意されています*#
-====
-*PDF版は link:./pdf/1on1meeting-guide.pdf[こちら]から閲覧することができます。* +
-ダウンロードして利用される場合は、右クリックからダウンロードお願いします。
-====
+include::contents/PDF-link.adoc[]
 endif::backend-html5,convert-for-all[]
 
 // β版の注意点
-include::requests-for-beta.adoc[]
+include::contents/requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
-[[PURPOSE-GUIDELINES]]
 include::contents/1on1ミーティングガイドの目的と背景.adoc[]
 
+
 // 1on1の目的
-[[PURPOSE-1ON1]]
 include::contents/1on1の目的.adoc[]
 
 // 1on1の前提条件
@@ -35,7 +30,6 @@ include::contents/1on1の前提条件.adoc[]
 <<<
 
 // 1on1の価値基準
-[[価値基準]]
 include::contents/1on1の価値基準.adoc[]
 
 <<<
@@ -46,24 +40,20 @@ include::contents/価値基準を満たすための行動.adoc[]
 <<<
 
 // 本書の構成
-[[PATTERN-OF-1ON1]]
 include::contents/本書の構成.adoc[]
 
 <<<
 // カテゴリー
-[[PATTERN-CATEGORY]]
 include::contents/カテゴリー.adoc[leveloffset=+1]
 
 <<<
 
 // パターン
-[[ALL-PATTERNS]]
 include::contents/patterns/全てのパターン.adoc[leveloffset=+1]
 
 <<<
 
 // 用語集
-[[GLOSSARY]]
 include::contents/用語集.adoc[]
 
 <<<

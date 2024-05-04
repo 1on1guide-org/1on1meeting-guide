@@ -1,10 +1,12 @@
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 :imagesdir: ./
-endif::[]
+endif::env-vscode[]
 
 ifndef::1on1guide-org[]
+:name-1on1meeting-guide-raw: 1on1ミーティングガイド
+:name-this-guide-raw: 本書
 :1on1guide-org: 1on1guide.org
 :CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
 :CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
@@ -22,7 +24,7 @@ endif::[]
 
 {CC-BY-SA-4_0-png}
 
-本書『1on1ミーティングガイド』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、 link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[その後の複数の著者の貢献]により作成されています。本書は {link-CC-BY-SA-4_0} の下に提供されています。
+{name-this-guide-raw}『{name-1on1meeting-guide-raw}』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、 link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[その後の複数の著者の貢献]により作成されています。本書は {link-CC-BY-SA-4_0} の下に提供されています。
 
 “1on1 meeting guide” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki], link:https://twitter.com/eroccowaruico[@eroccowaruico] and link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[other contributors] is licensed under a {link-CC-BY-SA-4_0-en}.
 

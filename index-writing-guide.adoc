@@ -4,9 +4,9 @@
 :revnumber: 1.0.0
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 :imagesdir: ./
-endif::[]
+endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 
@@ -22,4 +22,4 @@ include::./writing-guide/asciidoc/about.adoc[leveloffset=+1]
 include::./writing-guide/asciidoc/syntax-reference.adoc[leveloffset=+1]
 
 <<<
-include::./writing-guide/howto/config.adoc[leveloffset=+1]
+include::./writing-guide/howto/config.adoc[]

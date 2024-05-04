@@ -1,9 +1,9 @@
 = 1on1ミーティングガイド　リポジトリ
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 :imagesdir: ./
-endif::[]
+endif::env-vscode[]
 
 このリポジトリは『1on1ミーティングガイド』の執筆を管理するための場所です。
 
