@@ -11,3 +11,5 @@
 :link-CC-BY-SA-4_0: link:{url-CC-BY-SA-4_0}[{CC-BY-SA-4_0}]
 :link-CC-BY-SA-4_0-en: link:{url-CC-BY-SA-4_0}[{CC-BY-SA-4_0_EN}]
 
+:name-1on1meeting-guide: 1on1ミーティングガイド
+:name-this-guide: 本書
