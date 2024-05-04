@@ -14,5 +14,6 @@ cd ${INDEX_DIR}
 SOURCE_DIR=/public/html
 DESTNATION_DIR=/public
 
-mv ${SOURCE_DIR}/* ${DESTNATION_DIR}
+cp -rf .${SOURCE_DIR}/* .${DESTNATION_DIR}/.
+rm -rf .${SOURCE_DIR}
 
