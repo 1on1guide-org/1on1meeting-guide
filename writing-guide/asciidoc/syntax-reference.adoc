@@ -1,11 +1,11 @@
 = AsciiDocの記載方法
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
 [[ASCIIDOC-SYNTAX-DEFINE]]
 == 文言や画像、リンク等の定義と利用

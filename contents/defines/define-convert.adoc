@@ -1,8 +1,8 @@
 // 出力レベルを段階的に定義
 // VS codeでの修正中に全表示
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 :convert-for-all:
-endif::[]
+endif::env-vscode[]
 // Allを設定したらライター向けの情報も全て出す
 ifdef::convert-for-all[]
 :convert-for-readers:

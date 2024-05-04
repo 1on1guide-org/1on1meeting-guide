@@ -1,11 +1,11 @@
 = AsciiDocについて
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
 
 AsciiDocは軽量マークアップ言語の一つで可読文書記述形式です。 +

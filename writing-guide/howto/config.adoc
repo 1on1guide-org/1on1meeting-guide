@@ -1,11 +1,11 @@
 = 本ドキュメントの設定について
 :includedir: ../../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
 == 参照ディレクトリの扱い
 
@@ -25,11 +25,11 @@ endif::[]
 == タイトル
 :includedir: ../../
 \include::{includedir}contents/defines/define-all-include.adoc[]
-\ifeval::[{env} == vscode]
+\ifdef::env-vscode[]
 \ifndef::imagesdir[]
 :imagesdir: ../../
 \endif::imagesdir[]
-\endif::[]
+\endif::env-vscode[]
 
 本文
 ----

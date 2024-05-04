@@ -1,8 +1,8 @@
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 :imagesdir: ./
-endif::[]
+endif::env-vscode[]
 
 ifndef::1on1guide-org[]
 :name-1on1meeting-guide-raw: 1on1ミーティングガイド

@@ -1,10 +1,10 @@
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../
 endif::imagesdir[]
-endif::[]
+endif::env-vscode[]
 
 == 価値基準を満たすための行動
 

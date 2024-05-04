@@ -50,14 +50,12 @@
 // Source highlighting and formatting attributes
 // ==========
 // ソースハイライター設定
-ifeval::[{env} != vscode]
 :source-highlighter: rouge
 :rouge-style: github
-endif::[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 :source-highlighter: highlight.js
 :highlightjs-theme: github
-endif::[]
+endif::env-vscode[]
 // ==========
 // HTML styling attributes
 // ==========

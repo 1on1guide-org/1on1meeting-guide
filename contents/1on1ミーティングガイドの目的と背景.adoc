@@ -1,13 +1,10 @@
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
-ifeval::[{env} == vscode]
+ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../
 endif::imagesdir[]
-endif::[]
-
-// 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える
-:name-this-guide: {name-1on1meeting-guide-raw}
+endif::env-vscode[]
 
 [[PURPOSE-GUIDELINES]]
 == {name-this-guide}の目的と背景
