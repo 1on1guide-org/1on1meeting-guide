@@ -64,7 +64,7 @@ base:
   border_color: 888888
 
 heading:
-  font_color: 0000cd
+  font_color: 393939
   font_family: GenShinGothic
   # h1 is used for part titles (book doctype only)
   h1_font_size: floor($base_font_size * 2.4)
