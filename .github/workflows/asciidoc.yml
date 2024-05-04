@@ -54,6 +54,11 @@ jobs:
       uses: Analog-inc/asciidoctor-action@v1
       with:
         shellcommand: "./.github/workflows/asciidoc.sh"
+    # Copy html assets
+    - name: Move html for Deploy
+      if: inputs.upload_pages == true
+      timeout-minutes: 1
+      run: bash ./customs/html/utils/move-html-for-public.sh
     # Use the output from the documents step
     - name: Save AsciiDoc step
       if: inputs.upload_pages == false
