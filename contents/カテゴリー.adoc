@@ -1,4 +1,3 @@
-== カテゴリー
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifeval::[{env} == vscode]
@@ -7,8 +6,8 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::[]
 
-
-
+[[PATTERN-CATEGORY]]
+== カテゴリー
 
 image::contents/images/1on1_Meeting_Patterns.jpg[]
 

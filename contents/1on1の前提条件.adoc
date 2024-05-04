@@ -1,4 +1,3 @@
-== 1on1の前提条件
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifeval::[{env} == vscode]
@@ -7,6 +6,7 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::[]
 
+== 1on1の前提条件
 
 1on1の前提として、2つ条件がある。1つは「対話であること」で、もう1つは「組織や業務のフィードバックループをつくること」である。
 

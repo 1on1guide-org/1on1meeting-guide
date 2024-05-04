@@ -1,4 +1,3 @@
-== 価値基準を満たすための行動
 :includedir: ../
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifeval::[{env} == vscode]
@@ -6,6 +5,9 @@ ifndef::imagesdir[]
 :imagesdir: ../
 endif::imagesdir[]
 endif::[]
+
+== 価値基準を満たすための行動
+
 
 「<<価値基準>>」に挙げた価値基準を満たすため、以下のような行動が基本となる。
 
