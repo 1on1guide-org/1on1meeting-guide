@@ -4,32 +4,57 @@ ifdef::env-vscode[]
 :imagesdir: ./
 endif::env-vscode[]
 
-ifndef::1on1guide-org[]
+// ============================================
+// githubで表示する際に正しく表示するために多重で定義する。
+ifndef::name-1on1guide-org[]
+// contents/defines/define-literal.adoc と同等の内容を直書き
+:name-1on1guide-org: 1on1guide.org
+:name-CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
+:name-CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+:name-writing-guide: ライティングガイド
+:name-syntax-reference: シンタックスリファレンス
 :name-1on1meeting-guide-raw: 1on1ミーティングガイド
+:name-1on1meeting-guide-raw-en: 1on1 meeting guide
 :name-this-guide-raw: 本書
-:1on1guide-org: 1on1guide.org
-:CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
-:CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
-:url-1on1guide-org: https://github.com/1on1guide-org/
+// 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える
+ifndef::name-this-guide[]
+:name-this-guide: {name-1on1meeting-guide-raw}
+endif::name-this-guide[]
+:url-1on1guide-org: https://1on1guide.org
+:url-1on1meeting-guide-html: https://1on1guide.org
+:url-writing-guide-html: https://1on1guide.org/index-writing-guide.html
+:url-asciidoc-syntax-reference-html: {url-writing-guide-html}#ASCIIDOC-SYNTAX-REFERENCE
+:url-1on1meeting-guide-pdf: https://1on1guide.org/pdf/1on1meeting-guide.pdf
 :url-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
-:url-CC-BY-SA-4_0: http://creativecommons.org/licenses/by-sa/4.0/
-:link-1on1guide-org: link:{url-1on1guide-org}[{1on1guide-org}]
+:url-CC-BY-SA-4_0: https://creativecommons.org/licenses/by-sa/4.0/deed.ja
+:url-CC-BY-SA-4_0_en: http://creativecommons.org/licenses/by-sa/4.0/
+:link-1on1meeting-guide-raw: link:{url-github-repository}[{name-1on1meeting-guide-raw}]
+:link-1on1meeting-guide-raw-en: link:{url-github-repository}[{name-1on1meeting-guide-raw-en}]
+:link-1on1guide-org: link:{url-github-repository}[{name-1on1guide-org}]
 :link-github-repository: link:{url-github-repository}[Github repository]
-:link-CC-BY-SA-4_0: link:{url-CC-BY-SA-4_0}[{CC-BY-SA-4_0}]
-:link-CC-BY-SA-4_0-en: link:{url-CC-BY-SA-4_0}[{CC-BY-SA-4_0_EN}]
+:link-1on1meeting-guide-html: link:{url-1on1meeting-guide-html}[{name-1on1meeting-guide-raw} HTML版]
+:link-1on1meeting-guide-pdf: link:{url-1on1meeting-guide-pdf}[{name-1on1meeting-guide-raw} PDF版]
+:link-writing-guide-html: link:{url-writing-guide-html}[{name-writing-guide} HTML版]
+:link-asciidoc-syntax-reference-html: link:{url-asciidoc-syntax-reference-html}[{name-syntax-reference} HTML版]
+:link-CC-BY-SA-4_0: link:{url-CC-BY-SA-4_0}[{name-CC-BY-SA-4_0}]
+:link-CC-BY-SA-4_0-en: link:{url-CC-BY-SA-4_0_en}[{name-CC-BY-SA-4_0_EN}]
+// contents/defines/define-imageNicon.adoc と同等の内容を直書き
+// CC
 :CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
-endif::[]
+endif::name-1on1guide-org[]
+// ============================================
 
 == ライセンス
 
 {CC-BY-SA-4_0-png} 
 
-{name-this-guide-raw}『{name-1on1meeting-guide-raw}』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、 link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[その後の複数の著者の貢献]により作成されています。本書は {link-CC-BY-SA-4_0} の下に提供されています。
+『{link-1on1meeting-guide-raw}』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、 link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[その後の複数の著者の貢献]により作成されています。本書は {link-CC-BY-SA-4_0} の下に提供されています。
 
-“1on1 meeting guide” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki], link:https://twitter.com/eroccowaruico[@eroccowaruico] and link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[other contributors] is licensed under a {link-CC-BY-SA-4_0-en}.
+“{link-1on1meeting-guide-raw-en}” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki], link:https://twitter.com/eroccowaruico[@eroccowaruico] and link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[other contributors] is licensed under a {link-CC-BY-SA-4_0-en}.
 
 === 再利用
-再利用は元のコンテンツと同じ{link-CC-BY-SA-4_0}で全ての著作者を記載の上で公開する必要があります。
+営利目的も含め、改変したり別の作品のベースにしたり、複製したり再配布できます。 +
+ただし元のコンテンツと同じ{link-CC-BY-SA-4_0}の元に、全ての著作者やリンクなど適切なクレジットを表示する必要があります。
 
 === 貢献
 このコンテンツに貢献したい場合はあなたの貢献したドキュメントが{link-CC-BY-SA-4_0}の下で利用可能になることに同意することを意味します。 +
