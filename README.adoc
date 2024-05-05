@@ -46,7 +46,6 @@ endif::name-1on1guide-org[]
 // ============================================
 
 
-link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[image:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml/badge.svg][Make Artifact And Deploy status]
 
 このリポジトリは『{name-1on1meeting-guide-raw}』の執筆を管理するための場所です。
 
