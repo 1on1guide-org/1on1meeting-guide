@@ -48,16 +48,50 @@ endif::name-1on1guide-org[]
 
 link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[image:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml/badge.svg][Make Artifact And Deploy status]
 
-このリポジトリは『1on1ミーティングガイド』の執筆を管理するための場所です。
+このリポジトリは『{name-1on1meeting-guide-raw}』の執筆を管理するための場所です。
 
-== 『1on1ミーティングガイド』の出力先
-『1on1ミーティングガイド』はGitHub actionsのArtifactsとして出力されます。
+== 『{name-1on1meeting-guide-raw}』の出力先
+『{name-1on1meeting-guide-raw}』はGitHub actionsのArtifactsとして出力されます。
 また、デプロイ先として{link-1on1meeting-guide-html}と{link-1on1meeting-guide-pdf}があります。
 
 === 生成物
 * {link-1on1meeting-guide-pdf}
 * {link-1on1meeting-guide-html}
 
+== ドキュメント生成方法とWebサイトへのへのデプロイ
+現在は手動でのドキュメント生成を行っております。
+
+. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[Github Actionsの「Make Artifact And Deploy」] を開きます
+. 「Run workflow」で 「main」ブランチを指定します
+. 「Upload artifact to GitHub Pages.」にチェックを入れて、「Run workflow」ボタンを押下するとドライランを行うことができ、実行したActionのArtifactとしてtarファイルをダウンロード可能です。
+** チェックボックスにチェックを入れずに「Run workflow」ボタンを押下すると実行したActionのArtifactとしてzipファイルをダウンロード可能です。 +
+   この場合はdirectly構成が一部異なりますので、生成物の確認として実施しても、デプロイに向けたドライランとして利用することは避けてください。
+. ドライランの結果に問題がなければ「Upload artifact to GitHub Pages.」と「Deploy to GitHub Pages.」の両方にチェックを入れて「Run workflow」ボタンを押下し実行してください。
+
+== 更新に推奨する環境
+Visual Studio CodeとAsciiDoc extensionを利用します。
+
+* link:https://code.visualstudio.com[Visual Studio Code]
+* link:https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[AsciiDoc extension]
+
+== ファイル構成
+
+[,tree]
+----
+.
+├─ .github                  (Github Actions向け等のファイル)
+├─ contents                 (『{name-1on1meeting-guide-raw}』の構成ファイル)
+│ ├─ defines                (『{name-1on1meeting-guide-raw}』の設定ファイル)
+│ ├─ images                 (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
+│ └─ patterns               (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
+├─ customs                  (出力などの制御に必要な構成ファイル)
+├─ public                   (コンバート時の出力先ディレクトリ)
+├─ writing-guide            ({name-writing-guide}などの構成要素)
+├─ index-writing-guide.adoc ({name-writing-guide}の出力用インデックスファイル)
+├─ index.adoc               (『{name-1on1meeting-guide-raw}』出力用インデックスファイル)
+├─ LICENSE.adoc             (『{name-1on1meeting-guide-raw}』のライセンスを記載したファイル)
+└─ README.adoc              (本README)
+----
 
 == 管理者
 本リポジトリは以下のメンテナーにて管理されています。
@@ -71,41 +105,3 @@ link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciid
 
 コントリビューター::
 現在はメンテナーが直接レビュー依頼をした方に貢献いただいています。
-
-
-== 生成方法
-
-== ファイル構成
-
-[,tree]
-----
-.
-├─ .github                  (Github Actions向け等のファイル)
-├─ contents                 (『1on1ミーティングガイド』の構成ファイル)
-│ ├─ defines                (『1on1ミーティングガイド』の設定ファイル)
-│ ├─ images                 (『1on1ミーティングガイド』で利用する共通的な画像ファイル)
-│ └─ patterns               (『1on1ミーティングガイド』中のパターンファイル Notionから自動で書き出す場合あり)
-├─ customs                  (出力などの制御に必要な構成ファイル)
-├─ public                   (コンバート時の出力先ディレクトリ)
-├─ writing-guide            (記載ガイドなどの構成要素)
-├─ index-writing-guide.adoc (記載ガイドの出力用インデックスファイル)
-├─ index.adoc               (『1on1ミーティングガイド』出力用インデックスファイル)
-├─ LICENSE.adoc             (『1on1ミーティングガイド』のライセンスを記載したファイル)
-└─ README.adoc              (本README)
-----
-
-== 更新に推奨する環境
-Visual Studio CodeとAsciiDoc extensionを利用します。
-
-* link:https://code.visualstudio.com[Visual Studio Code]
-* link:https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[AsciiDoc extension]
-
-== Webサイトへのへのデプロイ
-. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[Github Actionsの「Make Artifact And Deploy」] を開きます
-. 「Run workflow」で 「main」ブランチを指定します
-. 「Upload artifact to GitHub Pages.」にチェックを入れて、「Run workflow」ボタンを押下するとドライランを行うことができ、実行したActionのArtifactとして結果をダウンロード可能です。
-. ドライランの結果に問題がなければ「Upload artifact to GitHub Pages.」と「Deploy to GitHub Pages.」の両方にチェックを入れて「Run workflow」ボタンを押下し実行してください。
-
-[[license]]
-== ライセンスについて
-include::LICENSE.adoc[leveloffset=+1]
