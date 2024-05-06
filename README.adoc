@@ -60,15 +60,21 @@ endif::name-1on1guide-org[]
 * {link-1on1meeting-guide-pdf}
 * {link-1on1meeting-guide-html}
 
-== ドキュメント生成方法とWebサイトへのへのデプロイ
-現在は手動でのドキュメント生成を行っております。
+== ドキュメント生成方法
+mainブランチに対するpullリクエストがあればドキュメント生成を行っておりますが、以下の方法で手動実行することも可能です。
 
-. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[Github Actionsの「Make Artifact And Deploy」] を開きます
+. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[Github Actionsの「Dryrun Pages」] を開きます
 . 「Run workflow」で 「main」ブランチを指定します
 . 「Upload artifact to GitHub Pages.」にチェックを入れて、「Run workflow」ボタンを押下するとドライランを行うことができ、実行したActionのArtifactとしてtarファイルをダウンロード可能です。
 ** チェックボックスにチェックを入れずに「Run workflow」ボタンを押下すると実行したActionのArtifactとしてzipファイルをダウンロード可能です。 +
    この場合はdirectly構成が一部異なりますので、生成物の確認として実施しても、デプロイに向けたドライランとして利用することは避けてください。
-. ドライランの結果に問題がなければ「Upload artifact to GitHub Pages.」と「Deploy to GitHub Pages.」の両方にチェックを入れて「Run workflow」ボタンを押下し実行してください。
+
+== Webサイトへのへのデプロイ方法
+リリースを実行すると自動でデプロイされますが、手動でも実行できます。
+
+. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/release-page.yml[Github Actionsの「Release Pages」] を開きます
+. 「Run workflow」で 「main」ブランチを指定します。
+. 「Run workflow」ボタンを押下し実行してください。
 
 == 更新に推奨する環境
 Visual Studio CodeとAsciiDoc extensionを利用します。
