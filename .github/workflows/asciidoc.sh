@@ -45,7 +45,7 @@ set -x
 FAILURE_LEVEL=" --failure-level=WARN "
 
 # Common parameters & Attributes
-COMMON_PARAMETERS=" -B ${CURRENT_PATH}/ -R ${CURRENT_PATH}/ -a diagram-cachedir=${OUTPUT_PATH}/diagram-cache -r asciidoctor-diagram -v --failure-level=ERROR --trace -r ${COMMON_PATH}/extensions/common-extensions.rb -a allow-uri-read ${FAILURE_LEVEL} "  
+COMMON_PARAMETERS=" -B ${CURRENT_PATH}/ -R ${CURRENT_PATH}/ -a diagram-cachedir=${OUTPUT_PATH}/diagram-cache -a allow-uri-read -r asciidoctor-diagram -r ${COMMON_PATH}/extensions/common-extensions.rb -v -t --trace ${FAILURE_LEVEL} "  
 
 
 ########################
@@ -58,7 +58,7 @@ mkdir -p ${PDF_OUTPUT_PATH}/images
 # PDF出力要素path
 PDF_PARTS_PATH=${CURRENT_PATH}/customs/pdf
 # parameters & Attributes
-PDF_PARAMETERS=" -D ${PDF_OUTPUT_PATH}/ -a imagesdir=${CURRENT_PATH}/ -a imagesoutdir=${PDF_OUTPUT_PATH}/images/ -a chapter-label= -r ${PDF_PARTS_PATH}/diagram-configs/config.rb -a pdf-themesdir=${PDF_PARTS_PATH}/themes -a pdf-fontsdir=${PDF_PARTS_PATH}/fonts "
+PDF_PARAMETERS=" -D ${PDF_OUTPUT_PATH}/ -a imagesdir=${CURRENT_PATH}/ -a imagesoutdir=${PDF_OUTPUT_PATH}/images/ -a pdf-themesdir=${PDF_PARTS_PATH}/themes -a pdf-fontsdir=${PDF_PARTS_PATH}/fonts -r ${PDF_PARTS_PATH}/diagram-configs/config.rb "
 # convert
 asciidoctor-pdf ${COMMON_PARAMETERS} ${PDF_PARAMETERS}  -a convert-for-readers -a pdf-theme=${PDF_PARTS_PATH}/themes/user-readers-theme.yml -o '1on1meeting-guide.pdf' 'index.adoc'
 
