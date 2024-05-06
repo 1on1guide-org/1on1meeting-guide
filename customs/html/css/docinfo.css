@@ -578,16 +578,6 @@ a>em {
 	display: none;
 }
 
-#header .details #revnumber::before,
-#footer .details #revnumber::before {
-	content: "\00a0\2013\00a0第";
-}
-
-#header .details #revnumber::after,
-#footer .details #revnumber::after {
-	content: "版\00a0";
-}
-
 #header .details #localdatetime::before,
 #footer .details #localdatetime::before {
 	content: "\00a0\2013\00a0 Update";
