@@ -1,0 +1,60 @@
+# This is a AsciiDoctor workflow to help you get started with Actions
+name: Utilitys
+
+# Controls when the action will run. Triggers the workflow on push
+
+on:
+  workflow_dispatch:
+    inputs:
+      not_main_branch:
+        description: 'This action cannot be performed on main branch.'
+        required: true
+        type: boolean
+      NDF_validation:
+        description: 'Validation Diacritical mark NFD.'
+        required: false
+        type: boolean
+      commit_comment:
+        description: 'Commit comment'
+        required: true
+        type: string
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "asciidoctor_job"
+  utility_job:
+    if: ${{ inputs.not_main_branch }} && github.base_ref != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    name: Utility
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Check out code
+      timeout-minutes: 1
+      uses: actions/checkout@v3
+    # Search Diacritical mark NFD 
+    # Unicode正規化がNFDで行われ、濁点・半濁点が親となる文字と分離した場合にerrorを出力
+    - name: Search Diacritical mark NFD
+      if: ${{ inputs.NDF_validation }}
+      timeout-minutes: 1
+      run: bash ./customs/common/utils/search-diacritical-mark-NFD.sh
+    # Make SvgBadges 
+    - name: Make SvgBadges 
+      timeout-minutes: 1
+      run: bash ./contents/images/SvgBadges/maketool/make.sh
+    # relative path to top directory
+    - name: relative path to top directory
+      timeout-minutes: 1
+      run: bash ./customs/common/utils/relative-path-level2top.sh
+    # Push to Github
+    - name: Push to Github.
+      timeout-minutes: 2
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        if [[ `git status --porcelain` ]]; then \
+          git add -A ; \
+          git commit -m "${{ inputs.commit_comment }}" ; \
+          git push ; \
+        fi
+          
