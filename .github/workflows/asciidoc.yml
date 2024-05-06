@@ -18,7 +18,16 @@ on:
         description: 'Deploy to GitHub Pages.'
         required: false
         type: boolean
-
+  workflow_call:
+    inputs:
+      upload_pages:
+        description: 'Upload artifact to GitHub Pages.'
+        required: true
+        type: boolean
+      deploy_pages:
+        description: 'Deploy to GitHub Pages.'
+        required: true
+        type: boolean
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "asciidoctor_job"
@@ -85,10 +94,9 @@ jobs:
 
   # Deploy job
   deploy:
-    if: inputs.deploy_pages == true && inputs.upload_pages == true
+    if: (inputs.deploy_pages == true && inputs.upload_pages == true) && github.base_ref != 'main'
     # Add a dependency to the build job
     needs: asciidoctor_job
-
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
       pages: write      # to deploy to Pages
