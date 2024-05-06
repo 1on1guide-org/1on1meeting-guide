@@ -24,11 +24,11 @@ endif::env-vscode[]
 
 [source,asciidoc]
 ----
-:includedir: ../../
+:includedir: ../../ <!--1-->
 \include::{includedir}contents/defines/define-all-include.adoc[]
 \ifdef::env-vscode[]
 \ifndef::imagesdir[]
-:imagesdir: ../../
+:imagesdir: ../../ <!--1-->
 \endif::imagesdir[]
 \endif::env-vscode[]
 
