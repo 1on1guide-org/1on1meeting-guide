@@ -1,8 +1,10 @@
+= ライセンス
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 :imagesdir: ./
 endif::env-vscode[]
+// ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // ============================================
 // githubで表示する際に正しく表示するために多重で定義する。
@@ -44,7 +46,7 @@ endif::name-this-guide[]
 endif::name-1on1guide-org[]
 // ============================================
 
-== ライセンス
+
 
 {CC-BY-SA-4_0-png} 
 
@@ -52,24 +54,23 @@ endif::name-1on1guide-org[]
 
 “{link-1on1meeting-guide-raw-en}” by  link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[Manani Ozawa], Naohito Sasao, link:https://twitter.com/chachaki[@chachaki], link:https://twitter.com/eroccowaruico[@eroccowaruico] and link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[other contributors] is licensed under a {link-CC-BY-SA-4_0-en}.
 
-=== 貢献
+== 貢献
 このコンテンツに貢献したい場合はあなたの貢献したドキュメントが{link-CC-BY-SA-4_0}の下で利用可能になることに同意することを意味します。 +
 その他ライセンスを使用して新しいコンテンツを作成することはできません。
-著者が他の誰かにそれを譲渡しない限り寄稿された著作権は著者に残ります。 +
-詳しくは{link-1on1guide-org}にお問い合わせください。
+著者が他の誰かにそれを譲渡しない限り寄稿された著作権は著者に残ります。
 
-=== 再利用
+== 再利用
 営利目的も含め、改変したり別の作品のベースにしたり、複製したり再配布できます。 +
 ただし元のコンテンツと同じ{link-CC-BY-SA-4_0}の元に、全ての著作者やリンクなど適切なクレジットを表示する必要があります。
 
 [#1ON1GUIDE-ORIGINAL-AUTHOR]
-=== 初版の著作者
+== 初版の著作者
 * link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実] 
 * 笹尾 納勇仁 
 * link:https://twitter.com/chachaki[@chachaki] 
 * link:https://twitter.com/eroccowaruico[@eroccowaruico] 
 
-=== ロゴ、商標、サービスマーク、ワードマーク
+== ロゴ、商標、サービスマーク、ワードマーク
 {link-1on1guide-org}の商標、ロゴ、サービスマークおよびWebサイトやPDFのルックアンドフィールの権利はクリエイティブコモンズライセンスの下ではライセンスされていません。 +
 また著作権のある著作物（ロゴやグラフィックなど）デザイン）、それらはそれらの条件の下でライセンスされている作品に含まれていません。 +
 文書のテキストを使用しこれらの権利のいずれかを使用したい場合、またはこのコレクションのライセンス条件を遵守することに関して他に質問がある場合は{link-1on1guide-org}にお問い合わせください。
