@@ -578,6 +578,10 @@ a>em {
 	display: none;
 }
 
+#header #revnumber {
+	text-transform: initial;
+}
+
 #header .details #localdatetime::before,
 #footer .details #localdatetime::before {
 	content: "\00a0\2013\00a0 Update";
