@@ -8,6 +8,7 @@ on:
         description: 'Upload artifact to GitHub Pages.'
         required: false
         type: boolean
+        default: false
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
