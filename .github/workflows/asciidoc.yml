@@ -84,7 +84,7 @@ jobs:
 
   # Deploy job
   deploy:
-    if: (inputs.deploy_pages == true && inputs.upload_pages == true) && github.base_ref != 'main'
+    if: (inputs.deploy_pages == true && inputs.upload_pages == true) && github.ref == 'refs/heads/main'
     # Add a dependency to the build job
     needs: asciidoctor_job
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
