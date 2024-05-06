@@ -1,7 +1,4 @@
 = Writing Guide
-// このバージョンはPDFでも利用しています。
-:revdate: 2021-01-01
-:revnumber: 1.0.0
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifdef::env-vscode[]

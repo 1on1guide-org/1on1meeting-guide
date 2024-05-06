@@ -1,4 +1,5 @@
 // 空行禁止(最終行含めて無駄な改行があると設定が有効になりません）
+include::define-version-headeronly.adoc[]
 include::define-common-headeronly.adoc[]
 // 空行禁止(最終行含めて無駄な改行があると設定が有効になりません）
 // ここから原則空行禁止(余計なトラブルを防ぐために空行は避けてください）
