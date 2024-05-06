@@ -40,9 +40,12 @@ set -x
 # -d, --doctype = DOCTYPE
 # -r, --require = LIBRARY
 
+# warningで戻り値を正常にするかしないか
+# warningをエラーとして扱う
+FAILURE_LEVEL=" --failure-level=WARN "
 
 # Common parameters & Attributes
-COMMON_PARAMETERS=" -B ${CURRENT_PATH}/ -R ${CURRENT_PATH}/ -a diagram-cachedir=${OUTPUT_PATH}/diagram-cache -r asciidoctor-diagram -v --failure-level=ERROR --trace -r ${COMMON_PATH}/extensions/common-extensions.rb -a allow-uri-read "
+COMMON_PARAMETERS=" -B ${CURRENT_PATH}/ -R ${CURRENT_PATH}/ -a diagram-cachedir=${OUTPUT_PATH}/diagram-cache -r asciidoctor-diagram -v --failure-level=ERROR --trace -r ${COMMON_PATH}/extensions/common-extensions.rb -a allow-uri-read "  ${FAILURE_LEVEL}
 
 
 ########################
