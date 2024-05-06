@@ -8,16 +8,6 @@ on:
     types: [opened, synchronize] #reopened はsynchronizeも走るので消去  #本ドキュメント固有
     branches:
       - main
-  workflow_dispatch:
-    inputs:
-      upload_pages:
-        description: 'Upload artifact to GitHub Pages.'
-        required: false
-        type: boolean
-      deploy_pages:
-        description: 'Deploy to GitHub Pages.'
-        required: false
-        type: boolean
   workflow_call:
     inputs:
       upload_pages:
