@@ -1,4 +1,4 @@
-= 1on1ミーティングガイド　リポジトリ
+= 1on1ミーティングガイド(1on1ガイド)　リポジトリ
 :includedir: ./
 include::{includedir}contents/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
@@ -11,7 +11,9 @@ endif::env-vscode[]
 ifndef::name-1on1guide-org[]
 // contents/defines/define-literal.adoc と同等の内容を直書き
 :name-1on1guide-org: 1on1guide.org
-:name-1on1meeting-guide-raw: 1on1ミーティングガイド
+:name-1on1meeting-raw: 1on1ミーティング
+:name-1on1-raw: 1on1
+:name-1on1meeting-guide-raw: {name-1on1meeting-raw}ガイド ({name-1on1-raw}ガイド)
 :name-1on1meeting-guide-raw-en: 1on1 meeting guide
 :name-this-guide-raw: 本書
 // 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える

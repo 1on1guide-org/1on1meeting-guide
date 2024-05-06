@@ -5,9 +5,9 @@ ifdef::env-vscode[]
 endif::env-vscode[]
 // Allを設定したらライター向けの情報も全て出す
 ifdef::convert-for-all[]
-:convert-for-readers:
-endif::[]
-// レビュワー向けの情報には読者向けの情報も含まれる
-ifdef::convert-for-readers[]
 :convert-for-writers:
+endif::[]
+// ライター向けの情報には読者向けの情報も含まれる
+ifdef::convert-for-writers[]
+:convert-for-readers:
 endif::[]

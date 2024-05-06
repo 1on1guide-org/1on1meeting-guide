@@ -1,4 +1,4 @@
-= 1on1ミーティングガイド
+= 1on1ミーティングガイド (1on1ガイド)
 :revnumber: β0.1.0
 :revdate: 2024-03-17
 :includedir: ./
@@ -8,6 +8,17 @@ ifdef::env-vscode[]
 endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
+// ========================================
+// ライター向けの記載内容
+ifdef::convert-for-writers[]
+[IMPORTANT]
+.[.red.big]#*編集者向けのコンテンツが出力されています*#
+====
+本項目が出ている場合はレビュワー向けの出力が有効になっています。
+正式版では利用できないため注意してください。
+====
+endif::convert-for-writers[]
+// ========================================
 
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5,convert-for-all[]
