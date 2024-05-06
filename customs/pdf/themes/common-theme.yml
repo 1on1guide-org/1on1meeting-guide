@@ -54,7 +54,12 @@ font:
       bold: NotoEmoji/NotoEmoji-Regular.ttf
       italic: NotoEmoji/NotoEmoji-Regular.ttf
       bold_italic: NotoEmoji/NotoEmoji-Regular.ttf
-  fallbacks: [GenShinGothic, GenYoMin, Noto Emoji]
+    hiddenCharacters:
+      normal: hiddenCharacters/hiddenCharacters.ttf
+      bold: hiddenCharacters/hiddenCharacters.ttf
+      italic: hiddenCharacters/hiddenCharacters.ttf
+      bold_italic: hiddenCharacters/hiddenCharacters.ttf
+  fallbacks: [GenShinGothic, GenYoMin, Noto Emoji, hiddenCharacters]
 
 base:
   align: left
