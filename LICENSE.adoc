@@ -44,13 +44,13 @@ endif::name-this-guide[]
 :link-asciidoc-syntax-reference-html: link:{url-asciidoc-syntax-reference-html}[{name-syntax-reference} HTML版]
 // contents/defines/define-imageNicon.adoc と同等の内容を直書き
 // CC
-:CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
+:badge-CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
 endif::name-1on1guide-org[]
 // ============================================
 
 
 
-{CC-BY-SA-4_0-png} 
+{badge-CC-BY-SA-4_0-png} 
 
 『{link-1on1meeting-guide-raw}』は link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、 link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[その後の複数の著者の貢献]により作成されています。本書は {link-CC-BY-SA-4_0} の下に提供されています。
 
