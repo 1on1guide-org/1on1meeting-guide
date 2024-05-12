@@ -61,7 +61,7 @@ endif::name-1on1guide-org[]
 * {link-1on1meeting-guide-html}
 
 == ご意見やアイデア
-『{name-1on1meeting-guide-raw}』へのご意見やアイデアは link:https://discord.com/channels/761560444367929366/846006580424081418/1239204188198797312[こちら]にて受け付けています。  
+『{name-1on1meeting-guide-raw}』へのご意見やアイデアは link:https://docs.google.com/forms/d/e/1FAIpQLSf9U3DEbxw7FtOQE75k1BLlF5jh_jQ3fedNFDwhWDbygpWdmw/viewform[こちら]にて受け付けています。  
 
 == ドキュメント生成方法
 mainブランチに対するpullリクエストがあればドキュメント生成を行っておりますが、以下の方法で手動実行することも可能です。
