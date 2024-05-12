@@ -58,7 +58,7 @@ include::contents/カテゴリー.adoc[leveloffset=+1]
 <<<
 
 // パターン
-include::contents/patterns/全てのパターン.adoc[leveloffset=+1]
+include::contents/1on1ミーティングパターン.adoc[]
 
 <<<
 
