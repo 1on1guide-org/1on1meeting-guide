@@ -44,7 +44,7 @@ endif::name-this-guide[]
 :link-asciidoc-syntax-reference-html: link:{url-asciidoc-syntax-reference-html}[{name-syntax-reference} HTML版]
 // contents/defines/define-imageNicon.adoc と同等の内容を直書き
 // CC
-:CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
+:badge-CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
 endif::name-1on1guide-org[]
 // ============================================
 
