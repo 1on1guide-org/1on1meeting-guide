@@ -1,20 +1,17 @@
 # This is a AsciiDoctor workflow to help you get started with Actions
-name: Dryrun Github Pages
+name: PullRequest 
 
 on:
-  workflow_dispatch:
-    inputs:
-      upload_pages:
-        description: 'Upload artifact to GitHub Pages.'
-        required: false
-        type: boolean
-        default: false
+  pull_request:
+    types: [opened, synchronize] #reopened はsynchronizeも走る
+    branches:
+      - main
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "asciidoctor_job"
-  dryrun_job:
+  release_job:
     uses: ./.github/workflows/asciidoc.yml
     with:
-      upload_pages: ${{ inputs.upload_pages }}
+      upload_pages: false
       deploy_pages: false

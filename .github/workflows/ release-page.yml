@@ -1,5 +1,5 @@
 # This is a AsciiDoctor workflow to help you get started with Actions
-name: Release Pages
+name: Deploy Github Pages
 
 on:
   release:
@@ -10,7 +10,7 @@ on:
 jobs:
   # This workflow contains a single job called "asciidoctor_job"
   release_job:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.event == 'release'
     uses: ./.github/workflows/asciidoc.yml
     with:
       upload_pages: true
