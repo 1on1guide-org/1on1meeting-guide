@@ -1,5 +1,5 @@
 # This is a AsciiDoctor workflow to help you get started with Actions
-name: Release Pages
+name: Deploy Github Pages
 
 on:
   release:
