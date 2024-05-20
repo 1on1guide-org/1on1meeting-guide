@@ -1,0 +1,17 @@
+# This is a AsciiDoctor workflow to help you get started with Actions
+name: PullRequest 
+
+on:
+  pull_request:
+    types: [opened, synchronize] #reopened はsynchronizeも走る
+    branches:
+      - main
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "asciidoctor_job"
+  release_job:
+    uses: ./.github/workflows/asciidoc.yml
+    with:
+      upload_pages: false
+      deploy_pages: false

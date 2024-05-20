@@ -4,10 +4,6 @@ name: Make Artifact And Deploy
 # Controls when the action will run. Triggers the workflow on push
 
 on:
-  pull_request:
-    types: [opened, synchronize] #reopened はsynchronizeも走るので消去  #本ドキュメント固有
-    branches:
-      - main
   workflow_call:
     inputs:
       upload_pages:
