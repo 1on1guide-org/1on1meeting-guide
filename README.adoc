@@ -66,7 +66,7 @@ endif::name-1on1guide-org[]
 == ドキュメント生成方法
 mainブランチに対するpullリクエストがあればドキュメント生成を行っておりますが、以下の方法で手動実行することも可能です。
 
-. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/asciidoc.yml[Github Actionsの「Dryrun Pages」] を開きます
+. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/DryrunGithubPages.yml[Github Actionsの「Dryrun Github Pages」] を開きます
 . 「Run workflow」で 「main」ブランチを指定します
 . 「Upload artifact to GitHub Pages.」にチェックを入れて、「Run workflow」ボタンを押下するとドライランを行うことができ、実行したActionのArtifactとしてtarファイルをダウンロード可能です。
 ** チェックボックスにチェックを入れずに「Run workflow」ボタンを押下すると実行したActionのArtifactとしてzipファイルをダウンロード可能です。 +
@@ -75,7 +75,7 @@ mainブランチに対するpullリクエストがあればドキュメント生
 == Webサイトへのへのデプロイ方法
 リリースを実行すると自動でデプロイされますが、手動でも実行できます。
 
-. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/release-page.yml[Github Actionsの「Release Pages」] を開きます
+. link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/DeployGithubPages.yml[Github Actionsの「Deploy Github Pages」] を開きます
 . 「Run workflow」で 「main」ブランチを指定します。
 . 「Run workflow」ボタンを押下し実行してください。
 
