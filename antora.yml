@@ -1,5 +1,6 @@
 name: component-a
 title: Component A
+version: ~
 start_page: index.adoc
 asciidoc:
   attributes:
