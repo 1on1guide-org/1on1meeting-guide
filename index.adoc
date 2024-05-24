@@ -1,6 +1,6 @@
 = 1on1ミーティングガイド (1on1ガイド)
 :includedir: ./
-include::{includedir}contents/defines/define-all-include.adoc[]
+include::{includedir}modules/ROOT/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 :imagesdir: ./
 endif::env-vscode[]
@@ -20,50 +20,50 @@ endif::convert-for-writers[]
 
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5,convert-for-all[]
-include::contents/PDF-link.adoc[]
+include::modules/ROOT/PDF-link.adoc[]
 endif::backend-html5,convert-for-all[]
 
 // β版の注意点
-include::contents/requests-for-beta.adoc[]
+include::modules/ROOT/requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
-include::contents/1on1ミーティングガイドの目的と背景.adoc[]
+include::modules/ROOT/1on1ミーティングガイドの目的と背景.adoc[]
 
 
 // 1on1の目的
-include::contents/1on1の目的.adoc[]
+include::modules/ROOT/1on1の目的.adoc[]
 
 // 1on1の前提条件
-include::contents/1on1の前提条件.adoc[]
+include::modules/ROOT/1on1の前提条件.adoc[]
 
 <<<
 
 // 1on1の価値基準
-include::contents/1on1の価値基準.adoc[]
+include::modules/ROOT/1on1の価値基準.adoc[]
 
 <<<
 
 // 価値基準を満たすための行動
-include::contents/価値基準を満たすための行動.adoc[]
+include::modules/ROOT/価値基準を満たすための行動.adoc[]
 
 <<<
 
 // 本書の構成
-include::contents/本書の構成.adoc[]
+include::modules/ROOT/本書の構成.adoc[]
 
 <<<
 // カテゴリー
-include::contents/カテゴリー.adoc[leveloffset=+1]
+include::modules/ROOT/カテゴリー.adoc[leveloffset=+1]
 
 <<<
 
 // パターン
-include::contents/1on1ミーティングパターン.adoc[]
+include::modules/ROOT/1on1ミーティングパターン.adoc[]
 
 <<<
 
 // 用語集
-include::contents/用語集.adoc[]
+include::modules/ROOT/用語集.adoc[]
 
 <<<
 

@@ -1,6 +1,6 @@
 = ライセンス
 :includedir: ./
-include::{includedir}contents/defines/define-all-include.adoc[]
+include::{includedir}modules/ROOT/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 :imagesdir: ./
 endif::env-vscode[]

@@ -1,8 +1,8 @@
 = 1on1ミーティングガイド(1on1ガイド)　リポジトリ
 :includedir: ./
-include::{includedir}contents/defines/define-all-include.adoc[]
+include::{includedir}modules/ROOT/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
-:imagesdir: ./
+:includedir: ./
 endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
