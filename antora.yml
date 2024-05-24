@@ -1,0 +1,8 @@
+name: component-a
+title: Component A
+start_page: index.adoc
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    table-caption: false
+
