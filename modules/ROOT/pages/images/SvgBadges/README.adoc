@@ -1,9 +1,9 @@
 = SVGバッジについて
-:includedir: ../../../../
-include::{includedir}modules/ROOT/defines/define-all-include.adoc[]
+:includedir: ../../../../../
+include::{includedir}modules/ROOT/pages/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 ifndef::imagesdir[]
-:imagesdir: ../../../../
+:imagesdir: ../../../../../
 endif::imagesdir[]
 endif::env-vscode[]
 
