@@ -9,7 +9,7 @@ endif::env-vscode[]
 [[PATTERN-CATEGORY]]
 == カテゴリー
 
-image::modules/ROOT/pages//images/1on1_Meeting_Patterns.jpg[]
+image::modules/ROOT/pages/images/1on1_Meeting_Patterns.jpg[]
 
 // この章のみセクションNo.を振らない
 :sectnums!:
