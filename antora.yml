@@ -1,7 +1,7 @@
 name: 1on1meeting-guide
 title: 1on1ミーティングガイド(1on1ガイド)
 version: ~
-start_page: index.adoc
+start_page: はじめに.adoc
 nav:
 - modules/ROOT/pages/navi.adoc
 

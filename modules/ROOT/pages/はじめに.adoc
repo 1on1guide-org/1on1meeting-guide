@@ -1,0 +1,28 @@
+:includedir: ../../../
+include::{includedir}modules/ROOT/pages/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
+
+// ========================================
+// ライター向けの記載内容
+ifdef::convert-for-writers[]
+[IMPORTANT]
+.[.red.big]#*編集者向けのコンテンツが出力されています*#
+====
+本項目が出ている場合はレビュワー向けの出力が有効になっています。
+正式版では利用できないため注意してください。
+====
+endif::convert-for-writers[]
+// ========================================
+
+// HTMLモードでのPDFへのリンク
+ifdef::backend-html5,convert-for-all[]
+include::PDF-link.adoc[]
+endif::backend-html5,convert-for-all[]
+
+// β版の注意点
+include::requests-for-beta.adoc[]
