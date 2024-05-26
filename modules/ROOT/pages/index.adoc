@@ -69,5 +69,5 @@ include::用語集.adoc[]
 
 //ライセンス
 [[LICENSE]]
-include::../../../LICENSE.adoc[leveloffset=+1]
+include::LICENSE.adoc[leveloffset=+1]
 
