@@ -6,4 +6,47 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
-* xref:index.adoc[]
+
+// 1on1ミーティングガイドの目的と背景
+* xref:1on1ミーティングガイドの目的と背景.adoc[]
+
+
+// 1on1の目的
+* xref:1on1の目的.adoc[]
+
+// 1on1の前提条件
+* xref:1on1の前提条件.adoc[]
+
+<<<
+
+// 1on1の価値基準
+* xref:1on1の価値基準.adoc[]
+
+<<<
+
+// 価値基準を満たすための行動
+* xref:価値基準を満たすための行動.adoc[]
+
+<<<
+
+// 本書の構成
+* xref:本書の構成.adoc[]
+
+<<<
+// カテゴリー
+* xref:カテゴリー.adoc[leveloffset=+1]
+
+<<<
+
+// パターン
+* xref:1on1ミーティングパターン.adoc[]
+
+<<<
+
+// 用語集
+* xref:用語集.adoc[]
+
+<<<
+
+//ライセンス
+* xref:LICENSE.adoc[leveloffset=+1]
