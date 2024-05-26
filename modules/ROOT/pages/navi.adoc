@@ -1,136 +1,45 @@
 
 // 1on1ミーティングガイドの目的と背景
 * xref:1on1ミーティングガイドの目的と背景.adoc[]
-
-
 // 1on1の目的
 * xref:1on1の目的.adoc[]
-
 // 1on1の前提条件
 * xref:1on1の前提条件.adoc[]
-
-<<<
-
 // 1on1の価値基準
 * xref:1on1の価値基準.adoc[]
-
-<<<
-
 // 価値基準を満たすための行動
 * xref:価値基準を満たすための行動.adoc[]
-
-<<<
-
 // 本書の構成
 * xref:本書の構成.adoc[]
-
-<<<
 // カテゴリー
 * xref:カテゴリー.adoc[leveloffset=+1]
-
-<<<
-
 // パターン
 * xref:1on1ミーティングパターン.adoc[1on1ミーティングパターン]
-
 ** xref::patterns/1.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/2.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/3.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/4.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/5.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/6.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/7.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/8.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/9.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/10.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/11.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/12.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/13.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/14.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/15.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/16.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/17.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/18.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/19.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/20.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/21.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/22.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/23.adoc[leveloffset=+2]
-
-<<<
-
 ** xref::patterns/24.adoc[leveloffset=+2]
-
 // 用語集
 * xref:用語集.adoc[用語集]
-
-<<<
-
 //ライセンス
 * xref:LICENSE.adoc[leveloffset=+1]
