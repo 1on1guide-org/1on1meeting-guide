@@ -1,11 +1,3 @@
-:includedir: ../../../
-include::{includedir}modules/ROOT/pages/defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: ../../../
-endif::imagesdir[]
-endif::env-vscode[]
-
 
 // 1on1ミーティングガイドの目的と背景
 * xref:1on1ミーティングガイドの目的と背景.adoc[]
