@@ -1,0 +1,73 @@
+= 1on1ミーティングガイド (1on1ガイド)
+:includedir: ../
+include::{includedir}modules/ROOT/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+:imagesdir: ../
+endif::env-vscode[]
+// ここまで空行禁止(無駄な改行があると設定が有効になりません）
+
+// ========================================
+// ライター向けの記載内容
+ifdef::convert-for-writers[]
+[IMPORTANT]
+.[.red.big]#*編集者向けのコンテンツが出力されています*#
+====
+本項目が出ている場合はレビュワー向けの出力が有効になっています。
+正式版では利用できないため注意してください。
+====
+endif::convert-for-writers[]
+// ========================================
+
+// HTMLモードでのPDFへのリンク
+ifdef::backend-html5,convert-for-all[]
+include::ROOT/PDF-link.adoc[]
+endif::backend-html5,convert-for-all[]
+
+// β版の注意点
+include::ROOT/requests-for-beta.adoc[]
+
+// 1on1ミーティングガイドの目的と背景
+include::ROOT/1on1ミーティングガイドの目的と背景.adoc[]
+
+
+// 1on1の目的
+include::ROOT/1on1の目的.adoc[]
+
+// 1on1の前提条件
+include::ROOT/1on1の前提条件.adoc[]
+
+<<<
+
+// 1on1の価値基準
+include::ROOT/1on1の価値基準.adoc[]
+
+<<<
+
+// 価値基準を満たすための行動
+include::ROOT/価値基準を満たすための行動.adoc[]
+
+<<<
+
+// 本書の構成
+include::ROOT/本書の構成.adoc[]
+
+<<<
+// カテゴリー
+include::ROOT/カテゴリー.adoc[leveloffset=+1]
+
+<<<
+
+// パターン
+include::ROOT/1on1ミーティングパターン.adoc[]
+
+<<<
+
+// 用語集
+include::ROOT/用語集.adoc[]
+
+<<<
+
+//ライセンス
+[[LICENSE]]
+include::../LICENSE.adoc[leveloffset=+1]
+
