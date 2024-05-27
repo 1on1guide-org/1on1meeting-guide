@@ -1,4 +1,12 @@
 = 言葉に表れない心の動き・意思を大事にする
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 アドバイスをする、またはアドバイスされる時は、言葉通りに受け止めずに、その言葉の裏側にどのような心の動きがあるのかを大事にすることに合意する

@@ -1,4 +1,12 @@
 = 一旦の結論を出して仮置きする
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 {name-1on1}で出た話題について完全な解決を求めず、まずは一旦の結論を仮置きしてみる。それが間違っていたなら、後から修正すればよいし、動いた結果で後から分かることもある。現状を一歩進めてみよう。

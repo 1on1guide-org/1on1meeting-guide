@@ -1,4 +1,11 @@
 = 相手を変えようとしない
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
 
 はじめに::
 相手に変えて欲しいことがある。しかし、実際のところ他人から何かを言われたところで、変化するのは難しいのではないだろうか？相手を変えようとはせず、まずは、双方の理解を進めるようにしよう。

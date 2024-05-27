@@ -1,4 +1,12 @@
 = 思いつきで話してみる
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 ちゃんと話さなくていい前提で伝える、聴く側もまとまってないことを前提にきく

@@ -1,4 +1,12 @@
 = アドバイスする前に話を「最後まで聴く」
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 何かアドバイスや言いたいことが思いついたとしても、まずは最後まで聴くことに徹底する

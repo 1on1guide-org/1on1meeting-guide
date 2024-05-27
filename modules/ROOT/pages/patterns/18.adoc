@@ -1,4 +1,12 @@
 = 言いにくい事も言ってみる
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 信頼関係を構築し維持するには、素直さを持って伝えることが重要である。

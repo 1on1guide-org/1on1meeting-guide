@@ -1,4 +1,12 @@
 = 話してもよいことをすり合わせていく
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 {name-1on1}の場で話す内容をイメージしやすくすることで安心でき、会話を促進する

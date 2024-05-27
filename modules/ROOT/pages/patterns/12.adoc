@@ -1,4 +1,12 @@
 = その時のコンディション（振れ幅）をお互いに見る
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 人は時や状況によってコンディションは異なる。その時の状態にお互い目を向ける

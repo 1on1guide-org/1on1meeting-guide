@@ -1,4 +1,12 @@
 = 組織の構造を知り、テーマと照らし合わせる
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 コンウェイの法則＝「製品のアーキテクチャは組織の構造を反映したものになる」という言葉がある。{name-1on1}で取り組もうとしているテーマも、これと同様に実は組織の構造を反映してしまっているかもしれない。

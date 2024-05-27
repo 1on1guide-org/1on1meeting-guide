@@ -1,4 +1,12 @@
 = 自分の感情を言葉にする
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 自分の感情を冷静に言語化して相手に伝えてみよう

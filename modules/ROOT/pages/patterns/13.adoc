@@ -1,4 +1,12 @@
 = 背景や経緯を語る
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 背景を失った物事は違う意味を持って一人歩きする。事実や決定事項、結果は背景となる情報もセットで伝達してみよう。

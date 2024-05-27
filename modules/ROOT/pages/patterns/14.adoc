@@ -1,4 +1,12 @@
 = 自分達で認知できる組織図を描いてみよう
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 自分達を取り囲む組織やステークホルダー、その役割と力関係について、それぞれの立場で語りながら認識を合わせてみよう

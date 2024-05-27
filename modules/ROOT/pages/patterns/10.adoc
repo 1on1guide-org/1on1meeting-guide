@@ -1,4 +1,12 @@
 = 対話の間合いを近づける
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 特に{name-1on1}セッション中は、お互いの「間合い」を意図的に近づけることを意識することで、核心を突いた話題ができ、お互いの発言を引き出すことができる。 [.small]#<<note-pattern10-kome1>>#

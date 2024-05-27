@@ -1,4 +1,12 @@
 = 大きな問題・課題には本腰入れて取り組む
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 心理的ハードルがあって避けたい問題でも、いつかは取り組まないといけない。問題・課題を1つ取り上げて、集中して向き合うことができるとよいだろう。

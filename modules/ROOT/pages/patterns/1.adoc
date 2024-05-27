@@ -1,4 +1,11 @@
 = 一緒に場を作っていくことを確認する
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
 
 はじめに::
 {name-1on1}の時間を今後どうしていくか、どんな話をしていくのかを改めてお互いが認識をする

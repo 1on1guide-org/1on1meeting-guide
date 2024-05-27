@@ -1,4 +1,12 @@
 = 記憶が薄れない程度に実施する
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 前回の記憶が薄れない間に次の{name-1on1}を行うことで関係性を向上したり情報の希薄化を防ごう

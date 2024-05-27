@@ -1,4 +1,12 @@
 = 対話の間合いを遠ざける
+:includedir: ../../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
 
 はじめに::
 特に{name-1on1}セッション中は、お互いの「間合い」を意図的に遠ざけることを意識することで、相手の発言を引き出すことができるかもしれない。 [.small]#<<note-pattern11-kome1>>#
