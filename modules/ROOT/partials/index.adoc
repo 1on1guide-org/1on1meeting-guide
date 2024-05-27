@@ -1,6 +1,6 @@
 = 1on1ミーティングガイド (1on1ガイド)
 :includedir: ../../../
-include::{includedir}modules/ROOT/pages/partials/define-all-include.adoc[]
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 :imagesdir: ../../../
 endif::env-vscode[]
