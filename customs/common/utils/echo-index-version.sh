@@ -18,7 +18,7 @@ do
     DATA_NAME=${data//:/}
     eval $DATA_NAME=${data}"\ "${value}
   fi
-done <  ${INDEX_DIR}/contents/defines/define-version-headeronly.adoc
+done <  ${INDEX_DIR}/contents/partials/define-version-headeronly.adoc
 
 echo ${revnumber}
 echo ${revdate}

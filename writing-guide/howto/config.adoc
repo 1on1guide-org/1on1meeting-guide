@@ -1,6 +1,6 @@
 
 :includedir: ../../
-include::{includedir}modules/ROOT/pages/defines/define-all-include.adoc[]
+include::{includedir}modules/ROOT/pages/partials/define-all-include.adoc[]
 ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../
@@ -25,7 +25,7 @@ endif::env-vscode[]
 [source,asciidoc]
 ----
 :includedir: ../../
-\include::{includedir}contents/defines/define-all-include.adoc[]
+\include::{includedir}contents/partials/define-all-include.adoc[]
 \ifdef::env-vscode[]
 \ifndef::imagesdir[]
 :imagesdir: ../../

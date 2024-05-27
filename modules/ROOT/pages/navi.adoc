@@ -1,5 +1,5 @@
 :includedir: ../../../
-include::{includedir}modules/ROOT/pages/defines/define-all-include.adoc[]
+include::{includedir}modules/ROOT/pages/partials/define-all-include.adoc[]
 ifdef::env-vscode[]
 :imagesdir: ../../../
 endif::env-vscode[]
