@@ -7,7 +7,7 @@ endif::imagesdir[]
 endif::env-vscode[]
 
 ifdef::site-gen-antora[]
-:chapter-number: 
+:chapter-number: 0
 endif::site-gen-antora[]
 
 [[PURPOSE-GUIDELINES]]

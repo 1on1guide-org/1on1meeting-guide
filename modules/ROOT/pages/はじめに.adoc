@@ -29,7 +29,7 @@ endif::site-gen-antora[]
 
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5,convert-for-all[]
-include::partials/PDF-link.adoc[]
+include::{includedir}modules/ROOT/partials/PDF-link.adoc[]
 endif::backend-html5,convert-for-all[]
 
 // β版の注意点
