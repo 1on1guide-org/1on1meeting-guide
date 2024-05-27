@@ -22,7 +22,7 @@ endif::env-vscode[]
 // パターン
 //* xref:1on1ミーティングパターン.adoc[{name-1on1meeting-raw}パターン]
 . 1on1ミーティングパターン
-** xref:patterns/1.adoc[]
+.. xref:patterns/1.adoc[]
 ** xref:patterns/2.adoc[]
 ** xref:patterns/3.adoc[]
 ** xref:patterns/4.adoc[]
@@ -47,6 +47,6 @@ endif::env-vscode[]
 ** xref:patterns/23.adoc[]
 ** xref:patterns/24.adoc[]
 // 用語集
-. xref:用語集.adoc[用語集]
+* xref:用語集.adoc[用語集]
 //ライセンス
-. xref:LICENSE.adoc[ライセンス]
+* xref:LICENSE.adoc[ライセンス]
