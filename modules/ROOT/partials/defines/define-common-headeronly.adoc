@@ -27,8 +27,11 @@
 // Section title and table of contents attributes
 // ==========
 // 目次
+// Antoraでは利用しない
+ifndef::site-gen-antora[]
 :toc: left
 :toclevels: 5
+endif::site-gen-antora[]
 // ==========
 // General content and formatting attributes
 // ==========
@@ -52,10 +55,10 @@
 // ソースハイライター設定
 :source-highlighter: rouge
 :rouge-style: github
-ifdef::env-vscode[]
+ifdef::env-vscode,site-gen-antora[]
 :source-highlighter: highlight.js
 :highlightjs-theme: github
-endif::env-vscode[]
+endif::env-vscode,site-gen-antora[]
 // ==========
 // HTML styling attributes
 // ==========
