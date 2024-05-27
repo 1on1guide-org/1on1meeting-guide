@@ -1,10 +1,10 @@
 = ライセンス
-ifndef::convert-for-writers[]
+ifndef::site-gen-antora[]
 :includedir: ./
-endif::convert-for-writers[]
-ifdef::convert-for-writers[]
+endif::site-gen-antora[]
+ifdef::site-gen-antora[]
 :includedir: ../../../
-endif::convert-for-writers[]
+endif::site-gen-antora[]
 include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 :imagesdir: ./
