@@ -1,5 +1,10 @@
 = ライセンス
+ifndef::convert-for-writers[]
 :includedir: ./
+endif::convert-for-writers[]
+ifdef::convert-for-writers[]
+:includedir: ../../../
+endif::convert-for-writers[]
 include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 :imagesdir: ./
