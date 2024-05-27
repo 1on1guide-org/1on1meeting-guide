@@ -7,6 +7,9 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+ifdef::site-gen-antora[]
+:chapter-number: 7.2
+endif::site-gen-antora[]
 
 はじめに::
 何かアドバイスや言いたいことが思いついたとしても、まずは最後まで聴くことに徹底する

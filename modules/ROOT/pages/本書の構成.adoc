@@ -6,6 +6,10 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+ifdef::site-gen-antora[]
+:chapter-number: 4
+endif::site-gen-antora[]
+
 [[PATTERN-OF-1ON1]]
 == {name-this-guide}の構成
 

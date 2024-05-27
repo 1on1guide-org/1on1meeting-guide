@@ -6,6 +6,10 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+ifdef::site-gen-antora[]
+:chapter-number: 6.3
+endif::site-gen-antora[]
+
 [[PATTERN-CATEGORY]]
 == カテゴリー
 

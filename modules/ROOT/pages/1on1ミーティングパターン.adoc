@@ -6,6 +6,9 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+ifdef::site-gen-antora[]
+:chapter-number: 6
+endif::site-gen-antora[]
 
 [[ALL-PATTERNS]]
 == {name-1on1meeting-raw}パターン

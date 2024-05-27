@@ -6,6 +6,10 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+ifdef::site-gen-antora[]
+:chapter-number: 4
+endif::site-gen-antora[]
+
 == 価値基準を満たすための行動
 
 

@@ -6,6 +6,10 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+ifdef::site-gen-antora[]
+:chapter-number: 2
+endif::site-gen-antora[]
+
 == {name-1on1}の前提条件
 
 {name-1on1}の前提として、2つ条件がある。1つは「対話であること」で、もう1つは「組織や業務のフィードバックループをつくること」である。 [.small]#<<note-前提条件-kome1>>#

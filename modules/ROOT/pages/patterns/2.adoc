@@ -7,6 +7,10 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+ifdef::site-gen-antora[]
+:chapter-number: 7.1
+endif::site-gen-antora[]
+
 はじめに::
 相手に変えて欲しいことがある。しかし、実際のところ他人から何かを言われたところで、変化するのは難しいのではないだろうか？相手を変えようとはせず、まずは、双方の理解を進めるようにしよう。
 
