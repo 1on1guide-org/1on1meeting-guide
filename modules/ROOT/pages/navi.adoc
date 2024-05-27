@@ -20,7 +20,8 @@ endif::env-vscode[]
 // カテゴリー
 ** xref:カテゴリー.adoc[カテゴリー]
 // パターン
-* xref:1on1ミーティングパターン.adoc[{name-1on1meeting-raw}パターン]
+//* xref:1on1ミーティングパターン.adoc[{name-1on1meeting-raw}パターン]
+* 1on1ミーティングパターン
 ** xref::patterns/1.adoc[]
 ** xref::patterns/2.adoc[]
 ** xref::patterns/3.adoc[]
