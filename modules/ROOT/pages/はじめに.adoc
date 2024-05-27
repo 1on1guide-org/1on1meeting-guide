@@ -18,13 +18,13 @@ ifdef::convert-for-writers[]
 ====
 endif::convert-for-writers[]
 
-ifdef::env-antora[]
+ifdef::site-gen-antora[]
 [IMPORTANT]
 .[.red.big]#*Antoraテスト*#
 ====
 
 ====
-endif::env-antora[]
+endif::site-gen-antora[]
 // ========================================
 
 // HTMLモードでのPDFへのリンク
