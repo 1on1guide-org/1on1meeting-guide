@@ -1,4 +1,5 @@
 ifdef::site-gen-antora[]
+:leveloffset: +1
 :chapter-number: 8
 endif::site-gen-antora[]
 = ライセンス
