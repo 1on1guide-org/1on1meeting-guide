@@ -1,3 +1,6 @@
+ifdef::site-gen-antora[]
+:chapter-number: 8
+endif::site-gen-antora[]
 = ライセンス
 ifndef::site-gen-antora[]
 :includedir: ./
@@ -11,9 +14,7 @@ ifdef::env-vscode[]
 endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
-ifdef::site-gen-antora[]
-:chapter-number: 8
-endif::site-gen-antora[]
+
 
 // ============================================
 // githubで表示する際に正しく表示するために多重で定義する。
