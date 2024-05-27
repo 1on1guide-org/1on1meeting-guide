@@ -3,7 +3,7 @@ title: 1on1ミーティングガイド(1on1ガイド)
 version: ~
 start_page: はじめに.adoc
 nav:
-- modules/ROOT/pages/navi.adoc
+- modules/ROOT/navi.adoc
 
 
 
