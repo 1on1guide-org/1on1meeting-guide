@@ -1,3 +1,4 @@
+= 本書の構成
 :includedir: ../../../
 include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
@@ -6,12 +7,7 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
-ifdef::site-gen-antora[]
-:chapter-number: 5
-endif::site-gen-antora[]
 
-[[PATTERN-OF-1ON1]]
-== {name-this-guide}の構成
 
 // ========================================
 // ライター向けの記載内容
@@ -34,14 +30,14 @@ ifdef::convert-for-writers[]
 endif::convert-for-writers[]
 // ========================================
 
-=== {name-this-guide}の書き方
+== {name-this-guide}の書き方
 
 {name-this-guide}はパターンランゲージを参考にして書かれている。
 パターンランゲージとは、ある分野や領域の実践者に繰り返し見られる振る舞いや行動を 「パターン（パターンランゲージ）」と名付けて、抽出したものである。 +
 {xref-記載内容について}に挙げたような記載内容で言語化することで、知見が共有できると考え、この形で整理した。 +
 ※パターン（パターンランゲージ）についての詳細の説明は割愛するため、参考文献を参照して欲しい。
 
-=== {name-this-guide}の読み方
+== {name-this-guide}の読み方
 
 {name-this-guide}の読み方としては、以下を想定している。
 
@@ -61,7 +57,7 @@ endif::convert-for-writers[]
 <<<
 
 [[PATTERN-記載内容]]
-=== 記載内容について
+== 記載内容について
 タイトル:: 
 記載内容を簡潔に表す言葉やメタファー [.small]#<<note-構成-kome1>>#
 

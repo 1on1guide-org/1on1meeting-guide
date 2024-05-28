@@ -27,43 +27,50 @@ endif::backend-html5,convert-for-all[]
 include::modules/ROOT/partials/requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
-include::modules/ROOT/pages/1on1ミーティングガイドの目的と背景.adoc[]
+[[PURPOSE-GUIDELINES]]
+include::modules/ROOT/pages/1on1ミーティングガイドの目的と背景.adoc[leveloffset=+1]
 
 
 // 1on1の目的
-include::modules/ROOT/pages/1on1の目的.adoc[]
+[[PURPOSE-1ON1]]
+include::modules/ROOT/pages/1on1の目的.adoc[leveloffset=+1]
 
 // 1on1の前提条件
-include::modules/ROOT/pages/1on1の前提条件.adoc[]
+include::modules/ROOT/pages/1on1の前提条件.adoc[leveloffset=+1]
 
 <<<
 
 // 1on1の価値基準
-include::modules/ROOT/pages/1on1の価値基準.adoc[]
+[[価値基準]]
+include::modules/ROOT/pages/1on1の価値基準.adoc[leveloffset=+1]
 
 <<<
 
 // 価値基準を満たすための行動
-include::modules/ROOT/pages/価値基準を満たすための行動.adoc[]
+include::modules/ROOT/pages/価値基準を満たすための行動.adoc[leveloffset=+1]
 
 <<<
 
 // 本書の構成
-include::modules/ROOT/pages/本書の構成.adoc[]
+[[PATTERN-OF-1ON1]]
+include::modules/ROOT/pages/本書の構成.adoc[leveloffset=+1]
 
 <<<
 // カテゴリー
-include::modules/ROOT/pages/カテゴリー.adoc[leveloffset=+1]
+[[PATTERN-CATEGORY]]
+include::modules/ROOT/pages/カテゴリー.adoc[leveloffset=+2]
 
 <<<
 
 // パターン
-include::modules/ROOT/pages/1on1ミーティングパターン.adoc[]
+[[ALL-PATTERNS]]
+include::modules/ROOT/pages/1on1ミーティングパターン.adoc[leveloffset=+1]
 
 <<<
 
 // 用語集
-include::modules/ROOT/pages/用語集.adoc[]
+[[GLOSSARY]]
+include::modules/ROOT/pages/用語集.adoc[leveloffset=+1]
 
 <<<
 

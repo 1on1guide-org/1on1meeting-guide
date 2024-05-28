@@ -1,3 +1,4 @@
+= 用語集
 :includedir: ../../../
 include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
@@ -6,12 +7,6 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
-ifdef::site-gen-antora[]
-:chapter-number: 7
-endif::site-gen-antora[]
-
-[[GLOSSARY]]
-== 用語集
 
 [#glossary_フィードバックループ, reftext=フィードバックループ]
 フィードバックループ:: 

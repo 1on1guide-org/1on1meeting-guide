@@ -38,7 +38,9 @@
 // セクションにリンクを作成
 // :sectlinks:
 // 章番号を付けるか。属性を定義しておくだけで章番号が付けられる。
+ifndef::site-gen-antora[]
 :sectnums:
+endif::site-gen-antora[]
 // ==========
 // General content and formatting attributes
 // ==========
