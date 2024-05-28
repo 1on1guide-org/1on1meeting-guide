@@ -56,6 +56,11 @@ include::modules/ROOT/pages/価値基準を満たすための行動.adoc[levelof
 include::modules/ROOT/pages/本書の構成.adoc[leveloffset=+1]
 
 <<<
+
+[[PATTERN-記載内容]]
+include::modules/ROOT/pages/記載内容について.adoc[leveloffset=+2]
+
+<<<
 // カテゴリー
 [[PATTERN-CATEGORY]]
 include::modules/ROOT/pages/カテゴリー.adoc[leveloffset=+2]
