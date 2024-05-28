@@ -33,4 +33,4 @@ include::{includedir}modules/ROOT/partials/PDF-link.adoc[]
 endif::backend-html5,convert-for-all[]
 
 // β版の注意点
-include::requests-for-beta.adoc[]
+include::{includedir}modules/ROOT/partials/requests-for-beta.adoc[]
