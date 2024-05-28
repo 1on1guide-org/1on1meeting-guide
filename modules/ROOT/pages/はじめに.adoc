@@ -6,6 +6,8 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+:name-this-guide: {name-1on1meeting-guide-raw}
+:name-1on1: {name-1on1meeting-raw}
 
 // ========================================
 // ライター向けの記載内容
