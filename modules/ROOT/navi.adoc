@@ -6,7 +6,7 @@ endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // 1on1ミーティングガイドの目的と背景
-* xref:1on1ミーティングガイドの目的と背景.adoc[{name-1on1meeting-guide-raw}の目的と背景]
+* xref:1on1ガイドの目的と背景.adoc[1on1ガイドの目的と背景]
 // 1on1の目的
 * xref:1on1の目的.adoc[{name-1on1}の目的]
 // 1on1の前提条件

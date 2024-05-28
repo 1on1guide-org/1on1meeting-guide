@@ -28,7 +28,7 @@ include::modules/ROOT/partials/requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
 [[PURPOSE-GUIDELINES]]
-include::modules/ROOT/pages/1on1ミーティングガイドの目的と背景.adoc[leveloffset=+1]
+include::modules/ROOT/pages/1on1ガイドの目的と背景.adoc[leveloffset=+1]
 
 
 // 1on1の目的
