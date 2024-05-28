@@ -77,12 +77,14 @@ def create_id_to_pattern_name_map(items):
 
 
 def create_asciidoc_file(item_properties, id_to_pattern_name):
-    file_name = f"contents/patterns/{item_properties['No.']}.adoc"
+    file_name = f"modules/ROOT/pages/patterns/{item_properties['No.']}.adoc"
     
     with open(file_name, 'w', encoding='utf-8') as file:
         
+        # インクルードを作成
+        file.write(f"include::../../../modules/ROOT/partials/defines/define-all-include.adoc[]\n\n")
         # レベル1のヘッダーを作成
-        file.write(f"= {item_properties['パターン名']}\n\n")
+        file.write(f"== {item_properties['パターン名']}\n\n")
 
 
         # Asciidocのセクションと定義リストを書く
