@@ -1,23 +1,14 @@
 ifndef::site-gen-antora[]
 = ライセンス
 endif::site-gen-antora[]
-ifndef::site-gen-antora[]
-:includedir: ./
-endif::site-gen-antora[]
 ifdef::site-gen-antora[]
 :includedir: ../../../
-endif::site-gen-antora[]
 include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-:imagesdir: ./
-endif::env-vscode[]
-// ここまで空行禁止(無駄な改行があると設定が有効になりません）
-
-ifdef::site-gen-antora[]
 == ライセンス
 :leveloffset: +1
 :chapter-number: 8
 endif::site-gen-antora[]
+// ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 
 // ============================================
