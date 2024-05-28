@@ -20,11 +20,11 @@ endif::convert-for-writers[]
 
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5,convert-for-all[]
-include::modules/ROOT/pages/PDF-link.adoc[]
+include::modules/ROOT/partials/PDF-link.adoc[]
 endif::backend-html5,convert-for-all[]
 
 // β版の注意点
-include::modules/ROOT/pages/requests-for-beta.adoc[]
+include::modules/ROOT/partials/requests-for-beta.adoc[]
 
 // 1on1ミーティングガイドの目的と背景
 include::modules/ROOT/pages/1on1ミーティングガイドの目的と背景.adoc[]
