@@ -17,14 +17,6 @@ ifdef::convert-for-writers[]
 正式版では利用できないため注意してください。
 ====
 endif::convert-for-writers[]
-
-ifdef::site-gen-antora[]
-[IMPORTANT]
-.[.red.big]#*Antoraテスト*#
-====
-
-====
-endif::site-gen-antora[]
 // ========================================
 
 // HTMLモードでのPDFへのリンク

@@ -13,7 +13,7 @@ endif::site-gen-antora[]
 [[価値基準]]
 == {name-1on1}の価値基準
 
-{name-1on1}の実施に際しては、以下のような6つの価値基準を大切にしていると考えて、「 <<PATTERN-OF-1ON1>> 」 を作成している。
+{name-1on1}の実施に際しては、以下のような6つの価値基準を大切にしていると考えて、{xref-ガイドの構成} を作成している。
 
 . 人としての尊重
 . 多様性の許容
@@ -25,7 +25,7 @@ endif::site-gen-antora[]
 以下の節では、それぞれ価値基準を満たすための振る舞いの例を記載している。
 
 [#note-価値基準-kome1, reftext=※1]
-[.small]#※1「<<glossary_中動態>>」の詳細は「<<GLOSSARY>>」を参照#
+[.small]#※1{xref-用語集-中動態}#
 
 === 人としての尊重
 
@@ -50,7 +50,7 @@ endif::site-gen-antora[]
 * 問題の解決を難しくしているフォースや習慣を受け入れる [.small]#<<note-価値基準-kome2>>#
 
 [#note-価値基準-kome2, reftext=※2]
-[.small]#※2「<<glossary_フォース>>」の詳細は「<<GLOSSARY>>」を参照#
+[.small]#※2{xref-用語集-フォース}#
 
 === 不確実性の受容
 
