@@ -7,7 +7,8 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
-
+:name-this-guide: {name-1on1meeting-guide-raw}
+:name-1on1: {name-1on1meeting-raw}
 
 2010年代に入ってから、仕事自体や、仕事に対する価値観が変化していってる。それに伴い、{name-1on1}（以下、{name-1on1-raw}）などで、定期的に話す場を設ける重要性が高まっている。 +
 {name-1on1-raw}には様々な形式がある。それに対して、必要となる根本的な部分・考え方の理解を促進するために、『{name-this-guide}』（以下、{name-this-guide-raw}）を作成した。

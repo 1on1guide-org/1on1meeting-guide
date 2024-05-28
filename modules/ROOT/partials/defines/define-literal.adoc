@@ -2,14 +2,15 @@
 :name-1on1meeting-raw: 1on1ミーティング
 :name-1on1-raw: 1on1
 :name-1on1meeting-guide-raw: {name-1on1meeting-raw}ガイド ({name-1on1-raw}ガイド)
+:name-1on1guide-raw: {name-1on1-raw}ガイド
 :name-1on1meeting-guide-raw-en: 1on1 meeting guide
 :name-this-guide-raw: 本書
 // 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える
 ifndef::name-this-guide[]
-:name-this-guide: {name-1on1meeting-guide-raw}
+:name-this-guide: {name-this-guide-raw}
 endif::name-this-guide[]
 ifndef::name-1on1[]
-:name-1on1: {name-1on1meeting-raw}
+:name-1on1: {name-1on1-raw}
 endif::name-1on1[]
 :name-CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
 :name-CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
