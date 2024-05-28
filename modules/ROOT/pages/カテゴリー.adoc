@@ -7,7 +7,7 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
-image::1on1_Meeting_Patterns.jpg[]
+{image-1on1_Meeting_Patterns}
 
 // この章のみセクションNo.を振らない
 :sectnums!:
