@@ -6,21 +6,23 @@ endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // 1on1ミーティングガイドの目的と背景
-* xref:1on1ガイドの目的と背景.adoc[{name-1on1guide-raw}の目的と背景]
+* xref:1on1ガイドの目的と背景.adoc[]
 // 1on1の目的
-* xref:1on1の目的.adoc[{name-1on1-raw}の目的]
+* xref:1on1の目的.adoc[]
 // 1on1の前提条件
-* xref:1on1の前提条件.adoc[{name-1on1-raw}の前提条件]
+* xref:1on1の前提条件.adoc[]
 // 1on1の価値基準
-* xref:1on1の価値基準.adoc[{name-1on1-raw}の価値基準]
+* xref:1on1の価値基準.adoc[]
 // 価値基準を満たすための行動
-* xref:価値基準を満たすための行動.adoc[価値基準を満たすための行動]
+* xref:価値基準を満たすための行動.adoc[]
 // 本書の構成
-* xref:本書の構成.adoc[本書の構成]
+* 本書の構成
+// 本書の書き方と読み方
+** xref:本書の書き方と読み方.adoc[]
 // 記載内容について
-** xref:記載内容について.adoc[記載内容について]
+** xref:記載内容について.adoc[]
 // カテゴリー
-** xref:カテゴリー.adoc[カテゴリー]
+** xref:カテゴリー.adoc[]
 // パターン
 //* xref:1on1ミーティングパターン.adoc[{name-1on1meeting-raw}パターン]
 * 1on1ミーティングパターン
@@ -49,6 +51,6 @@ endif::env-vscode[]
 ** xref:patterns/23.adoc[]
 ** xref:patterns/24.adoc[]
 // 用語集
-* xref:用語集.adoc[用語集]
+* xref:用語集.adoc[]
 //ライセンス
-* xref:LICENSE.adoc[ライセンス]
+* xref:LICENSE.adoc[]

@@ -1,0 +1,10 @@
+= 本書の構成
+:includedir: ../../../
+include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: ../../../
+endif::imagesdir[]
+endif::env-vscode[]
+
+include::../pages/本書の書き方と読み方.adoc[leveloffset=+1]

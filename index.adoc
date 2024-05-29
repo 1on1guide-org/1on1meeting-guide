@@ -36,7 +36,7 @@ include::modules/ROOT/pages/価値基準を満たすための行動.adoc[levelof
 
 // 本書の構成
 [[PATTERN-OF-1ON1]]
-include::modules/ROOT/pages/本書の構成.adoc[leveloffset=+1]
+include::modules/ROOT/partials/本書の構成.adoc[leveloffset=+1]
 
 <<<
 
