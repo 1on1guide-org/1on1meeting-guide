@@ -29,7 +29,7 @@ jobs:
     # Make SvgBadges 
     - name: Make SvgBadges 
       timeout-minutes: 1
-      run: bash ./contents/images/SvgBadges/maketool/make.sh
+      run: bash ./modules/ROOT/images/SvgBadges/maketool/make.sh
     # Search Diacritical mark NFD 
     # Unicode正規化がNFDで行われ、濁点・半濁点が親となる文字と分離した場合にwarningを出力
     - name: Search Diacritical mark NFD
