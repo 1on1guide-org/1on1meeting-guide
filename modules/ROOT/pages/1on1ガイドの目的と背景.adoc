@@ -1,4 +1,4 @@
-= 1on1ガイドの目的と背景
+= 1on1ミーティングガイドの目的と背景
 :includedir: ../../../
 include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
