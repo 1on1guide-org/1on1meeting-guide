@@ -7,7 +7,7 @@ endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // はじめに
-include::modules/ROOT/pages/はじめに.adoc[leveloffset=+1]
+include::modules/ROOT/pages/index.adoc[leveloffset=+1]
 
 // 1on1ミーティングガイドの目的と背景
 [[PURPOSE-GUIDELINES]]
