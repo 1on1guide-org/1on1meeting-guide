@@ -81,11 +81,11 @@ def create_asciidoc_file(item_properties, id_to_pattern_name):
     
     with open(file_name, 'w', encoding='utf-8') as file:
         
-        # インクルードを作成
-        file.write(f"include::../../../modules/ROOT/partials/defines/define-all-include.adoc[]\n\n")
-        # レベル1のヘッダーを作成
-        file.write(f"== {item_properties['パターン名']}\n\n")
 
+        # レベル1のヘッダーを作成
+        file.write(f"= {item_properties['パターン名']}\n\n")
+        # インクルードを作成
+        file.write(f"include::../../../../modules/ROOT/partials/defines/define-all-include.adoc[]\n\n")
 
         # Asciidocのセクションと定義リストを書く
         section_mapping = {
