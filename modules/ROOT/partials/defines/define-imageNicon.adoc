@@ -2,7 +2,6 @@
 :badge-CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
 :path-image-module-family: modules/ROOT/images/
 ifdef::site-gen-antora[]
-// 権限アイコン
 :path-image-module-family:
 endif::site-gen-antora[]
 // 権限アイコン
