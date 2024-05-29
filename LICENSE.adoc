@@ -63,8 +63,10 @@ Except where otherwise noted, “{link-1on1meeting-guide-raw-en}” by  link:htt
 また著作権のある著作物（ロゴやグラフィックなど）デザインやイラスト、それらはそれらの条件の下でライセンスされている作品に含まれていません。 +
 これらの権利のいずれかを使用したい場合、またはこのコレクションのライセンス条件を遵守することに関して他に質問がある場合は{link-1on1guide-org}にお問い合わせください。
 
-[[1ON1GUIDE-ORIGINAL-AUTHOR]]
+
+[[ORIGINAL-AUTHOR]]
 == 初版の著作者
+
 * link:https://twitter.com/careerupdate[尾澤 愛実] 
 * 笹尾 納勇仁 
 * link:https://twitter.com/chachaki[@chachaki] 
