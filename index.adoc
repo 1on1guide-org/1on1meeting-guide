@@ -35,12 +35,11 @@ include::modules/ROOT/pages/価値基準を満たすための行動.adoc[levelof
 <<<
 
 // 本書の構成
-[[PATTERN-OF-1ON1]]
 include::modules/ROOT/partials/本書の構成.adoc[leveloffset=+1]
 
 <<<
 
-[[PATTERN-記載内容]]
+[[記載内容について]]
 include::modules/ROOT/pages/記載内容について.adoc[leveloffset=+2]
 
 <<<

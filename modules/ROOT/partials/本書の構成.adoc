@@ -7,4 +7,5 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
+[[本書の書き方と読み方]]
 include::../pages/本書の書き方と読み方.adoc[leveloffset=+1]

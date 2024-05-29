@@ -1,8 +1,8 @@
 // ==============================
 // パターン以外のクロスリファレンス
 // ==============================
-:xref-ガイドの構成: 「 <<PATTERN-OF-1ON1>> 」
-:xref-記載内容について: 「<<PATTERN-記載内容>>」
+:xref-本書の書き方と読み方: 「 <<PATTERN-OF-1ON1>> 」
+:xref-記載内容について: 「<<記載内容について>>」
 :xref-カテゴリー: 「<<PATTERN-CATEGORY>>」
 :xref-価値基準: 「<<価値基準>>」
 :xref-用語集-中動態: 「<<glossary_中動態>>」の詳細は「<<GLOSSARY>>」を参照
@@ -25,7 +25,7 @@ ifdef::backend-pdf[]
 endif::backend-pdf[]
 
 ifdef::site-gen-antora[]
-:xref-ガイドの構成: 「 xref:ROOT:本書の構成.adoc[本書の構成] 」
+:xref-本書の書き方と読み方: 「 xref:ROOT:本書の書き方と読み方.adoc[本書の書き方と読み方] 」
 :xref-記載内容について: 「 xref:ROOT:記載内容について.adoc[記載内容について] 」
 :xref-カテゴリー: 「 xref:ROOT:カテゴリー.adoc[カテゴリー] 」
 :xref-価値基準: 「xref:ROOT:1on1の価値基準.adoc[価値基準] 」
