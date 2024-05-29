@@ -7,10 +7,6 @@ ifndef::imagesdir[]
 endif::imagesdir[]
 endif::env-vscode[]
 
-ifdef::site-gen-antora[]
-:chapter-number: 7.0
-endif::site-gen-antora[]
-
 はじめに::
 {name-1on1}の時間を今後どうしていくか、どんな話をしていくのかを改めてお互いが認識をする
 
