@@ -1,32 +1,21 @@
 // CC BY-SA
 :badge-CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
-
-// 権限アイコン
-:icon-sample-check: image:modules/ROOT/images/SvgBadges/badges/badge-user-sample-check.svg[]
-:icon-analog-check: image:modules/ROOT/images/SvgBadges/badges/badge-user-analog-check.svg[]
-:icon-sample-user: image:modules/ROOT/images/SvgBadges/badges/badge-user-sample-user.svg[]
-:icon-analog-user: image:modules/ROOT/images/SvgBadges/badges/badge-user-analog-user.svg[]
-:icon-sample-write: image:modules/ROOT/images/SvgBadges/badges/badge-user-sample-pen.svg[]
-:icon-analog-write: image:modules/ROOT/images/SvgBadges/badges/badge-user-analog-pen.svg[]
-:icon-sample-read: image:modules/ROOT/images/SvgBadges/badges/badge-user-sample-eye.svg[]
-:icon-analog-read: image:modules/ROOT/images/SvgBadges/badges/badge-user-analog-eye.svg[]
-:icon-sample-smartphone: image:modules/ROOT/images/SvgBadges/badges/badge-user-sample-smartphone.svg[]
-:icon-analog-featurephone: image:modules/ROOT/images/SvgBadges/badges/badge-user-analog-featurephone.svg[]
-// カテゴリー
-:image-1on1_Meeting_Patterns: image:modules/ROOT/images/1on1_Meeting_Patterns.jpg[]
-
+:path-image-module-family: modules/ROOT/images/
 ifdef::site-gen-antora[]
 // 権限アイコン
-:icon-sample-check: image:SvgBadges/badges/badge-user-sample-check.svg[]
-:icon-analog-check: image:SvgBadges/badges/badge-user-analog-check.svg[]
-:icon-sample-user: image:SvgBadges/badges/badge-user-sample-user.svg[]
-:icon-analog-user: image:SvgBadges/badges/badge-user-analog-user.svg[]
-:icon-sample-write: image:SvgBadges/badges/badge-user-sample-pen.svg[]
-:icon-analog-write: image:SvgBadges/badges/badge-user-analog-pen.svg[]
-:icon-sample-read: image:SvgBadges/badges/badge-user-sample-eye.svg[]
-:icon-analog-read: image:SvgBadges/badges/badge-user-analog-eye.svg[]
-:icon-sample-smartphone: image:SvgBadges/badges/badge-user-sample-smartphone.svg[]
-:icon-analog-featurephone: image:SvgBadges/badges/badge-user-analog-featurephone.svg[]
-// カテゴリー
-:image-1on1_Meeting_Patterns: image:1on1_Meeting_Patterns.jpg[]
+:path-image-module-family:
 endif::site-gen-antora[]
+// 権限アイコン
+:icon-sample-check: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-check.svg[]
+:icon-analog-check: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-check.svg[]
+:icon-sample-user: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-user.svg[]
+:icon-analog-user: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-user.svg[]
+:icon-sample-write: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-pen.svg[]
+:icon-analog-write: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-pen.svg[]
+:icon-sample-read: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-eye.svg[]
+:icon-analog-read: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-eye.svg[]
+:icon-sample-smartphone: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-smartphone.svg[]
+:icon-analog-featurephone: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-featurephone.svg[]
+// カテゴリー
+:image-1on1_Meeting_Patterns: image:{path-image-module-family}1on1_Meeting_Patterns.jpg[]
+
