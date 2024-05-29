@@ -45,7 +45,7 @@ endif::name-this-guide[]
 // contents/defines/define-imageNicon.adoc と同等の内容を直書き
 // CC
 :path-image-module-family: modules/ROOT/images/
-:badge-CC-BY-SA-4_0-png: image:{path-image-module-family}CC_by-sa.svg[Creative Commons License , opts=inline]
+:badge-CC-BY-SA-4_0-png: image:{path-image-module-family}CC_by-sa.svg[Creative Commons License]
 endif::name-1on1guide-org[]
 // ============================================
 

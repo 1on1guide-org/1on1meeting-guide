@@ -4,7 +4,7 @@ ifdef::site-gen-antora[]
 endif::site-gen-antora[]
 
 // CC BY-SA
-:badge-CC-BY-SA-4_0-png: image:{path-image-module-family}CC_by-sa.svg[Creative Commons License , opts=inline]
+:badge-CC-BY-SA-4_0-png: image:{path-image-module-family}CC_by-sa.svg[Creative Commons License ]
 // 権限アイコン
 :icon-sample-check: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-check.svg[]
 :icon-analog-check: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-check.svg[]
