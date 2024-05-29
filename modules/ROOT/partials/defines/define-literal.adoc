@@ -13,7 +13,7 @@ ifndef::name-1on1[]
 :name-1on1: {name-1on1-raw}
 endif::name-1on1[]
 :name-CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
-:name-CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+:name-CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 :name-writing-guide: ライティングガイド
 :name-syntax-reference: シンタックスリファレンス
 
