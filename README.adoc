@@ -100,7 +100,7 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 │ ├─ partials                 (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
 │ │ └─ defines                (『{name-1on1meeting-guide-raw}』の設定ファイル)
 │ ├─ images                   (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
-│ └─ navi.adoc
+│ └─ navi.adoc                (Antoraで出力する際のナビゲーションファイル)
 ├─ customs                    (出力などの制御に必要な構成ファイル)
 │ ├─ common                   (出力などの制御に共通で必要な構成ファイル)
 │ ├─ html                     (HTML出力の制御に必要な構成ファイル)
