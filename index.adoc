@@ -2,7 +2,7 @@
 :current2root: ./
 include::{current2root}modules/ROOT/partials/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
-:imagesdir: ./
+:imagesdir: {current2root}
 endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
