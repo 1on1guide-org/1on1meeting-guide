@@ -6,8 +6,8 @@
 // ==========
 // Localization and numbering attributes
 // ==========
-:appendix-caption: 付録
-:caution-caption: 一時的な問題等
+:appendix-caption: Appendix
+:caution-caption: Caution
 :chapter-refsig:
 // 各ラベルの日本語定義
 :chapter-signifier!:
@@ -15,16 +15,16 @@
 :example-caption!:
 // :figure-caption: 図
 :figure-caption!:
-:important-caption: 重要
+:important-caption: Important
 :listing-caption:
-:note-caption: 補足
+:note-caption: Note
 // :preface-title: はじめに
 :preface-title!:
 :section-refsig:
 // :table-caption: 表
 :table-caption!:
-:tip-caption: ヒント
-:warning-caption: 警告
+:tip-caption: Tip
+:warning-caption: Warning
 // ==========
 // Document metadata attributes
 // ==========
