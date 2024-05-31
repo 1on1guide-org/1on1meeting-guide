@@ -4,6 +4,7 @@ include::{current2root}modules/ROOT/partials/defines/define-all-include.adoc[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // はじめに
+[preface]
 include::modules/ROOT/pages/index.adoc[leveloffset=+1]
 
 // 1on1ミーティングガイドの目的と背景

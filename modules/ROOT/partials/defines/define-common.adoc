@@ -18,7 +18,7 @@
 :important-caption: Important
 :listing-caption:
 :note-caption: Note
-// :preface-title: はじめに
+:preface-title: はじめに
 :preface-title!:
 :section-refsig:
 // :table-caption: 表
