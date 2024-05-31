@@ -5,11 +5,7 @@ ifdef::site-gen-antora[]
 :path-partials: partial$
 endif::site-gen-antora[]
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 
 [#glossary_フィードバックループ, reftext=フィードバックループ]

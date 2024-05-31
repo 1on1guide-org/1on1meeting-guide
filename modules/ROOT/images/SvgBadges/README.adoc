@@ -2,11 +2,7 @@
 :current2root: ../../../../
 :path-partials: {current2root}modules/ROOT/partials/
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 == 本バッジの利用方法
 本バッチは権限とその実行内容などを表すために利用します。

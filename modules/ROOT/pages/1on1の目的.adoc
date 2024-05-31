@@ -5,11 +5,7 @@ ifdef::site-gen-antora[]
 :path-partials: partial$
 endif::site-gen-antora[]
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 
 {name-1on1}の目的は、第一に、組織で働く個人のパフォーマンス向上・維持である。 +

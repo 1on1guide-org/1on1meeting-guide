@@ -1,11 +1,7 @@
 :current2root: ../../../../
 :path-partials: {current2root}modules/ROOT/partials/
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 :link-os-Windows-Subsystem-for-Linux: https://docs.microsoft.com/ja-jp/windows/wsl/[「Windows Subsystem for Linux（WSL）」]
 

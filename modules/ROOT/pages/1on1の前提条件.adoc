@@ -5,11 +5,7 @@ ifdef::site-gen-antora[]
 :path-partials: partial$
 endif::site-gen-antora[]
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 {name-1on1}の前提として、2つ条件がある。1つは「対話であること」で、もう1つは「組織や業務のフィードバックループをつくること」である。 [.small]#<<note-前提条件-kome1>>#
 

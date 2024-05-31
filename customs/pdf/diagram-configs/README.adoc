@@ -1,11 +1,7 @@
 :current2root: ../../../
 :path-partials: {current2root}modules/ROOT/partials/
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 このディレクトリは一部標準的な設定ではできない設定を行うファイルを配置するディレクトリです。
 

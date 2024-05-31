@@ -4,9 +4,6 @@ ifdef::site-gen-antora[]
 :path-partials: partial$
 include::{path-partials}defines/define-all-include.adoc[]
 endif::site-gen-antora[]
-ifdef::env-vscode[]
-:imagesdir: {current2root}
-endif::env-vscode[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // ============================================

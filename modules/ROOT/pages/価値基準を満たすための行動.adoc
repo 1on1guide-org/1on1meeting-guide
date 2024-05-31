@@ -5,11 +5,7 @@ ifdef::site-gen-antora[]
 :path-partials: partial$
 endif::site-gen-antora[]
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 
 {xref-価値基準}に挙げた価値基準を満たすため、以下のような行動が基本となる。

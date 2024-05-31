@@ -1,0 +1,8 @@
+// ==============================
+// VS Codeで編集しやすくするための設定
+// ==============================
+ifdef::env-vscode[]
+ifndef::imagesdir[]
+:imagesdir: {current2root}
+endif::imagesdir[]
+endif::env-vscode[]

@@ -2,11 +2,7 @@
 :current2root: ../../../
 :path-partials: {current2root}modules/ROOT/partials/
 include::{path-partials}defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: {current2root}
-endif::imagesdir[]
-endif::env-vscode[]
+
 
 このディレクトリは画像ファイルを配置するディレクトリです。各階層でそれぞれ画像の種類を定義しています。 +
 画像の作成方法等は各階層の「README.adoc」に記載の説明を参照してください。
