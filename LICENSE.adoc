@@ -1,7 +1,7 @@
 = ライセンス
 ifdef::site-gen-antora[]
-:includedir: ../../../
-include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+:path-partials: partial$
+include::{path-partials}defines/define-all-include.adoc[]
 endif::site-gen-antora[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 

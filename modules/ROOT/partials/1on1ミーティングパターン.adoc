@@ -1,12 +1,18 @@
 = 1on1ミーティングパターン
-:includedir: ../../../
-include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+:current2root: ../../../
+:path-partials: {current2root}modules/ROOT/partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../../
 endif::imagesdir[]
 endif::env-vscode[]
 
+// このファイルはAntoraでは利用しない
+// インクルードはResource IDでの記載を省略している
 
 include::../pages/patterns/1.adoc[leveloffset=+1]
 

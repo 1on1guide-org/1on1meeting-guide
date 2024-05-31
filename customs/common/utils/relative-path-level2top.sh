@@ -2,9 +2,9 @@
 set -eu
 
 ##############################
-# ディレクトリ階層を辿ってbase directoryまでの相対パスを『:includedir:』の値として書き込むよ。
+# ディレクトリ階層を辿ってbase directoryまでの相対パスを『:current2root:』の値として書き込むよ。
 # bashが使える環境でこの子をキックしてね。
-# 利用する際はあらかじめ対象のファイルに『:includedir:』を定義してね。
+# 利用する際はあらかじめ対象のファイルに『:current2root:』を定義してね。
 ##############################
 
 TOOL_DIR=$(cd $(dirname $0); pwd)
@@ -26,10 +26,10 @@ do
   PATH_LEVEL=${PATH_LEVEL//\//\\/}
   echo ${FILE}
   if [ "$(uname)" == 'Darwin' ]; then
-    sed -i "" -e "s/^:includedir:.*/:includedir: ${PATH_LEVEL}/g" "${INDEX_DIR}${FILE#.}"
+    sed -i "" -e "s/^:current2root:.*/:current2root: ${PATH_LEVEL}/g" "${INDEX_DIR}${FILE#.}"
     sed -i "" -e "s/^:imagesdir:.*/:imagesdir: ${PATH_LEVEL}/g" "${INDEX_DIR}${FILE#.}"
   else
-    sed -i -e "s/^:includedir:.*/:includedir: ${PATH_LEVEL}/g" "${FILE}"
+    sed -i -e "s/^:current2root:.*/:current2root: ${PATH_LEVEL}/g" "${FILE}"
     sed -i -e "s/^:imagesdir:.*/:imagesdir: ${PATH_LEVEL}/g" "${FILE}"
   fi
 done

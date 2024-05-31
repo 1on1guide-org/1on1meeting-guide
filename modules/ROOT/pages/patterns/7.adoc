@@ -1,6 +1,10 @@
 = お互いの共通項・違いを知る
-:includedir: ../../../../
-include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+:current2root: ../../../../
+:path-partials: {current2root}modules/ROOT/partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../../../

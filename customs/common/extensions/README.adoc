@@ -1,5 +1,5 @@
-:includedir: ../../../
-include::{includedir}contents/defines/define-all-include.adoc[]
+:current2root: ../../../
+include::{current2root}contents/defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../../

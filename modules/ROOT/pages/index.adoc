@@ -1,5 +1,9 @@
-:includedir: ../../../
-include::{includedir}modules/ROOT/partials/defines/define-all-include.adoc[]
+:current2root: ../../../
+:path-partials: {current2root}modules/ROOT/partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 ifndef::imagesdir[]
 :imagesdir: ../../../
@@ -23,8 +27,8 @@ endif::convert-for-writers[]
 
 // HTMLモードでのPDFへのリンク
 ifdef::backend-html5,convert-for-all[]
-include::{includedir}modules/ROOT/partials/PDF-link.adoc[]
+include::{path-partials}PDF-link.adoc[]
 endif::backend-html5,convert-for-all[]
 
 // β版の注意点
-include::{includedir}modules/ROOT/partials/requests-for-beta.adoc[]
+include::{path-partials}requests-for-beta.adoc[]
