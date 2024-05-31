@@ -1,9 +1,10 @@
 = fonts ディレクトリ
 :current2root: ../../../
-include::{current2root}contents/defines/define-all-include.adoc[]
+:path-partials: {current2root}modules/ROOT/partials/
+include::{path-partials}defines/define-all-include.adoc[]
 ifdef::env-vscode[]
 ifndef::imagesdir[]
-:imagesdir: ../../../
+:imagesdir: {current2root}
 endif::imagesdir[]
 endif::env-vscode[]
 
