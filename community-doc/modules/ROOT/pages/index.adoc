@@ -32,8 +32,8 @@ include::{path-partials}written-by-community.adoc[]
 ifdef::site-gen-antora[]
 == コンテンツとページの移動について
 
-メインコンテンツは『{xref-1on1guide-top}』となっており、メニューから移動することができます。 +
-「{name-this-guide}」の各ページはページ下部から移動することもできますが、メニューから自由なページに直接移動することも可能です。
+メインコンテンツは『{xref-1on1guide-top}』となっており、メニューを利用して移動することができます。 +
+「{name-this-guide}」の各ページの下部にあるページネーションから移動することもできますが、メニューからそれぞれのページに直接移動することも可能です。
 endif::site-gen-antora[]
 
 // HTMLモードでのPDFの説明
