@@ -1,4 +1,5 @@
 = 1on1ミーティングガイド (1on1ガイド)
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイド。コミュニティメンバーによって、パターンランゲージの形式で執筆されている。
 :current2root: ./
 :path-module-community: community-doc/modules/ROOT/
 :path-module-1on1guide: guide/modules/ROOT/

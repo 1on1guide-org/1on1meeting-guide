@@ -1,4 +1,5 @@
 = 1on1の価値基準
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングで大切にしている6つの価値基準。
 :current2root: ../../../../
 :path-module-1on1guide: guide/modules/ROOT/
 :path-partials: {current2root}{path-module-1on1guide}partials/
