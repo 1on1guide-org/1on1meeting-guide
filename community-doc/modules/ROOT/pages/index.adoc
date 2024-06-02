@@ -1,0 +1,36 @@
+= はじめに
+:current2root: ../../../../
+:path-module-community: community-doc/modules/ROOT/
+:path-partials: {current2root}{path-module-community}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
+
+
+:name-this-guide: {name-1on1meeting-guide-raw}
+:name-1on1: {name-1on1meeting-raw}
+
+// ========================================
+// ライター向けの記載内容
+ifdef::convert-for-writers[]
+[IMPORTANT]
+.[.red.big]#*編集者向けのコンテンツが出力されています*#
+====
+本項目が出ている場合はレビュワー向けの出力が有効になっています。
+正式版では利用できないため注意してください。
+====
+endif::convert-for-writers[]
+// ========================================
+
+{name-this-guide}は組織で働く個人のパフォーマンス向上・維持のために実施する{name-1on1}の実践的なガイドを目指し、コミュニティメンバーによって、パターンランゲージの形式を取り入れ執筆しています。
+
+include::{path-partials}written-by-community.adoc[]
+
+// HTMLモードでのPDFへのリンク
+ifdef::backend-html5,convert-for-all[]
+include::{path-partials}PDF-link.adoc[]
+endif::backend-html5,convert-for-all[]
+
+// β版の注意点
+include::{path-partials}requests-for-beta.adoc[]

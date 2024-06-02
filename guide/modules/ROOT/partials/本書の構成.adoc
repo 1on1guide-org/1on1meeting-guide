@@ -1,0 +1,16 @@
+= 本書の構成
+:current2root: ../../../../
+:path-module-1on1guide: guide/modules/ROOT/
+:path-partials: {current2root}{path-module-1on1guide}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
+
+
+// このファイルはAntoraでは利用しない
+// インクルードはResource IDでの記載を省略している
+
+
+[[本書の書き方と読み方]]
+include::../pages/本書の書き方と読み方.adoc[leveloffset=+1]

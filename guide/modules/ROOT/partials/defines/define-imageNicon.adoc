@@ -1,0 +1,20 @@
+:path-image-module-family: modules/ROOT/images/
+ifdef::site-gen-antora[]
+:path-image-module-family:
+endif::site-gen-antora[]
+
+// 権限アイコン
+:icon-sample-check: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-check.svg[]
+:icon-analog-check: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-check.svg[]
+:icon-sample-user: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-user.svg[]
+:icon-analog-user: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-user.svg[]
+:icon-sample-write: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-pen.svg[]
+:icon-analog-write: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-pen.svg[]
+:icon-sample-read: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-eye.svg[]
+:icon-analog-read: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-eye.svg[]
+:icon-sample-smartphone: image:{path-image-module-family}SvgBadges/badges/badge-user-sample-smartphone.svg[]
+:icon-analog-featurephone: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-featurephone.svg[]
+
+// カテゴリー
+:image-1on1_Meeting_Patterns: image:{path-image-module-family}1on1_Meeting_Patterns.jpg[]
+

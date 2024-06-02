@@ -1,61 +1,63 @@
 = 1on1ミーティングガイド (1on1ガイド)
 :current2root: ./
-include::{current2root}modules/ROOT/partials/defines/define-all-include.adoc[]
+:path-module-community: community-doc/modules/ROOT/
+:path-module-1on1guide: guide/modules/ROOT/
+include::{current2root}{path-module-1on1guide}partials/defines/define-all-include.adoc[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // はじめに
 [preface]
-include::modules/ROOT/pages/index.adoc[leveloffset=+1]
+include::{path-module-community}pages/index.adoc[leveloffset=+1]
 
 // 1on1ミーティングガイドの目的と背景
 [[PURPOSE-GUIDELINES]]
-include::modules/ROOT/pages/1on1ガイドの目的と背景.adoc[leveloffset=+1]
+include::{path-module-1on1guide}pages/1on1ガイドの目的と背景.adoc[leveloffset=+1]
 
 
 // 1on1の目的
 [[PURPOSE-1ON1]]
-include::modules/ROOT/pages/1on1の目的.adoc[leveloffset=+1]
+include::{path-module-1on1guide}pages/1on1の目的.adoc[leveloffset=+1]
 
 // 1on1の前提条件
-include::modules/ROOT/pages/1on1の前提条件.adoc[leveloffset=+1]
+include::{path-module-1on1guide}pages/1on1の前提条件.adoc[leveloffset=+1]
 
 <<<
 
 // 1on1の価値基準
 [[価値基準]]
-include::modules/ROOT/pages/1on1の価値基準.adoc[leveloffset=+1]
+include::{path-module-1on1guide}pages/1on1の価値基準.adoc[leveloffset=+1]
 
 <<<
 
 // 価値基準を満たすための行動
-include::modules/ROOT/pages/価値基準を満たすための行動.adoc[leveloffset=+1]
+include::{path-module-1on1guide}pages/価値基準を満たすための行動.adoc[leveloffset=+1]
 
 <<<
 
 // 本書の構成
-include::modules/ROOT/partials/本書の構成.adoc[leveloffset=+1]
+include::{path-module-1on1guide}partials/本書の構成.adoc[leveloffset=+1]
 
 <<<
 
 [[記載内容について]]
-include::modules/ROOT/pages/記載内容について.adoc[leveloffset=+2]
+include::{path-module-1on1guide}pages/記載内容について.adoc[leveloffset=+2]
 
 <<<
 // カテゴリー
 [[PATTERN-CATEGORY]]
-include::modules/ROOT/pages/カテゴリー.adoc[leveloffset=+2]
+include::{path-module-1on1guide}pages/カテゴリー.adoc[leveloffset=+2]
 
 <<<
 
 // パターン
 [[ALL-PATTERNS]]
-include::modules/ROOT/partials/1on1ミーティングパターン.adoc[leveloffset=+1]
+include::{path-module-1on1guide}partials/1on1ミーティングパターン.adoc[leveloffset=+1]
 
 <<<
 
 // 用語集
 [[GLOSSARY]]
-include::modules/ROOT/pages/用語集.adoc[leveloffset=+1]
+include::{path-module-1on1guide}pages/用語集.adoc[leveloffset=+1]
 
 <<<
 
