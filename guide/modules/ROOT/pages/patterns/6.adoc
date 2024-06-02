@@ -1,4 +1,5 @@
 = 言葉に表れない心の動き・意思を大事にする
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『言葉に表れない心の動き・意思を大事にする』。
 :current2root: ../../../../../
 :path-module-1on1guide: guide/modules/ROOT/
 :path-partials: {current2root}{path-module-1on1guide}partials/

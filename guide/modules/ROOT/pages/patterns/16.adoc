@@ -1,4 +1,5 @@
 = 大きな問題・課題には本腰入れて取り組む
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『大きな問題・課題には本腰入れて取り組む』。
 :current2root: ../../../../../
 :path-module-1on1guide: guide/modules/ROOT/
 :path-partials: {current2root}{path-module-1on1guide}partials/

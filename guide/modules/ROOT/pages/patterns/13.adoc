@@ -1,4 +1,5 @@
 = 背景や経緯を語る
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『背景や経緯を語る』。
 :current2root: ../../../../../
 :path-module-1on1guide: guide/modules/ROOT/
 :path-partials: {current2root}{path-module-1on1guide}partials/

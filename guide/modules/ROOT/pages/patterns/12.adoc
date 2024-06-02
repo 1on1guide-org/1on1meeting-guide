@@ -1,4 +1,5 @@
 = その時のコンディション（振れ幅）をお互いに見る
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『その時のコンディション（振れ幅）をお互いに見る』。
 :current2root: ../../../../../
 :path-module-1on1guide: guide/modules/ROOT/
 :path-partials: {current2root}{path-module-1on1guide}partials/
