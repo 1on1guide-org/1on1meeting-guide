@@ -5,12 +5,15 @@
 include::{current2root}{path-module-1on1guide}partials/defines/define-all-include.adoc[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
+:name-this-guide: {name-1on1meeting-guide-raw}
+:name-1on1: {name-1on1meeting-raw}
+
 // はじめに
 [preface]
 include::{path-module-community}pages/index.adoc[leveloffset=+1]
 
 // 1on1ミーティングガイドの目的と背景
-[[PURPOSE-GUIDELINES]]
+[[PURPOSE-GUIDELINES,{name-this-guide}]]
 include::{path-module-1on1guide}pages/1on1ガイドの目的と背景.adoc[leveloffset=+1]
 
 
