@@ -14,7 +14,7 @@ include::{path-partials}defines/define-all-include.adoc[]
 相手を知るということは、案外難しい。まずは自分と相手でわかりそうなメタファーを見つけてみよう。 [.small]#<<note-pattern8-kome1>>#
 
 [#note-pattern8-kome1, reftext=※1]
-[.small]#※1「<<glossary_メタファー>>」の詳細は「<<GLOSSARY>>」を参照#
+[.small]#※1{xref-用語集-メタファー}#
 
 要約::
 相手と自分で互いにわかるメタファーが見つかると、互いの話がより分かりやすく感じることができる。
