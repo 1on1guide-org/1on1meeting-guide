@@ -1,0 +1,42 @@
+= 1on1ミーティングガイドの目的と背景
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドを執筆した目的と背景。
+:current2root: ../../../../
+:path-module-1on1guide: guide/modules/ROOT/
+:path-partials: {current2root}{path-module-1on1guide}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
+
+
+:name-this-guide: {name-1on1meeting-guide-raw}
+:name-1on1: {name-1on1meeting-raw}
+
+2010年代に入ってから、仕事自体や、仕事に対する価値観が変化していってる。それに伴い、{name-1on1}（以下、{name-1on1-raw}）などで、定期的に話す場を設ける重要性が高まっている。 +
+{name-1on1-raw}には様々な形式がある。それに対して、必要となる根本的な部分・考え方の理解を促進するために、『{name-this-guide}』（以下、{name-this-guide-raw}）を作成した。
+
+// 上の空行を消さないこと
+//上記で1on1に置き換えたので、この後は全て1on1となるように設定 
+:name-1on1: {name-1on1-raw} 
+//上記で本書に置き換えたので、この後は全て本書となるように設定 
+:name-this-guide: {name-this-guide-raw}
+// 下の空行を消さないこと
+
+私たちは『個の可能性を最大化することで組織の可能性を最大化できる』と考えている。また『各人や各組織で様々なやり方がある』ことも私たちは理解している。{name-this-guide}は、各人や各組織のやり方を否定するものではない。  +
+そのため、{name-this-guide}は、{name-1on1}実践の正解を記した教科書ではなく、あくまで最低限必要な部分や、よりよいやり方を見つけるためのヒントを記載する。{name-this-guide}の内容を参考にしながら、それぞれで実践してもらうことを想定している。 +
+想定読者としては、組織に{name-1on1}を導入したい人、{name-1on1}を実施する人、{name-1on1}を受ける人を想定している。 
+
+// ========================================
+// ライター向けの記載内容
+ifdef::convert-for-writers[]
+[WARNING]
+.[.orange.big]#*【編集者向け情報】 {name-this-guide}の想定読者は以下を想定しています*#
+====
+* 単純な答えを求めない人
+** ガイドには考える余地を大いに残す。
+** 同一のパターンの適用も、その場その時の状況に合わせた場合に、同じ方法は使えないと感じれること。
+* 既存の1on1本を読んでもうまくいかなかった人や疑問を持っている人
+* 教育関係者など人と向きあう仕事で技術向上をしている人
+====
+endif::convert-for-writers[]
+// ========================================

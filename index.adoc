@@ -1,69 +1,67 @@
 = 1on1ミーティングガイド (1on1ガイド)
-:includedir: ./
-include::{includedir}contents/defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-:imagesdir: ./
-endif::env-vscode[]
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイド。コミュニティメンバーによって、パターンランゲージの形式で執筆されている。
+:current2root: ./
+:path-module-community: community-doc/modules/ROOT/
+:path-module-1on1guide: guide/modules/ROOT/
+include::{current2root}{path-module-1on1guide}partials/defines/define-all-include.adoc[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
-// ========================================
-// ライター向けの記載内容
-ifdef::convert-for-writers[]
-[IMPORTANT]
-.[.red.big]#*編集者向けのコンテンツが出力されています*#
-====
-本項目が出ている場合はレビュワー向けの出力が有効になっています。
-正式版では利用できないため注意してください。
-====
-endif::convert-for-writers[]
-// ========================================
+:name-this-guide: {name-1on1meeting-guide-raw}
+:name-1on1: {name-1on1meeting-raw}
 
-// HTMLモードでのPDFへのリンク
-ifdef::backend-html5,convert-for-all[]
-include::contents/PDF-link.adoc[]
-endif::backend-html5,convert-for-all[]
-
-// β版の注意点
-include::contents/requests-for-beta.adoc[]
+// はじめに
+[preface]
+include::{path-module-community}pages/index.adoc[leveloffset=+1]
 
 // 1on1ミーティングガイドの目的と背景
-include::contents/1on1ミーティングガイドの目的と背景.adoc[]
+[[PURPOSE-GUIDELINES,{name-this-guide}]]
+include::{path-module-1on1guide}pages/1on1ガイドの目的と背景.adoc[leveloffset=+1]
 
 
 // 1on1の目的
-include::contents/1on1の目的.adoc[]
+[[PURPOSE-1ON1]]
+include::{path-module-1on1guide}pages/1on1の目的.adoc[leveloffset=+1]
 
 // 1on1の前提条件
-include::contents/1on1の前提条件.adoc[]
+include::{path-module-1on1guide}pages/1on1の前提条件.adoc[leveloffset=+1]
 
 <<<
 
 // 1on1の価値基準
-include::contents/1on1の価値基準.adoc[]
+[[価値基準]]
+include::{path-module-1on1guide}pages/1on1の価値基準.adoc[leveloffset=+1]
 
 <<<
 
 // 価値基準を満たすための行動
-include::contents/価値基準を満たすための行動.adoc[]
+include::{path-module-1on1guide}pages/価値基準を満たすための行動.adoc[leveloffset=+1]
 
 <<<
 
 // 本書の構成
-include::contents/本書の構成.adoc[]
+include::{path-module-1on1guide}partials/本書の構成.adoc[leveloffset=+1]
+
+<<<
+
+[[記載内容について]]
+include::{path-module-1on1guide}pages/記載内容について.adoc[leveloffset=+2]
 
 <<<
 // カテゴリー
-include::contents/カテゴリー.adoc[leveloffset=+1]
+[[PATTERN-CATEGORY]]
+include::{path-module-1on1guide}pages/カテゴリー.adoc[leveloffset=+2]
 
 <<<
 
 // パターン
-include::contents/1on1ミーティングパターン.adoc[]
+[[ALL-PATTERNS]]
+include::{path-module-1on1guide}partials/1on1ミーティングパターン.adoc[leveloffset=+1]
 
 <<<
 
 // 用語集
-include::contents/用語集.adoc[]
+[[GLOSSARY]]
+include::{path-module-1on1guide}pages/用語集.adoc[leveloffset=+1]
 
 <<<
 

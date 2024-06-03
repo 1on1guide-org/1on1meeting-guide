@@ -1,0 +1,15 @@
+// 空行禁止(最終行含めて無駄な改行があると設定が有効になりません）
+include::define-version-headeronly.adoc[]
+include::common/define-common-headeronly.adoc[]
+// 空行禁止(最終行含めて無駄な改行があると設定が有効になりません）
+// ここから原則空行禁止(余計なトラブルを防ぐために空行は避けてください）
+include::common/define-common.adoc[]
+// ここまで原則空行禁止
+include::common/define-imagesize.adoc[]
+include::common/define-convert.adoc[]
+include::common/define-common-imageNicon.adoc[]
+include::common/define-common-literal.adoc[]
+include::define-imageNicon.adoc[]
+include::define-literal.adoc[]
+include::define-xref.adoc[]
+include::common/define-forVScode.adoc[]

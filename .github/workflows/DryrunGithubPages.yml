@@ -3,12 +3,6 @@ name: Dryrun Github Pages
 
 on:
   workflow_dispatch:
-    inputs:
-      upload_pages:
-        description: 'Upload artifact to GitHub Pages.'
-        required: false
-        type: boolean
-        default: false
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -16,5 +10,4 @@ jobs:
   dryrun_job:
     uses: ./.github/workflows/asciidoc.yml
     with:
-      upload_pages: ${{ inputs.upload_pages }}
       deploy_pages: false

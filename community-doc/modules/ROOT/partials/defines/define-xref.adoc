@@ -1,0 +1,7 @@
+// ==============================
+// 他のモジュールのクロスリファレンス
+// ==============================
+:xref-1on1guide-top: <<PURPOSE-GUIDELINES>> 
+ifdef::site-gen-antora[]
+:xref-1on1guide-top: xref:1on1guide::1on1ガイドの目的と背景.adoc[1on1ミーティングガイド(1on1ガイド)]
+endif::site-gen-antora[]

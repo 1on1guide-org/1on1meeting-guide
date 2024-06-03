@@ -1,10 +1,7 @@
-:includedir: ../../../
-include::{includedir}contents/defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: ../../../
-endif::imagesdir[]
-endif::env-vscode[]
+:current2root: ../../../
+:path-partials: {current2root}modules/ROOT/partials/
+include::{path-partials}defines/define-all-include.adoc[]
+
 
 このディレクトリはHTML出力時にヘッダーやフッターに必要な情報を挿入するdocinfoファイルを配置しています。
 

@@ -1,0 +1,93 @@
+// ==============================
+// パターン以外のクロスリファレンス
+// ==============================
+:xref-本書の書き方と読み方: 「 <<本書の書き方と読み方>> 」
+:xref-記載内容について: 「<<記載内容について>>」
+:xref-カテゴリー: 「<<PATTERN-CATEGORY>>」
+:xref-価値基準: 「<<価値基準>>」
+:xref-用語集-中動態: 「<<glossary_中動態>>」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-フォース: 「<<glossary_フォース>>」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-フィードバックループ: 「<<glossary_フィードバックループ>>」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-プロトコル: 「<<glossary_プロトコル>>」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-間合い: 「<<glossary_間合い>>」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-コンテキスト: 「<<glossary_コンテキスト>>」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-メタファー: 「<<glossary_メタファー>>」の詳細は「<<GLOSSARY>>」を参照
+
+ifdef::backend-pdf[]
+// PDFはファイルまたぎの説明項目リンクは飛ばない
+:xref-用語集-中動態: 「中動態」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-フォース: 「フォース」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-フィードバックループ: 「フィードバックループ」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-プロトコル: 「プロトコル」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-間合い: 「間合い」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-コンテキスト: 「コンテキスト」の詳細は「<<GLOSSARY>>」を参照
+:xref-用語集-メタファー: 「メタファー」の詳細は「<<GLOSSARY>>」を参照
+endif::backend-pdf[]
+
+ifdef::site-gen-antora[]
+:xref-本書の書き方と読み方: 「 xref:ROOT:本書の書き方と読み方.adoc[本書の書き方と読み方] 」
+:xref-記載内容について: 「 xref:ROOT:記載内容について.adoc[記載内容について] 」
+:xref-カテゴリー: 「 xref:ROOT:カテゴリー.adoc[カテゴリー] 」
+:xref-価値基準: 「xref:ROOT:1on1の価値基準.adoc[価値基準] 」
+:xref-用語集-中動態: 「xref:ROOT:用語集.adoc#glossary_中動態[中動態]」の詳細は「xref:ROOT:用語集.adoc[用語集]」を参照
+:xref-用語集-フォース: 「xref:ROOT:用語集.adoc#glossary_フォース[フォース]」の詳細は「xref:ROOT:用語集.adoc[用語集]」を参照
+:xref-用語集-フィードバックループ: 「xref:ROOT:用語集.adoc#glossary_フィードバックループ[フィードバックループ]」の詳細は「xref:ROOT:用語集.adoc[用語集]」を参照
+:xref-用語集-プロトコル: 「xref:ROOT:用語集.adoc#glossary_プロトコル[プロトコル]」の詳細は「xref:ROOT:用語集.adoc[用語集]」を参照
+:xref-用語集-間合い: 「xref:ROOT:用語集.adoc#glossary_間合い[間合い]」の詳細は「xref:ROOT:用語集.adoc[用語集]」を参照
+:xref-用語集-コンテキスト: 「xref:ROOT:用語集.adoc#glossary_コンテキスト[コンテキスト]」の詳細は「xref:ROOT:用語集.adoc[用語集]」を参照
+:xref-用語集-メタファー: 「xref:ROOT:用語集.adoc#glossary_メタファー[メタファー]」の詳細は「xref:ROOT:用語集.adoc[用語集]」を参照
+endif::site-gen-antora[]
+
+// ==============================
+// パターンのクロスリファレンス
+// ==============================
+:xref-pattern-1: <<_一緒に場を作っていくことを確認する>> 
+:xref-pattern-2: <<_相手を変えようとしない>> 
+:xref-pattern-3: <<_アドバイスする前に話を最後まで聴く>> 
+:xref-pattern-4: <<_思いつきで話してみる>> 
+:xref-pattern-5: <<_自分の感情を言葉にする>> 
+:xref-pattern-6: <<_言葉に表れない心の動き意思を大事にする>> 
+:xref-pattern-7: <<_お互いの共通項違いを知る>> 
+:xref-pattern-8: <<_相手と自分で共通のメタファーを扱えるようにする>> 
+:xref-pattern-9: <<_話してもよいことをすり合わせていく>> 
+:xref-pattern-10: <<_対話の間合いを近づける>> 
+:xref-pattern-11: <<_対話の間合いを遠ざける>> 
+:xref-pattern-12: <<_その時のコンディション（振れ幅）をお互いに見る>> 
+:xref-pattern-13: <<_景や経緯を語る>> 
+:xref-pattern-14: <<_自分達で認知できる組織図を描いてみよう>> 
+:xref-pattern-15: <<_一旦の結論を出して仮置きする>> 
+:xref-pattern-16: <<_大きな問題・課題には本腰入れて取り組む>> 
+:xref-pattern-17: <<_あえて解決を急がず状況を解明する>> 
+:xref-pattern-18: <<_言いにくい事も言ってみる>> 
+:xref-pattern-19: <<_テーマや聴きたいことを備えておく>> 
+:xref-pattern-20: <<_問題と不安を分離する>> 
+:xref-pattern-21: <<_お互いの取説を作って更新していく>> 
+:xref-pattern-22: <<_あえて利害関係の無い人と実施してみる>> 
+:xref-pattern-23: <<_記憶が薄れない程度に実施する>> 
+:xref-pattern-24: <<_織の構造を知り、テーマと照らし合わせる>> 
+ifdef::site-gen-antora[]
+:xref-pattern-1: xref:ROOT:patterns/1.adoc[]
+:xref-pattern-2: xref:ROOT:patterns/2.adoc[]
+:xref-pattern-3: xref:ROOT:patterns/3.adoc[]
+:xref-pattern-4: xref:ROOT:patterns/4.adoc[]
+:xref-pattern-5: xref:ROOT:patterns/5.adoc[]
+:xref-pattern-6: xref:ROOT:patterns/6.adoc[]
+:xref-pattern-7: xref:ROOT:patterns/7.adoc[]
+:xref-pattern-8: xref:ROOT:patterns/8.adoc[]
+:xref-pattern-9: xref:ROOT:patterns/9.adoc[]
+:xref-pattern-10: xref:ROOT:patterns/10.adoc[]
+:xref-pattern-11: xref:ROOT:patterns/11.adoc[]
+:xref-pattern-12: xref:ROOT:patterns/12.adoc[]
+:xref-pattern-13: xref:ROOT:patterns/13.adoc[]
+:xref-pattern-14: xref:ROOT:patterns/14.adoc[]
+:xref-pattern-15: xref:ROOT:patterns/15.adoc[]
+:xref-pattern-16: xref:ROOT:patterns/16.adoc[]
+:xref-pattern-17: xref:ROOT:patterns/17.adoc[]
+:xref-pattern-18: xref:ROOT:patterns/18.adoc[]
+:xref-pattern-19: xref:ROOT:patterns/19.adoc[]
+:xref-pattern-20: xref:ROOT:patterns/20.adoc[]
+:xref-pattern-21: xref:ROOT:patterns/21.adoc[]
+:xref-pattern-22: xref:ROOT:patterns/22.adoc[]
+:xref-pattern-23: xref:ROOT:patterns/23.adoc[]
+:xref-pattern-24: xref:ROOT:patterns/24.adoc[]
+endif::site-gen-antora[]

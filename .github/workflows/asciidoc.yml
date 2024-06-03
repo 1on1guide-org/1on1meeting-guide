@@ -6,10 +6,6 @@ name: Make Artifact And Deploy
 on:
   workflow_call:
     inputs:
-      upload_pages:
-        description: 'Upload artifact to GitHub Pages.'
-        required: true
-        type: boolean
       deploy_pages:
         description: 'Deploy to GitHub Pages.'
         required: true
@@ -26,23 +22,10 @@ jobs:
     - name: Check out code
       timeout-minutes: 1
       uses: actions/checkout@v4
-    # Make SvgBadges 
-    - name: Make SvgBadges 
-      timeout-minutes: 1
-      run: bash ./contents/images/SvgBadges/maketool/make.sh
-    # Search Diacritical mark NFD 
-    # Unicode正規化がNFDで行われ、濁点・半濁点が親となる文字と分離した場合にwarningを出力
-    - name: Search Diacritical mark NFD
-      timeout-minutes: 1
-      run: bash ./customs/common/utils/search-diacritical-mark-NFD.sh
     # Copy html assets
     - name: Copy html assets
       timeout-minutes: 1
       run: bash ./customs/html/utils/copy-html-assets.sh
-    # Echo index version
-    - name: Echo index version
-      timeout-minutes: 1
-      run: bash ./customs/common/utils/echo-index-version.sh
     # Make PDF revision NO.
     - name: Make PDF revision NO.
       timeout-minutes: 1
@@ -54,23 +37,8 @@ jobs:
       uses: Analog-inc/asciidoctor-action@v1
       with:
         shellcommand: "./.github/workflows/asciidoc.sh"
-    # Copy html assets
-    - name: Move html for Deploy
-      if: inputs.upload_pages == true
-      timeout-minutes: 1
-      run: bash ./customs/html/utils/move-html-for-public.sh
-    # Use the output from the documents step
-    - name: Save AsciiDoc step
-      if: inputs.upload_pages == false
-      timeout-minutes: 1
-      uses: actions/upload-artifact@v4
-      with:
-        name: Output-document
-        path: ./public/
-        retention-days: 1
     # Uploading artifact that can be deployed to GitHub Pages.
     - name: Uploading GitHub Pages
-      if: inputs.upload_pages == true
       uses: actions/upload-pages-artifact@v3
       with:
         name: github-pages
@@ -80,7 +48,7 @@ jobs:
 
   # Deploy job
   deploy:
-    if: (inputs.deploy_pages == true && inputs.upload_pages == true) && (github.ref == 'refs/heads/main' || github.event == 'release')
+    if: inputs.deploy_pages == true  && (github.ref == 'refs/heads/main' || github.event == 'release')
     # Add a dependency to the build job
     needs: asciidoctor_job
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment

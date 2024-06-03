@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://guide.1on1guide.org/sitemap.xml

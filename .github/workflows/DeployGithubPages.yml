@@ -13,5 +13,4 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.event == 'release'
     uses: ./.github/workflows/asciidoc.yml
     with:
-      upload_pages: true
       deploy_pages: true

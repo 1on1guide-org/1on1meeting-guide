@@ -1,11 +1,8 @@
 = fonts ディレクトリ
-:includedir: ../../../
-include::{includedir}contents/defines/define-all-include.adoc[]
-ifdef::env-vscode[]
-ifndef::imagesdir[]
-:imagesdir: ../../../
-endif::imagesdir[]
-endif::env-vscode[]
+:current2root: ../../../
+:path-partials: {current2root}modules/ROOT/partials/
+include::{path-partials}defines/define-all-include.adoc[]
+
 
 
 このディレクトリはフォントファイルを配置するディレクトリです。日本語のファイルはフォントファイルがないとPDF出力できないため配置しています。
