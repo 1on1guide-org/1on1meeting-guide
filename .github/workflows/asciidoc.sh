@@ -42,7 +42,7 @@ set -x
 
 # warningで戻り値を正常にするかしないか
 # warningをエラーとして扱う
-FAILURE_LEVEL=" --failure-level=WARN "
+FAILURE_LEVEL=" --failure-level=INFO "
 
 # Common parameters & Attributes
 COMMON_PARAMETERS=" -B ${CURRENT_PATH}/ -R ${CURRENT_PATH}/ -a diagram-cachedir=${OUTPUT_PATH}/diagram-cache -a allow-uri-read -r asciidoctor-diagram -r ${COMMON_PATH}/extensions/common-extensions.rb -v -t --trace ${FAILURE_LEVEL} "  
