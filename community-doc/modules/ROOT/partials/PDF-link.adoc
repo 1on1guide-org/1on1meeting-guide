@@ -11,6 +11,6 @@ include::{path-partials}defines/define-all-include.adoc[]
 [NOTE]
 .[.navy.big]#*{name-this-guide}は印刷に便利なPDF版が用意されています*#
 ====
-*PDF版は link:./pdf/1on1meeting-guide.pdf[こちら]から閲覧することができます。* +
+*PDF版は右上のメニューから閲覧することができます。* +
 ダウンロードして利用される場合は、右クリックからダウンロードお願いします。
 ====
