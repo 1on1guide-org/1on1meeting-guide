@@ -1,9 +1,4 @@
 = 1on1ミーティングガイド(1on1ガイド)　リポジトリ
-:current2root: ./
-ifdef::site-gen-antora[]
-:path-partials: partial$
-include::{path-partials}defines/define-all-include.adoc[]
-endif::site-gen-antora[]
 // ここまで空行禁止(無駄な改行があると設定が有効になりません）
 
 // ============================================
@@ -22,15 +17,12 @@ ifndef::name-this-guide[]
 endif::name-this-guide[]
 :name-CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
 :name-CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
-:name-writing-guide: ライティングガイド
-:name-syntax-reference: シンタックスリファレンス
 :url-1on1guide-org: https://1on1guide.org
 :url-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
-:url-1on1meeting-guide-html: https://guide.1on1guide.org
-:url-1on1meeting-guide-pdf: https://guide.1on1guide.org/pdf/1on1meeting-guide.pdf
+:url-1on1meeting-guide-html: https://files.1on1guide.org/html/index.html
+:url-1on1meeting-guide-pdf: https://files.1on1guide.org/pdf/1on1meeting-guide.pdf
 :url-CC-BY-SA-4_0: https://creativecommons.org/licenses/by-sa/4.0/deed.ja
 :url-CC-BY-SA-4_0_en: http://creativecommons.org/licenses/by-sa/4.0/
-:url-writing-guide-html: https://guide.1on1guide.org/index-writing-guide.html
 :url-asciidoc-syntax-reference-html: {url-writing-guide-html}#ASCIIDOC-SYNTAX-REFERENCE
 :link-1on1guide-org: link:{url-github-repository}[{name-1on1guide-org}]
 :link-github-repository: link:{url-github-repository}[Github repository]
@@ -54,30 +46,30 @@ endif::name-1on1guide-org[]
 
 == 『{name-1on1meeting-guide-raw}』の出力先
 『{name-1on1meeting-guide-raw}』はGitHub actionsのArtifactsとして出力されます。
-また、デプロイ先として{link-1on1meeting-guide-html}と{link-1on1meeting-guide-pdf}があります。
 
-=== 生成物
+=== Web上の生成物
 * {link-1on1meeting-guide-pdf}
 * {link-1on1meeting-guide-html}
-
-== ご意見やアイデア
-『{name-1on1meeting-guide-raw}』へのご意見やアイデアは link:https://docs.google.com/forms/d/e/1FAIpQLSf9U3DEbxw7FtOQE75k1BLlF5jh_jQ3fedNFDwhWDbygpWdmw/viewform[こちら]にて受け付けています。  
 
 == ドキュメント生成方法
 mainブランチに対するpullリクエストがあればドキュメント生成を行っておりますが、以下の方法で手動実行することも可能です。
 
 . link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/DryrunGithubPages.yml[Github Actionsの「Dryrun Github Pages」] を開きます
 . 「Run workflow」で 「main」ブランチを指定します
-. 「Upload artifact to GitHub Pages.」にチェックを入れて、「Run workflow」ボタンを押下するとドライランを行うことができ、実行したActionのArtifactとしてtarファイルをダウンロード可能です。
-** チェックボックスにチェックを入れずに「Run workflow」ボタンを押下すると実行したActionのArtifactとしてzipファイルをダウンロード可能です。 +
-   この場合はdirectly構成が一部異なりますので、生成物の確認として実施しても、デプロイに向けたドライランとして利用することは避けてください。
+. 「Run workflow」ボタンを押下するとドライランを行うことができ、実行したActionのArtifactとしてtarファイルをダウンロード可能です。
 
-== Webサイトへのへのデプロイ方法
-リリースを実行すると自動でデプロイされますが、手動でも実行できます。
+
+== File用サイトのデプロイ方法
+リリースを実行すると自動でデプロイされますが、手動でも実行できます。 + 
+このデプロイは主にPDFファイルを配置するのに利用しています。
 
 . link:https://github.com/1on1guide-org/1on1meeting-guide/actions/workflows/DeployGithubPages.yml[Github Actionsの「Deploy Github Pages」] を開きます
 . 「Run workflow」で 「main」ブランチを指定します。
 . 「Run workflow」ボタンを押下し実行してください。
+
+=== guide.1on1guide.orgへのデプロイについては
+
+. link:https://github.com/1on1guide-org/guide.1on1guide.org[Github 1on1guide-org/guide.1on1guide.org リポジトリ」] を参照してください。
 
 == 更新に推奨する環境
 Visual Studio CodeとAsciiDoc extensionを利用します。
@@ -90,21 +82,32 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 [,tree,subs="attributes+"]
 ----
 .
-├─ .github                    (Github Actions向け等のファイル)
-├─ modules/ROOT               (『{name-1on1meeting-guide-raw}』の構成ファイル)
-│ ├─ pages                    (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
-│ │ └─ patterns               (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
-│ ├─ partials                 (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
-│ │ └─ defines                (『{name-1on1meeting-guide-raw}』の設定ファイル)
-│ ├─ images                   (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
-│ └─ navi.adoc                (Antoraで出力する際のナビゲーションファイル)
+├─ .github                    (Github向けのファイル)
+├─ community-doc              (『{name-1on1meeting-guide-raw}』の構成ファイルのうちコミュニティ情報)
+│ ├─ modules/ROOT             (『{name-1on1meeting-guide-raw}』の構成ファイル)
+│ │ ├─ pages                  (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
+│ │ │ └─ patterns             (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
+│ │ ├─ partials               (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
+│ │ │ └─ defines              (『{name-1on1meeting-guide-raw}』の設定ファイル)
+│ │ │   └─ common             (『{name-1on1meeting-guide-raw}』本編のエイリアス)
+│ │ └─ images                 (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
+│ └─antora.yml                (Antoraで出力するためにコンテンツソースルートに配置するメタ情報 ROOT指定)
+├─ guide
+│ ├─ modules/ROOT             (『{name-1on1meeting-guide-raw}』の本編の情報)
+│ │ ├─ pages                  (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
+│ │ │ └─ patterns             (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
+│ │ ├─ partials               (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
+│ │ │ └─ defines              (『{name-1on1meeting-guide-raw}』の設定ファイル)
+│ │ │   └─ common             (『{name-1on1meeting-guide-raw}』の設定ファイル)
+│ │ ├─ images                 (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
+│ │ └─ navi.adoc              (Antoraで出力する際のナビゲーションファイル)
+│ └─antora.yml                (Antoraで出力するためにコンテンツソースルートに配置するメタ情報)
 ├─ customs                    (出力などの制御に必要な構成ファイル)
 │ ├─ common                   (出力などの制御に共通で必要な構成ファイル)
 │ ├─ html                     (HTML出力の制御に必要な構成ファイル)
 │ ├─ notion2adoc              (Notionで記載したパターンをAsciidocに変換するためのファイル)
 │ └─ pdf                      (PDF出力の制御に必要な構成ファイル)
 ├─ public                     (コンバート時の出力先ディレクトリ)
-├─ antora.yml                 (Antoraで出力するためにコンテンツソースルートに配置するメタ情報)
 ├─ index.adoc                 (『{name-1on1meeting-guide-raw}』出力用インデックスファイル)
 ├─ LICENSE.adoc               (『{name-1on1meeting-guide-raw}』のライセンスを記載したファイル)
 └─ README.adoc                (本README)
