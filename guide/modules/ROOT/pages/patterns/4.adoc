@@ -51,7 +51,7 @@ include::{path-partials}defines/define-all-include.adoc[]
 * 結論はまだいえないものの、もやもやしたり悩んでいる状態であることを伝えることができる
 
 関連パターン::
-* <<_自分の感情を言葉にする>>
+* {xref-pattern-5}
 
 
 

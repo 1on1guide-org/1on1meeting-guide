@@ -49,8 +49,8 @@ include::{path-partials}defines/define-all-include.adoc[]
 それを少しブレイクダウンして説明することで、イメージするものが伝わりやすくなった。
 
 関連パターン::
-* <<_お互いの共通項・違いを知る>>
-* <<_お互いの取説を作って更新していく>>
+* {xref-pattern-7}
+* {xref-pattern-21}
 
 
 

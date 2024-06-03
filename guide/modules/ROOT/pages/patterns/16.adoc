@@ -45,7 +45,7 @@ include::{path-partials}defines/define-all-include.adoc[]
 これは特別な{name-1on1}と位置づけて実施してみるといいかもしれない。例えば時間を長くするとか、割込が入りにくい普段とは違う場所でやってみるなどだ。
 
 関連パターン::
-* <<_一旦の結論を出して仮置きする>>
+* {xref-pattern-15}
 
 
 
