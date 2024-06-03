@@ -13,5 +13,4 @@ jobs:
   release_job:
     uses: ./.github/workflows/asciidoc.yml
     with:
-      upload_pages: false
       deploy_pages: false
