@@ -22,10 +22,22 @@ jobs:
     - name: Check out code
       timeout-minutes: 1
       uses: actions/checkout@v4
+    # Make SvgBadges 
+    - name: Make SvgBadges 
+      timeout-minutes: 1
+      run: bash ./guide/modules/ROOT/images/SvgBadges/maketool/make.sh
+    # Unicode正規化がNFDで行われ、濁点・半濁点が親となる文字と分離した場合にwarningを出力
+    - name: Search Diacritical mark NFD
+      timeout-minutes: 1
+      run: bash ./customs/common/utils/search-diacritical-mark-NFD.sh
     # Copy html assets
     - name: Copy html assets
       timeout-minutes: 1
       run: bash ./customs/html/utils/copy-html-assets.sh
+    # Echo index version
+    - name: Echo index version
+      timeout-minutes: 1
+      run: bash ./customs/common/utils/echo-index-version.sh
     # Make PDF revision NO.
     - name: Make PDF revision NO.
       timeout-minutes: 1
