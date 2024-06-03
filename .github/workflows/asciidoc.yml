@@ -30,10 +30,6 @@ jobs:
     - name: Copy html assets
       timeout-minutes: 1
       run: bash ./customs/html/utils/copy-html-assets.sh
-    # Echo index version
-    - name: Echo index version
-      timeout-minutes: 1
-      run: bash ./customs/common/utils/echo-index-version.sh
     # Make PDF revision NO.
     - name: Make PDF revision NO.
       timeout-minutes: 1
