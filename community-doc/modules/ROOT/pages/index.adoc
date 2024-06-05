@@ -1,4 +1,9 @@
+ifndef::site-gen-antora[]
 = はじめに
+endif::site-gen-antora[]
+ifdef::site-gen-antora[]
+= 1on1ミーティングガイド (1on1ガイド)
+endif::site-gen-antora[]
 :description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイド。コミュニティメンバーによって、パターンランゲージの形式で執筆されている。
 :current2root: ../../../../
 :path-module-community: community-doc/modules/ROOT/
