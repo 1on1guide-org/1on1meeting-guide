@@ -1,5 +1,5 @@
 :current2root: ../../../../
-:path-partials: {current2root}modules/ROOT/partials/
+:path-partials: {current2root}modules/contents/partials/
 ifdef::site-gen-antora[]
 :path-partials: partial$
 endif::site-gen-antora[]

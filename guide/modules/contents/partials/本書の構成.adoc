@@ -1,6 +1,6 @@
 = 本書の構成
 :current2root: ../../../../
-:path-module-1on1guide: guide/modules/ROOT/
+:path-module-1on1guide: guide/modules/contents/
 :path-partials: {current2root}{path-module-1on1guide}partials/
 ifdef::site-gen-antora[]
 :path-partials: partial$

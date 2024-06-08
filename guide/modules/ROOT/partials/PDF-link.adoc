@@ -1,5 +1,5 @@
 :current2root: ../../../../
-:path-module-community: community-doc/modules/ROOT/
+:path-module-community: guide/modules/ROOT/
 :path-partials: {current2root}{path-module-community}partials/
 ifdef::site-gen-antora[]
 :path-partials: partial$
@@ -9,7 +9,7 @@ include::{path-partials}defines/define-all-include.adoc[]
 
 // HPDFへのリンク
 [NOTE]
-.[.navy.big]#*{name-this-guide}は印刷に便利なPDF版が用意されています*#
+.[.navy.big]#*印刷に便利なPDF版が用意されています*#
 ====
 *PDF版は右上のメニューから閲覧することができます。* +
 ダウンロードして利用される場合は、右クリックからダウンロードお願いします。

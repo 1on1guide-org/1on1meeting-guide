@@ -1,7 +1,7 @@
 = 一旦の結論を出して仮置きする
 :description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『一旦の結論を出して仮置きする』。
 :current2root: ../../../../../
-:path-module-1on1guide: guide/modules/ROOT/
+:path-module-1on1guide: guide/modules/contents/
 :path-partials: {current2root}{path-module-1on1guide}partials/
 ifdef::site-gen-antora[]
 :path-partials: partial$

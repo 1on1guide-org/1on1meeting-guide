@@ -44,8 +44,8 @@ endif::name-1on1guide-org[]
 
 このリポジトリは『{name-1on1meeting-guide-raw}』の執筆を管理するための場所です。
 
-== 『{name-1on1meeting-guide-raw}』の出力先
-『{name-1on1meeting-guide-raw}』はGitHub actionsのArtifactsとして出力されます。
+== の出力先
+GitHub actionsのArtifactsとして出力されます。
 
 === Web上の生成物
 * {link-1on1meeting-guide-pdf}
@@ -83,24 +83,22 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 ----
 .
 ├─ .github                    (Github向けのファイル)
-├─ community-doc              (『{name-1on1meeting-guide-raw}』の構成ファイルのうちコミュニティ情報)
-│ ├─ modules/ROOT             (『{name-1on1meeting-guide-raw}』の構成ファイル)
-│ │ ├─ pages                  (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
-│ │ │ └─ patterns             (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
-│ │ ├─ partials               (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
-│ │ │ └─ defines              (『{name-1on1meeting-guide-raw}』の設定ファイル)
-│ │ │   └─ common             (『{name-1on1meeting-guide-raw}』本編のエイリアス)
-│ │ └─ images                 (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
-│ └─antora.yml                (Antoraで出力するためにコンテンツソースルートに配置するメタ情報 ROOT指定)
 ├─ guide
-│ ├─ modules/ROOT             (『{name-1on1meeting-guide-raw}』の本編の情報)
-│ │ ├─ pages                  (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
-│ │ │ └─ patterns             (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
-│ │ ├─ partials               (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
-│ │ │ └─ defines              (『{name-1on1meeting-guide-raw}』の設定ファイル)
-│ │ │   └─ common             (『{name-1on1meeting-guide-raw}』の設定ファイル)
-│ │ ├─ images                 (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
-│ │ └─ navi.adoc              (Antoraで出力する際のナビゲーションファイル)
+│ ├─ modules
+│ │ ├─ contents               (本編の情報)
+│ │ │ ├─ pages                (本編の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
+│ │ │ │ └─ patterns           (本編中のパターンファイル Notionから自動で書き出す場合あり)
+│ │ │ ├─ partials             (本編の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
+│ │ │ │ └─ defines            (本編の設定ファイル)
+│ │ │ │   └─ common           (本編の設定ファイル)
+│ │ │ ├─ images               (本編で利用する共通的な画像ファイル)
+│ │ │ └─ navi.adoc            (Antoraで出力する際のナビゲーションファイル)
+│ │ ├─ ROOT                   (ROOTになるコンテンツディレクトリ)
+│ │ │ ├─ pages                (構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
+│ │ │ ├─ partials             (構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
+│ │ │ └─ defines              (ROOTの設定ファイル)
+│ │ │   └─ common             (本編のエイリアス)
+│ │ │ └─ images               (ROOTで利用する共通的な画像ファイル)
 │ └─antora.yml                (Antoraで出力するためにコンテンツソースルートに配置するメタ情報)
 ├─ customs                    (出力などの制御に必要な構成ファイル)
 │ ├─ common                   (出力などの制御に共通で必要な構成ファイル)
@@ -108,8 +106,8 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 │ ├─ notion2adoc              (Notionで記載したパターンをAsciidocに変換するためのファイル)
 │ └─ pdf                      (PDF出力の制御に必要な構成ファイル)
 ├─ public                     (コンバート時の出力先ディレクトリ)
-├─ index.adoc                 (『{name-1on1meeting-guide-raw}』出力用インデックスファイル)
-├─ LICENSE.adoc               (『{name-1on1meeting-guide-raw}』のライセンスを記載したファイル)
+├─ index.adoc                 (出力用インデックスファイル)
+├─ LICENSE.adoc               (のライセンスを記載したファイル)
 └─ README.adoc                (本README)
 ----
 

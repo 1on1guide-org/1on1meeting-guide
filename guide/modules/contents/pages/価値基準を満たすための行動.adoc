@@ -1,7 +1,7 @@
 = 価値基準を満たすための行動
 :description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングので価値基準を満たすために必要な行動が記載されている。
 :current2root: ../../../../
-:path-module-1on1guide: guide/modules/ROOT/
+:path-module-1on1guide: guide/modules/contents/
 :path-partials: {current2root}{path-module-1on1guide}partials/
 ifdef::site-gen-antora[]
 :path-partials: partial$

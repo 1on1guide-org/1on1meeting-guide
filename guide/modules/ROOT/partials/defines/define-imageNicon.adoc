@@ -1,4 +1,6 @@
-:path-image-module-family: community-doc/modules/ROOT/images/
+ifndef::path-image-module-family[]
+:path-image-module-family: guide/modules/ROOT/images/
+endif::path-image-module-family[]
 ifdef::site-gen-antora[]
 :path-image-module-family:
 endif::site-gen-antora[]

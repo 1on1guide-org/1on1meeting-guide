@@ -29,19 +29,13 @@ endif::convert-for-writers[]
 include::{path-partials}written-by-community.adoc[]
 
 
-ifdef::site-gen-antora[]
-== コンテンツとページの移動について
 
-メインコンテンツとなる『{xref-1on1guide-top}』へはメニューから移動することができます。 +
-「{name-this-guide}」内の各ページの移動について、下部にあるページネーションから順に閲覧することもできますが、メニューから閲覧したいページへ直接移動することも可能です。
-endif::site-gen-antora[]
 
 // HTMLモードでのPDFの説明
 ifdef::backend-html5,convert-for-all[]
 include::{path-partials}PDF-link.adoc[]
 endif::backend-html5,convert-for-all[]
 
-== その他の注意事項等
 
 // β版の注意点
 include::{path-partials}requests-for-beta.adoc[]

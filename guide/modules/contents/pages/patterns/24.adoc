@@ -1,7 +1,7 @@
 = 組織の構造を知り、テーマと照らし合わせる
 :description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『組織の構造を知り、テーマと照らし合わせる』。
 :current2root: ../../../../../
-:path-module-1on1guide: guide/modules/ROOT/
+:path-module-1on1guide: guide/modules/contents/
 :path-partials: {current2root}{path-module-1on1guide}partials/
 ifdef::site-gen-antora[]
 :path-partials: partial$
