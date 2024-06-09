@@ -1,7 +1,5 @@
-= 1on1ミーティングガイド(1on1ガイド)　執筆用リポジトリ
+= 1on1 meeting guide writing repository
 // ============================================
-// /defines/define-literal.adoc と同等の内容を一部直書き
-// githubで表示する際に正しく表示するために多重で定義する。
 :url-1on1meeting-guide-html: https://files.1on1guide.org/html/index.html
 :url-1on1meeting-guide-pdf: https://files.1on1guide.org/pdf/1on1meeting-guide.pdf
 :url-1on1meeting-guide-website: https://guide.1on1guide.org/
@@ -50,35 +48,35 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 [,tree,subs="attributes+"]
 ----
 .
-├─ .github                    (Github向けのファイル)
-├─ guide
-│ ├─ modules
-│ │ ├─ contents               (本編の情報)
-│ │ │ ├─ pages                (本編の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
-│ │ │ │ └─ patterns           (本編中のパターンファイル Notionから自動で書き出す場合あり)
-│ │ │ ├─ partials             (本編の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
-│ │ │ │ └─ defines            (本編の設定ファイル)
-│ │ │ │   └─ common           (本編の設定ファイル)
-│ │ │ ├─ images               (本編で利用する共通的な画像ファイル)
-│ │ │ └─ navi.adoc            (Antoraで出力する際のナビゲーションファイル)
-│ │ ├─ ROOT                   (ROOTになるコンテンツディレクトリ)
-│ │ │ ├─ pages                (構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
-│ │ │ ├─ partials             (構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
-│ │ │ └─ defines              (ROOTの設定ファイル)
-│ │ │   └─ common             (本編の設定から共通で持つエイリアス)
-│ │ │ └─ images               (ROOTで利用する共通的な画像ファイル)
-│ └─antora.yml                (Antoraで出力するためにコンテンツソースルートに配置するメタ情報)
-├─ customs                    (出力などの制御に必要な構成ファイル)
-│ ├─ common                   (出力などの制御に共通で必要な構成ファイル)
-│ ├─ html                     (HTML出力の制御に必要な構成ファイル)
-│ ├─ notion2adoc              (Notionで記載したパターンをAsciidocに変換するためのファイル)
-│ └─ pdf                      (PDF出力の制御に必要な構成ファイル)
-├─ public                     (公開用のディレクトリ)
-│ ├─ pdf                      (出力されたPDF)
-│ └─ html                     (出力された非公開HTML)
-├─ index.adoc                 (出力用インデックスファイル)
-├─ LICENSE.adoc               (のライセンスを記載したファイル)
-└─ README.adoc                (本README)
+├─ .github                  (Github向けのファイル)
+├─ guide                    (ガイドの構成ファイル)
+│ ├─ modules                (Antora buildで必要な構成)
+│ │ ├─ contents             (本編の情報)
+│ │ │ ├─ pages              (本編のページとなるファイル)
+│ │ │ │ └─ patterns         (本編中のパターンファイル Notionから自動で書き出す場合あり)
+│ │ │ ├─ partials           (Antoraでページ扱いにならない部品)
+│ │ │ │ └─ defines          (本編の設定ファイル)
+│ │ │ │   └─ common         (本編以外でも利用する設定ファイル)
+│ │ │ ├─ images             (本編で利用する共通的な画像ファイル)
+│ │ │ └─ navi.adoc          (Antoraで出力する際のナビゲーションファイル)
+│ │ ├─ ROOT                 (ROOTになるコンテンツディレクトリ)
+│ │ │ ├─ pages              (indexとなるファイルのみ配置)
+│ │ │ ├─ partials           (Antoraでページ扱いにならない部品)
+│ │ │ └─ defines            (ROOTの設定ファイル)
+│ │ │   └─ common           (本編の設定から共通で持つエイリアス)
+│ │ │ └─ images             (ROOTで利用する共通的な画像ファイル)
+│ └─antora.yml              (Antoraで出力するためにコンテンツソースルートに配置するメタ情報)
+├─ customs                  (出力などの制御に必要な構成ファイル)
+│ ├─ common                 (出力などの制御に共通で必要な構成ファイル)
+│ ├─ html                   (HTML出力の制御に必要な構成ファイル)
+│ ├─ notion2adoc            (Notionで記載したパターンをAsciidocに変換するためのファイル)
+│ └─ pdf                    (PDF出力の制御に必要な構成ファイル)
+├─ public                   (公開用のディレクトリ)
+│ ├─ pdf                    (出力されたPDF)
+│ └─ html                   (出力された非公開HTML)
+├─ index.adoc               (出力用インデックスファイル)
+├─ LICENSE.adoc             (ライセンスを記載したファイル)
+└─ README.adoc              (本README)
 ----
 
 == 管理者
