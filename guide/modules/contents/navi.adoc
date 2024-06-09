@@ -1,0 +1,61 @@
+:current2root: ../../
+:path-partials: {current2root}modules/ROOT/partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
+ifdef::env-vscode[]
+:imagesdir: {current2root}
+endif::env-vscode[]
+// ここまで空行禁止(無駄な改行があると設定が有効になりません）
+
+// 1on1ミーティングガイドの目的と背景
+* xref:purpose-and-background-of-the-1on1guide.adoc[{name-1on1guide-raw}の目的と背景]
+// 1on1の目的
+* xref:purpose-of-1on1.adoc[]
+// 1on1の前提条件
+* xref:prerequisites-for-1on1.adoc[]
+// 1on1の価値基準
+* xref:values-​​of-1on1.adoc[]
+// 価値基準を満たすための行動
+* xref:actions-to-meet-values.adoc[]
+// 本書の構成
+//* xref:本書の構成.adoc[]
+* 本書の構成
+// 本書の書き方と読み方
+** xref:how-to-write-and-read.adoc[]
+// 記載内容について
+** xref:about-the-contents-of-patterns.adoc[]
+// カテゴリー
+** xref:pattern-categories.adoc[]
+// パターン
+//* xref:1on1ミーティングパターン.adoc[]
+* 1on1ミーティングパターン
+** xref:patterns/1.adoc[]
+** xref:patterns/2.adoc[]
+** xref:patterns/3.adoc[]
+** xref:patterns/4.adoc[]
+** xref:patterns/5.adoc[]
+** xref:patterns/6.adoc[]
+** xref:patterns/7.adoc[]
+** xref:patterns/8.adoc[]
+** xref:patterns/9.adoc[]
+** xref:patterns/10.adoc[]
+** xref:patterns/11.adoc[]
+** xref:patterns/12.adoc[]
+** xref:patterns/13.adoc[]
+** xref:patterns/14.adoc[]
+** xref:patterns/15.adoc[]
+** xref:patterns/16.adoc[]
+** xref:patterns/17.adoc[]
+** xref:patterns/18.adoc[]
+** xref:patterns/19.adoc[]
+** xref:patterns/20.adoc[]
+** xref:patterns/21.adoc[]
+** xref:patterns/22.adoc[]
+** xref:patterns/23.adoc[]
+** xref:patterns/24.adoc[]
+// 用語集
+* xref:glossary.adoc[]
+//ライセンス
+* xref:LICENSE.adoc[]

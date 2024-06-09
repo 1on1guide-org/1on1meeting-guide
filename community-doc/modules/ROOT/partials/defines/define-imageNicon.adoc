@@ -1,4 +1,0 @@
-:path-image-module-family: community-doc/modules/ROOT/images/
-ifdef::site-gen-antora[]
-:path-image-module-family:
-endif::site-gen-antora[]

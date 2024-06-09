@@ -1,0 +1,15 @@
+:current2root: ../../../../
+:path-module-community: guide/modules/ROOT/
+:path-partials: {current2root}{path-module-community}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
+
+
+[NOTE]
+.[.navy.big]#*コミュニティでの執筆で成り立っています*#
+====
+本書はコミュニティのメンバーが共同で執筆しており特定の人によって完成されたものではなく、常に更新されるものです。また、出版される書籍の文章に比べて足りないと思うところはあるかもしれません。 +
+よりよい内容となる記載のアイデアがあれば{link-1on1guide-org}にご連絡ください。
+====

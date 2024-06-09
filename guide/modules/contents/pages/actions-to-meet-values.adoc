@@ -1,0 +1,34 @@
+= 価値基準を満たすための行動
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングので価値基準を満たすために必要な行動が記載されている。
+// 当面の間は以前のパスをaliasとして保持しておく
+:page-aliases: 1on1guide:価値基準を満たすための行動.adoc
+:current2root: ../../../../
+:path-module-1on1guide: guide/modules/contents/
+:path-partials: {current2root}{path-module-1on1guide}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
+
+
+
+{xref-価値基準}に挙げた価値基準を満たすため、以下のような行動が基本となる。
+
+
+状況確認:: 
+以下のようなことを互いに確認する
+* 困っていること、悩みがあるか
+* 嬉しいことや楽しいこと
+* コンディション（体調、仕事の状況、モチベーション）
+
+観察:: 
+* {name-1on1}の時間以外も含めて、相手がどんな状況にありそうか観察する
+
+並走:: 
+* それぞれの役割はあった上で、一緒に進めていく
+* 部分では牽引や伴走もあるが、全体では並走する
+
+内省:: 
+* 自分の状況を自分で把握する
+* 状況と事実と解釈をまずは話してみて、整理する
+* 主観と客観が混ざっていることを互いに踏まえる

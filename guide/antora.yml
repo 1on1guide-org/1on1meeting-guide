@@ -1,9 +1,8 @@
-name: 1on1guide
+name: ROOT
 title: 1on1ミーティングガイド
 version: ~
-start_page: 1on1ガイドの目的と背景.adoc
 nav:
-- modules/ROOT/navi.adoc
+- modules/contents/navi.adoc
 
 
 

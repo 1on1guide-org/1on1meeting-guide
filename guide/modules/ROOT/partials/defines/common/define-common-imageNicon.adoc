@@ -1,9 +1,0 @@
-:path-image-module-family: guide/modules/ROOT/images/
-ifdef::site-gen-antora[]
-:path-image-module-family:
-endif::site-gen-antora[]
-
-// CC BY-SA
-:badge-CC-BY-SA-4_0-png: image:{path-image-module-family}CC_by-sa.svg[Creative Commons License ]
-
-

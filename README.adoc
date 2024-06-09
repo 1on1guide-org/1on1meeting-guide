@@ -1,51 +1,17 @@
-= 1on1ミーティングガイド(1on1ガイド)　リポジトリ
-// ここまで空行禁止(無駄な改行があると設定が有効になりません）
-
+= 1on1 meeting guide writing repository
 // ============================================
-// githubで表示する際に正しく表示するために多重で定義する。
-ifndef::name-1on1guide-org[]
-// /defines/define-literal.adoc と同等の内容を直書き
-:name-1on1guide-org: 1on1guide.org
-:name-1on1meeting-raw: 1on1ミーティング
-:name-1on1-raw: 1on1
-:name-1on1meeting-guide-raw: {name-1on1meeting-raw}ガイド ({name-1on1-raw}ガイド)
-:name-1on1meeting-guide-raw-en: 1on1 meeting guide
-:name-this-guide-raw: 本書
-// 以下は本書で共通的に利用する。また、本書に読み替えるタイミングで動的に変数の値を書き換える
-ifndef::name-this-guide[]
-:name-this-guide: {name-1on1meeting-guide-raw}
-endif::name-this-guide[]
-:name-CC-BY-SA-4_0: クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス (CC BY-SA 4.0)
-:name-CC-BY-SA-4_0_EN: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
-:url-1on1guide-org: https://1on1guide.org
-:url-github-repository: https://github.com/1on1guide-org/1on1meeting-guide
 :url-1on1meeting-guide-html: https://files.1on1guide.org/html/index.html
 :url-1on1meeting-guide-pdf: https://files.1on1guide.org/pdf/1on1meeting-guide.pdf
-:url-CC-BY-SA-4_0: https://creativecommons.org/licenses/by-sa/4.0/deed.ja
-:url-CC-BY-SA-4_0_en: http://creativecommons.org/licenses/by-sa/4.0/
+:url-1on1meeting-guide-website: https://guide.1on1guide.org/
 :url-asciidoc-syntax-reference-html: {url-writing-guide-html}#ASCIIDOC-SYNTAX-REFERENCE
-:link-1on1guide-org: link:{url-github-repository}[{name-1on1guide-org}]
-:link-github-repository: link:{url-github-repository}[Github repository]
-:link-1on1meeting-guide-raw: link:{url-github-repository}[{name-1on1meeting-guide-raw}]
-:link-1on1meeting-guide-raw-en: link:{url-github-repository}[{name-1on1meeting-guide-raw-en}]
-:link-1on1meeting-guide-html: link:{url-1on1meeting-guide-html}[{name-1on1meeting-guide-raw} HTML版]
-:link-1on1meeting-guide-pdf: link:{url-1on1meeting-guide-pdf}[{name-1on1meeting-guide-raw} PDF版]
-:link-CC-BY-SA-4_0: link:{url-CC-BY-SA-4_0}[{name-CC-BY-SA-4_0}]
-:link-CC-BY-SA-4_0-en: link:{url-CC-BY-SA-4_0_en}[{name-CC-BY-SA-4_0_EN}]
-:link-writing-guide-html: link:{url-writing-guide-html}[{name-writing-guide} HTML版]
-:link-asciidoc-syntax-reference-html: link:{url-asciidoc-syntax-reference-html}[{name-syntax-reference} HTML版]
-// /defines/define-imageNicon.adoc と同等の内容を直書き
-// CC
-:badge-CC-BY-SA-4_0-png: image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License , opts=inline]
-endif::name-1on1guide-org[]
+:link-1on1meeting-guide-html: link:{url-1on1meeting-guide-html}[HTML版]
+:link-1on1meeting-guide-pdf: link:{url-1on1meeting-guide-pdf}[PDF版]
+:link-1on1meeting-guide-website: link:{url-1on1meeting-guide-pdf}[guide.1on1guide.org]
 // ============================================
 
 
-
-このリポジトリは『{name-1on1meeting-guide-raw}』の執筆を管理するための場所です。
-
-== 『{name-1on1meeting-guide-raw}』の出力先
-『{name-1on1meeting-guide-raw}』はGitHub actionsのArtifactsとして出力されます。
+== 出力先
+GitHub actionsのArtifactsとして出力されます。
 
 === Web上の生成物
 * {link-1on1meeting-guide-pdf}
@@ -67,7 +33,7 @@ mainブランチに対するpullリクエストがあればドキュメント生
 . 「Run workflow」で 「main」ブランチを指定します。
 . 「Run workflow」ボタンを押下し実行してください。
 
-=== guide.1on1guide.orgへのデプロイについては
+== {link-1on1meeting-guide-website}へのデプロイについて
 
 . link:https://github.com/1on1guide-org/guide.1on1guide.org[Github 1on1guide-org/guide.1on1guide.org リポジトリ」] を参照してください。
 
@@ -82,35 +48,35 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 [,tree,subs="attributes+"]
 ----
 .
-├─ .github                    (Github向けのファイル)
-├─ community-doc              (『{name-1on1meeting-guide-raw}』の構成ファイルのうちコミュニティ情報)
-│ ├─ modules/ROOT             (『{name-1on1meeting-guide-raw}』の構成ファイル)
-│ │ ├─ pages                  (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
-│ │ │ └─ patterns             (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
-│ │ ├─ partials               (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
-│ │ │ └─ defines              (『{name-1on1meeting-guide-raw}』の設定ファイル)
-│ │ │   └─ common             (『{name-1on1meeting-guide-raw}』本編のエイリアス)
-│ │ └─ images                 (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
-│ └─antora.yml                (Antoraで出力するためにコンテンツソースルートに配置するメタ情報 ROOT指定)
-├─ guide
-│ ├─ modules/ROOT             (『{name-1on1meeting-guide-raw}』の本編の情報)
-│ │ ├─ pages                  (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされるもの)
-│ │ │ └─ patterns             (『{name-1on1meeting-guide-raw}』中のパターンファイル Notionから自動で書き出す場合あり)
-│ │ ├─ partials               (『{name-1on1meeting-guide-raw}』の構成ファイルのうちAntoraでHTMLページとしてbuildされない部品となるもの)
-│ │ │ └─ defines              (『{name-1on1meeting-guide-raw}』の設定ファイル)
-│ │ │   └─ common             (『{name-1on1meeting-guide-raw}』の設定ファイル)
-│ │ ├─ images                 (『{name-1on1meeting-guide-raw}』で利用する共通的な画像ファイル)
-│ │ └─ navi.adoc              (Antoraで出力する際のナビゲーションファイル)
-│ └─antora.yml                (Antoraで出力するためにコンテンツソースルートに配置するメタ情報)
-├─ customs                    (出力などの制御に必要な構成ファイル)
-│ ├─ common                   (出力などの制御に共通で必要な構成ファイル)
-│ ├─ html                     (HTML出力の制御に必要な構成ファイル)
-│ ├─ notion2adoc              (Notionで記載したパターンをAsciidocに変換するためのファイル)
-│ └─ pdf                      (PDF出力の制御に必要な構成ファイル)
-├─ public                     (コンバート時の出力先ディレクトリ)
-├─ index.adoc                 (『{name-1on1meeting-guide-raw}』出力用インデックスファイル)
-├─ LICENSE.adoc               (『{name-1on1meeting-guide-raw}』のライセンスを記載したファイル)
-└─ README.adoc                (本README)
+├─ .github                  (Github向けのファイル)
+├─ guide                    (ガイドの構成ファイル)
+│ ├─ modules                (Antora buildで必要な構成)
+│ │ ├─ contents             (本編の情報)
+│ │ │ ├─ pages              (本編のページとなるファイル)
+│ │ │ │ └─ patterns         (本編中のパターンファイル Notionから自動で書き出す場合あり)
+│ │ │ ├─ partials           (Antoraでページ扱いにならない部品)
+│ │ │ │ └─ defines          (本編の設定ファイル)
+│ │ │ │   └─ common         (本編以外でも利用する設定ファイル)
+│ │ │ ├─ images             (本編で利用する共通的な画像ファイル)
+│ │ │ └─ navi.adoc          (Antoraで出力する際のナビゲーションファイル)
+│ │ ├─ ROOT                 (ROOTになるコンテンツディレクトリ)
+│ │ │ ├─ pages              (indexとなるファイルのみ配置)
+│ │ │ ├─ partials           (Antoraでページ扱いにならない部品)
+│ │ │ └─ defines            (ROOTの設定ファイル)
+│ │ │   └─ common           (本編の設定から共通で持つエイリアス)
+│ │ │ └─ images             (ROOTで利用する共通的な画像ファイル)
+│ └─antora.yml              (Antoraで出力するためにコンテンツソースルートに配置するメタ情報)
+├─ customs                  (出力などの制御に必要な構成ファイル)
+│ ├─ common                 (出力などの制御に共通で必要な構成ファイル)
+│ ├─ html                   (HTML出力の制御に必要な構成ファイル)
+│ ├─ notion2adoc            (Notionで記載したパターンをAsciidocに変換するためのファイル)
+│ └─ pdf                    (PDF出力の制御に必要な構成ファイル)
+├─ public                   (公開用のディレクトリ)
+│ ├─ pdf                    (出力されたPDF)
+│ └─ html                   (出力された非公開HTML)
+├─ index.adoc               (出力用インデックスファイル)
+├─ LICENSE.adoc             (ライセンスを記載したファイル)
+└─ README.adoc              (本README)
 ----
 
 == 管理者
@@ -118,7 +84,7 @@ Visual Studio CodeとAsciiDoc extensionを利用します。
 コントリビューターについては初回の正式版以降に検討される予定です。
 
 メンテナー::
-* link:https://twitter.com/careerupdate?s=21&t=PJ6d1v98rDKSP9IIUT0-BQ[尾澤 愛実]
+* link:https://twitter.com/careerupdate[尾澤 愛実]
 * 笹尾 納勇仁
 * link:https://twitter.com/chachaki[@chachaki]
 * link:https://twitter.com/eroccowaruico[@eroccowaruico] 
