@@ -2,21 +2,15 @@
 // ============================================
 // /defines/define-literal.adoc と同等の内容を一部直書き
 // githubで表示する際に正しく表示するために多重で定義する。
-ifndef::name-1on1guide-org[]
-:name-1on1meeting-raw: 1on1ミーティング
-:name-1on1-raw: 1on1
-:name-1on1meeting-guide-raw: {name-1on1meeting-raw}ガイド ({name-1on1-raw}ガイド)
 :url-1on1meeting-guide-html: https://files.1on1guide.org/html/index.html
 :url-1on1meeting-guide-pdf: https://files.1on1guide.org/pdf/1on1meeting-guide.pdf
+:url-1on1meeting-guide-website: https://guide.1on1guide.org/
 :url-asciidoc-syntax-reference-html: {url-writing-guide-html}#ASCIIDOC-SYNTAX-REFERENCE
-:link-1on1meeting-guide-html: link:{url-1on1meeting-guide-html}[{name-1on1meeting-guide-raw} HTML版]
-:link-1on1meeting-guide-pdf: link:{url-1on1meeting-guide-pdf}[{name-1on1meeting-guide-raw} PDF版]
-endif::name-1on1guide-org[]
+:link-1on1meeting-guide-html: link:{url-1on1meeting-guide-html}[HTML版]
+:link-1on1meeting-guide-pdf: link:{url-1on1meeting-guide-pdf}[PDF版]
+:link-1on1meeting-guide-website: link:{url-1on1meeting-guide-pdf}[guide.1on1guide.org]
 // ============================================
 
-
-
-このリポジトリは『{name-1on1meeting-guide-raw}』の執筆を管理するための場所です。
 
 == 出力先
 GitHub actionsのArtifactsとして出力されます。
@@ -41,7 +35,7 @@ mainブランチに対するpullリクエストがあればドキュメント生
 . 「Run workflow」で 「main」ブランチを指定します。
 . 「Run workflow」ボタンを押下し実行してください。
 
-=== guide.1on1guide.orgへのデプロイについては
+== {link-1on1meeting-guide-website}へのデプロイについて
 
 . link:https://github.com/1on1guide-org/guide.1on1guide.org[Github 1on1guide-org/guide.1on1guide.org リポジトリ」] を参照してください。
 
