@@ -13,4 +13,4 @@ include::{path-partials}defines/define-all-include.adoc[]
 
 
 [[本書の書き方と読み方]]
-include::../pages/本書の書き方と読み方.adoc[leveloffset=+1]
+include::../pages/how-to-write-and-read.adoc[leveloffset=+1]
