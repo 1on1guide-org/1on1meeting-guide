@@ -1,6 +1,8 @@
 = ライセンス
 :description: 1on1ミーティングガイド(1on1ガイド)のライセンスはCreative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)となっています。
 ifdef::site-gen-antora[]
+// 当面の間は以前のパスをaliasとして保持しておく
+:page-aliases: 1on1guide:LICENSE.adoc
 :path-partials: partial$
 include::{path-partials}defines/define-all-include.adoc[]
 endif::site-gen-antora[]

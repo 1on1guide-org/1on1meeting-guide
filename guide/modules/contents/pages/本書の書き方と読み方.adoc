@@ -1,5 +1,7 @@
 = 本書の書き方と読み方
 :description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドの構成について説明されている。
+// 当面の間は以前のパスをaliasとして保持しておく
+:page-aliases: 1on1guide:本書の書き方と読み方.adoc
 :current2root: ../../../../
 :path-module-1on1guide: guide/modules/contents/
 :path-partials: {current2root}{path-module-1on1guide}partials/
