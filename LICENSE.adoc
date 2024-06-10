@@ -30,12 +30,13 @@ ifndef::name-1on1guide-org[]
 // /defines/define-imageNicon.adoc と同等の内容を直書き
 // CC
 :path-image-module-family: guide/modules/ROOT/images/
-:badge-CC-BY-SA-4_0-png: image:{path-image-module-family}CC_by-sa.svg[Creative Commons License]
+:badge-CC-BY-SA-4_0-png: image:{path-image-module-family}CC_by-sa.svg["Creative Commons License"]
 endif::name-1on1guide-org[]
 // ============================================
 
 
-
+// この画像のプレビューはリポジトリのルートのみ表示
+// Antora build用の構成では対応していないが、ビルドすると表示される
 {badge-CC-BY-SA-4_0-png} 
 
 特に記載がある場合を除き、『{link-1on1meeting-guide-raw}』は link:https://twitter.com/careerupdate[尾澤 愛実]、笹尾 納勇仁、 link:https://twitter.com/chachaki[@chachaki]、 link:https://twitter.com/eroccowaruico[@eroccowaruico] および、 link:https://github.com/1on1guide-org/1on1meeting-guide/graphs/contributors[その後の複数の著者の貢献]により作成されています。本書は {link-CC-BY-SA-4_0} の下に提供されています。

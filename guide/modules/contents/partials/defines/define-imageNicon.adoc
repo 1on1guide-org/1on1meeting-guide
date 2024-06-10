@@ -18,5 +18,5 @@ endif::site-gen-antora[]
 :icon-analog-featurephone: image:{path-image-module-family}SvgBadges/badges/badge-user-analog-featurephone.svg[]
 
 // カテゴリー
-:image-1on1_Meeting_Patterns: image:{path-image-module-family}1on1_Meeting_Patterns.jpg[]
+:image-1on1_Meeting_Patterns: image:{path-image-module-family}1on1_Meeting_Patterns.jpg["1on1ミーティングパターンのカテゴリー",{full-width}]
 
