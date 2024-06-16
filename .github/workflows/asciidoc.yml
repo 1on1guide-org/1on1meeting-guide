@@ -51,6 +51,7 @@ jobs:
         shellcommand: "./.github/workflows/asciidoc.sh"
     # Uploading artifact that can be deployed to GitHub Pages.
     - name: Uploading GitHub Pages
+      timeout-minutes: 1
       uses: actions/upload-pages-artifact@v3
       with:
         name: github-pages
