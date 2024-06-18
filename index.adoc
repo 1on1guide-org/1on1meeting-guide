@@ -29,7 +29,7 @@ include::{path-module-1on1guide}pages/prerequisites-for-1on1.adoc[leveloffset=+1
 
 // 1on1の価値基準
 [[価値基準]]
-include::{path-module-1on1guide}pages/values-​​of-1on1.adoc[leveloffset=+1]
+include::{path-module-1on1guide}pages/values-of-1on1.adoc[leveloffset=+1]
 
 <<<
 

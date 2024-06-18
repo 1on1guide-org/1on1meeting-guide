@@ -16,7 +16,7 @@ endif::env-vscode[]
 // 1on1の前提条件
 * xref:prerequisites-for-1on1.adoc[]
 // 1on1の価値基準
-* xref:values-​​of-1on1.adoc[]
+* xref:values-of-1on1.adoc[]
 // 価値基準を満たすための行動
 * xref:actions-to-meet-values.adoc[]
 // 本書の構成
