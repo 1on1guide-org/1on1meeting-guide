@@ -28,7 +28,7 @@ ifdef::site-gen-antora[]
 :xref-本書の書き方と読み方: 「 xref:contents:how-to-write-and-read.adoc[本書の書き方と読み方] 」
 :xref-記載内容について: 「 xref:contents:about-the-contents-of-patterns.adoc[記載内容について] 」
 :xref-カテゴリー: 「 xref:contents:pattern-categories.adoc[カテゴリー] 」
-:xref-価値基準: 「xref:contents:values-​​of-1on1.adoc[価値基準] 」
+:xref-価値基準: 「xref:contents:values-of-1on1.adoc[価値基準] 」
 :xref-用語集-中動態: 「xref:contents:glossary.adoc#glossary_中動態[中動態]」の詳細は「xref:contents:glossary.adoc[用語集]」を参照
 :xref-用語集-フォース: 「xref:contents:glossary.adoc#glossary_フォース[フォース]」の詳細は「xref:contents:glossary.adoc[用語集]」を参照
 :xref-用語集-フィードバックループ: 「xref:contents:glossary.adoc#glossary_フィードバックループ[フィードバックループ]」の詳細は「xref:contents:glossary.adoc[用語集]」を参照
