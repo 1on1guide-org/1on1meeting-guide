@@ -1,5 +1,6 @@
 // 画像サイズ
 ifdef::backend-html5,env-vscode[]
+:oneinches: width=72
 :twoinches: width=144
 :full-width: width=100%,align="center"
 :half-width: width=50%
@@ -11,6 +12,7 @@ ifdef::backend-html5,env-vscode[]
 :list-menu: width=25%
 endif::[]
 ifdef::backend-pdf[]
+:oneinches: pdfwidth=1in
 :twoinches: pdfwidth=2in
 :full-width: pdfwidth=84%,align="center"
 :half-width: pdfwidth=40%
