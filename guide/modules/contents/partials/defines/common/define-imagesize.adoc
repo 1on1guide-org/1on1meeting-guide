@@ -1,23 +1,26 @@
 // 画像サイズ
 ifdef::backend-html5,env-vscode[]
-:twoinches: width='144'
-:full-width: width='100%',align="center"
-:half-width: width='50%'
-:half-size: width='50%'
-:thumbnail: width='60'
-:full-page: width='100%',align="center"
-:half-page: width='50%'
-:dialog-page: width='30%'
-:list-menu: width='25%'
+:oneinches: width=72
+:twoinches: width=144
+:full-width: width=100%,align="center"
+:half-width: width=50%
+:half-size: width=50%
+:thumbnail: width=60
+:full-page: width=100%,align="center"
+:half-page: width=50%
+:dialog-page: width=30%
+:list-menu: width=25%
 endif::[]
 ifdef::backend-pdf[]
-:twoinches: pdfwidth='2in'
-:full-width: pdfwidth='84vw',align="center"
-:half-width: pdfwidth='40vw'
-:half-size: pdfwidth='40vw'
-:thumbnail: pdfwidth='20mm'
-:full-page: pdfwidth='84vw',align="center"
-:half-page: pdfwidth='42vw'
-:dialog-page: pdfwidth='30vw'
-:list-menu: pdfwidth='20vw'
+:oneinches: pdfwidth=1in
+:twoinches: pdfwidth=2in
+:full-width: pdfwidth=84%,align="center"
+:half-width: pdfwidth=40%
+:half-size: pdfwidth=40%
+:thumbnail: pdfwidth=20mm
+:full-page: pdfwidth=84%,align="center"
+:half-page: pdfwidth=42%
+:dialog-page: pdfwidth=30%
+:list-menu: pdfwidth=20%
 endif::[]
+
