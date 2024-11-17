@@ -116,3 +116,7 @@ include::../pages/patterns/26.adoc[leveloffset=+1]
 <<<
 
 include::../pages/patterns/27.adoc[leveloffset=+1]
+
+<<<
+
+include::../pages/patterns/28.adoc[leveloffset=+1]

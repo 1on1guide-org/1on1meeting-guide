@@ -48,4 +48,3 @@ include::../../../../../guide/modules/contents/partials/defines/define-all-inclu
 * チームの課題の挙げてみる (未記載)
 
 
-
