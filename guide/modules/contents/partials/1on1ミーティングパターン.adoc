@@ -107,12 +107,12 @@ include::../pages/patterns/24.adoc[leveloffset=+1]
 
 <<<
 
-include::../pages/patterns/118.adoc[leveloffset=+1]
+include::../pages/patterns/25.adoc[leveloffset=+1]
 
 <<<
 
-include::../pages/patterns/122.adoc[leveloffset=+1]
+include::../pages/patterns/26.adoc[leveloffset=+1]
 
 <<<
 
-include::../pages/patterns/128.adoc[leveloffset=+1]
+include::../pages/patterns/27.adoc[leveloffset=+1]
