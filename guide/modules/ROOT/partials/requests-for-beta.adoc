@@ -17,4 +17,6 @@ include::{path-partials}defines/define-all-include.adoc[]
 
 * 以下の未記載パターンのリンク切れ
 ** 無理に実施しない
+** その時のコンディション（振れ幅）をお互いに見る
+** チームの課題の挙げてみる
 ====
