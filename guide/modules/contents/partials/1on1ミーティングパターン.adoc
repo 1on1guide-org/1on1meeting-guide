@@ -104,3 +104,15 @@ include::../pages/patterns/23.adoc[leveloffset=+1]
 <<<
 
 include::../pages/patterns/24.adoc[leveloffset=+1]
+
+<<<
+
+include::../pages/patterns/25.adoc[leveloffset=+1]
+
+<<<
+
+include::../pages/patterns/26.adoc[leveloffset=+1]
+
+<<<
+
+include::../pages/patterns/27.adoc[leveloffset=+1]
