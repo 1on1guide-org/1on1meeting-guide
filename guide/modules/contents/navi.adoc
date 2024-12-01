@@ -55,6 +55,10 @@ endif::env-vscode[]
 ** xref:patterns/22.adoc[]
 ** xref:patterns/23.adoc[]
 ** xref:patterns/24.adoc[]
+** xref:patterns/25.adoc[]
+** xref:patterns/26.adoc[]
+** xref:patterns/27.adoc[]
+** xref:patterns/28.adoc[]
 // 用語集
 * xref:glossary.adoc[]
 //ライセンス
