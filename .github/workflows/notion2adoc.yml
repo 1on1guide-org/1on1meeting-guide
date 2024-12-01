@@ -33,4 +33,4 @@ jobs:
         commit-message: 'Update Asciidoc files from Notion'
         title: 'Update Asciidoc files from Notion'
         body: 'This PR updates the Asciidoc files based on the latest data from the Notion database.'
-        branch: 'update-asciidoc-from-notion'
+        branch: 'temporary/update-asciidoc-from-notion'
