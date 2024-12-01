@@ -1,6 +1,12 @@
 = チームの問題はチームの会話で取り扱えるようにする
-
-include::../../../../../guide/modules/contents/partials/defines/define-all-include.adoc[]
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『チームの問題はチームの会話で取り扱えるようにする』。
+:current2root: ../../../../../
+:path-module-1on1guide: guide/modules/contents/
+:path-partials: {current2root}{path-module-1on1guide}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
 
 はじめに::
 チームが抱える問題や課題を1on1に閉じて取り扱い続けることは適切ではない。できる限りチームで会話し解決できるよう流れを作ることを意識して取り組んでみよう。

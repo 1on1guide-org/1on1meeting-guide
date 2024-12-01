@@ -1,6 +1,12 @@
 = 自分の言葉で理想や想いを語ってみる
-
-include::../../../../../guide/modules/contents/partials/defines/define-all-include.adoc[]
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『自分の言葉で理想や想いを語ってみる』。
+:current2root: ../../../../../
+:path-module-1on1guide: guide/modules/contents/
+:path-partials: {current2root}{path-module-1on1guide}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
 
 はじめに::
 目の前の問題や課題ばかり解決しても望んだ世界にはならない。自分の言葉で自分の理想を語り、相手の理想と擦り合わせながら現実から理想に近づけてみよう。

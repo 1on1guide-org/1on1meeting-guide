@@ -1,6 +1,12 @@
 = 話を聴く余裕・余白をつくる
-
-include::../../../../../guide/modules/contents/partials/defines/define-all-include.adoc[]
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『話を聴く余裕・余白をつくる』。
+:current2root: ../../../../../
+:path-module-1on1guide: guide/modules/contents/
+:path-partials: {current2root}{path-module-1on1guide}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
 
 はじめに::
 聴く側のコンディションとして余裕や余白を作り、聴く態勢を整えることが大切。

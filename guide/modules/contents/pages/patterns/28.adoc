@@ -1,6 +1,12 @@
 = 一人で抱えこまない環境をつくる
-
-include::../../../../../guide/modules/contents/partials/defines/define-all-include.adoc[]
+:description: 組織で働く個人のパフォーマンス維持・向上のために実施する1on1ミーティングの実践的なガイドのパターン『一人で抱えこまない環境をつくる』。
+:current2root: ../../../../../
+:path-module-1on1guide: guide/modules/contents/
+:path-partials: {current2root}{path-module-1on1guide}partials/
+ifdef::site-gen-antora[]
+:path-partials: partial$
+endif::site-gen-antora[]
+include::{path-partials}defines/define-all-include.adoc[]
 
 はじめに::
 問題を抱え込まないようにする環境をつくることで、問題解決や適切な対応の糸口を見つけやすくし、よい結果を得られるようにしよう
