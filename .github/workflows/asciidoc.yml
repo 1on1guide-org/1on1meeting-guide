@@ -9,6 +9,14 @@ on:
       deploy_pages:
         description: 'Deploy to GitHub Pages.'
         required: true
+        default: false
+        type: boolean
+  workflow_dispatch:
+    inputs:
+      deploy_pages:
+        description: 'Deploy to GitHub Pages.'
+        required: true
+        default: false
         type: boolean
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

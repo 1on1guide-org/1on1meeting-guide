@@ -1,16 +1,25 @@
 # This is a AsciiDoctor workflow to help you get started with Actions
-name: PullRequest 
+name: Release and PullRequest 
 
 on:
   pull_request:
     types: [opened, synchronize] #reopened はsynchronizeも走る
     branches:
       - main
-
+  push:
+    branches:
+      - main
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "asciidoctor_job"
-  release_job:
+  PullRequest_job:
+    if:  ${{ github.event_name == 'pull_request' }}
     uses: ./.github/workflows/asciidoc.yml
     with:
       deploy_pages: false
+  Release_job:
+    if:  ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    uses: ./.github/workflows/asciidoc.yml
+    with:
+      deploy_pages: true
+  
