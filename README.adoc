@@ -1,12 +1,9 @@
 = 1on1 meeting guide writing repository
 // ============================================
-:url-1on1meeting-guide-html: https://files.1on1guide.org/html/index.html
-:url-1on1meeting-guide-pdf: https://files.1on1guide.org/pdf/1on1meeting-guide.pdf
+:url-1on1meeting-guide-file: https://files.1on1guide.org/
 :url-1on1meeting-guide-website: https://guide.1on1guide.org/
-:url-asciidoc-syntax-reference-html: {url-writing-guide-html}#ASCIIDOC-SYNTAX-REFERENCE
-:link-1on1meeting-guide-html: link:{url-1on1meeting-guide-html}[HTML版]
-:link-1on1meeting-guide-pdf: link:{url-1on1meeting-guide-pdf}[PDF版]
-:link-1on1meeting-guide-website: link:{url-1on1meeting-guide-pdf}[guide.1on1guide.org]
+:link-1on1meeting-guide-file: link:{url-1on1meeting-guide-file}[1on1ガイドのファイル出力]
+:link-1on1meeting-guide-website: link:{url-1on1meeting-guide-website}[guide.1on1guide.org]
 // ============================================
 
 
@@ -14,8 +11,8 @@
 GitHub actionsのArtifactsとして出力されます。
 
 === Web上の生成物
-* {link-1on1meeting-guide-pdf}
-* {link-1on1meeting-guide-html}
+* {link-1on1meeting-guide-file} に出力されますが、直接の公開はされません。
+** 公開は {link-1on1meeting-guide-website} にて行われます。
 
 == ドキュメント生成方法
 mainブランチに対するpullリクエストがあればドキュメント生成を行っておりますが、以下の方法で手動実行することも可能です。
