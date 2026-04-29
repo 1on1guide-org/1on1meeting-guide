@@ -59,6 +59,12 @@ include::{path-module-1on1guide}partials/1on1ミーティングパターン.adoc
 
 <<<
 
+// AIをメンターとして使うときの特性と注意点
+[[CONSIDERATION-OF-AI-MENTORS]]
+include::{path-module-1on1guide}pages/consideration-of-AI-mentors.adoc[leveloffset=+1]
+
+<<<
+
 // 用語集
 [[GLOSSARY]]
 include::{path-module-1on1guide}pages/glossary.adoc[leveloffset=+1]
