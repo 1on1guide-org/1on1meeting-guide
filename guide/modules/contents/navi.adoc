@@ -59,6 +59,8 @@ endif::env-vscode[]
 ** xref:patterns/26.adoc[]
 ** xref:patterns/27.adoc[]
 ** xref:patterns/28.adoc[]
+// AIをメンターとして使うときの特性と注意点
+* xref:consideration-of-AI-mentors.adoc[]
 // 用語集
 * xref:glossary.adoc[]
 //ライセンス
